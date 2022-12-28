@@ -1,0 +1,270 @@
+package ai;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import main.AIParticipant;
+import main.Env;
+import main.Participant;
+import main.Skater;
+
+public class ProblemState {
+
+	private AIParticipant ai;
+
+	private Constr myConstr;
+
+	private float eval;
+	private float parent_eval;
+
+	private int round;
+
+	private Map<Integer, Boolean> draftedPlayerCombinations;
+
+    private Problem problem;
+
+	public ProblemState(Problem problem, ProblemState parent, AIParticipant ai) {
+		
+        myConstr = new Constr();
+        this.problem = problem;		
+		this.ai = ai;
+        if (parent == null){
+			round = Env.getCurrentRound();
+			draftedPlayerCombinations = new HashMap<>();
+			return;
+		}
+		round = parent.getRound();
+		//problem.setDraftedPlayers((String[]) ai.getRoster().getPlayers().clone());
+
+		int i = 0;
+		for(String p : ai.getRoster().getPlayers()){
+			problem.draftedPlayers[i++] = p;
+		}
+		draftedPlayerCombinations = parent.getDraftedPlayerCombinations();
+        this.parent_eval = parent.getEval();
+
+        //this.myConstr = new Constr(parent.getConstr());
+    }
+
+
+	// Returns true if this ProblemState does not meet all constraints
+    //or its penalty is higher than the current lowest penalty(score is lower than current highest score),
+    //therefore its leaf should be discarded
+	public boolean discardLeaf() {
+		//System.out.println(problem.getRoster().size());
+		if (rosterCombinationExists() || !myConstr.meetsConstraints(problem, ai, round)) {
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!(obj instanceof ProblemState))
+			return false;
+		ProblemState state = (ProblemState) obj;
+		return state.getProblem().equals(problem);
+	}
+
+	// Returns true if this solution is the best solution
+	public boolean isBestSolution() {
+		//eval = myEval.evaluate(problem.getRoster(), eval);
+		if (Float.compare(eval, ai.getMaxScore()) > 0) {
+			// System.out.println("eval: " + eval);
+			// System.out.println("max: " +  ai.getMaxScore());
+			// System.out.println("setting as new max");
+			// System.out.println("-----");
+			// for(String s : problem.getDraftedPlayers()){
+			// 	System.out.println(s);
+			// }
+			// System.out.println("-----");
+		
+			ai.setMaxScore(eval);
+			return true;
+		}
+		return false;
+	}
+
+
+    private boolean rosterCombinationExists() {
+
+		ArrayList<String> currentRoster = new ArrayList<>();
+		String[] p = problem.getDraftedPlayers();
+
+		//save current round somehwerwe and use it for array index
+		for(int i = 0; i < p.length; i++){
+			if(p[i] != null){
+				currentRoster.add(p[i]);
+			}
+		}
+		//System.out.println("current roster size: " + currentRoster.size());
+
+		Collections.sort(currentRoster);
+		int hashCode = currentRoster.hashCode();
+
+		if(draftedPlayerCombinations.containsKey(hashCode)){
+			//System.out.println("combo exists");
+			return true;
+
+		}
+
+		draftedPlayerCombinations.put(hashCode, true);
+
+		return false;
+	}
+
+	public void SimulateOpponentDraftPicks(){
+
+		//[points in category][wins in category]???
+		Float[][] cumulativeWeeklyScore = new Float[15][2];
+		if(Env.getCurrentRound() <= Env.getTotalRounds()){
+
+
+				
+			// for(int w = 0; w < 4; w++){
+			// 	System.out.println("week " + w + " matchup: ");
+			// }
+
+			System.out.println("(self) Participant " + ai.getId());			
+			System.out.println("-----------");
+			for(String s : problem.getDraftedPlayers()){
+				if(s != null){
+					//int score = 0;
+					for(int j = 0; j < 15; j++){
+						Skater skater = (Skater) Env.AllPlayers.get(s);
+						cumulativeWeeklyScore[j][0] = skater.getCountingStats().getStatsArray()[j] * Env.getSkaterWeights(j);
+						
+						//score += 
+					} 
+					System.out.println(s);
+					// System.out.print("calculated weekly score for ");
+					// System.out.println(s + " is: " + score);
+				}
+				
+			}
+			System.out.println("-----------");
+			System.out.println("vs.");
+
+			for(Map.Entry<Integer, ArrayList<String>> p: problem.getOpponentRosters().entrySet()){
+				if(true){
+					problem.nextPick();
+					System.out.println("Participant " + p.getKey());
+					System.out.println("getCurrentPick: " + problem.getCurrentPick());
+					System.out.println("this opponent's pick in draft: " + Env.totalPicksInDraft.get(p.getKey()));
+					//System.out.println("simulating next pick...");
+					Map.Entry<String,Float> best = problem.playerScores.entrySet().iterator().next();
+					String highestScorePlayer = best.getKey();
+					problem.playerScores.remove(highestScorePlayer);
+					problem.availablePlayers.remove(highestScorePlayer);
+					int size = p.getValue().size();
+					System.out.println("highestScorePlayer: " + highestScorePlayer);
+					if(size > round - 1){
+						//System.out.println("removing last drafted player");
+						problem.getOpponentRosters().get(p.getKey()).remove(size - 1);
+					}
+					problem.getOpponentRosters().get(p.getKey()).add(highestScorePlayer);
+				}
+				System.out.println("-----------");
+				for(String s : p.getValue()){
+					System.out.println(s);
+				}
+				System.out.println("-----------\n");
+			}
+		 }
+	}
+
+
+	public AIParticipant getAi() {
+		return ai;
+	}
+
+	public Constr getConstr() {
+		return myConstr;
+	}
+
+	public float getEval() {
+		return eval;
+	}
+	
+	public int getRound() {
+		return round;
+	}
+
+	public Map<Integer, Boolean> getDraftedPlayerCombinations() {
+		return draftedPlayerCombinations;
+	}
+
+    public Problem getProblem() {
+		return problem;
+	}
+
+	public String getMostRecentDraftSelection() {
+		return problem.getDraftedPlayers()[Env.getCurrentRound() - 1];
+	}
+
+	public void setProblem(Problem problem) {
+		this.problem = problem;
+	}
+
+    public void nextRound() {
+		round++;
+	}
+
+	public float getParentEval() {
+		return parent_eval;
+	}
+
+	public void setParentEval(float parent_eval) {
+		this.parent_eval = parent_eval;
+	}
+
+	public void setEval(float eval) {
+		this.eval = eval;
+	}
+}
+
+
+
+
+		// 	for(int i = problem.getCurrentPick(); i <= Env.totalPicksInDraft.entrySet().size(); i++){
+
+		// 		problem.nextPick();
+
+		// 		if(Env.totalPicksInDraft.get(i - 1) == ai.getId()){
+		// 			break;
+		// 		}
+
+
+
+		// 		//next player needs to fit under the position limit of the opponent picking
+		// 		
+
+
+		// 		int opponentID = Env.totalPicksInDraft.get(i-1);
+
+		// 		System.out.println(i-1);
+		// 		System.out.println("Participant " + Env.participants.get(opponentID).getId() + ": ");
+		// 		System.out.println("-----------");
+		// 		for(String s : Env.participants.get(opponentID).getRoster().getPlayers()){
+		// 			System.out.print("calculate weekly score for: ");
+		// 			System.out.println(s);
+		// 		}
+		// 		System.out.print("calculate weekly score for: ");
+		// 		System.out.println(highestScorePlayer);
+		// 		System.out.println("-----------");
+			
+
+
+		
+		// 	//	System.out.print("cumulative weekly score is: " + score);
+		// 		// score += counting.getPoints() * Env.getSkaterWeights(15);
+		// 		// score += counting.getPowerplaypoints() * Env.getSkaterWeights(16);
+		// 		// score += counting.getShpoints() * Env.getSkaterWeights(17);
+
+
+				 
+		// 	 }
