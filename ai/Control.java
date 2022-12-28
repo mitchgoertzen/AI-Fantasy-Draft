@@ -2,17 +2,20 @@ package ai;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.TreeSet;
+import java.util.Map;
 
+import main.DraftMenu;
 import main.Env;
 
 public class Control {
 
-    private boolean DEBUG = true;
+    private boolean DEBUG = false;
 
     private Eval myEval;
 
-    //private int currentRound;
+    private int currentRound;
     private int roundLimit;
 
     private LeafComparator leafComparator;
@@ -24,8 +27,10 @@ public class Control {
 
     public Control(ProblemState root) {
         myEval = new Eval();
-        //currentRound = Env.getCurrentRound();
-        roundLimit = Env.getTotalRounds();
+        if(DEBUG)
+            System.out.println("env round: " + Env.getCurrentRound());
+        currentRound = Env.getCurrentRound();
+        roundLimit = currentRound + 3;
         this.leafComparator = new LeafComparator();
         this.currentLeaf = null;
         this.root = root;
@@ -43,28 +48,60 @@ public class Control {
     public void ftrans() {
 
         if (currentLeaf.discardLeaf()) {
-                if(DEBUG)
+               if(DEBUG){
+                    System.out.println("discard");
+               }
+                    
+                // if(Env.getCurrentPick() == 9){
+                //     System.out.println("discard");
+                // }
                 currentLeaf = null;
                 return;
         }
-
+        // if(Env.getCurrentPick() == 9){
+        //     System.out.println("slots size: " + currentLeaf.getProblem().getDraftSlots().size());
+        // }
+        // if(Env.getCurrentPick() == 9){
+        //     System.out.println("round: " + currentLeaf.getRound());
+        // }
         //System.out.println(currentLeaf.getRound());
-        if (currentLeaf.getRound() > roundLimit || currentLeaf.getProblem().getDraftSlots().isEmpty()){
+        if (currentRound > roundLimit || currentLeaf.getProblem().getDraftSlots().isEmpty()){
+            
+        
+            if(currentRound > roundLimit){
+                if(DEBUG){
+                    System.out.println("leaf round: " + currentLeaf.getRound());
+                    System.out.println("current round: " + currentRound);
+                }
+            }
+            // if(DEBUG)
+            //     System.out.println("empty");
+            // if(Env.getCurrentPick() == 9){
+            //     System.out.println("empty");
+            // }
             if (!currentLeaf.isBestSolution()) {
+                // if(Env.getCurrentPick() == 9){
+                //     System.out.println("not best solutuion");
+                // }
                 //no solution found
                 currentLeaf = null;
             }
             return;
         }
 
+        SimulatePreviousPicks();
+
         ArrayList<Problem> subProblems = SearchModel.Div(currentLeaf.getProblem(), currentLeaf.getAi().getMaxDraftSlots(), currentLeaf.getRound(), currentLeaf.getAi().getId());
         // If the node cannot be divided into more leaves, discard it
         if (subProblems.isEmpty()) {
+            // if(Env.getCurrentPick() == 9){
+            //     System.out.println("no subproblems");
+            // }
             currentLeaf = null;
             return;
         }
 
-        
+        currentLeaf.nextRound();
         for (Problem subProblem : subProblems) {
 
             //System.out.println();
@@ -83,14 +120,51 @@ public class Control {
             // }
 
          //   newLeaf.SimulateOpponentDraftPicks();
-            newLeaf.nextRound();
             leaves.add(newLeaf);
         //    System.out.println();
             
         }
-      //  currentRound++;
+        currentRound++;
         currentLeaf = null;        
         return;
+    }
+
+    private void SimulatePreviousPicks() {
+
+        if(currentLeaf.getRound() > Env.getCurrentRound()){
+            //simulatePreviousPicksInRound();   
+            int firstPick = ((currentLeaf.getRound() - 1) * Env.participants.size()) + 1;
+            int j = firstPick + Env.participants.size();
+            for(int i = firstPick; i < j; i++){
+                if(Env.totalPicksInDraft.get(i - 1) == currentLeaf.getAi().getId()){
+                 //   System.out.println("this participant already has the first pick in this round");
+                    break;
+                }
+
+                currentLeaf.getProblem().nextPick();
+              //  System.out.println("--sim previous picks in round--");
+               // System.out.println("real current pick: " + Env.getCurrentPick());
+               // System.out.println("current problem pick: " + prob.getCurrentPick());
+               // System.out.println("# participants: " + Env.participants.size());
+               // System.out.println("1st pick in round: " + (((round - 1) * Env.participants.size()) + 1));
+    
+               Iterator<Map.Entry<String,Float>> entry = DraftMenu.getPlayerScores().entrySet().iterator();
+               for(int k = 0; k < currentLeaf.getProblem().getHighestScoreIndex(); k++){
+                    entry.next();
+               }
+
+                //Map.Entry<String,Float> 
+                String highestScorePlayer = entry.next().getKey();
+                currentLeaf.getProblem().incrementHighestScoreIndex();
+                //prob.playerScores.remove(highestScorePlayer);
+                currentLeaf.getProblem().availablePlayers.remove(highestScorePlayer);
+    
+                
+              //  System.out.println("in round " + round +" opponent has drafted: " + highestScorePlayer);
+            }
+
+
+        }
     }
 
     public ProblemState getCurrentLeaf() {

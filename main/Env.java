@@ -75,7 +75,7 @@ public class Env {
     private static int currentPick;
 
     //lw,rw,c,d,g
-    private static  Integer[] positionLimits = new Integer[5];
+    private static  Integer[] positionLimits = new Integer[6];
 
     public static LinkedHashMap<String, Float> SortedPlayerScores = new LinkedHashMap<>();
     public static Map<Integer, Integer> totalPicksInDraft = new HashMap<>();

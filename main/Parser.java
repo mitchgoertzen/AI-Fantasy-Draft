@@ -22,9 +22,9 @@ public class Parser {
             fileArray[0] = skaterFile;  
             fileArray[1] = goalieFile;  
 
-            for(int fileIndex = 0; fileIndex < 1; fileIndex++) // loop thru all files
+            for(int fileIndex = 0; fileIndex < 2; fileIndex++)
             {
-               if(fileArray[fileIndex].getName().endsWith(".txt")) // to deal with the .txt files.
+               if(fileArray[fileIndex].getName().endsWith(".txt"))
                 {                 
                     Scanner scanner = new Scanner(fileArray[fileIndex]);
                     int j;
@@ -108,7 +108,7 @@ public class Parser {
         score += counting.getPowerplaypoints() * Env.getSkaterWeights(16);
         score += counting.getShpoints() * Env.getSkaterWeights(17);
 
-        return score / skater.getGamesplayed() * (10f/12f) ;
+        return score / 82f ;
     }
 
     private static float calculateGoalieScore(Goalie goalie){
@@ -125,6 +125,6 @@ public class Parser {
         // score += counting.getPowerplaypoints() * Env.getWeights(16);
         // score += counting.getShpoints() * Env.getWeights(17);
 
-        return score / 82f  * (2f/12f);
+        return score / 82f  * (1f/12f);
     }
 }

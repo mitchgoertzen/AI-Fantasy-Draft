@@ -26,6 +26,7 @@ public class Main {
         Env.setFowWeight(0);
         Env.setFolWeight(0);
         Env.setHitsWeight(0);
+        Env.setBlocksWeight(1);
 
         Env.setGamesstartedWeight(0);
         Env.setGoalsagainstWeight(-3);
@@ -35,15 +36,15 @@ public class Main {
         Env.setShutoutWeight(5);
         Env.setWinsWeight(0);
 
-        Env.setBlocksWeight(1);
-        Env.setTotalParticipants(2);
-        Env.setTotalRounds(2);
+        Env.setTotalParticipants(10);
+        Env.setTotalRounds(12);
 
-        Env.setPositionLimit(0, 2);
-        Env.setPositionLimit(1, 2);
-        Env.setPositionLimit(2, 2);
-        Env.setPositionLimit(3, 4);
-        Env.setPositionLimit(4, 2);
+        Env.setPositionLimit(0, 12);
+        Env.setPositionLimit(1, 12);
+        Env.setPositionLimit(2, 12);
+        Env.setPositionLimit(3, 12);
+        Env.setPositionLimit(4, 12);
+        Env.setPositionLimit(5, 12);
 
         int humanPlayers = 0;
         int playerCount = Env.getTotalParticipants();

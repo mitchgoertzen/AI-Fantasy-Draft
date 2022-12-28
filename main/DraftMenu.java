@@ -90,6 +90,7 @@ public class DraftMenu {
                         if(!Env.playerDrafted.containsKey(playerCode) || (Env.playerDrafted.containsKey(playerCode) && !Env.playerDrafted.get(playerCode))){
                             System.out.println("\nWith the " + currentPickInDraft + " overall pick, "
                             + currentParticipant.getName() + " has drafted "
+                            + Env.AllPlayers.get(playerCode).getPosition() + " "
                             + Env.AllPlayers.get(playerCode).getName() + "\n");
                             Env.nextPick();
                             currentPickInDraft = Env.getCurrentPick();

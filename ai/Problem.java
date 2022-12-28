@@ -14,7 +14,18 @@ public class Problem {
     
     ArrayList<String> availablePlayers;
 
-    LinkedHashMap<String, Float> playerScores;
+    //LinkedHashMap<String, Float> playerScores;
+    int highestScoreIndex;
+    
+    public void incrementHighestScoreIndex() {
+        highestScoreIndex++;
+    }
+
+
+    public int getHighestScoreIndex() {
+        return highestScoreIndex;
+    }
+
     LinkedHashMap<Integer, ArrayList<String>> opponentRosters;
 
     public LinkedHashMap<Integer, ArrayList<String>> getOpponentRosters() {
@@ -32,9 +43,9 @@ public class Problem {
         currentPick++;
     }
 
-    public LinkedHashMap<String, Float> getPlayerScores() {
-        return playerScores;
-    }
+    // public LinkedHashMap<String, Float> getPlayerScores() {
+    //     return playerScores;
+    // }
 
     ArrayList<DraftSlot> draftSlots;
 
@@ -67,7 +78,8 @@ public class Problem {
                 // }
             }
         }
-        playerScores = new LinkedHashMap<String, Float>();
+        highestScoreIndex = 0;
+        //playerScores = new LinkedHashMap<String, Float>();
         currentPick = Env.getCurrentPick();
         availablePlayers = new ArrayList<>();
         draftSlots = new ArrayList<>();
@@ -79,22 +91,26 @@ public class Problem {
     public Problem(Problem problem, int rosterSize) {
         opponentRosters = new LinkedHashMap<>((LinkedHashMap<Integer, ArrayList<String>>)problem.getOpponentRosters().clone());
         //opponentRosters =  ;
-        playerScores = new LinkedHashMap<String, Float>();
+        highestScoreIndex = problem.getHighestScoreIndex();
+        //playerScores = new LinkedHashMap<String, Float>();
         currentPick = problem.getCurrentPick();
 
         // for (Map.Entry<String,Float> mapElement : problem.getPlayerScores().entrySet()) {
         //     playerScores.put(mapElement.getKey(), mapElement.getValue());
         // }
-        playerScores = (LinkedHashMap<String, Float>) problem.getPlayerScores().clone();
+
+       // playerScores = new LinkedHashMap<>(problem.getPlayerScores());
+        //playerScores = (LinkedHashMap<String, Float>) problem.getPlayerScores().clone();
         
-    	availablePlayers = new ArrayList<>();
-    	draftSlots = new ArrayList<>();
-    	roster = new ArrayList<>();
+    	//availablePlayers = new ArrayList<>();
+    	//draftSlots = new ArrayList<>();
+    	//roster = new ArrayList<>();
         //draftedPlayers = new String[rosterSize];
+
         draftedPlayers = problem.getDraftedPlayers().clone();
-        availablePlayers = (ArrayList<String>) problem.getAvailablePlayers().clone();
-        draftSlots = (ArrayList<DraftSlot>) problem.getDraftSlots().clone();
-        roster = (ArrayList<DraftSelection>) problem.getRoster().clone();
+        availablePlayers = new ArrayList<>(problem.getAvailablePlayers());// (ArrayList<String>)problem.getAvailablePlayers().clone();
+        draftSlots = new ArrayList<>(problem.getDraftSlots());//(ArrayList<DraftSlot>) problem.getDraftSlots().clone();
+        roster = new ArrayList<>(problem.getRoster());//(ArrayList<DraftSelection>) problem.getRoster().clone();
  	    		
     }
 
@@ -130,9 +146,9 @@ public class Problem {
         return true;
     }
 
-    public void addPlayerScore(String key, float value){
-        playerScores.put(key, value);
-    }
+    // public void addPlayerScore(String key, float value){
+    //     playerScores.put(key, value);
+    // }
 
 
     public ArrayList<String> getAvailablePlayers() {
@@ -179,7 +195,7 @@ public class Problem {
 
         draftSlots.remove(slot);
         availablePlayers.remove(id);
-        playerScores.remove(id);
+        //playerScores.remove(id);
         
         return true;
     }    
@@ -217,7 +233,7 @@ public class Problem {
         this.draftSlots = draftSlots;
     }
     
-    public void setPlayerScores(LinkedHashMap<String, Float> playerScores) {
-        this.playerScores = playerScores;
-    }
+    // public void setPlayerScores(LinkedHashMap<String, Float> playerScores) {
+    //     this.playerScores = playerScores;
+    // }
 }

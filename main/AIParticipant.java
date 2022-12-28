@@ -1,13 +1,11 @@
 package main;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import ai.*;
 
 public class AIParticipant extends Participant {
 
+    private boolean DEBUG = false;
     ArrayList<DraftSlot> draftSlots;
     int maxDraftSlots;
     public int getMaxDraftSlots() {
@@ -55,10 +53,16 @@ public class AIParticipant extends Participant {
         setMaxScore(rosterScore);
     
         int index = Env.getPositionIndex(Env.AllPlayers.get(playerCode).getPosition(), positionCounts);
+        if(DEBUG){        
+            System.out.println("player pos: " + Env.AllPlayers.get(playerCode).getPosition());
+            System.out.println("new count: " + (positionCounts[index] + 1));
+            System.out.println("limit: " + Env.getPositionLimits()[index]);
+        }
+
         positionCounts[index]++;
 
         System.out.println("score: " +  Env.PlayerScores.get(playerCode));
-        System.out.println((System.nanoTime() - StartTime)/1000000000f);
+        System.out.println("time elapsed: " + (System.nanoTime() - StartTime)/1000000000f + "s");
         return playerCode;
     }
 
@@ -69,11 +73,13 @@ public class AIParticipant extends Participant {
 
         initialProblem.setAvailablePlayers((ArrayList<String>) DraftMenu.getAvailablePlayers().clone());
 
-        initialProblem.setPlayerScores((LinkedHashMap<String, Float>) DraftMenu.getPlayerScores().clone());
+     //  initialProblem.setPlayerScores((LinkedHashMap<String, Float>) DraftMenu.getPlayerScores().clone());
 
-        for (Map.Entry<String,Float> mapElement : DraftMenu.getPlayerScores().entrySet()) {
-            initialProblem.addPlayerScore(mapElement.getKey(), mapElement.getValue());
-        }
+        // for (Map.Entry<String,Float> mapElement : DraftMenu.getPlayerScores().entrySet()) {
+        //     initialProblem.addPlayerScore(mapElement.getKey(), mapElement.getValue());
+        // }
+
+
         initialProblem.setDraftSlots((ArrayList<DraftSlot>) draftSlots.clone());
 
         int i = 0;
@@ -91,29 +97,41 @@ public class AIParticipant extends Participant {
 
     public ProblemState runSearch(ProblemState initialState)  {
 
+        if(DEBUG)
+            System.out.println("run search");
+
 		ProblemState bestState = null;
 		ProblemState currentState;
 
 		Control control = new Control(initialState);
 
+        if(DEBUG)
+            System.out.println("leaves: " + control.getLeaves().size());
     	while ((!control.getLeaves().isEmpty())) {
 
 
     		//Select the best leaf to work on
+            // if(DEBUG)
+            //     System.out.println("fleaf");
     		control.fleaf();
 
     		//Decide what to do with the current leaf
+            // if(DEBUG)
+            //     System.out.println("ftrans");
     		control.ftrans();
     		currentState = control.getCurrentLeaf();
     		//If the solution is complete and it has a better eval value than the current best state,
     		//then update the best state to the current state
     		if (!(currentState == null)) {
+                // if(DEBUG)
+                //     System.out.println("current state not null");
     			bestState = currentState;
     		}
     	}
 		
     	if (bestState == null) {
-    		System.out.println("No solution found.");
+            if(DEBUG)
+    		    System.out.println("best state null; No solution found.");
             return bestState;
     	}
 
