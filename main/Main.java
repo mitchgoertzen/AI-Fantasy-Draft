@@ -36,8 +36,8 @@ public class Main {
         Env.setWinsWeight(0);
 
         Env.setBlocksWeight(1);
-        Env.setTotalParticipants(5);
-        Env.setTotalRounds(4);
+        Env.setTotalParticipants(2);
+        Env.setTotalRounds(2);
 
         Env.setPositionLimit(0, 2);
         Env.setPositionLimit(1, 2);

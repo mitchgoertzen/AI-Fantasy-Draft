@@ -12,7 +12,7 @@ public class Control {
 
     private Eval myEval;
 
-    private int currentRound;
+    //private int currentRound;
     private int roundLimit;
 
     private LeafComparator leafComparator;
@@ -24,8 +24,8 @@ public class Control {
 
     public Control(ProblemState root) {
         myEval = new Eval();
-        currentRound = Env.getCurrentRound();
-        roundLimit = 3;
+        //currentRound = Env.getCurrentRound();
+        roundLimit = Env.getTotalRounds();
         this.leafComparator = new LeafComparator();
         this.currentLeaf = null;
         this.root = root;
@@ -49,7 +49,7 @@ public class Control {
         }
 
         //System.out.println(currentLeaf.getRound());
-        if (currentRound > roundLimit || currentLeaf.getProblem().getDraftSlots().isEmpty()){
+        if (currentLeaf.getRound() > roundLimit || currentLeaf.getProblem().getDraftSlots().isEmpty()){
             if (!currentLeaf.isBestSolution()) {
                 //no solution found
                 currentLeaf = null;
@@ -88,7 +88,7 @@ public class Control {
         //    System.out.println();
             
         }
-        currentRound++;
+      //  currentRound++;
         currentLeaf = null;        
         return;
     }
