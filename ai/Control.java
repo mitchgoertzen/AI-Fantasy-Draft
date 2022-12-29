@@ -30,7 +30,7 @@ public class Control {
         if(DEBUG)
             System.out.println("env round: " + Env.getCurrentRound());
         currentRound = Env.getCurrentRound();
-        roundLimit = Math.min(currentRound + 3, Env.getTotalRounds());
+        roundLimit = Math.min(currentRound + 2, Env.getTotalRounds());
         this.leafComparator = new LeafComparator();
         this.currentLeaf = null;
         this.root = root;
@@ -60,7 +60,7 @@ public class Control {
         }
 
         
-        currentRound = Env.getCurrentRound();
+        roundLimit = Env.getCurrentRound() + 3;
         // if(Env.getCurrentPick() == 9){
         //     System.out.println("slots size: " + currentLeaf.getProblem().getDraftSlots().size());
         // }
@@ -68,16 +68,18 @@ public class Control {
         //     System.out.println("round: " + currentLeaf.getRound());
         // }
         //System.out.println(currentLeaf.getRound());
-        if (currentRound > roundLimit || currentLeaf.getProblem().getDraftSlots().isEmpty()){
+        if (currentLeaf.getRound() > roundLimit || currentLeaf.getProblem().getDraftSlots().isEmpty()){
             
         
-            if(currentRound > roundLimit){
+
+             if(DEBUG){
+                if(currentRound > roundLimit){
                 
                     System.out.println("leaf round: " + currentLeaf.getRound());
                     System.out.println("current round: " + currentRound);
                 
             }
-            // if(DEBUG)
+             }
             //     System.out.println("empty");
             // if(Env.getCurrentPick() == 9){
             //     System.out.println("empty");
@@ -158,14 +160,14 @@ public class Control {
                 }
 
 
-                Map.Entry<String,Float> next = currentLeaf.getProblem().getPlayerScores().entrySet().iterator().next();
-                String highestScorePlayer = next.getKey();
-               // String highestScorePlayer = entry.next().getKey();
+              //  Map.Entry<String,Float> next = currentLeaf.getProblem().getPlayerScores().entrySet().iterator().next();
+                //String highestScorePlayer = next.getKey();
+                String highestScorePlayer = entry.next().getKey();
                 currentLeaf.getProblem().incrementHighestScoreIndex();
                 if(DEBUG)
                     System.out.println("opponent has drafted: " + highestScorePlayer);
                 currentLeaf.getProblem().addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
-                currentLeaf.getProblem().playerScores.remove(highestScorePlayer);
+                //currentLeaf.getProblem().playerScores.remove(highestScorePlayer);
                 currentLeaf.getProblem().availablePlayers.remove(highestScorePlayer);
     
                 

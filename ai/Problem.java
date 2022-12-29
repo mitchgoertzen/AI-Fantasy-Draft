@@ -17,7 +17,7 @@ public class Problem {
     
     ArrayList<String> availablePlayers;
 
-    LinkedHashMap<String, Float> playerScores;
+   // LinkedHashMap<String, Float> playerScores;
     int highestScoreIndex;
 
     private ArrayList<String>[] opponentRosters;
@@ -64,9 +64,9 @@ public class Problem {
         currentPick++;
     }
 
-    public LinkedHashMap<String, Float> getPlayerScores() {
-        return playerScores;
-    }
+    // public LinkedHashMap<String, Float> getPlayerScores() {
+    //     return playerScores;
+    // }
 
     ArrayList<DraftSlot> draftSlots;
 
@@ -102,7 +102,7 @@ public class Problem {
             }
         }
         highestScoreIndex = 0;
-        playerScores = new LinkedHashMap<String, Float>();
+       // playerScores = new LinkedHashMap<String, Float>();
         currentPick = Env.getCurrentPick();
         availablePlayers = new ArrayList<>();
         draftSlots = new ArrayList<>();
@@ -124,12 +124,12 @@ public class Problem {
         //opponentRosters = new LinkedHashMap<>((LinkedHashMap<Integer, ArrayList<String>>)problem.getOpponentRosters().clone());
         //opponentRosters =  ;
         highestScoreIndex = problem.getHighestScoreIndex();
-        playerScores = new LinkedHashMap<String, Float>();
+       // playerScores = new LinkedHashMap<String, Float>();
         currentPick = problem.getCurrentPick();
 
-        for (Map.Entry<String,Float> mapElement : problem.getPlayerScores().entrySet()) {
-            playerScores.put(mapElement.getKey(), mapElement.getValue());
-        }
+        // for (Map.Entry<String,Float> mapElement : problem.getPlayerScores().entrySet()) {
+        //     playerScores.put(mapElement.getKey(), mapElement.getValue());
+        // }
 
        // playerScores = new LinkedHashMap<>(problem.getPlayerScores());
         //playerScores = (LinkedHashMap<String, Float>) problem.getPlayerScores().clone();
@@ -178,9 +178,9 @@ public class Problem {
         return true;
     }
 
-    public void addPlayerScore(String key, float value){
-        playerScores.put(key, value);
-    }
+    // public void addPlayerScore(String key, float value){
+    //     playerScores.put(key, value);
+    // }
 
 
     public ArrayList<String> getAvailablePlayers() {
@@ -228,7 +228,7 @@ public class Problem {
 
         draftSlots.remove(slot);
         availablePlayers.remove(id);
-        playerScores.remove(id);
+      //  playerScores.remove(id);
         
         return true;
     }    

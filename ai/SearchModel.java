@@ -17,7 +17,7 @@ public class SearchModel {
         ArrayList<Problem> subProblems = new ArrayList<>();
 
         prob.nextPick();
-        for(String player: availablePlayers) {
+        for(String player: availablePlayers.subList(0, 50)) {
             Problem subProblem = new Problem(prob, max);
             //if element is able to be added to the slot
             if (subProblem.draftPlayer(Env.AllPlayers.get(player), nextDraftSlot, round));

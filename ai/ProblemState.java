@@ -12,7 +12,7 @@ import main.Env;
 
 public class ProblemState {
 
-    private boolean DEBUG = true;
+    private boolean DEBUG = false;
 
 	private AIParticipant ai;
 
@@ -187,10 +187,10 @@ public class ProblemState {
 
 					//System.out.println("opp rosters length: " + problem.getOpponentRosters().length);
 
-					Map.Entry<String,Float> next = problem.getPlayerScores().entrySet().iterator().next();
-					String highestScorePlayer = next.getKey();
-					//String highestScorePlayer = entry.next().getKey();
-					problem.playerScores.remove(highestScorePlayer);
+					//Map.Entry<String,Float> next = problem.getPlayerScores().entrySet().iterator().next();
+					//String highestScorePlayer = next.getKey();
+					String highestScorePlayer = entry.next().getKey();
+					//problem.playerScores.remove(highestScorePlayer);
 					problem.availablePlayers.remove(highestScorePlayer);
 					problem.incrementHighestScoreIndex();
 					problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
@@ -243,8 +243,8 @@ public class ProblemState {
 						}
 					}
 					System.out.println();
+					System.out.println("-----------\n");
 				}
-				System.out.println("-----------\n");
 				// for(int k = 0; k < problem.getOpponentRosters().length; k++){
 				// 	if(problem.getOpponentRosters()[k] != null){
 				// 		for(String s : problem.getOpponentRosters()[k]){
