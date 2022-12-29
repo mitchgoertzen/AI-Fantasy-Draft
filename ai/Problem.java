@@ -1,7 +1,6 @@
 package ai;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 import main.DraftSelection;
@@ -10,12 +9,28 @@ import main.Env;
 import main.Participant;
 import main.Player;
 
+@SuppressWarnings("unchecked")
 public class Problem {
+    
+    private boolean DEBUG = false;
     
     ArrayList<String> availablePlayers;
 
     //LinkedHashMap<String, Float> playerScores;
     int highestScoreIndex;
+
+    private ArrayList<String>[] opponentRosters;
+	//private List<ArrayList<String>> opponentRosters;
+
+
+    public void addOpponentPlayer(int opponentID, String player) {
+        opponentRosters[opponentID].add(player);
+    }
+
+
+    public ArrayList<String>[] getOpponentRosters() {
+        return opponentRosters;
+    }
     
     public void incrementHighestScoreIndex() {
         highestScoreIndex++;
@@ -26,11 +41,11 @@ public class Problem {
         return highestScoreIndex;
     }
 
-    LinkedHashMap<Integer, ArrayList<String>> opponentRosters;
+    // LinkedHashMap<Integer, ArrayList<String>> opponentRosters;
 
-    public LinkedHashMap<Integer, ArrayList<String>> getOpponentRosters() {
-        return opponentRosters;
-    }
+    // public LinkedHashMap<Integer, ArrayList<String>> getOpponentRosters() {
+    //     return opponentRosters;
+    // }
 
     private int currentPick;
 
@@ -64,14 +79,16 @@ public class Problem {
 
 
     public Problem(int rosterSize, int id) {
-        opponentRosters = new LinkedHashMap<>();
+        //opponentRosters = new LinkedHashMap<>();
+        opponentRosters = new ArrayList[Env.participants.size()];
         int currentKey = -1;
        // System.out.println("id: " + id);
         for(Map.Entry<Integer, Participant> p: Env.participants.entrySet()){
             currentKey = p.getKey();
            // System.out.println("currentKey: " + currentKey);
             if(currentKey != id){
-                opponentRosters.put(currentKey, p.getValue().getRoster().getPlayers());
+                opponentRosters[currentKey] = p.getValue().getRoster().getPlayers();
+              //  opponentRosters.put(currentKey, p.getValue().getRoster().getPlayers());
                 // System.out.println("opponent roster: ");
                 // for(String s : opponentRosters.get(currentKey)){
                 //     System.out.println("player: " + s);
@@ -87,9 +104,10 @@ public class Problem {
         draftedPlayers = new String[rosterSize];
     }
 
-    @SuppressWarnings (value="unchecked")
     public Problem(Problem problem, int rosterSize) {
-        opponentRosters = new LinkedHashMap<>((LinkedHashMap<Integer, ArrayList<String>>)problem.getOpponentRosters().clone());
+        
+        opponentRosters = new ArrayList[Env.participants.size()];
+        //opponentRosters = new LinkedHashMap<>((LinkedHashMap<Integer, ArrayList<String>>)problem.getOpponentRosters().clone());
         //opponentRosters =  ;
         highestScoreIndex = problem.getHighestScoreIndex();
         //playerScores = new LinkedHashMap<String, Float>();
