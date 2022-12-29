@@ -73,6 +73,11 @@ public class AIParticipant extends Participant {
 
         initialProblem.setAvailablePlayers((ArrayList<String>) DraftMenu.getAvailablePlayers().clone());
 
+        for(int i = 0; i < Env.participants.size(); i++){
+            if(i != super.getId()){
+                initialProblem.setOpponentRoster(i, Env.participants.get(i).getRoster().getPlayers());
+            }
+        }
      //  initialProblem.setPlayerScores((LinkedHashMap<String, Float>) DraftMenu.getPlayerScores().clone());
 
         // for (Map.Entry<String,Float> mapElement : DraftMenu.getPlayerScores().entrySet()) {

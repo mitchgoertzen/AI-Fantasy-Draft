@@ -22,7 +22,7 @@ public class Parser {
             fileArray[0] = skaterFile;  
             fileArray[1] = goalieFile;  
 
-            for(int fileIndex = 0; fileIndex < 2; fileIndex++)
+            for(int fileIndex = 0; fileIndex < 1; fileIndex++)
             {
                if(fileArray[fileIndex].getName().endsWith(".txt"))
                 {                 

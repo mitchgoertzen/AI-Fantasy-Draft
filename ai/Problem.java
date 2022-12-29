@@ -23,6 +23,11 @@ public class Problem {
 	//private List<ArrayList<String>> opponentRosters;
 
 
+    public void setOpponentRoster(int index, ArrayList<String> opponentRoster) {
+        this.opponentRosters[index] = opponentRoster;
+    }
+
+
     public void addOpponentPlayer(int opponentID, String player) {
         opponentRosters[opponentID].add(player);
     }
@@ -107,6 +112,14 @@ public class Problem {
     public Problem(Problem problem, int rosterSize) {
         
         opponentRosters = new ArrayList[Env.participants.size()];
+
+    
+        for(int i = 0; i < problem.getOpponentRosters().length; i++){
+            if(problem.getOpponentRosters()[i] != null){
+                opponentRosters[i] = (ArrayList<String>) problem.getOpponentRosters()[i].clone();
+            }
+        }
+        
         //opponentRosters = new LinkedHashMap<>((LinkedHashMap<Integer, ArrayList<String>>)problem.getOpponentRosters().clone());
         //opponentRosters =  ;
         highestScoreIndex = problem.getHighestScoreIndex();

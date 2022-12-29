@@ -132,9 +132,14 @@ public class ProblemState {
 		//float[][] cumulativeWeeklyScore = new float[15][2]; --> do not need?
 
 		//do not simulate rounds that are not in the draft 
+		// System.out.println("current: " + Env.getCurrentRound());
+		// System.out.println("total: " + Env.getTotalRounds());
 		if(Env.getCurrentRound() <= Env.getTotalRounds()){
 
-
+			for(String s : problem.getDraftedPlayers()){
+				System.out.println(s);
+			}
+			System.out.println("vs.");
 			/*
 
 			//used for tiebreakers
@@ -155,11 +160,12 @@ public class ProblemState {
 			 //change to: i = ((currentRound - 1) * #participants) + 1, j = i + #participants, i < j
 			//for(int i = problem.getCurrentPick(); i <= Env.totalPicksInDraft.entrySet().size(); i++){
 			int currentPick = problem.getCurrentPick() - 1;
-			//System.out.println("first pick in round " + round + ": " + firstPick);
-			//System.out.println("last pick: " + j);
-			//System.out.println("current ai's pick: " + currentPick);
+			// System.out.println("first pick in round " + round + ": " + firstPick);
+			// System.out.println("last pick: " + j);
+			// System.out.println("current ai's pick: " + currentPick);
 			for(int i = firstPick; i <= j; i++){
 				if(i > currentPick){
+					System.out.println("simming picks");
 					//System.out.println("current simulated pick: " + i);
 					//System.out.println("--sim opponent's next pick in round--");
 					//System.out.println("player score size: " + problem.playerScores.entrySet().size());
@@ -172,6 +178,11 @@ public class ProblemState {
 
 					String highestScorePlayer = entry.next().getKey();
 					problem.incrementHighestScoreIndex();
+
+					//System.out.println("opp rosters length: " + problem.getOpponentRosters().length);
+
+
+
 					//problem.playerScores.remove(highestScorePlayer);
 					problem.availablePlayers.remove(highestScorePlayer);
 					//System.out.println("opponent has drafted: " + highestScorePlayer);
@@ -214,8 +225,22 @@ public class ProblemState {
 
 				// System.out.print("cumulative weekly score is: ");
 
-				
-
+				if(Env.totalPicksInDraft.get(i - 1) != ai.getId()){
+					System.out.println("Roster of Participant " + Env.totalPicksInDraft.get(i - 1));
+					for(String s : problem.getOpponentRosters()[Env.totalPicksInDraft.get(i - 1)]){
+						System.out.println(s);
+					}
+				}
+				System.out.println();
+				// for(int k = 0; k < problem.getOpponentRosters().length; k++){
+				// 	if(problem.getOpponentRosters()[k] != null){
+				// 		for(String s : problem.getOpponentRosters()[k]){
+				// 			System.out.println(s);
+				// 		}
+				// 		System.out.println();
+				// 			//System.out.println("roster length: " + problem.getOpponentRosters()[s].size());
+				// 	}
+				// }
 
 				 
 			 }

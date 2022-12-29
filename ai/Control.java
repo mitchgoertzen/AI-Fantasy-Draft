@@ -30,7 +30,7 @@ public class Control {
         if(DEBUG)
             System.out.println("env round: " + Env.getCurrentRound());
         currentRound = Env.getCurrentRound();
-        roundLimit = currentRound + 3;
+        roundLimit = Math.min(currentRound + 3, Env.getTotalRounds());
         this.leafComparator = new LeafComparator();
         this.currentLeaf = null;
         this.root = root;
@@ -101,7 +101,7 @@ public class Control {
             return;
         }
 
-        currentLeaf.nextRound();
+//        currentLeaf.nextRound();
         for (Problem subProblem : subProblems) {
 
             //System.out.println();
@@ -120,6 +120,7 @@ public class Control {
             // }
 
          //   newLeaf.SimulateOpponentDraftPicks();
+            newLeaf.nextRound();
             leaves.add(newLeaf);
         //    System.out.println();
             
