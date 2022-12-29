@@ -1,6 +1,8 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Map;
+
 import ai.*;
 
 public class AIParticipant extends Participant {
@@ -80,9 +82,9 @@ public class AIParticipant extends Participant {
         }
      //  initialProblem.setPlayerScores((LinkedHashMap<String, Float>) DraftMenu.getPlayerScores().clone());
 
-        // for (Map.Entry<String,Float> mapElement : DraftMenu.getPlayerScores().entrySet()) {
-        //     initialProblem.addPlayerScore(mapElement.getKey(), mapElement.getValue());
-        // }
+        for (Map.Entry<String,Float> mapElement : DraftMenu.getPlayerScores().entrySet()) {
+            initialProblem.addPlayerScore(mapElement.getKey(), mapElement.getValue());
+        }
 
 
         initialProblem.setDraftSlots((ArrayList<DraftSlot>) draftSlots.clone());

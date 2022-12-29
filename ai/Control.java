@@ -58,6 +58,9 @@ public class Control {
                 currentLeaf = null;
                 return;
         }
+
+        
+        currentRound = Env.getCurrentRound();
         // if(Env.getCurrentPick() == 9){
         //     System.out.println("slots size: " + currentLeaf.getProblem().getDraftSlots().size());
         // }
@@ -69,10 +72,10 @@ public class Control {
             
         
             if(currentRound > roundLimit){
-                if(DEBUG){
+                
                     System.out.println("leaf round: " + currentLeaf.getRound());
                     System.out.println("current round: " + currentRound);
-                }
+                
             }
             // if(DEBUG)
             //     System.out.println("empty");
@@ -150,14 +153,19 @@ public class Control {
                // System.out.println("1st pick in round: " + (((round - 1) * Env.participants.size()) + 1));
     
                Iterator<Map.Entry<String,Float>> entry = DraftMenu.getPlayerScores().entrySet().iterator();
-               for(int k = 0; k < currentLeaf.getProblem().getHighestScoreIndex(); k++){
-                    entry.next();
-               }
+                for(int k = 0; k < currentLeaf.getProblem().getHighestScoreIndex(); k++){
+                        entry.next();
+                }
 
-                //Map.Entry<String,Float> 
-                String highestScorePlayer = entry.next().getKey();
+
+                Map.Entry<String,Float> next = currentLeaf.getProblem().getPlayerScores().entrySet().iterator().next();
+                String highestScorePlayer = next.getKey();
+               // String highestScorePlayer = entry.next().getKey();
                 currentLeaf.getProblem().incrementHighestScoreIndex();
-                //prob.playerScores.remove(highestScorePlayer);
+                if(DEBUG)
+                    System.out.println("opponent has drafted: " + highestScorePlayer);
+                currentLeaf.getProblem().addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
+                currentLeaf.getProblem().playerScores.remove(highestScorePlayer);
                 currentLeaf.getProblem().availablePlayers.remove(highestScorePlayer);
     
                 

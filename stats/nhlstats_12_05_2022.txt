@@ -2,9 +2,3 @@ Connor McDavid,EDM,C,28,25,29,6,16,10,1,3,17,0,110,636,12,28,177,161,mcdavco01
 Jason Robertson,DAL,LW,27,23,18,17,8,6,0,4,8,0,118,487,4,14,0,0,roberja01
 Tage Thompson,BUF,C,27,21,20,7,16,9,1,2,7,0,124,504,7,12,140,193,thompta01
 Bo Horvat,VAN,C,27,20,9,1,8,8,2,3,4,0,90,565,19,17,383,278,horvabo01
-Leon Draisaitl,EDM,C,28,19,27,7,16,12,0,7,9,1,89,622,19,15,285,246,draisle01
-David Pastrnak,BOS,RW,26,19,18,10,16,8,0,2,9,0,134,520,5,29,5,6,pastrda01
-Kirill Kaprizov,MIN,LW,26,17,17,-9,15,9,0,2,8,0,113,549,8,23,0,2,kapriki01
-Alex Ovechkin,WSH,LW,29,16,13,-10,16,6,0,3,7,0,126,601,10,84,1,3,ovechal01
-Mikko Rantanen,COL,RW,25,16,17,3,18,3,0,2,12,0,72,554,13,25,63,88,rantami01
-Cole Caufield,MTL,RW,26,15,9,-2,0,3,0,1,2,0,92,470,5,10,0,0,caufico01
