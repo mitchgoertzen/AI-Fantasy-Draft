@@ -5,8 +5,10 @@ import ai.*;
 
 public class AIParticipant extends Participant {
 
-    private boolean DEBUG = false;
+    private final boolean DEBUG = false;
+
     ArrayList<DraftSlot> draftSlots;
+
     int maxDraftSlots;
     public int getMaxDraftSlots() {
         return maxDraftSlots;
@@ -46,8 +48,7 @@ public class AIParticipant extends Participant {
     	//Run the search
         ProblemState solution = runSearch(initialState);
         String playerCode = solution.getMostRecentDraftSelection();
-        // System.out.println(super.getRoster().hashCode());
-        // System.out.println(super.hashCode());
+
         super.addPlayer(playerCode);
         rosterScore += Env.PlayerScores.get(playerCode);
         setMaxScore(rosterScore);
@@ -78,11 +79,6 @@ public class AIParticipant extends Participant {
                 initialProblem.setOpponentRoster(i, Env.participants.get(i).getRoster().getPlayers());
             }
         }
-     //  initialProblem.setPlayerScores((LinkedHashMap<String, Float>) DraftMenu.getPlayerScores().clone());
-
-        // for (Map.Entry<String,Float> mapElement : DraftMenu.getPlayerScores().entrySet()) {
-        //     initialProblem.addPlayerScore(mapElement.getKey(), mapElement.getValue());
-        // }
 
 
         initialProblem.setDraftSlots((ArrayList<DraftSlot>) draftSlots.clone());

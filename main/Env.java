@@ -11,7 +11,7 @@ import java.util.Map.Entry;
 
 public class Env { 
     
-    private static boolean DEBUG = false;
+    private static final boolean DEBUG = false;
 
     private static float goalsWeight;
     private static float assistsWeight;

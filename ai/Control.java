@@ -11,7 +11,7 @@ import main.Env;
 
 public class Control {
 
-    private boolean DEBUG = false;
+    private final boolean DEBUG = false;
 
     private Eval myEval;
 

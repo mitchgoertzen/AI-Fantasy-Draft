@@ -9,7 +9,7 @@ import main.Player;
 
 public class Eval {
 
-    private boolean DEBUG = false;
+    private final boolean DEBUG = false;
 
 	public ProblemState evaluate(ProblemState leaf) {
         

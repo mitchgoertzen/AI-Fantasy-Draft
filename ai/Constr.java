@@ -5,7 +5,7 @@ import main.Env;
 import main.Player;
 
 public class Constr {
-    private boolean DEBUG = false;
+    private final boolean DEBUG = false;
 
     public boolean meetsConstraints(Problem prob, AIParticipant ai, int round) {
         

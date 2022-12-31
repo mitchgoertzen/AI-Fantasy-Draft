@@ -12,7 +12,7 @@ import main.Env;
 
 public class ProblemState {
 
-    private boolean DEBUG = false;
+    private final boolean DEBUG = false;
 
 	private AIParticipant ai;
 
