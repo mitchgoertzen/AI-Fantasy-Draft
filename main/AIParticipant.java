@@ -1,8 +1,6 @@
 package main;
 
 import java.util.ArrayList;
-import java.util.Map;
-
 import ai.*;
 
 public class AIParticipant extends Participant {
