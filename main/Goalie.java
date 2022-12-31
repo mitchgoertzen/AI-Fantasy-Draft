@@ -12,14 +12,14 @@ public class Goalie extends Player {
     public GoalieCountingStats getCountingStats() {
         return countingStats;
     }
-
-    public void setCountingStats(GoalieCountingStats countingStats) {
-        this.countingStats = countingStats;
-    }
     
     @Override
     public Skater clone() {
         return (Skater) super.clone();
+    }
+
+    public void setCountingStats(GoalieCountingStats countingStats) {
+        this.countingStats = countingStats;
     }
     
 }

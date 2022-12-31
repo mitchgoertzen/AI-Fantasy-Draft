@@ -2,24 +2,12 @@ package main;
 
 public class DraftSlot implements Cloneable {
 
-    int type;
-    int number;
+    private int number;
+    private int type;
 
     public DraftSlot(int number) {
         this.number = number;
     }  
-    
-    public int getType() {
-        return type;
-    }   
-
-    public int getNumber() {
-        return number;
-    }   
-    
-    public void setType(int type) {
-        this.type = type;
-    }
     
     @Override
     public DraftSlot clone() {
@@ -30,5 +18,17 @@ public class DraftSlot implements Cloneable {
             
         }
         return clone;
+    }
+
+    public int getNumber() {
+        return number;
+    } 
+    
+    public int getType() {
+        return type;
+    }     
+    
+    public void setType(int type) {
+        this.type = type;
     }
 }

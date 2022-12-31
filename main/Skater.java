@@ -8,16 +8,16 @@ public class Skater extends Player{
         countingStats = new SkaterCountingStats(array);
     }
     
+    @Override
+    public Skater clone() {
+        return (Skater) super.clone();
+    }
+    
     public SkaterCountingStats getCountingStats() {
         return countingStats;
     }
 
     public void setCountingStats(SkaterCountingStats countingStats) {
         this.countingStats = countingStats;
-    }
-    
-    @Override
-    public Skater clone() {
-        return (Skater) super.clone();
     }
 }

@@ -40,51 +40,20 @@ public class Env {
     private static float shutoutWeight;
     private static float winsWeight;
 
-
-    public static void setWinsWeight(float winsWeight) {
-        Env.winsWeight = winsWeight;
-    }
-    
-    public static void setGamesstartedWeight(float gsWeight) {
-        Env.gamesstartedWeight = gsWeight;
-    }
-
-    public static void setLossesWeight(float lossesWeight) {
-        Env.lossesWeight = lossesWeight;
-    }
-
-    public static void setGoalsagainstWeight(float gaWeight) {
-        Env.goalsagainstWeight = gaWeight;
-    }
-
-    public static void setShotsagainstWeight(float saWeight) {
-        Env.shotsagainstWeight = saWeight;
-    }
-
-    public static void setSavesWeight(float savesWeight) {
-        Env.savesWeight = savesWeight;
-    }
-
-    public static void setShutoutWeight(float soWeight) {
-        Env.shutoutWeight = soWeight;
-    }
-
     private static int totalParticipants;
     private static int totalRounds;
     private static int currentRound;
     private static int currentPick;
 
-    //lw,rw,c,d,g
-    private static  Integer[] positionLimits = new Integer[6];
+    private static  Integer[] positionLimits = new Integer[6]; //lw,rw,c,d,g
 
     public static LinkedHashMap<String, Float> SortedPlayerScores = new LinkedHashMap<>();
+    
     public static Map<Integer, Integer> totalPicksInDraft = new HashMap<>();
     public static Map<String, Boolean> playerDrafted = new HashMap<>();
     public static Map<String, Float> PlayerScores = new HashMap<>();
     public static Map<String, Player> AllPlayers = new HashMap<>();
     public static Map<Integer, Participant> participants = new HashMap<>();
-
-    //public static ArrayList<String> SortedPlayers = new ArrayList<>();
 
     public static float getSkaterWeights(int i){
         switch(i){
@@ -250,18 +219,15 @@ public class Env {
         List<Entry<String, Float>> l1 = new LinkedList<Entry<String, Float>>(PlayerScores.entrySet());  
 
         Collections.sort(l1, new Comparator<Entry<String, Float>>() {
-
             @Override
             public int compare(Entry<String, Float> o1, Entry<String, Float> o2) {
                 return o2.getValue().compareTo(o1.getValue()); 
-                //return 0;
             }  
         });  
         
         for (Entry<String, Float> entry : l1)   
         {  
             SortedPlayerScores.put(entry.getKey(), entry.getValue());
-            //SortedPlayers.add(entry.getKey());
         }  
 
     }
@@ -459,6 +425,33 @@ public class Env {
     }
 
     //set goalie weights
+    public static void setGamesstartedWeight(float gsWeight) {
+        Env.gamesstartedWeight = gsWeight;
+    }
+
+    public static void setGoalsagainstWeight(float gaWeight) {
+        Env.goalsagainstWeight = gaWeight;
+    }
+
+    public static void setLossesWeight(float lossesWeight) {
+        Env.lossesWeight = lossesWeight;
+    }
+
+    public static void setSavesWeight(float savesWeight) {
+        Env.savesWeight = savesWeight;
+    }
+
+    public static void setShotsagainstWeight(float saWeight) {
+        Env.shotsagainstWeight = saWeight;
+    }
+
+    public static void setShutoutWeight(float soWeight) {
+        Env.shutoutWeight = soWeight;
+    }
+
+    public static void setWinsWeight(float winsWeight) {
+        Env.winsWeight = winsWeight;
+    }
 
     //set draft info
     public static void setCurrentPick(int currentPickInRound) {
@@ -493,3 +486,5 @@ public class Env {
         Env.totalRounds = totalRounds;
     }
 }
+
+

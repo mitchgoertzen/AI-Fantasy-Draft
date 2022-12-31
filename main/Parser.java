@@ -7,12 +7,15 @@ import java.util.Scanner;
 
 public class Parser {
 
+    private static final boolean DEBUG = false;
+
     public static void parseSkaters(){
+
         Map<String, Player>  players = new HashMap<>();
-       // String filename = "nhlstats_12_05_2022.txt";
         Player currentPlayer;
         String[] currentSkaterArray = new String[19];
         String[] currentGoalieArray = new String[10];
+
         try{
             
             File skaterFile = new File("stats/nhlstats_12_05_2022.txt");
@@ -25,29 +28,28 @@ public class Parser {
             for(int fileIndex = 0; fileIndex < 2; fileIndex++)
             {
                if(fileArray[fileIndex].getName().endsWith(".txt"))
-                {                 
+                {       
+                    int j;          
                     Scanner scanner = new Scanner(fileArray[fileIndex]);
-                    int j;
                     String currentID = "";
                     String currentString = "";
-                    if(fileIndex == 0){
+
+                    if(fileIndex == 0)
                         currentSkaterArray = new String[19];
-                    }else{
+                    else
                         currentGoalieArray = new String[10];
-                    }
+
                     while(scanner.hasNextLine()){
-                        
-                        //System.out.println(++i);
-                        
+
                         char[] currentLine = scanner.nextLine().toCharArray();
-                        
+
                         int lineSize = currentLine.length;
-                        for(int i = lineSize - 1;currentLine[i] != ',';i--){
+                        for(int i = lineSize - 1; currentLine[i] != ','; i--){
                             currentID = currentLine[i] + currentID;
                         }
-        
+
                         j = 0;
-                        for(int k = 0;k < lineSize - currentID.length();k++){
+                        for(int k = 0; k < lineSize - currentID.length(); k++){
                             if(currentLine[k] == ','){
                                 if(fileIndex == 0){
                                     currentSkaterArray[j++] = currentString;
@@ -59,11 +61,13 @@ public class Parser {
                                 currentString += currentLine[k];
                             }
                         }
+                        
                         float eval = -1;
                         if(fileIndex == 0){
                             currentPlayer = new Skater(currentID, currentSkaterArray);
                             eval = calculatePlayerScore((Skater)currentPlayer);
-                            //System.out.println(currentPlayer.getName() + " has a score of : " + eval);
+                            if(DEBUG)
+                                System.out.println(currentPlayer.getName() + " has a score of : " + eval);
                         }else{
 
                                 String[] infoArray = new String[4];
@@ -74,33 +78,32 @@ public class Parser {
                        
                             currentPlayer = new Goalie(currentID, infoArray, currentGoalieArray);
                             eval = calculateGoalieScore((Goalie)currentPlayer);
-                            //System.out.println(currentPlayer.getName() + " has a score of : " + eval);
+                            if(DEBUG)
+                                System.out.println(currentPlayer.getName() + " has a score of : " + eval);
                         }
-                       
-                        
                         Env.PlayerScores.put(currentID, eval);
                         Env.AllPlayers.put(currentID, currentPlayer);
                         players.put(currentID, currentPlayer);
                         currentID = "";
                     }
                     scanner.close();
-
-    
-                }              
-    
+                }
             }
         }catch(FileNotFoundException e){
-           // System.out.println(filename +" not found");
+            if(DEBUG)
+                System.out.println("file not found");
             e.printStackTrace();
         }
     }
 
     private static float calculatePlayerScore(Skater skater){
-        float score = 0;
 
+        float score = 0;
         SkaterCountingStats counting = skater.getCountingStats();
         Integer[] stats = counting.getStatsArray();
-        for(int i = 0; i < stats.length; i++){
+        int statsLength = stats.length;
+
+        for(int i = 0; i < statsLength; i++){
             score += stats[i] * Env.getSkaterWeights(i);
         }
 
@@ -112,19 +115,17 @@ public class Parser {
     }
 
     private static float calculateGoalieScore(Goalie goalie){
-        float score = 0;
 
+        float score = 0;
         GoalieCountingStats counting = goalie.getCountingStats();
         Integer[] stats = counting.getStatsArray();
-        for(int i = 0; i < stats.length; i++){
-            //System.out.print(stats[i]);
+        int statsLength = stats.length;
+
+        for(int i = 0; i < statsLength; i++){
+            if(DEBUG)
+                System.out.print(stats[i]);
             score += stats[i] * Env.getGoalieWeights(i);
         }
-
-        // score += counting.getPoints() * Env.getWeights(15);
-        // score += counting.getPowerplaypoints() * Env.getWeights(16);
-        // score += counting.getShpoints() * Env.getWeights(17);
-
         return score / 82f  * (1f/12f);
     }
 }

@@ -70,12 +70,12 @@ public class SkaterCountingStats {
     }
 
     public void addStats(Integer[] newStats, int gamesPlayed){
-
         for(int i = 0; i < stats.length; i++){
             stats[i] += newStats[i]/gamesPlayed;
         }
     }
 
+    //Getters
     public Integer[] getStatsArray(){
         return stats;
     }
@@ -132,68 +132,85 @@ public class SkaterCountingStats {
         return goals/shots;
     }
 
-    public int getTimeoonice() {
-        return timeoonice;
-    }
-
     public int getBlocks() {
         return blocks;
-    }
-
-    public int getHits() {
-        return hits;
-    }
-
-    public int getFaceoffswon() {
-        return faceoffswon;
     }
 
     public int getFaceoffslost() {
         return faceoffslost;
     }
 
-    public float getFaceoffPercentage() {
-        return faceoffswon/(faceoffswon + faceoffslost);
+    public int getFaceoffswon() {
+        return faceoffswon;
     }
 
-    public void setGoals(int goals) {
-        this.goals = goals;
-    }
-
-    public void setAssists(int assists) {
-        this.assists = assists;
-    }
-
-    public void setPlusminus(int plusminus) {
-        this.plusminus = plusminus;
+    public int getHits() {
+        return hits;
     }
 
     public int getPenaltiesinminutes() {
         return penaltiesinminutes;
     }
 
+    public int getTimeoonice() {
+        return timeoonice;
+    }
+
+    public float getFaceoffPercentage() {
+        return faceoffswon/(faceoffswon + faceoffslost);
+    }
+
+    //Setters
+    public void setAssists(int assists) {
+        this.assists = assists;
+    }
+
+    public void setBlocks(int blocks) {
+        this.blocks = blocks;
+    }
+    
+    public void setFaceoffslost(int faceoffslost) {
+        this.faceoffslost = faceoffslost;
+    }
+
+    public void setFaceoffswon(int faceoffswon) {
+        this.faceoffswon = faceoffswon;
+    }
+
+    public void setGamewinninggoals(int gamewinninggoals) {
+        this.gamewinninggoals = gamewinninggoals;
+    }
+    
+    public void setGoals(int goals) {
+        this.goals = goals;
+    }
+
+    public void setHits(int hits) {
+        this.hits = hits;
+    }
+
     public void setPenaltiesinminutes(int penaltiesinminutes) {
         this.penaltiesinminutes = penaltiesinminutes;
     }
 
-    public void setPowerplaygoals(int powerplaygoals) {
-        this.powerplaygoals = powerplaygoals;
+    public void setPlusminus(int plusminus) {
+        this.plusminus = plusminus;
     }
 
     public void setPowerplayassists(int powerplayassists) {
         this.powerplayassists = powerplayassists;
     }
 
-    public void setGamewinninggoals(int gamewinninggoals) {
-        this.gamewinninggoals = gamewinninggoals;
-    }
-
-    public void setShorthandedgoals(int shorthandedgoals) {
-        this.shorthandedgoals = shorthandedgoals;
+    public void setPowerplaygoals(int powerplaygoals) {
+        this.powerplaygoals = powerplaygoals;
     }
 
     public void setShorthandedassists(int shorthandedassists) {
         this.shorthandedassists = shorthandedassists;
+    }
+
+    public void setShorthandedgoals(int shorthandedgoals) {
+        this.shorthandedgoals = shorthandedgoals;
     }
 
     public void setShots(int shots) {
@@ -202,22 +219,5 @@ public class SkaterCountingStats {
 
     public void setTimeoonice(int timeoonice) {
         this.timeoonice = timeoonice;
-    }
-
-    public void setBlocks(int blocks) {
-        this.blocks = blocks;
-    }
-
-
-    public void setHits(int hits) {
-        this.hits = hits;
-    }
-
-    public void setFaceoffswon(int faceoffswon) {
-        this.faceoffswon = faceoffswon;
-    }
-    
-    public void setFaceoffslost(int faceoffslost) {
-        this.faceoffslost = faceoffslost;
     }
 }

@@ -3,10 +3,7 @@ package main;
 import java.util.Arrays;
 
 public class GoalieCountingStats {
-    //GS,W,L,GA,SA,SV,SO
-    private Integer[] stats;
-
-
+   
     private int gamesStarted;
     private int goalsAgainst;
     private int losses;
@@ -14,6 +11,8 @@ public class GoalieCountingStats {
     private int shotsAgainst;
     private int shutouts;
     private int wins;
+    
+    private Integer[] stats; //GS,W,L,GA,SA,SV,SO
 
     public GoalieCountingStats(){
         stats = new Integer[7];

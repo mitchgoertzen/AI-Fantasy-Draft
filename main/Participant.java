@@ -1,15 +1,19 @@
 package main;
 public class Participant {
-    private int id;
+
     private boolean isHuman;
+
     private int draftNumber;
-    private String name;
+    private int id;
+    
     private Roster roster;
-    private String[] skaters;
+
+    private String name;
+    private String[] bench;
     private String[] goalies;
     private String[] injuredReserve;
     private String[] notActive;
-    private String[] bench;
+    private String[] skaters;
 
     public Participant(int id, boolean isHuman, int draftNumber){
         this.id = id;
@@ -19,16 +23,15 @@ public class Participant {
         roster = new Roster();
     }
 
-    public void addPlayer(String p){
-        //System.out.println("particpant " + id + " has just added " + p);
-        roster.addPlayer(p);
-    }
-
-
     public boolean isHuman() {
         return isHuman;
     }
 
+    public void addPlayer(String p){
+        roster.addPlayer(p);
+    }
+
+    //Getters
     public int getId() {
         return id;
     }    
@@ -37,16 +40,20 @@ public class Participant {
         return draftNumber;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public Roster getRoster() {
         return roster;
     }
 
-    public String[] getSkaters() {
-        return skaters;
+    public String getName() {
+        return name;
+    }
+
+    public String[] getBench() {
+        return bench;
+    }  
+
+    public String[] getGoalies() {
+        return goalies;
     }
 
     public String[] getInjuredReserve() {
@@ -55,53 +62,46 @@ public class Participant {
 
     public String[] getNotActive() {
         return notActive;
+    } 
+
+    public String[] getSkaters() {
+        return skaters;
     }
 
-    public String[] getBench() {
-        return bench;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }   
-    
-    public void setIsHuman(boolean isHuman) {
-        this.isHuman = isHuman;
+    //Setters
+    public void setBench(String[] bench) {
+        this.bench = bench;
     }
 
     public void setDraftNumber(int draftNumber) {
         this.draftNumber = draftNumber;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-    
-    // public void addPlayerToRoster(String[] roster) {
-    //     this.roster = roster;
-    // }
-
-    public void setSkaters(String[] skaters) {
-        this.skaters = skaters;
     }
     
     public void setGoalies(String[] goalies) {
         this.goalies = goalies;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setInjuredReserve(String[] injuredReserve) {
         this.injuredReserve = injuredReserve;
+    }
+    
+    public void setIsHuman(boolean isHuman) {
+        this.isHuman = isHuman;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setNotActive(String[] notActive) {
         this.notActive = notActive;
     }
 
-    public void setBench(String[] bench) {
-        this.bench = bench;
-    }
-
-    public String[] getGoalies() {
-        return goalies;
+    public void setSkaters(String[] skaters) {
+        this.skaters = skaters;
     }
 }

@@ -1,8 +1,9 @@
 package main;
 
 public class DraftSelection {
-    Player player;
-    DraftSlot draftSlot;
+
+    private DraftSlot draftSlot;
+    private Player player;
 
     public DraftSelection(Player player, DraftSlot slot) {
         this.player = player;
@@ -13,12 +14,12 @@ public class DraftSelection {
         this.player = draftSelection.getPlayer().clone();
         this.draftSlot = draftSelection.getDraftSlot().clone();
     }
-    
-    public Player getPlayer() {
-        return player;
-    }
 
     public DraftSlot getDraftSlot() {
         return draftSlot;
+    }
+    
+    public Player getPlayer() {
+        return player;
     }
 }

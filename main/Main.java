@@ -7,7 +7,6 @@ import java.util.stream.IntStream;
 
 public class Main {
 
-
     public static void main(String[]  args){
            
         Env.setGoalsWeight(6);
@@ -49,13 +48,13 @@ public class Main {
         int humanPlayers = 0;
         int playerCount = Env.getTotalParticipants();
         int rounds = Env.getTotalRounds();
+        Random random = new Random();
 
         Parser.parseSkaters();
         Env.sortPlayerScores();
+
         List<Integer> draftNumbers = IntStream.rangeClosed(1, playerCount)
         .boxed().collect(Collectors.toList());
-
-        Random random = new Random();
 
         for(int i = 0;i < playerCount;i++){
             int num = random.nextInt(draftNumbers.size());
