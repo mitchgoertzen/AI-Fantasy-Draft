@@ -12,11 +12,8 @@ public class Eval {
     private boolean DEBUG = false;
 
 	public ProblemState evaluate(ProblemState leaf) {
-
-       // leaf.getProblem().nextPick();
         
         ArrayList<DraftSelection> newRoster = leaf.getProblem().getRoster();
-        
         Player newPlayer = newRoster.get(newRoster.size()-1).getPlayer();
         
         //float[][] evalA = leaf.getParentEval(); //(ie.float[1][1]) --> [wins][weeklyRosterScore]
@@ -26,8 +23,6 @@ public class Eval {
         leaf.setEval(eval);
 
         leaf.SimulateOpponentDraftPicks();//pass evalA
-
-       // System.out.println();
 
         //int[2] = wins, points
         //add player to current roster
