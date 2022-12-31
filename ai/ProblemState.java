@@ -32,29 +32,21 @@ public class ProblemState {
         myConstr = new Constr();
         this.problem = problem;		
 		this.ai = ai;
+
         if (parent == null){
 			draftedPlayerCombinations = new HashMap<>();
 			return;
 		}
 		round = parent.getRound();
-		//problem.setDraftedPlayers((String[]) ai.getRoster().getPlayers().clone());
-
 		int i = 0;
 		for(String p : ai.getRoster().getPlayers()){
 			problem.setDraftedPlayer(i++, p);
 		}
 		draftedPlayerCombinations = parent.getDraftedPlayerCombinations();
-        this.parent_eval = parent.getEval();
-
-        //this.myConstr = new Constr(parent.getConstr());
+        parent_eval = parent.getEval();
     }
 
-
-	// Returns true if this ProblemState does not meet all constraints
-    //or its penalty is higher than the current lowest penalty(score is lower than current highest score),
-    //therefore its leaf should be discarded
 	public boolean discardLeaf() {
-		//System.out.println(problem.getRoster().size());
 		if (rosterCombinationExists() || !myConstr.meetsConstraints(problem, ai, round)) {
 			return true;
 		}
@@ -71,19 +63,17 @@ public class ProblemState {
 		return state.getProblem().equals(problem);
 	}
 
-	// Returns true if this solution is the best solution
 	public boolean isBestSolution() {
-		//eval = myEval.evaluate(problem.getRoster(), eval);
 		if (Float.compare(eval, ai.getMaxScore()) > 0) {
-			//  if(DEBUG){
-			// 	System.out.println("eval: " + eval);
-			// 	System.out.println("max: " +  ai.getMaxScore());
-			// 	System.out.println("-----");
-			// 	for(String s : problem.getDraftedPlayers()){
-			// 		System.out.println(s);
-			// 	}
-			// 	System.out.println("-----");
-			//  }
+			 if(DEBUG){
+				System.out.println("eval: " + eval);
+				System.out.println("max: " +  ai.getMaxScore());
+				System.out.println("-----");
+				for(String s : problem.getDraftedPlayers()){
+					System.out.println(s);
+				}
+				System.out.println("-----");
+			 }
 		
 			ai.setMaxScore(eval);
 			return true;
@@ -103,49 +93,48 @@ public class ProblemState {
 				currentRoster.add(p[i]);
 			}
 		}
-		//System.out.println("current roster size: " + currentRoster.size());
 
 		Collections.sort(currentRoster);
-		// if(DEBUG){
-		// 	System.out.println("---");
-		// 	System.out.println(currentRoster);
-		// 	System.out.println("---");
-		// }
 		int hashCode = currentRoster.hashCode();
 
 		if(draftedPlayerCombinations.containsKey(hashCode)){
-			
 			if(DEBUG)
-			//	System.out.println("player combo");
+				System.out.println("player combo");
 			return true;
-
 		}
 
 		draftedPlayerCombinations.put(hashCode, true);
 
 		return false;
 	}
+	
+    public void nextRound() {
+		round++;
+	}
 
 	public void SimulateOpponentDraftPicks(){
-		//passed value float[][] rosterScore
-		
-		//float[][] cumulativeWeeklyScore = new float[15][2]; --> do not need?
+
+		/*
+		passed value float[][] rosterScore
+		float[][] cumulativeWeeklyScore = new float[15][2]; --> do not need?
+		*/
+
+		if(DEBUG){
+			System.out.println("current: " + Env.getCurrentRound());
+			System.out.println("total: " + Env.getTotalRounds());
+		}
 
 		//do not simulate rounds that are not in the draft 
-		// System.out.println("current: " + Env.getCurrentRound());
-		// System.out.println("total: " + Env.getTotalRounds());
 		if(Env.getCurrentRound() <= Env.getTotalRounds()){
+
 			if(DEBUG){
 				for(String s : problem.getDraftedPlayers()){
 					System.out.println(s);
 				}
 				System.out.println("vs.");
 			}
-
-		
 			
 			/*
-
 			//used for tiebreakers
 			//float totalRosterScore = 0;
 
@@ -157,87 +146,50 @@ public class ProblemState {
 			}
 			 */
 
-			//System.out.println("round: " + round);
-
 			int firstPick = ((round - 1)* Env.participants.size()) + 1;
 			int j = round * Env.participants.size();
-			 //change to: i = ((currentRound - 1) * #participants) + 1, j = i + #participants, i < j
-			//for(int i = problem.getCurrentPick(); i <= Env.totalPicksInDraft.entrySet().size(); i++){
 			int currentPick = problem.getCurrentPick() - 1;
-			// System.out.println("first pick in round " + round + ": " + firstPick);
-			// System.out.println("last pick: " + j);
-			// System.out.println("current ai's pick: " + currentPick);
 			for(int i = firstPick; i <= j; i++){
 				if(i > currentPick){
-					//if(DEBUG)
-						//System.out.println("simming picks");
-					//System.out.println("current simulated pick: " + i);
-					//System.out.println("--sim opponent's next pick in round--");
-					//System.out.println("player score size: " + problem.playerScores.entrySet().size());
-					// Map.Entry<String,Float> entry = problem.playerScores.entrySet().iterator().next();
-					// String highestScorePlayer = entry.getKey();
+					if(DEBUG){
+						System.out.println("simming picks");
+						System.out.println("current simulated pick: " + i);
+						System.out.println("--sim opponent's next pick in round--");
+					}
+
 					Iterator<Map.Entry<String,Float>> entry = DraftMenu.getPlayerScores().entrySet().iterator();
 					for(int k = 0; k < problem.getHighestScoreIndex(); k++){
 						 entry.next();
-					}                
-					// if(problem.getDraftedPlayers()[round- 1] == entry.next().getKey()){
-					// 	System.out.println("recent draft pick is highest score player");
-					// 	entry.next();
-					// }
+					}  
 
-					//System.out.println("opp rosters length: " + problem.getOpponentRosters().length);
+					//needed?
+					//if current ai has drafted player with highest score, increment index and iterator
+					/*
+					if(problem.getDraftedPlayers()[round- 1] == entry.next().getKey()){
+						if(DEBUG)
+							System.out.println("recent draft pick is highest score player");
+						problem.incrementHighestScoreIndex();
+						entry.next();
+					}
+					*/
 
-					//Map.Entry<String,Float> next = problem.getPlayerScores().entrySet().iterator().next();
-					//String highestScorePlayer = next.getKey();
 					String highestScorePlayer = entry.next().getKey();
-					//problem.playerScores.remove(highestScorePlayer);
+
+					if(DEBUG)
+						System.out.println("opponent will be drafting: " + highestScorePlayer);
+
 					problem.removeAvailablePlayer(highestScorePlayer);
 					problem.incrementHighestScoreIndex();
 					problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
-					//if(DEBUG)
-						//System.out.println("opponent will be drafting: " + highestScorePlayer);
-
 					problem.nextPick();
 
 
 				}
 
-
-				// if(Env.totalPicksInDraft.get(i - 1) == ai.getId()){
-				// 	System.out.println("calculate this ai's roster score vs Particpant " + Env.totalPicksInDraft.get(i-1) + "'s roster");
-				// }
-
-				// System.out.println("Participant " + Env.totalPicksInDraft.get(i-1) + ": ");
-				// System.out.println("-----------");
-				// for(String s : problem.getOpponentRosters().get(Env.totalPicksInDraft.get(i-1))){
-				// 	System.out.println(s);
-				// }
-				// System.out.println("-----------");
-
-
-
 				//next player needs to fit under the position limit of the opponent picking
 
-
-
-				// int opponentID = ;
-
-				// System.out.println(i-1);
-				// //System.out.println("Participant " + p.getId() + ": ");
-				// System.out.println("-----------");
-				// for(String s : Env.participants.get(opponentID).getRoster().getPlayers()){
-				// 	System.out.print("calculate weekly score for: ");
-				// 	System.out.println(s);
-				// }
-				// System.out.print("calculate weekly score for: ");
-				// System.out.println(highestScorePlayer);
-				// System.out.println("-----------");
-			
-
-				// System.out.print("cumulative weekly score is: ");
 				if(DEBUG){				
 					if(Env.totalPicksInDraft.get(i - 1) != ai.getId()){
-						//System.out.println("Roster of Participant " + Env.totalPicksInDraft.get(i - 1));
 						for(String s : problem.getOpponentRosters()[Env.totalPicksInDraft.get(i - 1)]){
 							System.out.println(s);
 						}
@@ -245,23 +197,9 @@ public class ProblemState {
 					System.out.println();
 					System.out.println("-----------\n");
 				}
-				// for(int k = 0; k < problem.getOpponentRosters().length; k++){
-				// 	if(problem.getOpponentRosters()[k] != null){
-				// 		for(String s : problem.getOpponentRosters()[k]){
-				// 			System.out.println(s);
-				// 		}
-				// 		System.out.println();
-				// 			//System.out.println("roster length: " + problem.getOpponentRosters()[s].size());
-				// 	}
-				// }
-
-				 
 			 }
 		}
-
-		  
 	}
-
 
 	public AIParticipant getAi() {
 		return ai;
@@ -273,6 +211,10 @@ public class ProblemState {
 
 	public float getEval() {
 		return eval;
+	}
+
+	public float getParentEval() {
+		return parent_eval;
 	}
 	
 	public int getRound() {
@@ -289,37 +231,29 @@ public class ProblemState {
 
 	public String getMostRecentDraftSelection() {
 
-		// if(DEBUG){
-		// 	System.out.println("problem: " + problem);
-		// 	System.out.println("players: " + problem.getDraftedPlayers().length);
-		// 	System.out.println("---");
-		// 	for(String s : problem.getDraftedPlayers()){
-		// 		System.out.println(s);
-		// 	}
-		// 	System.out.println("---");
-		// 	System.out.println("round: " + Env.getCurrentRound());
-		// }
+		if(DEBUG){
+			System.out.println("problem: " + problem);
+			System.out.println("players: " + problem.getDraftedPlayers().length);
+			System.out.println("---");
+			for(String s : problem.getDraftedPlayers()){
+				System.out.println(s);
+			}
+			System.out.println("---");
+			System.out.println("round: " + Env.getCurrentRound());
+		}
 		
 		return problem.getDraftedPlayers()[Env.getCurrentRound() - 1];
+	}
+
+	public void setEval(float eval) {
+		this.eval = eval;
 	}
 
 	public void setProblem(Problem problem) {
 		this.problem = problem;
 	}
 
-    public void nextRound() {
-		round++;
-	}
-
-	public float getParentEval() {
-		return parent_eval;
-	}
-
 	public void setParentEval(float parent_eval) {
 		this.parent_eval = parent_eval;
-	}
-
-	public void setEval(float eval) {
-		this.eval = eval;
 	}
 }
