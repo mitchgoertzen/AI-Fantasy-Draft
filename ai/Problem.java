@@ -12,153 +12,63 @@ import main.Player;
 @SuppressWarnings("unchecked")
 public class Problem {
     
-    private boolean DEBUG = false;
+    private final boolean DEBUG = false;
     
-    ArrayList<String> availablePlayers;
-
-   // LinkedHashMap<String, Float> playerScores;
-    int highestScoreIndex;
-
+    private ArrayList<DraftSlot> draftSlots;
+    private ArrayList<DraftSelection> roster;
+    private ArrayList<String> availablePlayers;
     private ArrayList<String>[] opponentRosters;
-	//private List<ArrayList<String>> opponentRosters;
-
-
-    public void setOpponentRoster(int index, ArrayList<String> opponentRoster) {
-        this.opponentRosters[index] = opponentRoster;
-    }
-
-
-    public void addOpponentPlayer(int opponentID, String player) {
-        opponentRosters[opponentID].add(player);
-    }
-
-
-    public ArrayList<String>[] getOpponentRosters() {
-        return opponentRosters;
-    }
-    
-    public void incrementHighestScoreIndex() {
-        highestScoreIndex++;
-    }
-
-
-    public int getHighestScoreIndex() {
-        return highestScoreIndex;
-    }
-
-    // LinkedHashMap<Integer, ArrayList<String>> opponentRosters;
-
-    // public LinkedHashMap<Integer, ArrayList<String>> getOpponentRosters() {
-    //     return opponentRosters;
-    // }
 
     private int currentPick;
+    private int highestScoreIndex;
 
-    public int getCurrentPick() {
-        return currentPick;
-    }
-
-    
-    public void nextPick() {
-        currentPick++;
-    }
-
-    // public LinkedHashMap<String, Float> getPlayerScores() {
-    //     return playerScores;
-    // }
-
-    ArrayList<DraftSlot> draftSlots;
-
-    ArrayList<DraftSelection> roster;
-    String[] draftedPlayers;
-
-
-    public void addDraftedPlayers(String player, int index) {
-        draftedPlayers[index] = player;
-    }
-
-
-    public String[] getDraftedPlayers() {
-        return draftedPlayers;
-    }
-
+    private String[] draftedPlayers;
 
     public Problem(int rosterSize, int id) {
-        //opponentRosters = new LinkedHashMap<>();
+
+        availablePlayers = new ArrayList<>();
+        currentPick = Env.getCurrentPick();
+        draftedPlayers = new String[rosterSize];
+        draftSlots = new ArrayList<>();
+        highestScoreIndex = 0;  
         opponentRosters = new ArrayList[Env.participants.size()];
+
         int currentKey = -1;
-       // System.out.println("id: " + id);
         for(Map.Entry<Integer, Participant> p: Env.participants.entrySet()){
             currentKey = p.getKey();
-           // System.out.println("currentKey: " + currentKey);
             if(currentKey != id){
                 opponentRosters[currentKey] = p.getValue().getRoster().getPlayers();
-              //  opponentRosters.put(currentKey, p.getValue().getRoster().getPlayers());
-                // System.out.println("opponent roster: ");
-                // for(String s : opponentRosters.get(currentKey)){
-                //     System.out.println("player: " + s);
-                // }
+            
             }
         }
-        highestScoreIndex = 0;
-       // playerScores = new LinkedHashMap<String, Float>();
-        currentPick = Env.getCurrentPick();
-        availablePlayers = new ArrayList<>();
-        draftSlots = new ArrayList<>();
         roster = new ArrayList<>();
-        draftedPlayers = new String[rosterSize];
     }
 
     public Problem(Problem problem, int rosterSize) {
         
         opponentRosters = new ArrayList[Env.participants.size()];
 
-    
-        for(int i = 0; i < problem.getOpponentRosters().length; i++){
+        int rosterLength = problem.getOpponentRosters().length;
+        for(int i = 0; i < rosterLength; i++){
             if(problem.getOpponentRosters()[i] != null){
                 opponentRosters[i] = (ArrayList<String>) problem.getOpponentRosters()[i].clone();
             }
         }
-        
-        //opponentRosters = new LinkedHashMap<>((LinkedHashMap<Integer, ArrayList<String>>)problem.getOpponentRosters().clone());
-        //opponentRosters =  ;
+
         highestScoreIndex = problem.getHighestScoreIndex();
-       // playerScores = new LinkedHashMap<String, Float>();
         currentPick = problem.getCurrentPick();
-
-        // for (Map.Entry<String,Float> mapElement : problem.getPlayerScores().entrySet()) {
-        //     playerScores.put(mapElement.getKey(), mapElement.getValue());
-        // }
-
-       // playerScores = new LinkedHashMap<>(problem.getPlayerScores());
-        //playerScores = (LinkedHashMap<String, Float>) problem.getPlayerScores().clone();
-        
-    	//availablePlayers = new ArrayList<>();
-    	//draftSlots = new ArrayList<>();
-    	//roster = new ArrayList<>();
-        //draftedPlayers = new String[rosterSize];
-
         draftedPlayers = problem.getDraftedPlayers().clone();
-        availablePlayers = new ArrayList<>(problem.getAvailablePlayers());// (ArrayList<String>)problem.getAvailablePlayers().clone();
-        draftSlots = new ArrayList<>(problem.getDraftSlots());//(ArrayList<DraftSlot>) problem.getDraftSlots().clone();
-        roster = new ArrayList<>(problem.getRoster());//(ArrayList<DraftSelection>) problem.getRoster().clone();
- 	    		
+        availablePlayers = new ArrayList<>(problem.getAvailablePlayers());
+        draftSlots = new ArrayList<>(problem.getDraftSlots());
+        roster = new ArrayList<>(problem.getRoster());	
     }
 
-    public boolean playerAdded(String player) {        
-        for(DraftSelection draftSelection : roster) {
-            if ( player.equals(draftSelection.getPlayer().getID()) ) 
-                return true;
-        }    
-        return false;
-    }
-
-    public boolean slotAdded(DraftSlot draftSlot) {        
-        for(DraftSelection draftSelection : roster) {
-            if ( draftSlot.equals(draftSelection.getDraftSlot()) ) 
-                return true;
-        }    
-        return false;
+    //Utility methods
+    public boolean addAvailablePlayer(String player) {
+        if (availablePlayers.contains(player)  || playerAdded(player))
+            return false;
+        availablePlayers.add(player);
+        return true;
     }
 
     public boolean addDraftSlot(DraftSlot newSlot) {
@@ -168,70 +78,36 @@ public class Problem {
         return true;
     }
 
-    
-
-    public boolean addAvailablePlayer(String player) {
-        if (availablePlayers.contains(player)  || playerAdded(player))
-            return false;
-        availablePlayers.add(player);
-        return true;
-    }
-
-    // public void addPlayerScore(String key, float value){
-    //     playerScores.put(key, value);
-    // }
-
-
-    public ArrayList<String> getAvailablePlayers() {
-        return availablePlayers;
-    }
-
-    public ArrayList<DraftSlot> getDraftSlots() {
-        return draftSlots;
-    }
-
-    public DraftSlot nextDraftSlot() {
-        if (draftSlots.isEmpty())
-            return null;
-        DraftSlot draftSlot = draftSlots.get(0);
-        return draftSlot;
-    }
-
-    public ArrayList<DraftSelection> getRoster() {
-        return roster;
-    }
-
     public boolean draftPlayer(Player player, DraftSlot slot, int round) {
 
         String id = player.getID();
-        if (!draftSlots.contains(slot))      {
-            System.out.println(slot + " does not exist");
+
+        if (!draftSlots.contains(slot)){
+            if(DEBUG)
+                System.out.println(slot + " does not exist");
             System.exit(1);
             return false;
         }
 
         if (!availablePlayers.contains(id))      {
-            System.out.println(player + " does not exist");
+            if(DEBUG)
+                System.out.println(player + " does not exist");
             System.exit(1);
             return false;
         }
 
         DraftSelection newDraftSelection = new DraftSelection(player, slot);
-        roster.add(newDraftSelection);
 
         if(DEBUG)
             System.out.println("drafting: " + player.getID());
-        
-        //System.out.println("round " + (round + 1));
-        draftedPlayers[round - 1] = id;
 
+        draftedPlayers[round - 1] = id;
+        roster.add(newDraftSelection);
         draftSlots.remove(slot);
         availablePlayers.remove(id);
-      //  playerScores.remove(id);
         
         return true;
-    }    
-
+    } 
 
     @Override
     public boolean equals(Object other) {
@@ -256,7 +132,79 @@ public class Problem {
 		return false;
     }
 
+    public boolean playerAdded(String player) {        
+        for(DraftSelection draftSelection : roster) {
+            if ( player.equals(draftSelection.getPlayer().getID()) ) 
+                return true;
+        }    
+        return false;
+    }
+
+    public boolean slotAdded(DraftSlot draftSlot) {        
+        for(DraftSelection draftSelection : roster) {
+            if ( draftSlot.equals(draftSelection.getDraftSlot()) ) 
+                return true;
+        }    
+        return false;
+    }
+
+    public DraftSlot nextDraftSlot() {
+        if (draftSlots.isEmpty())
+            return null;
+        DraftSlot draftSlot = draftSlots.get(0);
+        return draftSlot;
+    }
     
+    public void addDraftedPlayers(String player, int index) {
+        draftedPlayers[index] = player;
+    }
+
+    public void addOpponentPlayer(int opponentID, String player) {
+        opponentRosters[opponentID].add(player);
+    }
+    
+    public void incrementHighestScoreIndex() {
+        highestScoreIndex++;
+    }
+    
+    public void nextPick() {
+        currentPick++;
+    }
+    
+    public void removeAvailablePlayer(String s){
+        availablePlayers.remove(s);
+    }
+
+    //Getters
+    public ArrayList<DraftSelection> getRoster() {
+        return roster;
+    }
+
+    public ArrayList<DraftSlot> getDraftSlots() {
+        return draftSlots;
+    }
+
+    public ArrayList<String> getAvailablePlayers() {
+        return availablePlayers;
+    }
+
+    public ArrayList<String>[] getOpponentRosters() {
+        return opponentRosters;
+    }
+
+    public int getCurrentPick() {
+        return currentPick;
+    }
+
+    public int getHighestScoreIndex() {
+        return highestScoreIndex;
+    }
+
+    public String[] getDraftedPlayers() {
+        return draftedPlayers;
+    }
+
+    //Setters
     public void setAvailablePlayers(ArrayList<String> availablePlayers) {
         this.availablePlayers = availablePlayers;
     }
@@ -264,8 +212,13 @@ public class Problem {
     public void setDraftSlots(ArrayList<DraftSlot> draftSlots) {
         this.draftSlots = draftSlots;
     }
-    
-    // public void setPlayerScores(LinkedHashMap<String, Float> playerScores) {
-    //     this.playerScores = playerScores;
-    // }
+
+    public void setOpponentRoster(int index, ArrayList<String> opponentRoster) {
+        this.opponentRosters[index] = opponentRoster;
+    }
+
+    public void setDraftedPlayer(int index, String player){
+        draftedPlayers[index] = player;
+    }
+
 }

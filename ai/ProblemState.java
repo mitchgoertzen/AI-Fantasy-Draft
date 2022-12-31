@@ -41,7 +41,7 @@ public class ProblemState {
 
 		int i = 0;
 		for(String p : ai.getRoster().getPlayers()){
-			problem.draftedPlayers[i++] = p;
+			problem.setDraftedPlayer(i++, p);
 		}
 		draftedPlayerCombinations = parent.getDraftedPlayerCombinations();
         this.parent_eval = parent.getEval();
@@ -191,7 +191,7 @@ public class ProblemState {
 					//String highestScorePlayer = next.getKey();
 					String highestScorePlayer = entry.next().getKey();
 					//problem.playerScores.remove(highestScorePlayer);
-					problem.availablePlayers.remove(highestScorePlayer);
+					problem.removeAvailablePlayer(highestScorePlayer);
 					problem.incrementHighestScoreIndex();
 					problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
 					//if(DEBUG)

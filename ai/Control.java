@@ -137,7 +137,7 @@ public class Control {
 
                 currentLeaf.getProblem().incrementHighestScoreIndex();
                 currentLeaf.getProblem().addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
-                currentLeaf.getProblem().availablePlayers.remove(highestScorePlayer);
+                currentLeaf.getProblem().removeAvailablePlayer(highestScorePlayer);
             }
         }
     }
