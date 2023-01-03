@@ -14,7 +14,7 @@ public class SearchModel {
 
         prob.nextPick();
 
-        int availablePlayerScope = 50;
+        int availablePlayerScope = Math.min(50, availablePlayers.size());
         for(String player: availablePlayers.subList(0, availablePlayerScope)) {
             Problem subProblem = new Problem(prob, max);
             if (subProblem.draftPlayer(Env.AllPlayers.get(player), nextDraftSlot, round));
