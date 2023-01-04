@@ -23,7 +23,7 @@ public class Problem {
     private ArrayList<String> availablePlayers;
     private ArrayList<String>[] opponentRosters;
 
-    private float[] currentRosterScore;
+    private float[] activeRosterScore;
     private float[][] opponentRosterScores;
 
     private int currentPick;
@@ -54,8 +54,8 @@ public class Problem {
                 opponentRosterScores[currentKey] = currentOpponentScore;
             }
         }
-
-        currentRosterScore = new float[25];
+        
+        activeRosterScore = new float[25];
         currentPick = Env.getCurrentPick();
         highestScoreIndex = 0;  
         draftedPlayers = new String[rosterSize];
@@ -78,7 +78,7 @@ public class Problem {
             }
         }
 
-        currentRosterScore = problem.getCurrentRosterScore().clone();
+        activeRosterScore = problem.getActiveRosterScore().clone();
         currentPick = problem.getCurrentPick();
         highestScoreIndex = problem.getHighestScoreIndex();
         draftedPlayers = problem.getDraftedPlayers().clone();
@@ -127,8 +127,8 @@ public class Problem {
         draftSlots.remove(slot);
         availablePlayers.remove(id);
         
-        currentRosterScore = updateRosterScore(currentRosterScore, player);
-        
+        activeRosterScore = updateRosterScore(activeRosterScore, player);
+
         return true;
     } 
 
@@ -242,6 +242,13 @@ public class Problem {
         availablePlayers.remove(s);
     }
 
+    public void setRosterScore() {
+        for(String s : draftedPlayers){
+            if(s != null)
+                activeRosterScore = updateRosterScore(activeRosterScore, Env.AllPlayers.get(s));
+        }
+    }
+
     public void updateOpponentRosterScore(int opponentID, Player newPlayer){
         opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], newPlayer);
     }
@@ -263,8 +270,8 @@ public class Problem {
         return opponentRosters;
     }
 
-    public float[] getCurrentRosterScore() {
-        return currentRosterScore;
+    public float[] getActiveRosterScore() {
+        return activeRosterScore;
     }
 
     public float[][] getOpponentRosterScores() {

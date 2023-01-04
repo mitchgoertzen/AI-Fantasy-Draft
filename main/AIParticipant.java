@@ -52,6 +52,9 @@ public class AIParticipant extends Participant {
             initialProblem.addDraftedPlayers(s, i++);
         }
 
+        initialProblem.setRosterScore();
+
+        
     	//root node
     	return new ProblemState(initialProblem, null, this);
     }
@@ -99,22 +102,35 @@ public class AIParticipant extends Participant {
     	long StartTime = System.nanoTime();
 
         ProblemState initialState = initializeProblemState();
-        System.out.println("old roster eval");
-        for(int k = 0; k < 3; k++){
-            System.out.println(rosterEval[k]);
-		}
+        // System.out.println("old roster eval");
+        // for(int k = 0; k < 3; k++){
+        //     System.out.println(rosterEval[k]);
+		// }
         initialState.setEval(rosterEval);
 
         ProblemState solution = runSearch(initialState);
         String playerCode = solution.getMostRecentDraftSelection();
 
         super.addPlayer(playerCode);
-        System.out.println("new roster eval");
-		for(int k = 0; k < 3; k++){
-			rosterEval[k] += maxScore[k];
-            System.out.println("max " + maxScore[k]);
-            System.out.println("eval " + rosterEval[k]);
-		}
+        rosterEval = solution.getMaxCurrentRoundEval();
+        setMaxScore(rosterEval);
+
+        // System.out.println("new roster eval");
+        // for(int k = 0; k < 3; k++){
+        //     System.out.println(rosterEval[k]);
+		// }
+
+        
+        // System.out.println("max current round eval");
+        // for(int k = 0; k < 3; k++){
+        //     System.out.println(solution.getMaxCurrentRoundEval()[k]);
+		// }
+
+        
+        // System.out.println("max eval");
+        // for(int k = 0; k < 3; k++){
+        //     System.out.println(maxScore[k]);
+		// }
     
         int index = Env.getPositionIndex(Env.AllPlayers.get(playerCode).getPosition(), positionCounts);
         if(DEBUG){        
