@@ -51,6 +51,11 @@ public class AIParticipant extends Participant {
         for(String s : super.getRoster().getPlayers()){
             initialProblem.addDraftedPlayers(s, i++);
         }
+        /* 
+        *TODO: move to after draft pick has been made, 
+         change to update rosterScore by new player individually,
+         rather than by entire roster
+        */
 
         initialProblem.setRosterScore();
 
