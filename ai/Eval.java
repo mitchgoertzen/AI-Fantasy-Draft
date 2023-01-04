@@ -3,8 +3,6 @@ package ai;
 import java.util.ArrayList;
 
 import main.DraftSelection;
-import main.Env;
-import main.Player;
 
 
 public class Eval {
@@ -14,22 +12,44 @@ public class Eval {
 	public ProblemState evaluate(ProblemState leaf) {
         
         ArrayList<DraftSelection> newRoster = leaf.getProblem().getRoster();
-        Player newPlayer = newRoster.get(newRoster.size()-1).getPlayer();
+        //Player newPlayer = newRoster.get(newRoster.size()-1).getPlayer();
+
+        int[] eval = leaf.getParentEval().clone();
+
         
-        //float[][] evalA = leaf.getParentEval(); //(ie.float[1][1]) --> [wins][weeklyRosterScore]
+		System.out.println("new leaf eval");
+        for(int k = 0; k < 3; k++){
+            System.out.println(eval[k]);
+		}
+		
 
-        float eval = leaf.getParentEval();
-        eval += Env.PlayerScores.get(newPlayer.getID());
+        // int[] temp_eval = new int[3];
+		// for(int k = 0; k < 3; k++){
+		// 	temp_eval[k] = leaf.getParentEval()[k];
+		// }
+
+        
+		// System.out.println("temp eval: ");
+		// System.out.println(temp_eval[0]);
+		// System.out.println(temp_eval[1]);
+		// System.out.println(temp_eval[2]);
+    
+       // eval += Env.PlayerScores.get(newPlayer.getID());
+
+        int[] newEval = leaf.SimulateOpponentDraftPicks(eval);
+
+        System.out.println("newEval");
+        for(int k = 0; k < 3; k++){
+            System.out.println(newEval[k]);
+            eval[k] += newEval[k];
+		}
+
+        System.out.println("added eval");
+        for(int k = 0; k < 3; k++){
+            System.out.println(eval[k]);
+		}
+
         leaf.setEval(eval);
-
-        leaf.SimulateOpponentDraftPicks();//pass evalA
-
-        //int[2] = wins, points
-        //add player to current roster
-        //for each week in season
-        //compare current roster to opponents' roster
-        //count each category won per week, 1 win = 1 point
-        //return cumulative points, and wins vs opponents to be used as tie breaker
 
         if(DEBUG){
             System.out.println("Drafting " + newRoster.get(newRoster.size()-1).getPlayer().getName() + " will add a score of " + eval);
