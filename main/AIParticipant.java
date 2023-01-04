@@ -100,6 +100,10 @@ public class AIParticipant extends Participant {
     public String draftPlayer(){
 
     	long StartTime = System.nanoTime();
+        
+        maxScore[0] = -1;
+        maxScore[1] = -1;
+        maxScore[2] = -1;
 
         ProblemState initialState = initializeProblemState();
         // System.out.println("old roster eval");
@@ -112,8 +116,7 @@ public class AIParticipant extends Participant {
         String playerCode = solution.getMostRecentDraftSelection();
 
         super.addPlayer(playerCode);
-        rosterEval = solution.getMaxCurrentRoundEval();
-        setMaxScore(rosterEval);
+        //rosterEval = solution.getMaxCurrentRoundEval();
 
         // System.out.println("new roster eval");
         // for(int k = 0; k < 3; k++){
