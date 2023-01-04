@@ -9,17 +9,20 @@ public class AIParticipant extends Participant {
 
     private ArrayList<DraftSlot> draftSlots;
 
-    private float rosterScore;
-    private float maxScore = -Float.MAX_VALUE;
+    private int[] rosterEval;
+    private int[] maxScore;
 
     private int maxDraftSlots;
-    private int predictedSeasonScore;
+    //private int predictedSeasonScore;
 
     private Integer[] positionCounts = new Integer[5]; //lw, rw, c, d, g, f
 
     public AIParticipant(int id, boolean isHuman, int draftNumber, int maxDraftSlots) {
+
         super(id, isHuman, draftNumber);
         this.maxDraftSlots = maxDraftSlots;
+        maxScore = new int[3]; 
+        rosterEval = new int[3];
         draftSlots = new ArrayList<>();
         for(int i = 0; i < positionCounts.length; i++){
             positionCounts[i] = 0;
@@ -49,6 +52,9 @@ public class AIParticipant extends Participant {
             initialProblem.addDraftedPlayers(s, i++);
         }
 
+        initialProblem.setRosterScore();
+
+        
     	//root node
     	return new ProblemState(initialProblem, null, this);
     }
@@ -96,14 +102,35 @@ public class AIParticipant extends Participant {
     	long StartTime = System.nanoTime();
 
         ProblemState initialState = initializeProblemState();
-        initialState.setEval(rosterScore);
+        // System.out.println("old roster eval");
+        // for(int k = 0; k < 3; k++){
+        //     System.out.println(rosterEval[k]);
+		// }
+        initialState.setEval(rosterEval);
 
         ProblemState solution = runSearch(initialState);
         String playerCode = solution.getMostRecentDraftSelection();
 
         super.addPlayer(playerCode);
-        rosterScore += Env.PlayerScores.get(playerCode);
-        setMaxScore(rosterScore);
+        rosterEval = solution.getMaxCurrentRoundEval();
+        setMaxScore(rosterEval);
+
+        // System.out.println("new roster eval");
+        // for(int k = 0; k < 3; k++){
+        //     System.out.println(rosterEval[k]);
+		// }
+
+        
+        // System.out.println("max current round eval");
+        // for(int k = 0; k < 3; k++){
+        //     System.out.println(solution.getMaxCurrentRoundEval()[k]);
+		// }
+
+        
+        // System.out.println("max eval");
+        // for(int k = 0; k < 3; k++){
+        //     System.out.println(maxScore[k]);
+		// }
     
         int index = Env.getPositionIndex(Env.AllPlayers.get(playerCode).getPosition(), positionCounts);
         if(DEBUG){        
@@ -119,7 +146,12 @@ public class AIParticipant extends Participant {
         return playerCode;
     }
 
-    public float getMaxScore() {
+   
+    // public void addEval(float eval){
+    //     rosterEval += eval;
+    // }
+
+    public int[] getMaxScore() {
         return maxScore;
     }
 
@@ -131,7 +163,7 @@ public class AIParticipant extends Participant {
         return positionCounts;
     }
 
-    public void setMaxScore(float maxScore) {
+    public void setMaxScore(int[] maxScore) {
         this.maxScore = maxScore;
     }
 }

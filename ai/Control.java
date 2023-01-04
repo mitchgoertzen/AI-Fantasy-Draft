@@ -131,6 +131,17 @@ public class Control {
                 }
 
                 String highestScorePlayer = entry.next().getKey();
+                String[] roster = currentLeaf.getProblem().getDraftedPlayers();
+
+                int length = roster.length;
+
+                for(int k = 0; k < length; k++){
+                    if(roster[k] == highestScorePlayer){
+                            currentLeaf.getProblem().incrementHighestScoreIndex();
+                        highestScorePlayer = entry.next().getKey();
+                        k = -1;
+                    }
+                }
 
                 if(DEBUG)
                     System.out.println("opponent has drafted: " + highestScorePlayer);
@@ -166,7 +177,7 @@ class LeafComparator implements Comparator<ProblemState> {
         int result = Integer.compare(node1.getProblem().getDraftSlots().size(),
                         node2.getProblem().getDraftSlots().size());
         if (result == 0)
-            result = Float.compare(node1.getEval(), node2.getEval());
+            result = Integer.compare(node1.getEval()[0], node2.getEval()[0]);
 
         if (result == 0)
             result = Integer.compare(node1.hashCode(), node2.hashCode());
