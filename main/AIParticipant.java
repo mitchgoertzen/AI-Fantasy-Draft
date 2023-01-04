@@ -119,11 +119,6 @@ public class AIParticipant extends Participant {
         return playerCode;
     }
 
-   
-    public void addEval(float eval){
-        rosterScore += eval;
-    }
-
     public float getMaxScore() {
         return maxScore;
     }
