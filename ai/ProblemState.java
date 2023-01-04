@@ -21,8 +21,8 @@ public class ProblemState {
 
 	private int[] eval;
 	private int[] parent_eval;
-    private int[] currentRoundEval;
-    private int[] maxCurrentRoundEval;
+    // private int[] currentRoundEval;
+    // private int[] maxCurrentRoundEval;
 
 	private int round;
 
@@ -34,8 +34,8 @@ public class ProblemState {
 		round = Env.getCurrentRound();
         myConstr = new Constr();
 		eval = new int[3];
-		currentRoundEval = new int[3];
-		maxCurrentRoundEval = new int[3];
+		// currentRoundEval = new int[3];
+		// maxCurrentRoundEval = new int[3];
         this.problem = problem;		
 		this.ai = ai;
 
@@ -100,7 +100,7 @@ public class ProblemState {
 
 		if (eval[0] > ai.getMaxScore()[0]) {
 			ai.setMaxScore(eval);
-			maxCurrentRoundEval = currentRoundEval;
+			//maxCurrentRoundEval = currentRoundEval;
 			if(DEBUG){
 				System.out.println("isBestSolution");
 				System.out.println(eval[0]);
@@ -111,7 +111,7 @@ public class ProblemState {
 		}else if(eval[0] == ai.getMaxScore()[0]){
 			if(eval[1] > ai.getMaxScore()[1]){
 				ai.setMaxScore(eval);
-				maxCurrentRoundEval = currentRoundEval;
+				//maxCurrentRoundEval = currentRoundEval;
 				if(DEBUG){
 					System.out.println("isBestSolution");
 					System.out.println(eval[0]);
@@ -122,7 +122,7 @@ public class ProblemState {
 			}else if(eval[1] == ai.getMaxScore()[1]){
 				if(eval[2] > ai.getMaxScore()[2]){
 					ai.setMaxScore(eval);
-					maxCurrentRoundEval = currentRoundEval;
+				//	maxCurrentRoundEval = currentRoundEval;
 					if(DEBUG){
 						System.out.println("isBestSolution");
 						System.out.println(eval[0]);
@@ -280,8 +280,8 @@ public class ProblemState {
 			// System.out.println("round: " + round);
 			// System.out.println("env round: " + Env.getCurrentRound());
 
-			if(round == Env.getCurrentRound())
-				currentRoundEval = eval.clone();
+			// if(round == Env.getCurrentRound())
+			// 	currentRoundEval = eval.clone();
 
 			if(DEBUG){			 
 			System.out.println("this roster will result in " + totalWins + " win(s), " + weeklyPoints + " weekly point(s)"+ ", and a roster score of: " + cumulativeScore);
@@ -309,9 +309,9 @@ public class ProblemState {
 		return parent_eval;
 	}
 
-	public int[] getMaxCurrentRoundEval() {
-		return maxCurrentRoundEval;
-	}
+	// public int[] getMaxCurrentRoundEval() {
+	// 	return maxCurrentRoundEval;
+	// }
 	
 	public int getRound() {
 		return round;
