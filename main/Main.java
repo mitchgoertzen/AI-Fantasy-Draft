@@ -35,15 +35,12 @@ public class Main {
         Env.setShutoutWeight(5);
         Env.setWinsWeight(0);
 
-        Env.setTotalParticipants(2);
-        Env.setTotalRounds(2);
+        Env.setTotalParticipants(5);
+        Env.setTotalRounds(5);
 
-        Env.setPositionLimit(0, 12);
-        Env.setPositionLimit(1, 12);
-        Env.setPositionLimit(2, 12);
-        Env.setPositionLimit(3, 12);
-        Env.setPositionLimit(4, 12);
-        Env.setPositionLimit(5, 12);
+        for(int i = 0; i < 6; i++){
+            Env.setPositionLimit(i, Env.getTotalRounds());
+        }
 
         int humanPlayers = 0;
         int playerCount = Env.getTotalParticipants();
