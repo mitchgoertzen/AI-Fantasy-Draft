@@ -1,7 +1,5 @@
 package ai;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -21,8 +19,6 @@ public class ProblemState {
 
 	private int[] eval;
 	private int[] parent_eval;
-    // private int[] currentRoundEval;
-    // private int[] maxCurrentRoundEval;
 
 	private int round;
 
@@ -34,8 +30,6 @@ public class ProblemState {
 		round = Env.getCurrentRound();
         myConstr = new Constr();
 		eval = new int[3];
-		// currentRoundEval = new int[3];
-		// maxCurrentRoundEval = new int[3];
         this.problem = problem;		
 		this.ai = ai;
 
@@ -55,7 +49,7 @@ public class ProblemState {
     }
 
 	public boolean discardLeaf() {
-		if (rosterCombinationExists() || !myConstr.meetsConstraints(problem, ai, round)) {
+		if (!myConstr.meetsConstraints(problem, ai, round, draftedPlayerCombinations)) {
 			return true;
 		}
 		return false;
@@ -111,30 +105,7 @@ public class ProblemState {
 		return false;
 	}
 
-    private boolean rosterCombinationExists() {
 
-		ArrayList<String> currentRoster = new ArrayList<>();
-		String[] p = problem.getDraftedPlayers();
-
-		for(int i = 0; i < p.length; i++){
-			if(p[i] != null){
-				currentRoster.add(p[i]);
-			}
-		}
-
-		Collections.sort(currentRoster);
-		int hashCode = currentRoster.hashCode();
-
-		if(draftedPlayerCombinations.containsKey(hashCode)){
-			if(DEBUG_VERBOSE)
-				System.out.println("player combo");
-			return true;
-		}
-
-		draftedPlayerCombinations.put(hashCode, true);
-
-		return false;
-	}
 	
     public void nextRound() {
 		round++;
