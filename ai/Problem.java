@@ -27,8 +27,9 @@ public class Problem {
     private float[][] opponentRosterScores;
 
     private int currentPick;
-    private int highestScoreIndex;
+   // private int highestScoreIndex;
 
+    private String highestScoreIndex;
     private String[] draftedPlayers;
 
     public Problem(int rosterSize, int id) {
@@ -202,10 +203,24 @@ public class Problem {
     public void addOpponentPlayer(int opponentID, String player) {
         opponentRosters[opponentID].add(player);
     }
+
     
-    public void incrementHighestScoreIndex() {
-        highestScoreIndex++;
+
+    public void addOpponentDraftPicks(int pick, String[] players) {
+        for(String s : players){
+            int opponentID = Env.totalPicksInDraft.get(pick++);
+            opponentRosters[opponentID].add(s);
+            opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));
+        }
     }
+    
+    public void advancePick(int amount) {
+        currentPick += amount;
+    }
+    
+    // public void incrementHighestScoreIndex() {
+    //     highestScoreIndex++;
+    // }
     
     public void nextPick() {
         currentPick++;
@@ -213,6 +228,18 @@ public class Problem {
     
     public void removeAvailablePlayer(String s){
         availablePlayers.remove(s);
+    }
+
+    
+    
+    public void removeAvailablePlayers(String[] players){
+        for(String s : players){
+            availablePlayers.remove(s);
+        }
+    }
+    
+    public void setHighestScoreIndex(String s) {
+        highestScoreIndex = s;
     }
 
     public void setRosterScore() {

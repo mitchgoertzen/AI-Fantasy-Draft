@@ -17,6 +17,10 @@ public class ProblemState {
 
 	private Constr myConstr;
 
+	private int totalWins;
+	private int weeklyPoints;
+	private int cumulativeScore;
+
 	private int[] eval;
 	private int[] parent_eval;
 
@@ -113,10 +117,17 @@ public class ProblemState {
 
 	public int[] SimulateOpponentDraftPicks(){
 
+		int numParticipants = Env.participants.size();
+		int currentPick = problem.getCurrentPick() - 1;
+		String[] highestScoringPlayers = new String[numParticipants - currentPick];
 
-		int totalWins = 0;
-		int weeklyPoints = 0;
-		int cumulativeScore = 0;
+		//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
+		//problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
+		problem.nextPick();
+
+		totalWins = 0;
+		weeklyPoints = 0;
+		cumulativeScore = 0;
 
 		if(DEBUG_VERBOSE){
 			System.out.println("current: " + Env.getCurrentRound());
@@ -133,9 +144,8 @@ public class ProblemState {
 				System.out.println("vs.");
 			}
 
-			int firstPick = ((round - 1)* Env.participants.size()) + 1;
-			int j = round * Env.participants.size();
-			int currentPick = problem.getCurrentPick() - 1;
+			int firstPick = ((round - 1)* numParticipants) + 1;
+			int j = round * numParticipants;
 			for(int i = firstPick; i <= j; i++){
 
 
@@ -153,6 +163,7 @@ public class ProblemState {
 					}  
 
 					String highestScorePlayer = entry.next().getKey();
+					String highestScorePlayer = entry.next().getKey();
 					String[] roster = problem.getDraftedPlayers();
 					int length = roster.length;
 					for(int k = 0; k < length; k++){
@@ -168,18 +179,38 @@ public class ProblemState {
 					if(DEBUG_VERBOSE)
 						System.out.println("opponent will be drafting: " + highestScorePlayer);
 
-					problem.removeAvailablePlayer(highestScorePlayer);
-					problem.incrementHighestScoreIndex();
-					problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
-					problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
-					problem.nextPick();
-
-
+					//HERE
 				}
 
 				if(i != currentPick){
-					
-					int currentPoints = 0;
+					calculateOpponentMatchup(i);
+				}
+
+			}
+
+			problem.removeAvailablePlayers(highestScoringPlayers);
+			//problem.incrementHighestScoreIndex();
+			problem.addOpponentDraftPicks(currentPick, highestScoringPlayers);
+
+			//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
+			//problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
+			problem.advancePick(numParticipants - currentPick);
+			//problem.nextPick();
+
+			eval[0] = totalWins;
+			eval[1] = weeklyPoints;
+			eval[2] = cumulativeScore;
+
+			if(DEBUG){			 
+			System.out.println("this roster will result in " + totalWins + " win(s), " + weeklyPoints + " weekly point(s)"+ ", and a roster score of: " + cumulativeScore);
+			System.out.println();
+			}
+		}
+		return eval;
+	}
+
+	public void calculateOpponentMatchup(int i){
+		int currentPoints = 0;
 					int opponentPoints = 0;
 					if(DEBUG){
 						System.out.println("Roster of Participant " + Env.getTotalPicksInDraft().get(i-1));
@@ -203,20 +234,6 @@ public class ProblemState {
 					if(currentPoints > opponentPoints)
 						totalWins++;
 
-				}
-			}
-			eval[0] = totalWins;
-			eval[1] = weeklyPoints;
-			eval[2] = cumulativeScore;
-
-			if(DEBUG){			 
-			System.out.println("this roster will result in " + totalWins + " win(s), " + weeklyPoints + " weekly point(s)"+ ", and a roster score of: " + cumulativeScore);
-			System.out.println();
-			}
-
-		}
-
-		return eval;
 	}
 
 	public AIParticipant getAi() {
