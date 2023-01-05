@@ -27,6 +27,8 @@ public class Main {
         Env.setHitsWeight(0);
         Env.setBlocksWeight(1);
 
+        Env.setSkaterWeights();
+
         Env.setGamesstartedWeight(0);
         Env.setGoalsagainstWeight(-3);
         Env.setLossesWeight(0);
@@ -34,6 +36,8 @@ public class Main {
         Env.setSavesWeight(0.6f);
         Env.setShutoutWeight(5);
         Env.setWinsWeight(0);
+        
+        Env.setGoalieWeights();
 
         Env.setTotalParticipants(5);
         Env.setTotalRounds(5);
