@@ -44,10 +44,7 @@ public class Problem {
             currentKey = p.getKey();
             if(currentKey != id){
                 opponentRosters[currentKey] = p.getValue().getRoster().getPlayers();
-                
-                //currentKey opponent's roster score is empty float[]
                 float[] currentOpponentScore = new float[25];
-                //for player in opponent roster, update opp score
                 for(String s : opponentRosters[currentKey]){
                     currentOpponentScore = updateRosterScore(currentOpponentScore, Env.AllPlayers.get(s));
                 }
@@ -102,20 +99,6 @@ public class Problem {
     public boolean draftPlayer(Player player, DraftSlot slot, int round) {
 
         String id = player.getID();
-
-        if (!draftSlots.contains(slot)){
-            if(DEBUG)
-                System.out.println(slot + " does not exist");
-            System.exit(1);
-            return false;
-        }
-
-        if (!availablePlayers.contains(id))      {
-            if(DEBUG)
-                System.out.println(player + " does not exist");
-            System.exit(1);
-            return false;
-        }
 
         DraftSelection newDraftSelection = new DraftSelection(player, slot);
 
@@ -181,11 +164,6 @@ public class Problem {
     public float[] updateRosterScore(float[] rosterScore, Player newPlayer){
 
         float[] newRosterScore = rosterScore;
-
-        // System.out.println("old");
-        // for(int j  = 0; j < newRosterScore.length; j++){
-        //     System.out.println("j " + j + ": " + newRosterScore[j]); 
-        // }
         
         //TODO: make universal method? also used in parser
         if(newPlayer.getPosition().equals("G")){
@@ -193,32 +171,27 @@ public class Problem {
                 System.out.println("player is a goalie");
             Goalie newGoalie = (Goalie) newPlayer;
             GoalieCountingStats goalieStats  = newGoalie.getCountingStats();
-            Integer[] stats = goalieStats.getStatsArray();
-            int length = stats.length;
+            float[] statScore = goalieStats.getStatScore();
+
+            int length = statScore.length;
             for(int i = 0; i < length; i++){
-                newRosterScore[i] += stats[i] * Env.getGoalieWeights(i);
+                newRosterScore[i] += statScore[i];
             }
+
         }else{
             if(DEBUG)
                 System.out.println("player is a skater");
             Skater newSkater = (Skater) newPlayer;
             SkaterCountingStats skaterStats  = newSkater.getCountingStats();
-            Integer[] stats = skaterStats.getStatsArray();
-            int length = stats.length;
-            int i;
-            for(i = 0; i < length; i++){
-                newRosterScore[i] += stats[i] * Env.getSkaterWeights(i);
-            }
-    
-            newRosterScore[i++] += skaterStats.getPoints() * Env.getSkaterWeights(i);
-            newRosterScore[i++] += skaterStats.getPowerplaypoints() * Env.getSkaterWeights(i);
-            newRosterScore[i] += skaterStats.getShpoints() * Env.getSkaterWeights(i);
-        }
 
-        // System.out.println("new");
-        // for(int j  = 0; j < newRosterScore.length; j++){
-        //     System.out.println("j " + j + ": " + newRosterScore[j]); 
-        // }
+            
+            float[] statScore = skaterStats.getStatScore();
+            int length = statScore.length;
+            for(int i = 0; i < length; i++){
+                newRosterScore[i] += statScore[i];
+            }
+
+        }
         return newRosterScore;
     }
     
