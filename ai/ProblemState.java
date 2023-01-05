@@ -49,31 +49,9 @@ public class ProblemState {
 			problem.setDraftedPlayer(i++, p);
 		}
 		draftedPlayerCombinations = parent.getDraftedPlayerCombinations();
-		// if(parent_eval != null){
-		// 	System.out.println("parent eval before: ");
-		// 	System.out.println(parent_eval[0]);
-		// 	System.out.println(parent_eval[1]);
-		// 	System.out.println(parent_eval[2]);
-		// }
-
-		// int[] temp_eval = new int[3];
-		// for(int k = 0; k < 3; k++){
-		// 	temp_eval[k] = parent.getEval()[k];
-		// }
 
          parent_eval = parent.getEval().clone();
-		// System.out.println("parent eval after: ");
-		// System.out.println(parent_eval[0]);
-		// System.out.println(parent_eval[1]);
-		// System.out.println(parent_eval[2]);
-		// System.out.println("parent get eval after: ");
-		// System.out.println(parent.getEval()[0]);
-		// System.out.println(parent.getEval()[1]);
-		// System.out.println(parent.getEval()[2]);
-		// System.out.println("temp eval after: ");
-		// System.out.println(temp_eval[0]);
-		// System.out.println(temp_eval[1]);
-		// System.out.println(temp_eval[2]);
+
     }
 
 	public boolean discardLeaf() {
@@ -100,7 +78,6 @@ public class ProblemState {
 
 		if (eval[0] > ai.getMaxScore()[0]) {
 			ai.setMaxScore(eval);
-			//maxCurrentRoundEval = currentRoundEval;
 			if(DEBUG){
 				System.out.println("isBestSolution");
 				System.out.println(eval[0]);
@@ -111,7 +88,6 @@ public class ProblemState {
 		}else if(eval[0] == ai.getMaxScore()[0]){
 			if(eval[1] > ai.getMaxScore()[1]){
 				ai.setMaxScore(eval);
-				//maxCurrentRoundEval = currentRoundEval;
 				if(DEBUG){
 					System.out.println("isBestSolution");
 					System.out.println(eval[0]);
@@ -122,7 +98,6 @@ public class ProblemState {
 			}else if(eval[1] == ai.getMaxScore()[1]){
 				if(eval[2] > ai.getMaxScore()[2]){
 					ai.setMaxScore(eval);
-				//	maxCurrentRoundEval = currentRoundEval;
 					if(DEBUG){
 						System.out.println("isBestSolution");
 						System.out.println(eval[0]);
@@ -135,22 +110,12 @@ public class ProblemState {
 		}
 		return false;
 	}
-			//  if(DEBUG_VERBOSE){
-			// 	System.out.println("eval: " + eval);
-			// 	System.out.println("max: " +  ai.getMaxScore());
-			// 	System.out.println("-----");
-			// 	for(String s : problem.getDraftedPlayers()){
-			// 		System.out.println(s);
-			// 	}
-			// 	System.out.println("-----");
-			//  }
 
     private boolean rosterCombinationExists() {
 
 		ArrayList<String> currentRoster = new ArrayList<>();
 		String[] p = problem.getDraftedPlayers();
 
-		//save current round somehwerwe and use it for array index
 		for(int i = 0; i < p.length; i++){
 			if(p[i] != null){
 				currentRoster.add(p[i]);
@@ -181,10 +146,6 @@ public class ProblemState {
 		int totalWins = 0;
 		int weeklyPoints = 0;
 		int cumulativeScore = 0;
-		/*
-		passed value float[][] rosterScore
-		float[][] skaterCumulativeWeeklyScore = new float[15][2]; --> do not need?
-		*/
 
 		if(DEBUG_VERBOSE){
 			System.out.println("current: " + Env.getCurrentRound());
@@ -277,12 +238,6 @@ public class ProblemState {
 			eval[1] = weeklyPoints;
 			eval[2] = cumulativeScore;
 
-			// System.out.println("round: " + round);
-			// System.out.println("env round: " + Env.getCurrentRound());
-
-			// if(round == Env.getCurrentRound())
-			// 	currentRoundEval = eval.clone();
-
 			if(DEBUG){			 
 			System.out.println("this roster will result in " + totalWins + " win(s), " + weeklyPoints + " weekly point(s)"+ ", and a roster score of: " + cumulativeScore);
 			System.out.println();
@@ -308,10 +263,6 @@ public class ProblemState {
 	public int[] getParentEval() {
 		return parent_eval;
 	}
-
-	// public int[] getMaxCurrentRoundEval() {
-	// 	return maxCurrentRoundEval;
-	// }
 	
 	public int getRound() {
 		return round;
@@ -343,10 +294,6 @@ public class ProblemState {
 
 	public void setEval(int[] eval) {
 		this.eval = eval;
-		// System.out.println("set eval");
-        // for(int k = 0; k < 3; k++){
-        //     System.out.println(this.eval[k]);
-		// }
 	}
 
 	public void setProblem(Problem problem) {
