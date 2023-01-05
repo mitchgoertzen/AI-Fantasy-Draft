@@ -21,6 +21,5 @@ public class SearchModel {
                 subProblems.add(subProblem);
             }
         return subProblems;
-    }
-    
+    }   
 }
