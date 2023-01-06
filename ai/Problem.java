@@ -181,8 +181,6 @@ public class Problem {
     public float[] updateRosterScore(float[] rosterScore, Player newPlayer){
 
         float[] newRosterScore = rosterScore;
-
-        System.out.println("player: " + newPlayer.getName());
         // System.out.println("old");
         // for(int j  = 0; j < newRosterScore.length; j++){
         //     System.out.println("j " + j + ": " + newRosterScore[j]); 
@@ -209,7 +207,6 @@ public class Problem {
             int i;
             for(i = 0; i < length; i++){
                 newRosterScore[i] += stats[i] * Env.getSkaterWeights(i);
-                System.out.println("newRosterScore[i]: " + newRosterScore[i]);
             }
     
             newRosterScore[i++] += skaterStats.getPoints() * Env.getSkaterWeights(i);
