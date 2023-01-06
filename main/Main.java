@@ -35,8 +35,8 @@ public class Main {
         Env.setShutoutWeight(5);
         Env.setWinsWeight(0);
 
-        Env.setTotalParticipants(5);
-        Env.setTotalRounds(5);
+        Env.setTotalParticipants(2);
+        Env.setTotalRounds(2);
 
         for(int i = 0; i < 6; i++){
             Env.setPositionLimit(i, Env.getTotalRounds());
