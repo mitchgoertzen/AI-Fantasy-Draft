@@ -258,8 +258,11 @@ public class ProblemState {
 					}
 					//System.out.println("comparing roster scores...");
 					int oppID = Env.totalPicksInDraft.get(i - 1);
+					System.out.println(i - 1);
+					System.out.println(oppID);
 					for(int k = 0; k < 25; k++){
 						cumulativeScore += problem.getActiveRosterScore()[k];
+						System.out.println(problem.getOpponentRosterScores()[oppID][k]);
 						if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) > 0 ){
 							currentPoints++;
 							weeklyPoints++;
