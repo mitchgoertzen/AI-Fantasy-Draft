@@ -164,6 +164,11 @@ public class Problem {
     public float[] updateRosterScore(float[] rosterScore, Player newPlayer){
 
         float[] newRosterScore = rosterScore;
+
+        // System.out.println("old");
+        // for(int j  = 0; j < newRosterScore.length; j++){
+        //     System.out.println("j " + j + ": " + newRosterScore[j]); 
+        // }
         
         //TODO: make universal method? also used in parser
         if(newPlayer.getPosition().equals("G")){
@@ -171,27 +176,28 @@ public class Problem {
                 System.out.println("player is a goalie");
             Goalie newGoalie = (Goalie) newPlayer;
             GoalieCountingStats goalieStats  = newGoalie.getCountingStats();
-            float[] statScore = goalieStats.getStatScore();
-
-            int length = statScore.length;
+            Integer[] stats = goalieStats.getStatsArray();
+            int length = stats.length;
             for(int i = 0; i < length; i++){
-                newRosterScore[i] += statScore[i];
+                newRosterScore[i] += stats[i] * Env.getGoalieWeights(i);
             }
-
         }else{
             if(DEBUG)
                 System.out.println("player is a skater");
             Skater newSkater = (Skater) newPlayer;
             SkaterCountingStats skaterStats  = newSkater.getCountingStats();
-
-            
-            float[] statScore = skaterStats.getStatScore();
-            int length = statScore.length;
-            for(int i = 0; i < length; i++){
-                newRosterScore[i] += statScore[i];
+            Integer[] stats = skaterStats.getStatsArray();
+            int length = stats.length;
+            int i;
+            for(i = 0; i < length; i++){
+                newRosterScore[i] += stats[i] * Env.getSkaterWeights(i);
             }
-
+    
+            newRosterScore[i++] += skaterStats.getPoints() * Env.getSkaterWeights(i);
+            newRosterScore[i++] += skaterStats.getPowerplaypoints() * Env.getSkaterWeights(i);
+            newRosterScore[i] += skaterStats.getShpoints() * Env.getSkaterWeights(i);
         }
+
         return newRosterScore;
     }
     
@@ -209,7 +215,6 @@ public class Problem {
         for(int i = currentPick + 1; i <= totalPicks; i++){
             int opponentID = Env.totalPicksInDraft.get(i - 1);
             String s = players[i - currentPick - 1];
-            System.out.println("participant " + opponentID + " will draft: " + s);
             opponentRosters[opponentID].add(s);
             opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));  
         }
@@ -245,7 +250,6 @@ public class Problem {
     
     public void removeAvailablePlayers(String[] players){
         for(String s : players){
-            System.out.println("removing: " + s);
             availablePlayers.remove(s);
         }
     }
