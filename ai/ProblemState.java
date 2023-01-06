@@ -247,29 +247,32 @@ public class ProblemState {
 
 	public void calculateOpponentMatchup(int i){
 		int currentPoints = 0;
-					int opponentPoints = 0;
-					if(DEBUG){
-						System.out.println("Roster of Participant " + Env.getTotalPicksInDraft().get(i-1));
-						//System.out.println("i - 1: " + (i-1));
-						for(String s : problem.getOpponentRosters()[Env.totalPicksInDraft.get(i - 1)]){
-							System.out.println(s);
-						}
-						System.out.println();
-					}
-					//System.out.println("comparing roster scores...");
-					int oppID = Env.totalPicksInDraft.get(i - 1);
-					for(int k = 0; k < 25; k++){
-						cumulativeScore += problem.getActiveRosterScore()[k];
-						if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) > 0 ){
-							currentPoints++;
-							weeklyPoints++;
-						}
-						else if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) < 0 )
-							opponentPoints++;
-					}
+		int opponentPoints = 0;
+		if(DEBUG){
+			System.out.println("Roster of Participant " + Env.getTotalPicksInDraft().get(i-1));
+			//System.out.println("i - 1: " + (i-1));
+			for(String s : problem.getOpponentRosters()[Env.totalPicksInDraft.get(i - 1)]){
+				System.out.println(s);
+			}
+			System.out.println();
+		}
+		//System.out.println("comparing roster scores...");
+		int oppID = Env.totalPicksInDraft.get(i - 1);
+		System.out.println(i - 1);
+		System.out.println(oppID);
+		for(int k = 0; k < 25; k++){
+			cumulativeScore += problem.getActiveRosterScore()[k];
+			System.out.println("opp score: " + problem.getOpponentRosterScores()[oppID][k]);
+			if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) > 0 ){
+				currentPoints++;
+				weeklyPoints++;
+			}
+			else if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) < 0 )
+				opponentPoints++;
+		}
 
-					if(currentPoints > opponentPoints)
-						totalWins++;
+		if(currentPoints > opponentPoints)
+			totalWins++;
 
 	}
 
