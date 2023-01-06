@@ -30,6 +30,8 @@ public class ProblemState {
 
     private Problem problem;
 
+	private String[] highestScoringPlayers;
+
 	public ProblemState(Problem problem, ProblemState parent, AIParticipant ai) {
 		round = Env.getCurrentRound();
         myConstr = new Constr();
@@ -115,11 +117,18 @@ public class ProblemState {
 		round++;
 	}
 
-	public int[] SimulateOpponentDraftPicks(){
+	public int[] SimulateOpponentDraftPicks(){	
 
 		int numParticipants = Env.participants.size();
 		int currentPick = problem.getCurrentPick() - 1;
-		String[] highestScoringPlayers = new String[numParticipants - currentPick];
+
+		//System.out.println("pick " + Env.getCurrentPick());
+		//System.out.println("round " + Env.getCurrentRound());
+
+		
+
+		int pickInRound = Env.getCurrentPick() / Env.getCurrentRound();
+		//System.out.println("pick in round " + pickInRound);
 
 		//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
 		//problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
@@ -137,6 +146,12 @@ public class ProblemState {
 		//do not simulate rounds that are not in the draft 
 		if(Env.getCurrentRound() <= Env.getTotalRounds()){
 
+
+			for(String s : problem.getDraftedPlayers()){
+				System.out.println(s);
+			}
+			System.out.println();
+
 			if(DEBUG){
 				for(String s : problem.getDraftedPlayers()){
 					System.out.println(s);
@@ -144,17 +159,21 @@ public class ProblemState {
 				System.out.println("vs.");
 			}
 
+			int playerIndex = 0;
 			int firstPick = ((round - 1)* numParticipants) + 1;
 			int j = round * numParticipants;
 			for(int i = firstPick; i <= j; i++){
 
 
 				if(i > currentPick){
+
+					highestScoringPlayers = new String[numParticipants - pickInRound];
 					if(DEBUG_VERBOSE){
 						System.out.println("simming picks");
 						System.out.println("current simulated pick: " + i);
 						System.out.println("--sim opponent's next pick in round--");
 					}
+
 
 					Iterator<Map.Entry<String,Float>> entry = DraftMenu.getPlayerScores().entrySet().iterator();
 					//TODO: next player needs to fit under the position limit of the opponent picking
@@ -163,39 +182,51 @@ public class ProblemState {
 					}  
 
 					String highestScorePlayer = entry.next().getKey();
-					String highestScorePlayer = entry.next().getKey();
+
 					String[] roster = problem.getDraftedPlayers();
 					int length = roster.length;
 					for(int k = 0; k < length; k++){
 						if(roster[k] == highestScorePlayer){
 							if(DEBUG_VERBOSE)
 								System.out.println("recent draft pick is highest score player");
-							problem.incrementHighestScoreIndex();
+							//problem.incrementHighestScoreIndex();
 							highestScorePlayer = entry.next().getKey();
 							k = -1;
 						}
 					}
-
+					highestScoringPlayers[playerIndex++] = highestScorePlayer;
 					if(DEBUG_VERBOSE)
 						System.out.println("opponent will be drafting: " + highestScorePlayer);
 
 					//HERE
 				}
 
-				if(i != currentPick){
-					calculateOpponentMatchup(i);
-				}
+				//TODO: move outside of for loop, most likey to new loop of all opp picks in round
+
 
 			}
 
-			problem.removeAvailablePlayers(highestScoringPlayers);
-			//problem.incrementHighestScoreIndex();
-			problem.addOpponentDraftPicks(currentPick, highestScoringPlayers);
+			//opp picks exist after current pick
+			if(highestScoringPlayers != null && highestScoringPlayers[0] != null){
+				problem.removeAvailablePlayers(highestScoringPlayers);
+				//problem.incrementHighestScoreIndex();
+				problem.addOpponentDraftPicks(currentPick, j, highestScoringPlayers);
+	
+				//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
+				//problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
+				problem.advancePick(j - pickInRound);
+				//problem.nextPick();
+			}
+			
 
-			//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
-			//problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
-			problem.advancePick(numParticipants - currentPick);
-			//problem.nextPick();
+			//TODO: new loop here for calulating matchup
+
+			
+			for(int i = firstPick; i <= j; i++){
+				if(i != currentPick){
+					calculateOpponentMatchup(i);
+				}
+			}
 
 			eval[0] = totalWins;
 			eval[1] = weeklyPoints;

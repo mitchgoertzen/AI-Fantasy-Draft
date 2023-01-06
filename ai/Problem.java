@@ -27,9 +27,8 @@ public class Problem {
     private float[][] opponentRosterScores;
 
     private int currentPick;
-   // private int highestScoreIndex;
+    private int highestScoreIndex;
 
-    private String highestScoreIndex;
     private String[] draftedPlayers;
 
     public Problem(int rosterSize, int id) {
@@ -206,21 +205,33 @@ public class Problem {
 
     
 
-    public void addOpponentDraftPicks(int pick, String[] players) {
-        for(String s : players){
-            int opponentID = Env.totalPicksInDraft.get(pick++);
+    public void addOpponentDraftPicks(int currentPick, int totalPicks, String[] players) {
+        for(int i = currentPick + 1; i <= totalPicks; i++){
+            int opponentID = Env.totalPicksInDraft.get(i - 1);
+            String s = players[i - currentPick - 1];
             opponentRosters[opponentID].add(s);
-            opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));
+            opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));  
         }
+        // for(String s : players){
+        //     System.out.println("pick # " + currentPick);
+        //     int opponentID = Env.totalPicksInDraft.get(currentPick - 1);
+        //     System.out.println(s);
+        //     System.out.println(opponentRosters);
+        //     System.out.println(opponentRosters[opponentID]);
+        //     System.out.println("opponentID " + opponentID);
+        //     opponentRosters[opponentID].add(s);
+        //     opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));
+        //     pick++;
+        // }
     }
     
     public void advancePick(int amount) {
         currentPick += amount;
     }
     
-    // public void incrementHighestScoreIndex() {
-    //     highestScoreIndex++;
-    // }
+    public void incrementHighestScoreIndex() {
+        highestScoreIndex++;
+    }
     
     public void nextPick() {
         currentPick++;
@@ -231,15 +242,11 @@ public class Problem {
     }
 
     
-    
     public void removeAvailablePlayers(String[] players){
         for(String s : players){
+            System.out.println("opp will draft: " + s);
             availablePlayers.remove(s);
         }
-    }
-    
-    public void setHighestScoreIndex(String s) {
-        highestScoreIndex = s;
     }
 
     public void setRosterScore() {

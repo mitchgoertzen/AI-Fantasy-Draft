@@ -39,8 +39,8 @@ public class Main {
         
         Env.setGoalieWeights();
 
-        Env.setTotalParticipants(5);
-        Env.setTotalRounds(5);
+        Env.setTotalParticipants(2);
+        Env.setTotalRounds(2);
 
         for(int i = 0; i < 6; i++){
             Env.setPositionLimit(i, Env.getTotalRounds());
