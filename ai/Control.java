@@ -135,7 +135,7 @@ public class Control {
 
                 for(int k = 0; k < length; k++){
                     if(roster[k] == highestScorePlayer){
-                            currentLeaf.getProblem().incrementHighestScoreIndex();
+                        currentLeaf.getProblem().incrementHighestScoreIndex();
                         highestScorePlayer = entry.next().getKey();
                         k = -1;
                     }

@@ -209,6 +209,7 @@ public class Problem {
         for(int i = currentPick + 1; i <= totalPicks; i++){
             int opponentID = Env.totalPicksInDraft.get(i - 1);
             String s = players[i - currentPick - 1];
+            System.out.println("participant " + opponentID + " will draft: " + s);
             opponentRosters[opponentID].add(s);
             opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));  
         }
@@ -244,7 +245,7 @@ public class Problem {
     
     public void removeAvailablePlayers(String[] players){
         for(String s : players){
-            System.out.println("opp will draft: " + s);
+            System.out.println("removing: " + s);
             availablePlayers.remove(s);
         }
     }
