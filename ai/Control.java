@@ -121,8 +121,6 @@ public class Control {
                     System.out.println("# participants: " + Env.participants.size());
                     System.out.println("1st pick in round: " + (((currentLeaf.getRound() - 1) * Env.participants.size()) + 1));
                 }
-
-    
                 Iterator<Map.Entry<String,Float>> entry = DraftMenu.getPlayerScores().entrySet().iterator();
                 int highestScoreIndex = currentLeaf.getProblem().getHighestScoreIndex();
 
@@ -137,11 +135,13 @@ public class Control {
 
                 for(int k = 0; k < length; k++){
                     if(roster[k] == highestScorePlayer){
-                            currentLeaf.getProblem().incrementHighestScoreIndex();
+                        currentLeaf.getProblem().incrementHighestScoreIndex();
                         highestScorePlayer = entry.next().getKey();
                         k = -1;
                     }
                 }
+
+
 
                 if(DEBUG)
                     System.out.println("opponent has drafted: " + highestScorePlayer);

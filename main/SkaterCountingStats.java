@@ -6,6 +6,8 @@ public class SkaterCountingStats {
     
     //Player,Tm,Pos,GP,G,A,PTS,+/-,PIM,PPG,SHG,GW,PPA,SHA,S,TOI,BLK,HIT,FOW,FOL,playerid(lastnfi0_)
    
+    private float[] statScore;
+
     private Integer[] stats;
 
     private int goals;
@@ -67,6 +69,9 @@ public class SkaterCountingStats {
         faceoffswon = stats[13] = Integer.parseInt(array[17]);
         //fol
         faceoffslost = stats[14] = Integer.parseInt(array[18]);
+
+        statScore = new float[18];
+        setStatScore();
     }
 
     public void addStats(Integer[] newStats, int gamesPlayed){
@@ -76,6 +81,14 @@ public class SkaterCountingStats {
     }
 
     //Getters
+    public float getShootingPercentage() {
+        return goals/shots;
+    }
+
+    public float[] getStatScore() {
+        return statScore;
+    }
+
     public Integer[] getStatsArray(){
         return stats;
     }
@@ -126,10 +139,6 @@ public class SkaterCountingStats {
 
     public int getShots() {
         return shots;
-    }
-
-    public float getShootingPercentage() {
-        return goals/shots;
     }
 
     public int getBlocks() {
@@ -215,6 +224,17 @@ public class SkaterCountingStats {
 
     public void setShots(int shots) {
         this.shots = shots;
+    }
+    
+    public void setStatScore(){
+        
+        for(int i = 0; i < 15; i++){
+            statScore[i] = stats[i] * Env.getSkaterWeights(i);
+        }
+
+        statScore[15] = getPoints() * Env.getSkaterWeights(15);
+        statScore[16] = getPowerplaypoints() * Env.getSkaterWeights(16);
+        statScore[17] = getShpoints() * Env.getSkaterWeights(17);
     }
 
     public void setTimeoonice(int timeoonice) {

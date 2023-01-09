@@ -1,5 +1,9 @@
 package ai;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Map;
+
 import main.AIParticipant;
 import main.Env;
 import main.Player;
@@ -7,13 +11,13 @@ import main.Player;
 public class Constr {
     private final boolean DEBUG = false;
 
-    public boolean meetsConstraints(Problem prob, AIParticipant ai, int round) {
+    public boolean meetsConstraints(Problem problem, AIParticipant ai, int round, Map<Integer, Boolean> draftedPlayerCombinations) {
         
-        String[] roster = prob.getDraftedPlayers();
+        String[] roster = problem.getDraftedPlayers();
 
         if (roster[0] == null || roster == null || roster.length == 0)
             return true;
-        if (prob.getRoster() == null || prob.getRoster().size() == 0)
+        if (problem.getRoster() == null || problem.getRoster().size() == 0)
             return true;
 
         //pick from previous round(- 1), convert round number to index (- 1)
@@ -40,6 +44,9 @@ public class Constr {
             }
            
         }
+
+        if(rosterCombinationExists(problem, draftedPlayerCombinations))
+            return false;
 
         currentPlayer = Env.AllPlayers.get(newSelection);
 
@@ -68,4 +75,29 @@ public class Constr {
         }
         return true;
     }
+
+    private boolean rosterCombinationExists(Problem problem, Map<Integer, Boolean> draftedPlayerCombinations) {
+
+		ArrayList<String> currentRoster = new ArrayList<>();
+		String[] p = problem.getDraftedPlayers();
+
+		for(int i = 0; i < p.length; i++){
+			if(p[i] != null){
+				currentRoster.add(p[i]);
+			}
+		}
+
+		Collections.sort(currentRoster);
+		int hashCode = currentRoster.hashCode();
+
+		if(draftedPlayerCombinations.containsKey(hashCode)){
+			if(DEBUG)
+				System.out.println("player combo");
+			return true;
+		}
+
+		draftedPlayerCombinations.put(hashCode, true);
+
+		return false;
+	}
 }

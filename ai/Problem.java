@@ -44,10 +44,7 @@ public class Problem {
             currentKey = p.getKey();
             if(currentKey != id){
                 opponentRosters[currentKey] = p.getValue().getRoster().getPlayers();
-                
-                //currentKey opponent's roster score is empty float[]
                 float[] currentOpponentScore = new float[25];
-                //for player in opponent roster, update opp score
                 for(String s : opponentRosters[currentKey]){
                     currentOpponentScore = updateRosterScore(currentOpponentScore, Env.AllPlayers.get(s));
                 }
@@ -102,20 +99,6 @@ public class Problem {
     public boolean draftPlayer(Player player, DraftSlot slot, int round) {
 
         String id = player.getID();
-
-        if (!draftSlots.contains(slot)){
-            if(DEBUG)
-                System.out.println(slot + " does not exist");
-            System.exit(1);
-            return false;
-        }
-
-        if (!availablePlayers.contains(id))      {
-            if(DEBUG)
-                System.out.println(player + " does not exist");
-            System.exit(1);
-            return false;
-        }
 
         DraftSelection newDraftSelection = new DraftSelection(player, slot);
 
@@ -214,10 +197,6 @@ public class Problem {
             newRosterScore[i] += skaterStats.getShpoints() * Env.getSkaterWeights(i);
         }
 
-        // System.out.println("new");
-        // for(int j  = 0; j < newRosterScore.length; j++){
-        //     System.out.println("j " + j + ": " + newRosterScore[j]); 
-        // }
         return newRosterScore;
     }
     
@@ -227,6 +206,32 @@ public class Problem {
 
     public void addOpponentPlayer(int opponentID, String player) {
         opponentRosters[opponentID].add(player);
+    }
+
+    
+
+    public void addOpponentDraftPicks(int currentPick, int totalPicks, String[] players) {
+        for(int i = currentPick + 1; i <= totalPicks; i++){
+            int opponentID = Env.totalPicksInDraft.get(i - 1);
+            String s = players[i - currentPick - 1];
+            opponentRosters[opponentID].add(s);
+            opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));  
+        }
+        // for(String s : players){
+        //     System.out.println("pick # " + currentPick);
+        //     int opponentID = Env.totalPicksInDraft.get(currentPick - 1);
+        //     System.out.println(s);
+        //     System.out.println(opponentRosters);
+        //     System.out.println(opponentRosters[opponentID]);
+        //     System.out.println("opponentID " + opponentID);
+        //     opponentRosters[opponentID].add(s);
+        //     opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));
+        //     pick++;
+        // }
+    }
+    
+    public void advancePick(int amount) {
+        currentPick += amount;
     }
     
     public void incrementHighestScoreIndex() {
@@ -239,6 +244,13 @@ public class Problem {
     
     public void removeAvailablePlayer(String s){
         availablePlayers.remove(s);
+    }
+
+    
+    public void removeAvailablePlayers(String[] players){
+        for(String s : players){
+            availablePlayers.remove(s);
+        }
     }
 
     public void setRosterScore() {

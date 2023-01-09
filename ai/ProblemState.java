@@ -1,7 +1,5 @@
 package ai;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -19,10 +17,12 @@ public class ProblemState {
 
 	private Constr myConstr;
 
+	private int totalWins;
+	private int weeklyPoints;
+	private int cumulativeScore;
+
 	private int[] eval;
 	private int[] parent_eval;
-    // private int[] currentRoundEval;
-    // private int[] maxCurrentRoundEval;
 
 	private int round;
 
@@ -30,12 +30,12 @@ public class ProblemState {
 
     private Problem problem;
 
+	private String[] highestScoringPlayers;
+
 	public ProblemState(Problem problem, ProblemState parent, AIParticipant ai) {
 		round = Env.getCurrentRound();
         myConstr = new Constr();
 		eval = new int[3];
-		// currentRoundEval = new int[3];
-		// maxCurrentRoundEval = new int[3];
         this.problem = problem;		
 		this.ai = ai;
 
@@ -49,35 +49,13 @@ public class ProblemState {
 			problem.setDraftedPlayer(i++, p);
 		}
 		draftedPlayerCombinations = parent.getDraftedPlayerCombinations();
-		// if(parent_eval != null){
-		// 	System.out.println("parent eval before: ");
-		// 	System.out.println(parent_eval[0]);
-		// 	System.out.println(parent_eval[1]);
-		// 	System.out.println(parent_eval[2]);
-		// }
-
-		// int[] temp_eval = new int[3];
-		// for(int k = 0; k < 3; k++){
-		// 	temp_eval[k] = parent.getEval()[k];
-		// }
 
          parent_eval = parent.getEval().clone();
-		// System.out.println("parent eval after: ");
-		// System.out.println(parent_eval[0]);
-		// System.out.println(parent_eval[1]);
-		// System.out.println(parent_eval[2]);
-		// System.out.println("parent get eval after: ");
-		// System.out.println(parent.getEval()[0]);
-		// System.out.println(parent.getEval()[1]);
-		// System.out.println(parent.getEval()[2]);
-		// System.out.println("temp eval after: ");
-		// System.out.println(temp_eval[0]);
-		// System.out.println(temp_eval[1]);
-		// System.out.println(temp_eval[2]);
+
     }
 
 	public boolean discardLeaf() {
-		if (rosterCombinationExists() || !myConstr.meetsConstraints(problem, ai, round)) {
+		if (!myConstr.meetsConstraints(problem, ai, round, draftedPlayerCombinations)) {
 			return true;
 		}
 		return false;
@@ -100,7 +78,6 @@ public class ProblemState {
 
 		if (eval[0] > ai.getMaxScore()[0]) {
 			ai.setMaxScore(eval);
-			//maxCurrentRoundEval = currentRoundEval;
 			if(DEBUG){
 				System.out.println("isBestSolution");
 				System.out.println(eval[0]);
@@ -111,7 +88,6 @@ public class ProblemState {
 		}else if(eval[0] == ai.getMaxScore()[0]){
 			if(eval[1] > ai.getMaxScore()[1]){
 				ai.setMaxScore(eval);
-				//maxCurrentRoundEval = currentRoundEval;
 				if(DEBUG){
 					System.out.println("isBestSolution");
 					System.out.println(eval[0]);
@@ -122,7 +98,6 @@ public class ProblemState {
 			}else if(eval[1] == ai.getMaxScore()[1]){
 				if(eval[2] > ai.getMaxScore()[2]){
 					ai.setMaxScore(eval);
-				//	maxCurrentRoundEval = currentRoundEval;
 					if(DEBUG){
 						System.out.println("isBestSolution");
 						System.out.println(eval[0]);
@@ -135,56 +110,34 @@ public class ProblemState {
 		}
 		return false;
 	}
-			//  if(DEBUG_VERBOSE){
-			// 	System.out.println("eval: " + eval);
-			// 	System.out.println("max: " +  ai.getMaxScore());
-			// 	System.out.println("-----");
-			// 	for(String s : problem.getDraftedPlayers()){
-			// 		System.out.println(s);
-			// 	}
-			// 	System.out.println("-----");
-			//  }
 
-    private boolean rosterCombinationExists() {
 
-		ArrayList<String> currentRoster = new ArrayList<>();
-		String[] p = problem.getDraftedPlayers();
-
-		//save current round somehwerwe and use it for array index
-		for(int i = 0; i < p.length; i++){
-			if(p[i] != null){
-				currentRoster.add(p[i]);
-			}
-		}
-
-		Collections.sort(currentRoster);
-		int hashCode = currentRoster.hashCode();
-
-		if(draftedPlayerCombinations.containsKey(hashCode)){
-			if(DEBUG_VERBOSE)
-				System.out.println("player combo");
-			return true;
-		}
-
-		draftedPlayerCombinations.put(hashCode, true);
-
-		return false;
-	}
 	
     public void nextRound() {
 		round++;
 	}
 
-	public int[] SimulateOpponentDraftPicks(){
+	public int[] SimulateOpponentDraftPicks(){	
 
+		int numParticipants = Env.participants.size();
+		int currentPick = problem.getCurrentPick() - 1;
+		//System.out.println("current pick: " + currentPick);
 
-		int totalWins = 0;
-		int weeklyPoints = 0;
-		int cumulativeScore = 0;
-		/*
-		passed value float[][] rosterScore
-		float[][] skaterCumulativeWeeklyScore = new float[15][2]; --> do not need?
-		*/
+		//System.out.println("pick " + Env.getCurrentPick());
+		//System.out.println("round " + round);
+
+		//currentPick += (Env.participants.size() * (round -1 ));
+
+		//int pickInRound = Env.getCurrentPick() / Env.getCurrentRound();
+		//System.out.println("pick in round " + pickInRound);
+
+		//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
+		//problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
+		//problem.nextPick();
+
+		totalWins = 0;
+		weeklyPoints = 0;
+		cumulativeScore = 0;
 
 		if(DEBUG_VERBOSE){
 			System.out.println("current: " + Env.getCurrentRound());
@@ -193,26 +146,36 @@ public class ProblemState {
 
 		//do not simulate rounds that are not in the draft 
 		if(Env.getCurrentRound() <= Env.getTotalRounds()){
-
 			if(DEBUG){
 				for(String s : problem.getDraftedPlayers()){
 					System.out.println(s);
 				}
 				System.out.println("vs.");
+				
 			}
 
-			int firstPick = ((round - 1)* Env.participants.size()) + 1;
-			int j = round * Env.participants.size();
-			int currentPick = problem.getCurrentPick() - 1;
+			int playerIndex = 0;
+			int firstPick = ((round - 1)* numParticipants) + 1;
+			int j = round * numParticipants;
+			//System.out.println("firstPick: " + firstPick);
+			//System.out.println("j: " + j);
+			highestScoringPlayers = new String[j - currentPick];
+			
+			//System.out.println("j: " + j);
 			for(int i = firstPick; i <= j; i++){
 
 
 				if(i > currentPick){
+
+					//System.out.println("num part " + numParticipants);
+					//System.out.println("currentPick " + currentPick);
+					//System.out.println("pickInRound " + pickInRound);
 					if(DEBUG_VERBOSE){
 						System.out.println("simming picks");
 						System.out.println("current simulated pick: " + i);
 						System.out.println("--sim opponent's next pick in round--");
 					}
+
 
 					Iterator<Map.Entry<String,Float>> entry = DraftMenu.getPlayerScores().entrySet().iterator();
 					//TODO: next player needs to fit under the position limit of the opponent picking
@@ -221,6 +184,8 @@ public class ProblemState {
 					}  
 
 					String highestScorePlayer = entry.next().getKey();
+					problem.incrementHighestScoreIndex();
+
 					String[] roster = problem.getDraftedPlayers();
 					int length = roster.length;
 					for(int k = 0; k < length; k++){
@@ -233,64 +198,82 @@ public class ProblemState {
 						}
 					}
 
+					//System.out.println("i: " + i);
+				//	System.out.println("playerIndex: " + playerIndex);
+					highestScoringPlayers[playerIndex++] = highestScorePlayer;
 					if(DEBUG_VERBOSE)
 						System.out.println("opponent will be drafting: " + highestScorePlayer);
 
-					problem.removeAvailablePlayer(highestScorePlayer);
-					problem.incrementHighestScoreIndex();
-					problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
-					problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
-					problem.nextPick();
-
-
 				}
 
+				
+
+			}
+			
+			//opp picks exist after current pick
+
+			if(highestScoringPlayers.length > 0 && highestScoringPlayers[0] != null){
+				problem.removeAvailablePlayers(highestScoringPlayers);
+				//problem.incrementHighestScoreIndex();
+				problem.addOpponentDraftPicks(currentPick, j, highestScoringPlayers);
+	
+				//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
+				//problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
+
+				problem.advancePick(j - currentPick);
+				//problem.nextPick();
+			}
+			
+
+			//TODO: new loop here for calulating matchup
+
+			
+			for(int i = firstPick; i <= j; i++){
+				// System.out.println("i: " + i);
+				// System.out.println("currentPick: " + currentPick);
 				if(i != currentPick){
-					
-					int currentPoints = 0;
-					int opponentPoints = 0;
-					if(DEBUG){
-						System.out.println("Roster of Participant " + Env.getTotalPicksInDraft().get(i-1));
-						for(String s : problem.getOpponentRosters()[Env.totalPicksInDraft.get(i - 1)]){
-							System.out.println(s);
-						}
-						System.out.println();
-					}
-					//System.out.println("comparing roster scores...");
-					int oppID = Env.totalPicksInDraft.get(i - 1);
-					for(int k = 0; k < 25; k++){
-						cumulativeScore += problem.getActiveRosterScore()[k];
-						if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) > 0 ){
-							currentPoints++;
-							weeklyPoints++;
-						}
-						else if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) < 0 )
-							opponentPoints++;
-					}
-
-					if(currentPoints > opponentPoints)
-						totalWins++;
-
+					calculateOpponentMatchup(i);
 				}
 			}
+
 			eval[0] = totalWins;
 			eval[1] = weeklyPoints;
 			eval[2] = cumulativeScore;
-
-			// System.out.println("round: " + round);
-			// System.out.println("env round: " + Env.getCurrentRound());
-
-			// if(round == Env.getCurrentRound())
-			// 	currentRoundEval = eval.clone();
 
 			if(DEBUG){			 
 			System.out.println("this roster will result in " + totalWins + " win(s), " + weeklyPoints + " weekly point(s)"+ ", and a roster score of: " + cumulativeScore);
 			System.out.println();
 			}
+		}
+		return eval;
+	}
 
+	public void calculateOpponentMatchup(int i){
+		int currentPoints = 0;
+		int opponentPoints = 0;
+		if(DEBUG){
+			System.out.println("Roster of Participant " + Env.getTotalPicksInDraft().get(i-1));
+			//System.out.println("i - 1: " + (i-1));
+			for(String s : problem.getOpponentRosters()[Env.totalPicksInDraft.get(i - 1)]){
+				System.out.println(s);
+			}
+			System.out.println();
+		}
+		//System.out.println("comparing roster scores...");
+		int oppID = Env.totalPicksInDraft.get(i - 1);
+		for(int k = 0; k < 25; k++){
+			cumulativeScore += problem.getActiveRosterScore()[k];
+			if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) > 0 ){
+				currentPoints++;
+				weeklyPoints++;
+			}
+			else if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) < 0 )
+				opponentPoints++;
 		}
 
-		return eval;
+		if(currentPoints > opponentPoints)
+			totalWins++;
+
 	}
 
 	public AIParticipant getAi() {
@@ -308,10 +291,6 @@ public class ProblemState {
 	public int[] getParentEval() {
 		return parent_eval;
 	}
-
-	// public int[] getMaxCurrentRoundEval() {
-	// 	return maxCurrentRoundEval;
-	// }
 	
 	public int getRound() {
 		return round;
@@ -343,10 +322,6 @@ public class ProblemState {
 
 	public void setEval(int[] eval) {
 		this.eval = eval;
-		// System.out.println("set eval");
-        // for(int k = 0; k < 3; k++){
-        //     System.out.println(this.eval[k]);
-		// }
 	}
 
 	public void setProblem(Problem problem) {

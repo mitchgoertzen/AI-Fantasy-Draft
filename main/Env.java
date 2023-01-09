@@ -11,7 +11,7 @@ import java.util.Map.Entry;
 
 public class Env { 
     
-    private static final boolean DEBUG = false;
+    //private static final boolean DEBUG = false;
 
     private static float goalsWeight;
     private static float assistsWeight;
@@ -31,6 +31,10 @@ public class Env {
     private static float folWeight;
     private static float hitsWeight;
     private static float blocksWeight;
+
+    private static float[] skaterWeights = new float[18];
+    private static float[] goalieWeights = new float[7];
+
 
     private static float goalsagainstWeight;
     private static float gamesstartedWeight;
@@ -56,125 +60,11 @@ public class Env {
     public static Map<Integer, Participant> participants = new HashMap<>();
 
     public static float getSkaterWeights(int i){
-        switch(i){
-            case 0:{
-                if(DEBUG)
-                    System.out.println(" * goalsWeight of: " + goalsWeight);
-                return goalsWeight;
-            }
-            case 1:{
-                if(DEBUG)
-                    System.out.println(" * assistsWeight of: " + assistsWeight);
-                return assistsWeight;}
-            case 2:{
-                if(DEBUG)
-                    System.out.println(" * plusminusWeight of: " + plusminusWeight);
-                return plusminusWeight;}
-            case 3:{
-                if(DEBUG)
-                    System.out.println(" * pimWeight of: " + pimWeight);
-                return pimWeight;}
-            case 4:{
-                if(DEBUG)
-                    System.out.println(" * ppgoalsWeight of: " + ppgoalsWeight);
-                return ppgoalsWeight;}
-            case 5:{
-                if(DEBUG)
-                    System.out.println(" * shgoalsWeight of: " + shgoalsWeight);
-                return shgoalsWeight;}
-            case 6:{
-                if(DEBUG)
-                    System.out.println(" * gwgWeight of: " + gwgWeight);
-                return gwgWeight;}
-            case 7:{
-                if(DEBUG)
-                    System.out.println(" * ppassistsWeight of: " + ppassistsWeight);
-                return ppassistsWeight;}
-            case 8:{
-                if(DEBUG)
-                    System.out.println(" * shassistsWeight of: " + shassistsWeight);
-                return shassistsWeight;}
-            case 9:{
-                if(DEBUG)
-                    System.out.println(" * sogWeight of: " + sogWeight);
-                return sogWeight;}
-            case 10:{
-                if(DEBUG)
-                    System.out.println(" * toiWeight of: " + toiWeight);
-                return toiWeight;}
-            case 11:{
-                if(DEBUG)
-                    System.out.println(" * blocksWeight of: " + blocksWeight);
-                return blocksWeight;}
-            case 12:{
-                if(DEBUG)
-                    System.out.println(" * hitsWeight of: " + hitsWeight);
-                return hitsWeight;}
-            case 13:{
-                if(DEBUG)
-                    System.out.println(" * fowWeight of: " + fowWeight);
-                return fowWeight;}
-            case 14:{
-                if(DEBUG)
-                    System.out.println(" * folWeight of: " + folWeight);
-                return folWeight;}
-            case 15:{
-                if(DEBUG)
-                System.out.println(" * pointsWeight of: " + pointsWeight);
-                return pointsWeight;}
-            case 16:{
-                if(DEBUG)
-                    System.out.println(" * pppointsWeight of: " + pppointsWeight);
-                return pppointsWeight;}
-            case 17:{
-                if(DEBUG)
-                    System.out.println(" * shpointsWeight of: " + shpointsWeight);
-                return shpointsWeight;}
-            default:
-            return 0;
-        }
+        return skaterWeights[i];
     }  
     
     public static float getGoalieWeights(int i){
-        switch(i){
-            case 0:{
-                if(DEBUG)
-                    System.out.println(" * gamesstartedWeight of: " + gamesstartedWeight);
-                return gamesstartedWeight;
-            }
-            case 1:{
-                if(DEBUG)
-                    System.out.println(" * winsWeight of: " + winsWeight);
-                return winsWeight;
-            }
-            case 2:{
-                if(DEBUG)
-                    System.out.println(" * lossesWeight of: " + lossesWeight);
-                return lossesWeight;
-            }
-            case 3:{
-                if(DEBUG)
-                    System.out.println(" * goalsagainstWeight of: " + goalsagainstWeight);
-                return goalsagainstWeight;
-            }
-            case 4:{
-                if(DEBUG)
-                    System.out.println(" * shotsagainstWeight of: " + shotsagainstWeight);
-                return shotsagainstWeight;
-            }
-            case 5:{
-                if(DEBUG)
-                    System.out.println(" * savesWeight of: " + savesWeight);
-                return savesWeight;
-            }
-            case 6:{
-                if(DEBUG)
-                    System.out.println(" * shutoutWeight of: " + shutoutWeight);
-                return shutoutWeight;
-            }
-            default:
-            return 0;
-        }
+            return goalieWeights[i];
     }    
     
     public static int getPositionIndex(String position, Integer[] positionCounts){
@@ -230,104 +120,6 @@ public class Env {
             SortedPlayerScores.put(entry.getKey(), entry.getValue());
         }  
 
-    }
-   
-    //get skater weights
-    public static float getAssistsWeight() {
-        return assistsWeight;
-    }
-
-    public static float getBlocksWeight() {
-        return blocksWeight;
-    }
-
-    public static float getFolWeight() {
-        return folWeight;
-    }
-
-    public static float getFowWeight() {
-        return fowWeight;
-    }
-
-    public static float getGoalsWeight() {
-        return goalsWeight;
-    }
-
-    public static float getGwgWeight() {
-        return gwgWeight;
-    }
-
-    public static float getHitsWeight() {
-        return hitsWeight;
-    }
-
-    public static float getPimWeight() {
-        return pimWeight;
-    }
-
-    public static float getPlusminusWeight() {
-        return plusminusWeight;
-    }
-
-    public static float getPointsWeight() {
-        return pointsWeight;
-    }
-
-    public static float getPpassistsWeight() {
-        return ppassistsWeight;
-    }
-
-    public static float getPpgoalsWeight() {
-        return ppgoalsWeight;
-    }
-
-    public static float getPppointsWeight() {
-        return pppointsWeight;
-    }
-
-    public static float getShassistsWeight() {
-        return shassistsWeight;
-    }
-
-    public static float getShgoalsWeight() {
-        return shgoalsWeight;
-    }
-
-    public static float getShpointsWeight() {
-        return shpointsWeight;
-    }
-
-    public static float getSogWeight() {
-        return sogWeight;
-    }
-    
-    //get goalie weights
-    public static float getGoalsagainstWeight() {
-        return goalsagainstWeight;
-    }
-
-    public static float getGamesstartedWeight() {
-        return gamesstartedWeight;
-    }
-
-    public static float getLossesWeight() {
-        return lossesWeight;
-    }
-    
-    public static float getWinsWeight() {
-        return winsWeight;
-    }
-
-    public static float getShotsagainstWeight() {
-        return shotsagainstWeight;
-    }
-
-    public static float getSavesWeight() {
-        return savesWeight;
-    }
-
-    public static float getShutoutWeight() {
-        return shutoutWeight;
     }
 
     //get draft info
@@ -484,6 +276,37 @@ public class Env {
 
     public static void setTotalRounds(int totalRounds) {
         Env.totalRounds = totalRounds;
+    }
+
+    public static void setSkaterWeights() {
+            skaterWeights[0] = goalsWeight;
+            skaterWeights[1] = assistsWeight;
+            skaterWeights[2] = plusminusWeight;
+            skaterWeights[3] = pimWeight;
+            skaterWeights[4] = ppgoalsWeight;
+            skaterWeights[5] = shgoalsWeight;
+            skaterWeights[6] = gwgWeight;
+            skaterWeights[7] = ppassistsWeight;
+            skaterWeights[8] = shassistsWeight;
+            skaterWeights[9] = sogWeight;
+            skaterWeights[10] = toiWeight;
+            skaterWeights[11] = blocksWeight;
+            skaterWeights[12] = hitsWeight;
+            skaterWeights[13] = fowWeight;
+            skaterWeights[14] = folWeight;
+            skaterWeights[15] = pointsWeight;
+            skaterWeights[16] = pppointsWeight;
+            skaterWeights[17] = shpointsWeight;
+    }
+
+    public static void setGoalieWeights() {
+        goalieWeights[0] = gamesstartedWeight;
+        goalieWeights[1] = winsWeight;
+        goalieWeights[2] = lossesWeight;
+        goalieWeights[3] = goalsagainstWeight;
+        goalieWeights[4] = shotsagainstWeight;
+        goalieWeights[5] = savesWeight;
+        goalieWeights[6] = shutoutWeight;
     }
 }
 

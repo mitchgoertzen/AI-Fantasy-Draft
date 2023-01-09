@@ -65,7 +65,7 @@ public class Parser {
                         float eval = -1;
                         if(fileIndex == 0){
                             currentPlayer = new Skater(currentID, currentSkaterArray);
-                            eval = calculatePlayerScore((Skater)currentPlayer);
+                            eval = calculateSkaterScore((Skater)currentPlayer);
                             if(DEBUG)
                                 System.out.println(currentPlayer.getName() + " has a score of : " + eval);
                         }else{
@@ -96,7 +96,7 @@ public class Parser {
         }
     }
 
-    private static float calculatePlayerScore(Skater skater){
+    private static float calculateSkaterScore(Skater skater){
 
         float score = 0;
         SkaterCountingStats counting = skater.getCountingStats();
