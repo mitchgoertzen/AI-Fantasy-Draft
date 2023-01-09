@@ -121,13 +121,14 @@ public class ProblemState {
 
 		int numParticipants = Env.participants.size();
 		int currentPick = problem.getCurrentPick() - 1;
+		//System.out.println("current pick: " + currentPick);
 
 		//System.out.println("pick " + Env.getCurrentPick());
-		//System.out.println("round " + Env.getCurrentRound());
+		//System.out.println("round " + round);
 
-		
+		//currentPick += (Env.participants.size() * (round -1 ));
 
-		int pickInRound = Env.getCurrentPick() / Env.getCurrentRound();
+		//int pickInRound = Env.getCurrentPick() / Env.getCurrentRound();
 		//System.out.println("pick in round " + pickInRound);
 
 		//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
@@ -156,12 +157,19 @@ public class ProblemState {
 			int playerIndex = 0;
 			int firstPick = ((round - 1)* numParticipants) + 1;
 			int j = round * numParticipants;
+			//System.out.println("firstPick: " + firstPick);
+			//System.out.println("j: " + j);
+			highestScoringPlayers = new String[j - currentPick];
+			
+			//System.out.println("j: " + j);
 			for(int i = firstPick; i <= j; i++){
 
 
 				if(i > currentPick){
 
-					highestScoringPlayers = new String[numParticipants - pickInRound];
+					//System.out.println("num part " + numParticipants);
+					//System.out.println("currentPick " + currentPick);
+					//System.out.println("pickInRound " + pickInRound);
 					if(DEBUG_VERBOSE){
 						System.out.println("simming picks");
 						System.out.println("current simulated pick: " + i);
@@ -189,27 +197,30 @@ public class ProblemState {
 							k = -1;
 						}
 					}
+
+					//System.out.println("i: " + i);
+				//	System.out.println("playerIndex: " + playerIndex);
 					highestScoringPlayers[playerIndex++] = highestScorePlayer;
 					if(DEBUG_VERBOSE)
 						System.out.println("opponent will be drafting: " + highestScorePlayer);
 
-					//HERE
 				}
 
-				//TODO: move outside of for loop, most likey to new loop of all opp picks in round
-
+				
 
 			}
 			
 			//opp picks exist after current pick
-			if(highestScoringPlayers != null && highestScoringPlayers[0] != null){
+
+			if(highestScoringPlayers.length > 0 && highestScoringPlayers[0] != null){
 				problem.removeAvailablePlayers(highestScoringPlayers);
 				//problem.incrementHighestScoreIndex();
 				problem.addOpponentDraftPicks(currentPick, j, highestScoringPlayers);
 	
 				//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
 				//problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
-				problem.advancePick(j - pickInRound);
+
+				problem.advancePick(j - currentPick);
 				//problem.nextPick();
 			}
 			
