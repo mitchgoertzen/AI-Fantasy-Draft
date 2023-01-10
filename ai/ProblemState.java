@@ -73,9 +73,6 @@ public class ProblemState {
 
 	public boolean isBestSolution() {
 
-
-
-
 		if (eval[0] > ai.getMaxScore()[0]) {
 			ai.setMaxScore(eval);
 			if(DEBUG){
@@ -110,8 +107,6 @@ public class ProblemState {
 		}
 		return false;
 	}
-
-
 	
     public void nextRound() {
 		round++;
@@ -121,19 +116,6 @@ public class ProblemState {
 
 		int numParticipants = Env.participants.size();
 		int currentPick = problem.getCurrentPick() - 1;
-		//System.out.println("current pick: " + currentPick);
-
-		//System.out.println("pick " + Env.getCurrentPick());
-		//System.out.println("round " + round);
-
-		//currentPick += (Env.participants.size() * (round -1 ));
-
-		//int pickInRound = Env.getCurrentPick() / Env.getCurrentRound();
-		//System.out.println("pick in round " + pickInRound);
-
-		//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
-		//problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
-		//problem.nextPick();
 
 		totalWins = 0;
 		weeklyPoints = 0;
@@ -157,28 +139,19 @@ public class ProblemState {
 			int playerIndex = 0;
 			int firstPick = ((round - 1)* numParticipants) + 1;
 			int j = round * numParticipants;
-			//System.out.println("firstPick: " + firstPick);
-			//System.out.println("j: " + j);
 			highestScoringPlayers = new String[j - currentPick];
-			
-			//System.out.println("j: " + j);
 			for(int i = firstPick; i <= j; i++){
 
 
 				if(i > currentPick){
-
-					//System.out.println("num part " + numParticipants);
-					//System.out.println("currentPick " + currentPick);
-					//System.out.println("pickInRound " + pickInRound);
 					if(DEBUG_VERBOSE){
 						System.out.println("simming picks");
 						System.out.println("current simulated pick: " + i);
 						System.out.println("--sim opponent's next pick in round--");
 					}
 
-
 					Iterator<Map.Entry<String,Float>> entry = DraftMenu.getPlayerScores().entrySet().iterator();
-					//TODO: next player needs to fit under the position limit of the opponent picking
+					
 					for(int k = 0; k < problem.getHighestScoreIndex(); k++){
 						 entry.next();
 					}  
@@ -197,40 +170,19 @@ public class ProblemState {
 							k = -1;
 						}
 					}
-
-					//System.out.println("i: " + i);
-				//	System.out.println("playerIndex: " + playerIndex);
 					highestScoringPlayers[playerIndex++] = highestScorePlayer;
 					if(DEBUG_VERBOSE)
 						System.out.println("opponent will be drafting: " + highestScorePlayer);
-
 				}
-
-				
-
 			}
-			
-			//opp picks exist after current pick
 
 			if(highestScoringPlayers.length > 0 && highestScoringPlayers[0] != null){
 				problem.removeAvailablePlayers(highestScoringPlayers);
-				//problem.incrementHighestScoreIndex();
 				problem.addOpponentDraftPicks(currentPick, j, highestScoringPlayers);
-	
-				//problem.addOpponentPlayer(Env.totalPicksInDraft.get(i - 1), highestScorePlayer);
-				//problem.updateOpponentRosterScore(Env.totalPicksInDraft.get(i - 1), Env.AllPlayers.get(highestScorePlayer));
-
 				problem.advancePick(j - currentPick);
-				//problem.nextPick();
 			}
-			
 
-			//TODO: new loop here for calulating matchup
-
-			
 			for(int i = firstPick; i <= j; i++){
-				// System.out.println("i: " + i);
-				// System.out.println("currentPick: " + currentPick);
 				if(i != currentPick){
 					calculateOpponentMatchup(i);
 				}
@@ -253,13 +205,12 @@ public class ProblemState {
 		int opponentPoints = 0;
 		if(DEBUG){
 			System.out.println("Roster of Participant " + Env.getTotalPicksInDraft().get(i-1));
-			//System.out.println("i - 1: " + (i-1));
 			for(String s : problem.getOpponentRosters()[Env.totalPicksInDraft.get(i - 1)]){
 				System.out.println(s);
 			}
 			System.out.println();
-		}
-		//System.out.println("comparing roster scores...");
+		}	
+		
 		int oppID = Env.totalPicksInDraft.get(i - 1);
 		for(int k = 0; k < 25; k++){
 			cumulativeScore += problem.getActiveRosterScore()[k];
@@ -273,7 +224,6 @@ public class ProblemState {
 
 		if(currentPoints > opponentPoints)
 			totalWins++;
-
 	}
 
 	public AIParticipant getAi() {

@@ -140,9 +140,7 @@ public class Control {
                         k = -1;
                     }
                 }
-
-
-
+                
                 if(DEBUG)
                     System.out.println("opponent has drafted: " + highestScorePlayer);
 

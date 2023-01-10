@@ -13,7 +13,6 @@ public class AIParticipant extends Participant {
     private int[] maxScore;
 
     private int maxDraftSlots;
-    //private int predictedSeasonScore;
 
     private Integer[] positionCounts = new Integer[5]; //lw, rw, c, d, g, f
 
@@ -51,15 +50,8 @@ public class AIParticipant extends Participant {
         for(String s : super.getRoster().getPlayers()){
             initialProblem.addDraftedPlayers(s, i++);
         }
-        /* 
-        *TODO: move to after draft pick has been made, 
-         change to update rosterScore by new player individually,
-         rather than by entire roster
-        */
-
         initialProblem.setRosterScore();
 
-        
     	//root node
     	return new ProblemState(initialProblem, null, this);
     }
@@ -111,35 +103,14 @@ public class AIParticipant extends Participant {
         maxScore[2] = -1;
 
         ProblemState initialState = initializeProblemState();
-        // System.out.println("old roster eval");
-        // for(int k = 0; k < 3; k++){
-        //     System.out.println(rosterEval[k]);
-		// }
+        
         initialState.setEval(rosterEval);
 
         ProblemState solution = runSearch(initialState);
         String playerCode = solution.getMostRecentDraftSelection();
 
         super.addPlayer(playerCode);
-        //rosterEval = solution.getMaxCurrentRoundEval();
-
-        // System.out.println("new roster eval");
-        // for(int k = 0; k < 3; k++){
-        //     System.out.println(rosterEval[k]);
-		// }
-
         
-        // System.out.println("max current round eval");
-        // for(int k = 0; k < 3; k++){
-        //     System.out.println(solution.getMaxCurrentRoundEval()[k]);
-		// }
-
-        
-        // System.out.println("max eval");
-        // for(int k = 0; k < 3; k++){
-        //     System.out.println(maxScore[k]);
-		// }
-    
         int index = Env.getPositionIndex(Env.AllPlayers.get(playerCode).getPosition(), positionCounts);
         if(DEBUG){        
             System.out.println("player pos: " + Env.AllPlayers.get(playerCode).getPosition());
@@ -153,11 +124,6 @@ public class AIParticipant extends Participant {
         System.out.println("time elapsed: " + (System.nanoTime() - StartTime)/1000000000f + "s");
         return playerCode;
     }
-
-   
-    // public void addEval(float eval){
-    //     rosterEval += eval;
-    // }
 
     public int[] getMaxScore() {
         return maxScore;

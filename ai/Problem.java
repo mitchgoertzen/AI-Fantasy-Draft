@@ -164,12 +164,7 @@ public class Problem {
     public float[] updateRosterScore(float[] rosterScore, Player newPlayer){
 
         float[] newRosterScore = rosterScore;
-        // System.out.println("old");
-        // for(int j  = 0; j < newRosterScore.length; j++){
-        //     System.out.println("j " + j + ": " + newRosterScore[j]); 
-        // }
         
-        //TODO: make universal method? also used in parser
         if(newPlayer.getPosition().equals("G")){
             if(DEBUG)
                 System.out.println("player is a goalie");
@@ -217,17 +212,6 @@ public class Problem {
             opponentRosters[opponentID].add(s);
             opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));  
         }
-        // for(String s : players){
-        //     System.out.println("pick # " + currentPick);
-        //     int opponentID = Env.totalPicksInDraft.get(currentPick - 1);
-        //     System.out.println(s);
-        //     System.out.println(opponentRosters);
-        //     System.out.println(opponentRosters[opponentID]);
-        //     System.out.println("opponentID " + opponentID);
-        //     opponentRosters[opponentID].add(s);
-        //     opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));
-        //     pick++;
-        // }
     }
     
     public void advancePick(int amount) {
@@ -317,5 +301,4 @@ public class Problem {
     public void setDraftedPlayer(int index, String player){
         draftedPlayers[index] = player;
     }
-
 }
