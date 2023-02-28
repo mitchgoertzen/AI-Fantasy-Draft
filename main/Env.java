@@ -10,37 +10,108 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class Env { 
-
-    private static float goalsWeight;
-    private static float assistsWeight;
-    private static float pointsWeight;
-    private static float plusminusWeight;
-    private static float pimWeight;
-    private static float ppgoalsWeight;
-    private static float ppassistsWeight;
-    private static float pppointsWeight;
-    private static float shgoalsWeight;
-    private static float shassistsWeight;
-    private static float shpointsWeight;
-    private static float gwgWeight;
-    private static float sogWeight;
-    private static float toiWeight;
-    private static float fowWeight;
-    private static float folWeight;
-    private static float hitsWeight;
-    private static float blocksWeight;
+    
+    //need for reference to make comments later on
+    // private static float goalsWeight;
+    // private static float assistsWeight;
+    // private static float pointsWeight;
+    // private static float plusminusWeight;
+    // private static float pimWeight;
+    // private static float ppgoalsWeight;
+    // private static float ppassistsWeight;
+    // private static float pppointsWeight;
+    // private static float shgoalsWeight;
+    // private static float shassistsWeight;
+    // private static float shpointsWeight;
+    // private static float gwgWeight;
+    // private static float sogWeight;
+    // private static float toiWeight;
+    // private static float fowWeight;
+    // private static float folWeight;
+    // private static float hitsWeight;
+    // private static float blocksWeight;
 
     private static float[] skaterWeights = new float[18];
     private static float[] goalieWeights = new float[7];
 
 
-    private static float goalsagainstWeight;
-    private static float gamesstartedWeight;
-    private static float lossesWeight;
-    private static float shotsagainstWeight;
-    private static float savesWeight;
-    private static float shutoutWeight;
-    private static float winsWeight;
+    //Games Played,Games Started,At Bats,Runs,Hits,Singles,Doubles,
+    //Triples,Home Runs,Runs Batted In,Sacrifice Hits,Sacrifice Flys,
+    //Stolen Bases,Caught Stealing,Walks,Intentional Walks,Hit By Pitch,
+    //Strikeouts,Ground Into Double Play,Total Bases,Putouts,Assists,
+    //Errors,Fielding Percentage,Batting Average,On-base Percentage,
+    //Slugging Percentage,On-base + Slugging Percentage,Extra Base Hits,
+    //Net Stolen Bases,Stolen Base Percentage,Hitting for the Cycle,
+    //Plate Appearances,Grand Slam Home Runs,Outfield Assists,
+    //Double Plays Turned,Catcher Interference
+    private static float[] batterWeights = new float[36];
+
+ 
+//    Pitching Appearances
+// Games Started
+// Innings Pitched
+// Wins
+// Losses
+// Complete Games
+// Shutouts
+// Saves
+// Outs
+// Hits
+// Total Batters Faced
+// Runs
+// Earned Runs
+// Home Runs
+// Walks
+// Intentional Walks
+// Hit Batters
+// Strikeouts
+// Wild Pitches
+// Balks
+// Stolen Bases Allowed
+// Batters Grounded Into Double Plays
+// Save Chances
+// Holds
+// Total Bases Allowed
+// Earned Run Average
+// (Walks + Hits)/ Innings Pitched
+// Strikeouts per Walk Ratio
+// Strikeouts per Nine Innings
+// Pitch Count
+// Singles Allowed
+// Doubles Allowed
+// Triples Allowed
+// Relief Wins
+// Relief Losses
+// Pickoffs
+// Relief Appearances
+// On-base Percentage Against
+// Winning Percentage
+// Hits Per Nine Innings
+// Walks Per Nine Innings
+// No Hitters
+// Perfect Games
+// Save Percentage
+// Inherited Runners Scored
+// Quality Starts
+// Blown Saves
+// Net Saves
+// Saves + Holds
+// Net Saves and Holds
+// Net Wins
+
+
+    private static float[] pitcherWeights = new float[50];
+
+
+
+    //need for reference to make comments later on
+    // private static float goalsagainstWeight;
+    // private static float gamesstartedWeight;
+    // private static float lossesWeight;
+    // private static float shotsagainstWeight;
+    // private static float savesWeight;
+    // private static float shutoutWeight;
+    // private static float winsWeight;
 
     private static int totalParticipants;
     private static int totalRounds;
@@ -145,103 +216,6 @@ public class Env {
         return totalPicksInDraft;
     }
 
-    //set skater weights
-    public static void setAssistsWeight(float assistsWeight) {
-        Env.assistsWeight = assistsWeight;
-    }
-
-    public static void setBlocksWeight(float blocksWeight) {
-        Env.blocksWeight = blocksWeight;
-    }
-
-    public static void setFolWeight(float folWeight) {
-        Env.folWeight = folWeight;
-    }
-
-    public static void setFowWeight(float fowWeight) {
-        Env.fowWeight = fowWeight;
-    }
-
-    public static void setGoalsWeight(float goalsWeight) {
-        Env.goalsWeight = goalsWeight;
-    }
-
-    public static void setGwgWeight(float gwgWeight) {
-        Env.gwgWeight = gwgWeight;
-    }
-
-    public static void setHitsWeight(float hitsWeight) {
-        Env.hitsWeight = hitsWeight;
-    }
-
-    public static void setPimWeight(float pimWeight) {
-        Env.pimWeight = pimWeight;
-    }
-
-    public static void setPlusminusWeight(float plusminusWeight) {
-        Env.plusminusWeight = plusminusWeight;
-    }
-
-    public static void setPointsWeight(float pointsWeight) {
-        Env.pointsWeight = pointsWeight;
-    }
-
-    public static void setPpassistsWeight(float ppassistsWeight) {
-        Env.ppassistsWeight = ppassistsWeight;
-    }
-
-    public static void setPpgoalsWeight(float ppgoalsWeight) {
-        Env.ppgoalsWeight = ppgoalsWeight;
-    }
-
-    public static void setPppointsWeight(float pppointsWeight) {
-        Env.pppointsWeight = pppointsWeight;
-    }
-
-    public static void setShassistsWeight(float shassistsWeight) {
-        Env.shassistsWeight = shassistsWeight;
-    }
-
-    public static void setShgoalsWeight(float shgoalsWeight) {
-        Env.shgoalsWeight = shgoalsWeight;
-    }
-
-    public static void setShpointsWeight(float shpointsWeight) {
-        Env.shpointsWeight = shpointsWeight;
-    }
-
-    public static void setSogWeight(float sogWeight) {
-        Env.sogWeight = sogWeight;
-    }
-
-    //set goalie weights
-    public static void setGamesstartedWeight(float gsWeight) {
-        Env.gamesstartedWeight = gsWeight;
-    }
-
-    public static void setGoalsagainstWeight(float gaWeight) {
-        Env.goalsagainstWeight = gaWeight;
-    }
-
-    public static void setLossesWeight(float lossesWeight) {
-        Env.lossesWeight = lossesWeight;
-    }
-
-    public static void setSavesWeight(float savesWeight) {
-        Env.savesWeight = savesWeight;
-    }
-
-    public static void setShotsagainstWeight(float saWeight) {
-        Env.shotsagainstWeight = saWeight;
-    }
-
-    public static void setShutoutWeight(float soWeight) {
-        Env.shutoutWeight = soWeight;
-    }
-
-    public static void setWinsWeight(float winsWeight) {
-        Env.winsWeight = winsWeight;
-    }
 
     //set draft info
     public static void setCurrentPick(int currentPickInRound) {
@@ -276,35 +250,25 @@ public class Env {
         Env.totalRounds = totalRounds;
     }
 
-    public static void setSkaterWeights() {
-            skaterWeights[0] = goalsWeight;
-            skaterWeights[1] = assistsWeight;
-            skaterWeights[2] = plusminusWeight;
-            skaterWeights[3] = pimWeight;
-            skaterWeights[4] = ppgoalsWeight;
-            skaterWeights[5] = shgoalsWeight;
-            skaterWeights[6] = gwgWeight;
-            skaterWeights[7] = ppassistsWeight;
-            skaterWeights[8] = shassistsWeight;
-            skaterWeights[9] = sogWeight;
-            skaterWeights[10] = toiWeight;
-            skaterWeights[11] = blocksWeight;
-            skaterWeights[12] = hitsWeight;
-            skaterWeights[13] = fowWeight;
-            skaterWeights[14] = folWeight;
-            skaterWeights[15] = pointsWeight;
-            skaterWeights[16] = pppointsWeight;
-            skaterWeights[17] = shpointsWeight;
+    public static void setHockeyWeights(float[] skater, float[] goalie){
+        for(int i = 0; i < skater.length; i++){
+            skaterWeights[i] = skater[i];
+        }
+
+        for(int i = 0; i < goalie.length; i++){
+            goalieWeights[i] = goalie[i];
+        }
     }
 
-    public static void setGoalieWeights() {
-        goalieWeights[0] = gamesstartedWeight;
-        goalieWeights[1] = winsWeight;
-        goalieWeights[2] = lossesWeight;
-        goalieWeights[3] = goalsagainstWeight;
-        goalieWeights[4] = shotsagainstWeight;
-        goalieWeights[5] = savesWeight;
-        goalieWeights[6] = shutoutWeight;
+    
+    public static void setBaseballWeights(float[] batter, float[] pitcher){
+        for(int i = 0; i < batter.length; i++){
+            batterWeights[i] = batter[i];
+        }
+
+        for(int i = 0; i < pitcher.length; i++){
+            pitcherWeights[i] = pitcher[i];
+        }
     }
 }
 

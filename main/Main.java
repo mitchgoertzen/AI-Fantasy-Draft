@@ -8,39 +8,21 @@ import java.util.stream.IntStream;
 public class Main {
 
     public static void main(String[]  args){
-           
-        Env.setGoalsWeight(6);
-        Env.setAssistsWeight(4);
-        Env.setPointsWeight(0);
-        Env.setPlusminusWeight(2);
-        Env.setPimWeight(0);
-        Env.setPpgoalsWeight(0);
-        Env.setPpassistsWeight(0);
-        Env.setPppointsWeight(2);
-        Env.setShgoalsWeight(0);
-        Env.setShassistsWeight(0);
-        Env.setShpointsWeight(0);
-        Env.setGwgWeight(0);
-        Env.setSogWeight(0.9f);
-        Env.setFowWeight(0);
-        Env.setFolWeight(0);
-        Env.setHitsWeight(0);
-        Env.setBlocksWeight(1);
 
-        Env.setSkaterWeights();
+        boolean hockey = false;
 
-        Env.setGamesstartedWeight(0);
-        Env.setGoalsagainstWeight(-3);
-        Env.setLossesWeight(0);
-        Env.setShotsagainstWeight(0);
-        Env.setSavesWeight(0.6f);
-        Env.setShutoutWeight(5);
-        Env.setWinsWeight(0);
-        
-        Env.setGoalieWeights();
+        if(hockey){
+            float[] s = {6f, 4f, 2f, 0f, 0f, 0f, 0f, 0f, 0f, 0.9f, 0f, 1f, 0f, 0f, 0f, 0f, 2f, 0f};
+            float[] g = {0f, 0f, 0f, -3f, 0f, 0.6f, 5f};
+            Env.setHockeyWeights(s, g);
+        }else{
+            float[] b = {6f, 4f, 2f, 0f, 0f, 0f, 0f, 0f, 0f, 0.9f, 0f, 1f, 0f, 0f, 0f, 0f, 2f, 0f};
+            float[] p = {0f, 0f, 0f, -3f, 0f, 0.6f, 5f};
+            Env.setBaseballWeights(b, p);
+        }
 
-        Env.setTotalParticipants(10);
-        Env.setTotalRounds(12);
+        Env.setTotalParticipants(4);
+        Env.setTotalRounds(4);
 
         for(int i = 0; i < 6; i++){
             Env.setPositionLimit(i, Env.getTotalRounds());
@@ -51,6 +33,7 @@ public class Main {
         int rounds = Env.getTotalRounds();
         Random random = new Random();
 
+        //hockey
         Parser.parseSkaters();
         Env.sortPlayerScores();
 
