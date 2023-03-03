@@ -2,6 +2,11 @@ package main;
 
 import java.util.ArrayList;
 
+import main.Hockey.Goalie;
+import main.Hockey.GoalieCountingStats;
+import main.Hockey.Skater;
+import main.Hockey.SkaterCountingStats;
+
 public class Roster {
 
     private ArrayList<String> players;

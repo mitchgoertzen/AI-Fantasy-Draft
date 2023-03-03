@@ -16,8 +16,16 @@ public class Main {
             float[] g = {0f, 0f, 0f, -3f, 0f, 0.6f, 5f};
             Env.setHockeyWeights(s, g);
         }else{
-            float[] b = {6f, 4f, 2f, 0f, 0f, 0f, 0f, 0f, 0f, 0.9f, 0f, 1f, 0f, 0f, 0f, 0f, 2f, 0f};
-            float[] p = {0f, 0f, 0f, -3f, 0f, 0.6f, 5f};
+            float[] b = {0f,0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f};
+            System.out.println(b.length);
+            float[] p = {0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f};
+            System.out.println(p.length);
             Env.setBaseballWeights(b, p);
         }
 
@@ -34,8 +42,9 @@ public class Main {
         Random random = new Random();
 
         //hockey
-        Parser.parseSkaters();
-        Env.sortPlayerScores();
+        Parser.parsePlayers(hockey);
+       // Parser.parseSkaters();
+        //Env.sortPlayerScores();
 
         List<Integer> draftNumbers = IntStream.rangeClosed(1, playerCount)
         .boxed().collect(Collectors.toList());
@@ -62,7 +71,7 @@ public class Main {
 
             if(readString.equals("begin")){
                 System.out.println();
-                DraftMenu.Draft(rounds, playerCount, false);
+              //  DraftMenu.Draft(rounds, playerCount, false);
                 readString = null;
                 scanner.close();
             }else if(readString.equals("exit")){

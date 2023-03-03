@@ -1,4 +1,6 @@
-package main;
+package main.Hockey;
+
+import main.Player;
 
 public class Goalie extends Player {
 

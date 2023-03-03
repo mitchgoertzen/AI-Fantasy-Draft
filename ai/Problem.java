@@ -6,12 +6,12 @@ import java.util.Map;
 import main.DraftSelection;
 import main.DraftSlot;
 import main.Env;
-import main.Goalie;
-import main.GoalieCountingStats;
 import main.Participant;
 import main.Player;
-import main.Skater;
-import main.SkaterCountingStats;
+import main.Hockey.Goalie;
+import main.Hockey.GoalieCountingStats;
+import main.Hockey.Skater;
+import main.Hockey.SkaterCountingStats;
 
 @SuppressWarnings("unchecked")
 public class Problem {

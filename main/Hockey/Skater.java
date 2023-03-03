@@ -1,4 +1,7 @@
-package main;
+package main.Hockey;
+
+import main.Player;
+
 public class Skater extends Player{
 
     private SkaterCountingStats countingStats;

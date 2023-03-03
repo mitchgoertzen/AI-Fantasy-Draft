@@ -1,6 +1,8 @@
-package main;
+package main.Hockey;
 
 import java.util.Arrays;
+
+import main.Env;
 
 public class SkaterCountingStats {
     
