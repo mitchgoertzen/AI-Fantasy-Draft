@@ -59,8 +59,8 @@ public class Main {
             draftNumbers.remove(num);
         }
 
-        System.out.println("This fantasy hockey pool currently has " + Env.participants.size() +
-        " participants with " + Env.AllPlayers.size() + " available NHL players to draft.");
+        System.out.println("This fantasy pool currently has " + Env.participants.size() +
+        " participants with " + Env.AllPlayers.size() + " available players to draft.");
     
         System.out.println("To begin the draft, type \'begin\'");
         Scanner scanner = new Scanner(System.in);
