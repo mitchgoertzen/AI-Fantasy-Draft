@@ -8,7 +8,20 @@ public abstract class Player implements Cloneable {
     private String id;
     private String name;
     private String position;
-    private String team;
+    private String team;//TODO: change to list
+
+    private int statYearsCounted = 0;
+
+    public int getStatYearsCounted() {
+        return statYearsCounted;
+    }
+
+    public void resetStatYearsCounted() {
+        statYearsCounted = 0;
+    }
+    public void countYears() {
+        statYearsCounted++;
+    }
 
     public Player(String id, String[] array){
         this.id = id;
@@ -53,6 +66,9 @@ public abstract class Player implements Cloneable {
     }
 
     //Setters
+    public void addGamesPlayed(int gp){
+        gamesplayed += gp;
+    }
     public void setGamesplayed(int gamesplayed) {
         this.gamesplayed = gamesplayed;
     }
@@ -75,5 +91,9 @@ public abstract class Player implements Cloneable {
 
     public void setTeam(String team) {
         this.team = team;
+    }
+
+    public void printInfo(){
+        System.out.printf("%s, %s, %s, %s GP\n", name, team, position, gamesplayed);
     }
 }

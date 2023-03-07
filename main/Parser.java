@@ -14,6 +14,7 @@ public class Parser {
 
     private static final boolean DEBUG = false;
 
+    //TODO: rename
     public static void parsePlayers(boolean hockey){
         //Map<String, Player>  players = new HashMap<>();
 
@@ -40,14 +41,13 @@ public class Parser {
                     "stats/Baseball/mlb_batting_2020.txt"};
             parseFiles(baseballFiles, hockey, 1);
 
-            // //pitching
-            // baseballFiles = 
-            //     new String[]{
-            //         "stats/Baseball/mlb_pitching_2022.txt", 
-            //         "stats/Baseball/mlb_pitching_2021.txt",
-            //         "stats/Baseball/mlb_pitching_2020.txt"};
-            // parseFiles(baseballFiles, hockey, 2);
-
+            //pitching
+            baseballFiles = 
+                new String[]{
+                    "stats/Baseball/mlb_pitching_2022.txt", 
+                    "stats/Baseball/mlb_pitching_2021.txt",
+                    "stats/Baseball/mlb_pitching_2020.txt"};
+            parseFiles(baseballFiles, hockey, 2);
         }
 
     }
@@ -113,6 +113,11 @@ public class Parser {
                     }
                     //player has been added
                     else{ 
+                        if(fileIndex == 0){
+                            
+                            currentPlayer.resetStatYearsCounted();
+                        }
+
                         currentPlayerArray = parseStatLine(currentLine, currentPlayerArray.length, lineSize, currentID.length());
                         //if the player is a pitcher and has batting stats, new batter must be created
                         if(statType == 1  && currentPlayer.getPosition().equals("P")){
@@ -128,7 +133,30 @@ public class Parser {
                             }
                         }else{
                             //update stats
-                            Env.updatePlayerStats(currentID, currentPlayerArray, statType, fileIndex + 1);
+                            //TODO: update teams for player
+                            // if(currentPlayer.getTeam().equals("TOT")){
+
+                            // }
+
+                            if(currentPlayer.getStatYearsCounted() <= fileIndex){
+                                if(statType == 2){
+                                    if(currentPlayer.getPosition().equals("P")){
+                                        Env.updatePlayerStats(currentID, currentPlayerArray, statType, fileIndex + 1);
+                                        // System.out.println("Pitcher");
+                                        // System.out.println(currentPlayer.getName());
+                                        // System.out.println("counted years " + currentPlayer.getStatYearsCounted() + "/" + (fileIndex + 1));
+                                        // System.out.println();
+                                    }
+                                }else{
+                                    Env.updatePlayerStats(currentID, currentPlayerArray, statType, fileIndex + 1);
+                                    // System.out.println("Batter");
+                                    // System.out.println(currentPlayer.getName());
+                                    // System.out.println("counted years " + currentPlayer.getStatYearsCounted() + "/" + (fileIndex + 1));
+                                    // System.out.println();
+                                }
+                            }
+                            
+                            
                         }
                     }
                     currentID = "";

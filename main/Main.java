@@ -63,7 +63,7 @@ public class Main {
       
 
         for (Map.Entry<String,Player> mapElement : Env.AllPlayers.entrySet()) {
-            System.out.println(mapElement.getValue().getName());
+            mapElement.getValue().printInfo();
         }
 
         System.out.println("This fantasy pool currently has " + Env.participants.size() +

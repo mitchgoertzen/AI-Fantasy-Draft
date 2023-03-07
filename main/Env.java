@@ -275,21 +275,22 @@ public class Env {
     }
 
     public static void updatePlayerStats(String id, String[] array,int statType, int year){
-        
         switch(statType){
             case 0:{
                 if(AllPlayers.get(id).getPosition().equals("P")){
-                    // ((Pitcher)AllPlayers.get(id)).addPtchingStats(array);
+                    // ((Pitcher)AllPlayers.get(id)).addPitchingStats(array);
                 }else{
                     ((Batter)AllPlayers.get(id)).addFieldingStats(array, year);
                 }
             }
             break;
-            case 1: {
-                ((Batter)AllPlayers.get(id)).addBattingStats(array, year);
+            case 1: ((Batter)AllPlayers.get(id)).addBattingStats(array, year);
+            
+            break;
+            case 2: {
+                ((Pitcher)AllPlayers.get(id)).addPitchingStats(array, year);
             }
             break;
-            case 2:// ((Pitcher)AllPlayers.get(id)).addPtchingStats(array);
         }
     }
 }
