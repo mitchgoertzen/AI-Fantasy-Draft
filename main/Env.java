@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import main.Baseball.Batter;
+import main.Baseball.Pitcher;
+
 public class Env { 
     
     //need for reference to make comments later on
@@ -268,6 +271,25 @@ public class Env {
 
         for(int i = 0; i < pitcher.length; i++){
             pitcherWeights[i] = pitcher[i];
+        }
+    }
+
+    public static void updatePlayerStats(String id, String[] array,int statType, int year){
+        
+        switch(statType){
+            case 0:{
+                if(AllPlayers.get(id).getPosition().equals("P")){
+                    // ((Pitcher)AllPlayers.get(id)).addPtchingStats(array);
+                }else{
+                    ((Batter)AllPlayers.get(id)).addFieldingStats(array, year);
+                }
+            }
+            break;
+            case 1: {
+                ((Batter)AllPlayers.get(id)).addBattingStats(array, year);
+            }
+            break;
+            case 2:// ((Pitcher)AllPlayers.get(id)).addPtchingStats(array);
         }
     }
 }

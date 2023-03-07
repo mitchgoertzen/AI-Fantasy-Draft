@@ -1,10 +1,8 @@
 package main;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import main.Baseball.Batter;
 import main.Baseball.Pitcher;
 import main.Hockey.Goalie;
@@ -17,131 +15,203 @@ public class Parser {
     private static final boolean DEBUG = false;
 
     public static void parsePlayers(boolean hockey){
-        Map<String, Player>  players = new HashMap<>();
-        Player currentPlayer;
-        String[] currentPlayerArray;
-        File[] playerFiles;
+        //Map<String, Player>  players = new HashMap<>();
 
         System.out.println("parse players");
 
-        try{
+        //could replace dupe arrays with call to new parse method
+        if(hockey){
+            String[] hockeyFiles = {"stats/nhlstats_12_05_2022.txt",
+            "stats/goalieStats_12_14_2022.txt"};
 
-            //could replace dupe arrays with call to new parse method
+        }else{
+            //fielding
+            String[] baseballFiles = {
+                    "stats/Baseball/mlb_fielding_2022.txt", 
+                    "stats/Baseball/mlb_fielding_2021.txt",
+                    "stats/Baseball/mlb_fielding_2020.txt"};
+            parseFiles(baseballFiles, hockey, 0);
+
+            //batting
+            baseballFiles = 
+                new String[]{
+                    "stats/Baseball/mlb_batting_2022.txt", 
+                    "stats/Baseball/mlb_batting_2021.txt",
+                    "stats/Baseball/mlb_batting_2020.txt"};
+            parseFiles(baseballFiles, hockey, 1);
+
+            // //pitching
+            // baseballFiles = 
+            //     new String[]{
+            //         "stats/Baseball/mlb_pitching_2022.txt", 
+            //         "stats/Baseball/mlb_pitching_2021.txt",
+            //         "stats/Baseball/mlb_pitching_2020.txt"};
+            // parseFiles(baseballFiles, hockey, 2);
+
+        }
+
+    }
+
+    private static void parseFiles(String[] playerFiles, boolean hockey, int statType){
+
+    //    int pitcherHitters = 1;
+    //    int designatedHitters = 1;
+        
+        String[] currentPlayerArray;
+        Player currentPlayer;
+
+        for(int fileIndex = 0; fileIndex < playerFiles.length; fileIndex++){
+                   
+           // Scanner scanner = new Scanner(playerFiles[fileIndex]);
+            String currentID = "";
+
             if(hockey){
-                File[] hockeyFiles = {new File("stats/nhlstats_12_05_2022.txt"),
-                new File("stats/goalieStats_12_14_2022.txt")};
-
-                playerFiles = hockeyFiles;
+                if(fileIndex == 0)
+                    currentPlayerArray = new String[19];
+                else
+                    currentPlayerArray = new String[10];
             }else{
-                File[] baseballFiles = {
-                new File("stats/Baseball/mlb_batters_2022.txt")};
-
-                playerFiles = baseballFiles;
+                switch(statType){
+                    case 0: currentPlayerArray = new String[11];
+                    break;
+                    case 1: currentPlayerArray = new String[40];
+                    break;
+                    case 2: currentPlayerArray = new String[54];
+                    break;
+                    default: currentPlayerArray = new String[11];
+                }
             }
 
-            // new File("stats/Baseball/mlb_batters_2020.txt"),
-            //     new File("stats/Baseball/mlb_batters_2021.txt"),
-            //     new File("stats/Baseball/mlb_batters_2022.txt"),
-            //     new File("stats/Baseball/mlb_pitchers_2020.txt"),
-            //     new File("stats/Baseball/mlb_pitchers_2021.txt"),
-           //     new File("stats/Baseball/mlb_batters_2022.txt")
+           // Path path = Paths.get(playerFiles[fileIndex]);
 
+            try (FileReader fr = new FileReader(playerFiles[fileIndex], StandardCharsets.UTF_8);
+            BufferedReader reader = new BufferedReader(fr)) {
 
-            for(int fileIndex = 0; fileIndex < playerFiles.length; fileIndex++){
-                int j;          
-                Scanner scanner = new Scanner(playerFiles[fileIndex]);
-                String currentID = "";
-                String currentString = "";
-
-                if(hockey){
-                    if(fileIndex == 0)
-                        currentPlayerArray = new String[19];
-                    else
-                        currentPlayerArray = new String[10];
-                }else{
-                    if(fileIndex < 3)
-                        currentPlayerArray = new String[40];
-                    else
-                        currentPlayerArray = new String[54];
-                }
-
-                //skip first line of text file
-                if(scanner.hasNextLine()){
-                    scanner.nextLine();
-                }
-
-                while(scanner.hasNextLine()){
-
-                    char[] currentLine = scanner.nextLine().toCharArray();
+                String str;
+                reader.readLine();
+                while ((str = reader.readLine()) != null) {
+                    char[] currentLine = str.toCharArray();
 
                     int lineSize = currentLine.length;
+
                     for(int i = lineSize - 1; currentLine[i] != ','; i--){
                         currentID = currentLine[i] + currentID;
                     }
 
-           //         System.out.println("id: " + currentID);
-                    if(!Env.AllPlayers.containsKey(currentID))
-                    {
-                        j = 0;
-                        for(int k = 0; k < lineSize - currentID.length(); k++){
-                            if(currentLine[k] == ','){
-                                currentPlayerArray[j++] = currentString;
-                                currentString = "";
-                            }else{
-                                if(currentLine[k] != '*' && currentLine[k] != '#' )
-                                    currentString += currentLine[k];
-                            }
+                    currentPlayer = Env.AllPlayers.get(currentID);
+
+                    //player has not been added yet
+                    if(currentPlayer == null){
+                        //if file is for current year
+                        if(fileIndex == 0){
+                            // if(statType == 1){
+                            //     System.out.println(designatedHitters++);
+                            // }
+                            currentPlayerArray = parseStatLine(currentLine, currentPlayerArray.length, lineSize, currentID.length());
+                            createPlayer(currentPlayerArray, currentID, statType, fileIndex, hockey);
                         }
-                        
-                        float eval = -1;
-    
-                        if(hockey){
-                            if(fileIndex == 0){
-                                currentPlayer = new Skater(currentID, currentPlayerArray);
-                                eval = calculateSkaterScore((Skater)currentPlayer);
-                                if(DEBUG)
-                                    System.out.println(currentPlayer.getName() + " has a score of : " + eval);
-                            }else{
-        
-                                    String[] infoArray = new String[4];
-                                    infoArray[0] = currentPlayerArray[0];
-                                    infoArray[1] = currentPlayerArray[1];
-                                    infoArray[2] = "G";
-                                    infoArray[3] = currentPlayerArray[2];
+                    }
+                    //player has been added
+                    else{ 
+                        currentPlayerArray = parseStatLine(currentLine, currentPlayerArray.length, lineSize, currentID.length());
+                        //if the player is a pitcher and has batting stats, new batter must be created
+                        if(statType == 1  && currentPlayer.getPosition().equals("P")){
                             
-                                currentPlayer = new Goalie(currentID, infoArray, currentPlayerArray);
-                                eval = calculateGoalieScore((Goalie)currentPlayer);
-                                if(DEBUG)
-                                    System.out.println(currentPlayer.getName() + " has a score of : " + eval);
+                            if(fileIndex == 0){
+                                currentID += "_h";
+                                if(Env.AllPlayers.get(currentID) == null){
+                                    // System.out.println(currentID);
+                                    // System.out.println(pitcherHitters++);
+                                    currentPlayerArray[0] += "_h";
+                                    createPlayer(currentPlayerArray, currentID, statType, fileIndex, hockey);
+                                }
                             }
                         }else{
-                            if(fileIndex < 3){
-                                currentPlayer = new Pitcher(currentID, currentPlayerArray);
-                            }else{
-                                currentPlayer = new Batter(currentID, currentPlayerArray);
-                            }
+                            //update stats
+                            Env.updatePlayerStats(currentID, currentPlayerArray, statType, fileIndex + 1);
                         }
-    
-                        Env.PlayerScores.put(currentID, eval);
-                        Env.AllPlayers.put(currentID, currentPlayer);
-                        players.put(currentID, currentPlayer);
-
                     }
-                    
-                    // else{
-                    //     System.out.println("id: " + currentID + ", team: " + Env.AllPlayers.get(currentID).getTeam());
-                    // }
                     currentID = "";
                 }
-                scanner.close();
+                
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-
-        }catch(FileNotFoundException e){
-
-            if(DEBUG)
-                System.out.println("file not found");
-            e.printStackTrace();
         }
+    }
+
+    private static void createPlayer(String[] currentPlayerArray, String currentID, int statType, int fileIndex, boolean hockey){
+         //create player
+         Player currentPlayer;
+         float eval = -1;
+
+         if(hockey){
+             if(fileIndex == 0){
+                 currentPlayer = new Skater(currentID, currentPlayerArray);
+                 eval = calculateSkaterScore((Skater)currentPlayer);
+                 if(DEBUG)
+                     System.out.println(currentPlayer.getName() + " has a score of : " + eval);
+             }else{
+
+                     String[] infoArray = new String[4];
+                     infoArray[0] = currentPlayerArray[0];
+                     infoArray[1] = currentPlayerArray[1];
+                     infoArray[2] = "G";
+                     infoArray[3] = currentPlayerArray[2];
+             
+                 currentPlayer = new Goalie(currentID, infoArray, currentPlayerArray);
+                 eval = calculateGoalieScore((Goalie)currentPlayer);
+                 if(DEBUG)
+                     System.out.println(currentPlayer.getName() + " has a score of : " + eval);
+             }
+         }else{
+
+             String[] info = {currentPlayerArray[0], currentPlayerArray[1], currentPlayerArray[9], currentPlayerArray[3]};
+
+             switch(statType){
+                 case 0: { 
+                     if(currentPlayerArray[9].equals("P")){
+                         info = new String[]{currentPlayerArray[0], currentPlayerArray[1], "P", currentPlayerArray[3]};
+                         currentPlayer = new Pitcher(currentID, currentPlayerArray, info, true);
+                     }else{
+                         currentPlayer = new Batter(currentID, currentPlayerArray, info, true);
+                     }
+                 }
+                 break;
+                 case 1:  { 
+                     info = new String[]{currentPlayerArray[0], currentPlayerArray[1], currentPlayerArray[23], currentPlayerArray[3]};
+                     currentPlayer = new Batter(currentID, currentPlayerArray, info, false);
+                 }
+                 break;
+                 case 2:  { 
+                     info = new String[]{currentPlayerArray[0], currentPlayerArray[1], "P", currentPlayerArray[6]};
+                     currentPlayer = new Pitcher(currentID, currentPlayerArray, info, false);
+                 }
+                 break;
+                 default: currentPlayer = new Batter(currentID, currentPlayerArray, info, false);
+             }
+         }
+
+         Env.PlayerScores.put(currentID, eval);
+         Env.AllPlayers.put(currentID, currentPlayer);
+    }
+
+    private static String[] parseStatLine(char[]currentLine, int arraySize, int lineSize, int idLength){
+        String[] array = new String[arraySize];
+        String currentString = "";
+        int j = 0;  
+        for(int k = 0; k < lineSize - idLength; k++){
+            if(currentLine[k] == ','){
+                if(currentString.isEmpty())
+                    currentString = "0";
+                array[j++] = currentString;
+                currentString = "";
+            }else{
+                if(currentLine[k] != '*' && currentLine[k] != '#' )
+                    currentString += currentLine[k];
+            }
+        }
+        return array;
     }
 
  //   public static void parseHockeyPlayers(){

@@ -1,5 +1,6 @@
 package main;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -57,6 +58,12 @@ public class Main {
                 Env.participants.put(i, new AIParticipant(i, (i < humanPlayers), draftNumbers.get(num), rounds));
             }
             draftNumbers.remove(num);
+        }
+
+      
+
+        for (Map.Entry<String,Player> mapElement : Env.AllPlayers.entrySet()) {
+            System.out.println(mapElement.getValue().getName());
         }
 
         System.out.println("This fantasy pool currently has " + Env.participants.size() +

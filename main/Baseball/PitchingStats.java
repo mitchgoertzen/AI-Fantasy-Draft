@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import main.Env;
 
-public class PitcherStats {
+public class PitchingStats {
 
     private float[] statScore;
 
@@ -62,12 +62,12 @@ public class PitcherStats {
 
     private Integer[] stats;
 
-    public PitcherStats(){
+    public PitchingStats(){
         stats = new Integer[50];
         Arrays.fill(stats, 0);
     }
 
-    public PitcherStats(String[] array){
+    public PitchingStats(String[] array, boolean fielding){
 
         //size to br adjusted based on stats tajen from txt
         stats = new Integer[50];

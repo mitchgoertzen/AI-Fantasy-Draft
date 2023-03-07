@@ -4,15 +4,19 @@ import main.Player;
 
 public class Pitcher extends Player {
 
-    private PitcherStats stats;
+    private PitchingStats pitchingStats;
 
-    public Pitcher(String id, String[] array) {
-        super(id, array);
-        stats = new PitcherStats(array);
+    public Pitcher(String id, String[] array, String[] info, boolean fielding) {
+        super(id, info);
+        pitchingStats = new PitchingStats(array, fielding);
     }
 
-    public PitcherStats getCountingStats() {
-        return stats;
+    public PitchingStats getCountingStats() {
+        return pitchingStats;
+    }
+
+    public PitchingStats getBattingStats() {
+        return pitchingStats;
     }
     
     @Override
@@ -20,8 +24,8 @@ public class Pitcher extends Player {
         return (Pitcher) super.clone();
     }
 
-    public void setCountingStats(PitcherStats stats) {
-        this.stats = stats;
+    public void setCountingStats(PitchingStats stats) {
+        this.pitchingStats = stats;
     }
     
 }
