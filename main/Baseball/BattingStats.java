@@ -6,6 +6,7 @@ import main.Env;
 
 public class BattingStats {
 
+    private Float[] stats;
     private Float[] weightedStats;
 
     private float gamesStarted = 0;
@@ -45,21 +46,22 @@ public class BattingStats {
     private float doublePlaysTurned = 0;
     private float catcherInterference = 0;
 
-    private Float[] stats;
-
     public Float[] getStats() {
         return stats;
     }
 
     public BattingStats(){
-        stats = new Float[37];
-        Arrays.fill(stats, 0);
+        stats = new Float[36];
+        
+        for(int i = 0; i < stats.length; i++){
+            stats[i] = 0f;
+        }
     }
 
     public BattingStats(String[] array, boolean fielding){
 
         //size to br adjusted based on stats tajen from txt
-        stats = new Float[37];
+        stats = new Float[36];
 
         for(int i = 0; i < stats.length; i++){
             stats[i] = 0f;
@@ -81,8 +83,8 @@ public class BattingStats {
         //stats[33] = outfieldAssists = Float.parseFloat(array[38]);
         //stats[35] = catcherInterference = Float.parseFloat(array[40]);
 
-    //    weightedStats = new Float[37];
-     //   setWeightedStats();
+    //    weightedStats = new Float[36];
+    //    setWeightedStats();
 
     }
 
@@ -133,8 +135,8 @@ public class BattingStats {
     }
 
     public void setWeightedStats(){
-        for(int i = 0; i < 15; i++){
-            weightedStats[i] = stats[i] * Env.getSkaterWeights(i);
+        for(int i = 0; i < weightedStats.length; i++){
+            weightedStats[i] = stats[i] * Env.getBattingWeights(i);
         }
     }
 

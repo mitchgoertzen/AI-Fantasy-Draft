@@ -9,7 +9,7 @@ import main.Env;
 public class PitchingStats {
 
     private Float[] PartialInningArray;
-
+    private Float[] stats;
     private Float[] weightedStats;
 
     private float gamesStarted = 0;
@@ -62,7 +62,6 @@ public class PitchingStats {
     private float savesPlusHolds = 0;
     private float netSavesandHolds = 0;
     private float netWins = 0;
-    private Float[] stats;
 
     public Float[] getStats() {
         return stats;
@@ -71,13 +70,21 @@ public class PitchingStats {
     public PitchingStats(){
         stats = new Float[51];
         PartialInningArray = new Float[] {0.0f, 0.1f, 0.2f, 1.0f, 1.1f};
-        Arrays.fill(stats, 0);
+        
+        for(int i = 0; i < stats.length; i++){
+            stats[i] = 0f;
+        }
     }
 
     public PitchingStats(String[] array){
 
         //size to br adjusted based on stats tajen from txt
         stats = new Float[51];
+        
+        for(int i = 0; i < stats.length; i++){
+            stats[i] = 0f;
+        }
+
         PartialInningArray = new Float[] {0.0f, 0.1f, 0.2f, 1.0f, 1.1f};
 
     //    weightedStats = new Float[37];
@@ -142,6 +149,11 @@ public class PitchingStats {
         //stats[48] = savesPlusHolds += Float.parseFloat(array[0]) / year;
         //stats[49] = netSavesandHolds += Float.parseFloat(array[0]) / year;
         //stats[50] = netWins += Float.parseFloat(array[0]) / year;
+
+        
+       //weightedStats = new Float[51];
+       //setWeightedStats();
+
     }
 
     public void addStats(Integer[] newStats, int gamesPlayed){
@@ -151,8 +163,10 @@ public class PitchingStats {
     }
 
     public void setWeightedStats(){
-        for(int i = 0; i < 15; i++){
-            weightedStats[i] = stats[i] * Env.getSkaterWeights(i);
+        System.out.println(weightedStats.length);
+        System.out.println(stats.length);
+        for(int i = 0; i < weightedStats.length; i++){
+            weightedStats[i] = stats[i] * Env.getPitchingWeights(i);
         }
     }
 

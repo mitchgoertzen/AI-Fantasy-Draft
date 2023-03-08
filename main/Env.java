@@ -34,7 +34,10 @@ public class Env {
     // private static float hitsWeight;
     // private static float blocksWeight;
 
+    //TODO: set size with variable
     private static float[] skaterWeights = new float[18];
+    
+    //TODO: set size with variable
     private static float[] goalieWeights = new float[7];
 
 
@@ -47,7 +50,9 @@ public class Env {
     //Net Stolen Bases,Stolen Base Percentage,Hitting for the Cycle,
     //Plate Appearances,Grand Slam Home Runs,Outfield Assists,
     //Double Plays Turned,Catcher Interference
-    private static float[] batterWeights = new float[36];
+    
+    //TODO: set size with variable
+    private static float[] battingWeights = new float[36];
 
  
 //    Pitching Appearances
@@ -102,8 +107,8 @@ public class Env {
 // Net Saves and Holds
 // Net Wins
 
-
-    private static float[] pitcherWeights = new float[50];
+    //TODO: set size with variable
+    private static float[] pitchingWeights = new float[51];
 
 
 
@@ -115,6 +120,10 @@ public class Env {
     // private static float savesWeight;
     // private static float shutoutWeight;
     // private static float winsWeight;
+
+    public static float[] getPitchingWeights() {
+        return pitchingWeights;
+    }
 
     private static int totalParticipants;
     private static int totalRounds;
@@ -137,7 +146,15 @@ public class Env {
     
     public static float getGoalieWeights(int i){
             return goalieWeights[i];
-    }    
+    }   
+    
+    public static float getBattingWeights(int i){
+            return battingWeights[i];
+    } 
+    
+    public static float getPitchingWeights(int i){
+            return pitchingWeights[i];
+    }  
     
     public static int getPositionIndex(String position, Integer[] positionCounts){
         switch(position){
@@ -264,20 +281,21 @@ public class Env {
     }
 
     
-    public static void setBaseballWeights(float[] batter, float[] pitcher){
-        for(int i = 0; i < batter.length; i++){
-            batterWeights[i] = batter[i];
+    public static void setBaseballWeights(float[] batting, float[] pitching){
+        for(int i = 0; i < batting.length; i++){
+            battingWeights[i] = batting[i];
         }
 
-        for(int i = 0; i < pitcher.length; i++){
-            pitcherWeights[i] = pitcher[i];
+        for(int i = 0; i < pitching.length; i++){
+            pitchingWeights[i] = pitching[i];
         }
     }
 
     public static void updatePlayerStats(String id, String[] array,int statType, int year){
+        Player player = AllPlayers.get(id);
         switch(statType){
             case 0:{
-                if(AllPlayers.get(id).getPosition().equals("P")){
+                if(player.getPosition().equals("P")){
                     // ((Pitcher)AllPlayers.get(id)).addPitchingStats(array);
                 }else{
                     ((Batter)AllPlayers.get(id)).addFieldingStats(array, year);
@@ -292,6 +310,7 @@ public class Env {
             }
             break;
         }
+        PlayerScores.put(id, player.getScore());
     }
 }
 

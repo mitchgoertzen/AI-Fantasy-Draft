@@ -1,5 +1,6 @@
 package main.Baseball;
 
+import main.Env;
 import main.Player;
 
 public class Pitcher extends Player {
@@ -17,7 +18,10 @@ public class Pitcher extends Player {
 
     public void addPitchingStats(String[] array, int year){
         countYears();
+        if(year > 1)
+            super.addGamesPlayed(Integer.parseInt(array[5]) / year);
         stats.addPitchingStats(array, year);
+        setScore(calculateScore());
     }
     
     @Override
@@ -70,5 +74,34 @@ public class Pitcher extends Player {
          , stats.getStats()[17], stats.getStats()[16], stats.getStats()[19], stats.getStats()[18], stats.getStats()[10]
          , stats.getStats()[26], stats.getStats()[27], stats.getStats()[28], stats.getStats()[39], stats.getStats()[40]);
 
+    }
+
+    private float calculateScore(){
+
+        float score = 0;
+        Float[] array = stats.getStats();
+        // System.out.println(array.length);
+        // System.out.println(Env.getPitchingWeights().length);
+
+
+        score += getGamesplayed() * Env.getPitchingWeights(0);
+        for(int i = 1; i < 20; i++){
+            // System.out.println(i);
+            // System.out.println(array[i]);
+            // System.out.println(Env.getPitchingWeights(i));
+            score += array[i] * Env.getPitchingWeights(i);
+        }
+
+
+        score /= Math.max(0.01f, array[25])  * Env.getPitchingWeights(25);
+        score /= Math.max(0.01f, array[26]) * Env.getPitchingWeights(26);
+        score /= Math.max(0.01f, array[39]) * Env.getPitchingWeights(39);
+        score /= Math.max(0.01f, array[40]) * Env.getPitchingWeights(40);
+
+        score *= Math.max(0.01f, array[27]) * Env.getPitchingWeights(27);
+        score *= Math.max(0.01f, array[28]) * Env.getPitchingWeights(28);
+        score *= Math.max(0.01f, array[38]) * Env.getPitchingWeights(38);
+
+        return (score / 10f) * stats.getStats()[2]/getGamesplayed();
     }
 }

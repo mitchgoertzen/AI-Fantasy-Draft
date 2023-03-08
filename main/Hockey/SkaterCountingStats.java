@@ -230,7 +230,7 @@ public class SkaterCountingStats {
     
     public void setStatScore(){
         
-        for(int i = 0; i < 15; i++){
+        for(int i = 0; i < statScore.length - 3; i++){
             statScore[i] = stats[i] * Env.getSkaterWeights(i);
         }
 

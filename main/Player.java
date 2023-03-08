@@ -1,7 +1,7 @@
 package main;
 public abstract class Player implements Cloneable {
 
-    private float score;
+    private float score = 0;
 
     private int gamesplayed;
 

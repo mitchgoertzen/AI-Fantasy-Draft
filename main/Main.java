@@ -1,4 +1,6 @@
 package main;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -17,15 +19,16 @@ public class Main {
             float[] g = {0f, 0f, 0f, -3f, 0f, 0.6f, 5f};
             Env.setHockeyWeights(s, g);
         }else{
-            float[] b = {0f,0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
-                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
-                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f};
+            float[] b = {1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 
+                        1f, 1f, 1f, -1f, 1f, 1f, 1f, -1f, -1f, 
+                        1f, 1f, 1f, -1f, 1f, 1f, 1f, 1f, 1f, 
+                        1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f};
             System.out.println(b.length);
-            float[] p = {0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
-                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
-                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
-                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
-                0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f};
+            float[] p = {1f, 1f, 1f, 1f, -1f, 1f, 1f, 1f, 1f, -1f, 1f,
+                        -1f, -1f, -1f, -1f, 0f, -1f, 1f, -1f, -1f, 0f, 
+                        0f, 0f, 0f, 0f, 1f, 1f, 1f, 1f, 0f, 0f, 
+                        0f, 0f, 0f, 0f, 0f, 0f, 0f, 1f, 1f, 1f, 
+                        0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f};
             System.out.println(p.length);
             Env.setBaseballWeights(b, p);
         }
@@ -45,7 +48,7 @@ public class Main {
         //hockey
         Parser.parsePlayers(hockey);
        // Parser.parseSkaters();
-        //Env.sortPlayerScores();
+        Env.sortPlayerScores();
 
         List<Integer> draftNumbers = IntStream.rangeClosed(1, playerCount)
         .boxed().collect(Collectors.toList());
@@ -59,12 +62,22 @@ public class Main {
             }
             draftNumbers.remove(num);
         }
+int i = 1;
+        try {
+            FileWriter myWriter = new FileWriter("sortedScores.txt");
+            for (Map.Entry<String,Float> mapElement : Env.SortedPlayerScores.entrySet()) {
+                myWriter.write(i++ + ". " + Env.AllPlayers.get(mapElement.getKey()).getName() + ", " +  Env.AllPlayers.get(mapElement.getKey()).getPosition() + "\n");
+                myWriter.write("Score: " + mapElement.getValue() + "\n\n");
+                //myWriter.write(Env.AllPlayers.get(mapElement.getKey()).getInfo() + "\n\n");
+            }
+            myWriter.close();
+            System.out.println("Successfully wrote to the file.");
+          } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+          }
 
-      
-
-        for (Map.Entry<String,Player> mapElement : Env.AllPlayers.entrySet()) {
-            mapElement.getValue().printInfo();
-        }
+        
 
         System.out.println("This fantasy pool currently has " + Env.participants.size() +
         " participants with " + Env.AllPlayers.size() + " available players to draft.");

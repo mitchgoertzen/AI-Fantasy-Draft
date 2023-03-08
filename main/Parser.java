@@ -98,6 +98,7 @@ public class Parser {
                         currentID = currentLine[i] + currentID;
                     }
 
+                    float eval = -1;
                     currentPlayer = Env.AllPlayers.get(currentID);
 
                     //player has not been added yet
@@ -194,13 +195,15 @@ public class Parser {
              }
          }else{
 
-             String[] info = {currentPlayerArray[0], currentPlayerArray[1], currentPlayerArray[9], currentPlayerArray[3]};
+            String[] info = {currentPlayerArray[0], currentPlayerArray[1], currentPlayerArray[9], currentPlayerArray[3]};
 
-             switch(statType){
-                 case 0: { 
-                     if(currentPlayerArray[9].equals("P")){
-                         info = new String[]{currentPlayerArray[0], currentPlayerArray[1], "P", currentPlayerArray[3]};
-                         currentPlayer = new Pitcher(currentID, currentPlayerArray, info, true);
+            switch(statType){
+                case 0: { 
+                    if(currentPlayerArray[9].equals("P")){
+                        info = new String[]{currentPlayerArray[0], currentPlayerArray[1], "P", currentPlayerArray[3]};
+                        currentPlayer = new Pitcher(currentID, currentPlayerArray, info, true);
+                        if(DEBUG)
+                            System.out.println(currentPlayer.getName() + " has a score of : " + eval);
                      }else{
                          currentPlayer = new Batter(currentID, currentPlayerArray, info, true);
                      }
@@ -220,7 +223,7 @@ public class Parser {
              }
          }
 
-         Env.PlayerScores.put(currentID, eval);
+         Env.PlayerScores.put(currentID, currentPlayer.getScore());
          Env.AllPlayers.put(currentID, currentPlayer);
     }
 

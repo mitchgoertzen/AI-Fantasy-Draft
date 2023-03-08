@@ -104,7 +104,7 @@ public class GoalieCountingStats {
     }
 
     public void setStatScore(){
-        for(int i = 0; i < 7; i++){
+        for(int i = 0; i < statScore.length; i++){
             statScore[i] = stats[i] * Env.getGoalieWeights(i);
         }
     }
