@@ -19,10 +19,10 @@ public class Main {
             float[] g = {0f, 0f, 0f, -3f, 0f, 0.6f, 5f};
             Env.setHockeyWeights(s, g);
         }else{
-            float[] b = {1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 
-                        1f, 1f, 1f, -1f, 1f, 1f, 1f, -1f, -1f, 
-                        1f, 1f, 1f, -1f, 1f, 1f, 1f, 1f, 1f, 
-                        1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f};
+            float[] b = {0f, 0f, 0f, 1f, 0f, 0f, 0f, 0f, 1f, 1f, 
+                        0f, 0f, 1f, -0f, 0f, 0f, 0f, -0f, -0f, 
+                        0f, 0f, 0f, -0f, 0f, 1f, 0f, 0f, 0f, 
+                        0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f};
             System.out.println(b.length);
             float[] p = {1f, 1f, 1f, 1f, -1f, 1f, 1f, 1f, 1f, -1f, 1f,
                         -1f, -1f, -1f, -1f, 0f, -1f, 1f, -1f, -1f, 0f, 
@@ -62,10 +62,13 @@ public class Main {
             }
             draftNumbers.remove(num);
         }
-int i = 1;
+        int i = 1;
         try {
             FileWriter myWriter = new FileWriter("sortedScores.txt");
             for (Map.Entry<String,Float> mapElement : Env.SortedPlayerScores.entrySet()) {
+                if(mapElement.getKey().equals("rondoan01")){
+                    Env.AllPlayers.get(mapElement.getKey()).printInfo();
+                }
                 myWriter.write(i++ + ". " + Env.AllPlayers.get(mapElement.getKey()).getName() + ", " +  Env.AllPlayers.get(mapElement.getKey()).getPosition() + "\n");
                 myWriter.write("Score: " + mapElement.getValue() + "\n\n");
                 //myWriter.write(Env.AllPlayers.get(mapElement.getKey()).getInfo() + "\n\n");

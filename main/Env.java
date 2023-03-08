@@ -52,7 +52,7 @@ public class Env {
     //Double Plays Turned,Catcher Interference
     
     //TODO: set size with variable
-    private static float[] battingWeights = new float[36];
+    private static float[] battingWeights = new float[37];
 
  
 //    Pitching Appearances

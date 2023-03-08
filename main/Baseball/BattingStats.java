@@ -51,7 +51,7 @@ public class BattingStats {
     }
 
     public BattingStats(){
-        stats = new Float[36];
+        stats = new Float[37];
         
         for(int i = 0; i < stats.length; i++){
             stats[i] = 0f;
@@ -61,7 +61,7 @@ public class BattingStats {
     public BattingStats(String[] array, boolean fielding){
 
         //size to br adjusted based on stats tajen from txt
-        stats = new Float[36];
+        stats = new Float[37];
 
         for(int i = 0; i < stats.length; i++){
             stats[i] = 0f;
@@ -78,10 +78,10 @@ public class BattingStats {
         }
         
         //UNUSED STATS
-        //stats[30] = hitForCycle = Float.parseFloat(array[35]);
-        //stats[32] = grandSlams = Float.parseFloat(array[37]);
-        //stats[33] = outfieldAssists = Float.parseFloat(array[38]);
-        //stats[35] = catcherInterference = Float.parseFloat(array[40]);
+        //stats[31] = hitForCycle = Float.parseFloat(array[35]);
+        //stats[33] = grandSlams = Float.parseFloat(array[37]);
+        //stats[34] = outfieldAssists = Float.parseFloat(array[38]);
+        //stats[36] = catcherInterference = Float.parseFloat(array[40]);
 
     //    weightedStats = new Float[36];
     //    setWeightedStats();
@@ -89,41 +89,41 @@ public class BattingStats {
     }
 
     public void addBattingStats(String[] array, int year){
-        stats[1] = atBats += Float.parseFloat(array[5]) / year;
-        stats[2] = runs += Float.parseFloat(array[6]) / year;
-        stats[3] = hits += Float.parseFloat(array[7]) / year;
-        stats[4] = doubles += Float.parseFloat(array[8]) / year;
-        stats[5] = triples += Float.parseFloat(array[9]) / year;
-        stats[6] = homeRuns += Float.parseFloat(array[10]) / year;
-        stats[7] = singles += (hits - homeRuns - triples - doubles) / year;
-        stats[8] = RBI += Float.parseFloat(array[11]) / year;
-        stats[9] = sacHits += Float.parseFloat(array[20]) / year;
-        stats[10] = sacFlys += Float.parseFloat(array[21]) / year;
-        stats[11] = stolenBases += Float.parseFloat(array[12]) / year;
-        stats[12] = caughtStealing += Float.parseFloat(array[13]) / year;
-        stats[13] = walks += Float.parseFloat(array[14]) / year;
-        stats[14] = intentionalWalks += Float.parseFloat(array[22]) / year;
-        stats[15] = hitByPitch += Float.parseFloat(array[19]) / year;
-        stats[16] = strikeouts += Float.parseFloat(array[15]) / year;
-        stats[17] = GIDP += Float.parseFloat(array[18]) / year;
-        stats[18] = totalBases += Float.parseFloat(array[17]) / year;
-        stats[23] = battingAverage = hits / Math.max(1,atBats);
-        stats[24] = onBasePercentage = (hits + walks + hitByPitch) / Math.max(1,(atBats + walks + hitByPitch + sacFlys));
-        stats[25] = sluggingPercentage = (singles + 2*doubles + 3*triples + 4*homeRuns)/ Math.max(1, atBats);
-        stats[26] = OPS = (onBasePercentage + sluggingPercentage);
-        stats[27] = extraBaseHits = (doubles + triples + homeRuns);
-        stats[28] = netStolenBases = (stolenBases - caughtStealing);
-        stats[29] = stolenBasePercentage = stolenBases / Math.max(1, (stolenBases + caughtStealing));
-        stats[31] = plateAppearances += Float.parseFloat(array[4]) / year;
+        stats[2] = atBats += Float.parseFloat(array[5]) / year;
+        stats[3] = runs += Float.parseFloat(array[6]) / year;
+        stats[4] = hits += Float.parseFloat(array[7]) / year;
+        stats[5] = doubles += Float.parseFloat(array[8]) / year;
+        stats[6] = triples += Float.parseFloat(array[9]) / year;
+        stats[7] = homeRuns += Float.parseFloat(array[10]) / year;
+        stats[8] = singles += (hits - homeRuns - triples - doubles) / year;
+        stats[9] = RBI += Float.parseFloat(array[11]) / year;
+        stats[10] = sacHits += Float.parseFloat(array[20]) / year;
+        stats[11] = sacFlys += Float.parseFloat(array[21]) / year;
+        stats[12] = stolenBases += Float.parseFloat(array[12]) / year;
+        stats[13] = caughtStealing += Float.parseFloat(array[13]) / year;
+        stats[14] = walks += Float.parseFloat(array[14]) / year;
+        stats[15] = intentionalWalks += Float.parseFloat(array[22]) / year;
+        stats[16] = hitByPitch += Float.parseFloat(array[19]) / year;
+        stats[17] = strikeouts += Float.parseFloat(array[15]) / year;
+        stats[18] = GIDP += Float.parseFloat(array[18]) / year;
+        stats[19] = totalBases += Float.parseFloat(array[17]) / year;
+        stats[24] = battingAverage = hits / Math.max(1,atBats);
+        stats[25] = onBasePercentage = (hits + walks + hitByPitch) / Math.max(1,(atBats + walks + hitByPitch + sacFlys));
+        stats[26] = sluggingPercentage = (singles + 2*doubles + 3*triples + 4*homeRuns)/ Math.max(1, atBats);
+        stats[27] = OPS = (onBasePercentage + sluggingPercentage);
+        stats[28] = extraBaseHits = (doubles + triples + homeRuns);
+        stats[29] = netStolenBases = (stolenBases - caughtStealing);
+        stats[30] = stolenBasePercentage = stolenBases / Math.max(1, (stolenBases + caughtStealing));
+        stats[32] = plateAppearances += Float.parseFloat(array[4]) / year;
     }
 
     public void addFieldingStats(String[] array, int year){
-        stats[0] = gamesStarted += Float.parseFloat(array[4]) / year;
-        stats[19] = putouts += Float.parseFloat(array[5]) / year;
-        stats[20] = assists += Float.parseFloat(array[6]) / year;
-        stats[21] = errors += Float.parseFloat(array[7]) / year;
-        stats[22] = fieldingPercentage = (putouts + assists) / Math.max(1, (putouts + assists + errors));
-        stats[34] = doublePlaysTurned += Float.parseFloat(array[8]) / year;
+        stats[1] = gamesStarted += Float.parseFloat(array[4]) / year;
+        stats[20] = putouts += Float.parseFloat(array[5]) / year;
+        stats[21] = assists += Float.parseFloat(array[6]) / year;
+        stats[22] = errors += Float.parseFloat(array[7]) / year;
+        stats[23] = fieldingPercentage = (putouts + assists) / Math.max(1, (putouts + assists + errors));
+        stats[35] = doublePlaysTurned += Float.parseFloat(array[8]) / year;
     }
 
     //used for roster's total stats

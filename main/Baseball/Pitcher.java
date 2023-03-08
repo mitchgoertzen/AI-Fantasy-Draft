@@ -93,15 +93,15 @@ public class Pitcher extends Player {
         }
 
 
-        score /= Math.max(0.01f, array[25])  * Env.getPitchingWeights(25);
-        score /= Math.max(0.01f, array[26]) * Env.getPitchingWeights(26);
+       // score *= Math.max(0.01f, array[25])  * Env.getPitchingWeights(25);
+        //score /= Math.max(0.01f, array[26]) * Env.getPitchingWeights(26);
         score /= Math.max(0.01f, array[39]) * Env.getPitchingWeights(39);
         score /= Math.max(0.01f, array[40]) * Env.getPitchingWeights(40);
 
-        score *= Math.max(0.01f, array[27]) * Env.getPitchingWeights(27);
+      //  score *= Math.max(0.01f, array[27]) * Env.getPitchingWeights(27);
         score *= Math.max(0.01f, array[28]) * Env.getPitchingWeights(28);
         score *= Math.max(0.01f, array[38]) * Env.getPitchingWeights(38);
 
-        return (score / 10f) * stats.getStats()[2]/getGamesplayed();
+        return (score / 162f );
     }
 }
