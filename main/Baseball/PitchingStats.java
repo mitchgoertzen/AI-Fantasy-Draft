@@ -64,6 +64,10 @@ public class PitchingStats {
     private float netWins = 0;
     private Float[] stats;
 
+    public Float[] getStats() {
+        return stats;
+    }
+
     public PitchingStats(){
         stats = new Float[51];
         PartialInningArray = new Float[] {0.0f, 0.1f, 0.2f, 1.0f, 1.1f};
@@ -125,7 +129,7 @@ public class PitchingStats {
         //stats[35] = pickoffs += Float.parseFloat(array[0]) / year;
         //stats[36] = reliefAppearances += Float.parseFloat(array[0]) / year;
         //stats[37] = OBP += Float.parseFloat(array[0]) / year;
-        stats[38] = winningPercentage = wins / Math.max(wins +losses, IP);
+        stats[38] = winningPercentage = wins / Math.max(1, wins + losses);
         stats[39] = Hper9 =  9 * hits / Math.max(1, IP);
         stats[40] = BBper9 =  9 * walks / Math.max(1, IP);
         //stats[41] = noHitters += Float.parseFloat(array[0]) / year;

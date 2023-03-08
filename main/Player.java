@@ -94,6 +94,6 @@ public abstract class Player implements Cloneable {
     }
 
     public void printInfo(){
-        System.out.printf("%s, %s, %s, %s GP\n", name, team, position, gamesplayed);
+        System.out.printf("%s, %s, %s\n%s GP\n", name, team, position, gamesplayed);
     }
 }
