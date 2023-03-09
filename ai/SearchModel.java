@@ -16,7 +16,8 @@ public class SearchModel {
 
         int availablePlayerScope = Math.min(50, availablePlayers.size());
         for(String player: availablePlayers.subList(0, availablePlayerScope)) {
-            Problem subProblem = new Problem(prob, max);
+            int[] lengths = prob.getStatLengths();
+            Problem subProblem = new Problem(prob, max, lengths[0], lengths[1]);
             if (subProblem.draftPlayer(Env.AllPlayers.get(player), nextDraftSlot, round));
                 subProblems.add(subProblem);
             }

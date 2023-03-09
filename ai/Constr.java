@@ -50,29 +50,32 @@ public class Constr {
 
         currentPlayer = Env.AllPlayers.get(newSelection);
 
-        //index to be used for currentPlayer's position
-        int positionIndex = Env.getPositionIndex(currentPlayer.getPosition(), ai.getPositionCounts());
+        if(ai.getHockey()){
+                //index to be used for currentPlayer's position
+            int positionIndex = Env.getPositionIndex(currentPlayer.getPosition(), ai.getPositionCounts());
 
-        //checking forward position limit
-        if(positionIndex < 3){
+            //checking forward position limit
+            if(positionIndex < 3){
 
-            int forwardCount = ai.getPositionCounts()[0] + ai.getPositionCounts()[1] + ai.getPositionCounts()[2];
+                int forwardCount = ai.getPositionCounts()[0] + ai.getPositionCounts()[1] + ai.getPositionCounts()[2];
 
-            if(forwardCount + 1> Env.getPositionLimits()[5])
+                if(forwardCount + 1> Env.getPositionLimits()[5])
+                    return false;
+                
+            //checking individual position limit
+            } else if(ai.getPositionCounts()[positionIndex] + 1 > Env.getPositionLimits()[positionIndex]){
+
+                if(DEBUG){
+                    System.out.println("Player pos: " + currentPlayer.getPosition());
+                    System.out.println("index: " + positionIndex);
+                    System.out.println("count: " + ai.getPositionCounts()[positionIndex]);
+                    System.out.println("limit: " + Env.getPositionLimits()[positionIndex]);
+                    System.out.println("limit for: " + currentPlayer.getPosition());
+                }
                 return false;
-            
-        //checking individual position limit
-        } else if(ai.getPositionCounts()[positionIndex] + 1 > Env.getPositionLimits()[positionIndex]){
-
-            if(DEBUG){
-                System.out.println("Player pos: " + currentPlayer.getPosition());
-                System.out.println("index: " + positionIndex);
-                System.out.println("count: " + ai.getPositionCounts()[positionIndex]);
-                System.out.println("limit: " + Env.getPositionLimits()[positionIndex]);
-                System.out.println("limit for: " + currentPlayer.getPosition());
             }
-            return false;
         }
+
         return true;
     }
 

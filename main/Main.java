@@ -44,10 +44,10 @@ public class Main {
                 0f, //A
                 -0f, //E
                 0f, //F%
-                1f, //BA
+                0f, //BA
                 0f, //OBP
                 0f, //SLG
-                0f, //OPS
+                1f, //OPS
                 0f, //XBH
                 0f, //NetSB
                 0f, //SB%
@@ -154,7 +154,7 @@ public class Main {
             if(i < humanPlayers){
                 Env.participants.put(i, new Participant(i, true, draftNumbers.get(num)));
             }else{
-                Env.participants.put(i, new AIParticipant(i, false, draftNumbers.get(num), rounds));
+                Env.participants.put(i, new AIParticipant(i, false, draftNumbers.get(num), rounds, hockey));
             }
             draftNumbers.remove(num);
         }
@@ -166,7 +166,7 @@ public class Main {
                 // if(mapElement.getKey().equals("beninan01")){
                 //     Env.AllPlayers.get(mapElement.getKey()).printInfo();
                 // }
-                // if(mapElement.getKey().equals("beninan01")){
+                // if(mapElement.getKey().equals("diazya01")){
                 //     Env.AllPlayers.get(mapElement.getKey()).printInfo();
                 // }
                 myWriter.write(i++ + ". " + Env.AllPlayers.get(mapElement.getKey()).getName() + ", " +  Env.AllPlayers.get(mapElement.getKey()).getPosition() + "\n");
@@ -194,7 +194,7 @@ public class Main {
 
             if(readString.equals("begin")){
                 System.out.println();
-                DraftMenu.Draft(rounds, playerCount, false);
+                DraftMenu.Draft(rounds, playerCount, false, hockey);
                 readString = null;
                 scanner.close();
             }else if(readString.equals("exit")){

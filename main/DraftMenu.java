@@ -4,11 +4,18 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+
+import main.Baseball.Batter;
+import main.Baseball.Pitcher;
+
 public class DraftMenu {
     
     private static ArrayList<String> availablePlayers = new ArrayList<>();
 
     private static LinkedHashMap<String, Float> playerScores = new LinkedHashMap<>();
+
+    private static int length1;
+    private static int length2;
 
     public static String checkForPlayer(String name){
         for (String s : availablePlayers) {
@@ -20,15 +27,22 @@ public class DraftMenu {
         return null;
     }
 
-    public static void Draft(int rounds, int playerCount, boolean snake){
+    public static void Draft(int rounds, int playerCount, boolean snake, boolean hockey){
 
+        if(hockey){
+            length1 = 18;
+            length2 = 7;
+        }else{
+            length1 = 37;
+            length2 = 51;
+        }
+
+        int currentPickInRound =  1;
+        Env.setCurrentPick(currentPickInRound);
         Env.setCurrentRound(1);
 
         int currentPickInDraft =  Env.getCurrentPick();
         int currentRound = Env.getCurrentRound();
-        int currentPickInRound =  1;
-
-        Env.setCurrentPick(currentPickInRound);
 
         Participant[] draftOrder = new Participant[playerCount];
         Participant currentParticipant;
@@ -71,13 +85,14 @@ public class DraftMenu {
                     playerCode = checkForPlayer(readString);
                 }else{
                     while(!readString.equals("c")){
-                        playerCode = ((AIParticipant) currentParticipant).draftPlayer();
+                        playerCode = ((AIParticipant) currentParticipant).draftPlayer(length1, length2);
                         System.out.println(currentParticipant.getName() + " wants to draft " + Env.AllPlayers.get(playerCode).getName() + 
                         ". To confirm this selection press 'C', to deny press 'D'...");
                         readString = scanner.nextLine().toLowerCase();
                         if(readString.equals("d")){
                             availablePlayers.remove(playerCode);
                             playerScores.remove(playerCode);
+                            ((AIParticipant) currentParticipant).restoreDraftSlot(currentRound - 1);
                             currentParticipant.removeRecentDraft(playerCode);
                         }
                     }
@@ -91,8 +106,14 @@ public class DraftMenu {
                         if(!Env.playerDrafted.containsKey(playerCode) || (Env.playerDrafted.containsKey(playerCode) && !Env.playerDrafted.get(playerCode))){
                             System.out.println("\nWith the " + currentPickInDraft + " overall pick, "
                             + currentParticipant.getName() + " has drafted "
-                            + Env.AllPlayers.get(playerCode).getPosition() + " "
                             + Env.AllPlayers.get(playerCode).getName() + "\n");
+                            if(!hockey){
+                                if(Env.AllPlayers.get(playerCode).getPosition().equals("P")){
+                                    ((Pitcher)Env.AllPlayers.get(playerCode)).printInfo();
+                                }else{
+                                    ((Batter)Env.AllPlayers.get(playerCode)).printInfo();
+                                }
+                            }
                             Env.nextPick();
                             currentPickInDraft = Env.getCurrentPick();
                             currentPickInRound++;
@@ -115,7 +136,7 @@ public class DraftMenu {
             }
         }
         scanner.close();
-        System.out.println("\nThe current NHL fantasy draft has concluded.");
+        System.out.println("\nThe current fantasy draft has concluded.");
     }
 
     public static ArrayList<String> getAvailablePlayers(){

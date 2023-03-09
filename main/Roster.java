@@ -2,6 +2,10 @@ package main;
 
 import java.util.ArrayList;
 
+import main.Baseball.Batter;
+import main.Baseball.BattingStats;
+import main.Baseball.Pitcher;
+import main.Baseball.PitchingStats;
 import main.Hockey.Goalie;
 import main.Hockey.GoalieCountingStats;
 import main.Hockey.Skater;
@@ -14,21 +18,42 @@ public class Roster {
     private GoalieCountingStats totalGoalieCountingStats;
 
     private SkaterCountingStats totalSkaterCountingStats;
+    
+    private BattingStats totalBattingStats;
+
+    private PitchingStats totalPitchingStats;
 
     public Roster() {
         players = new ArrayList<>();
         totalSkaterCountingStats = new SkaterCountingStats();
         totalGoalieCountingStats = new GoalieCountingStats();
+        totalBattingStats = new BattingStats();
+        totalPitchingStats = new PitchingStats();
     }
 
     public void addPlayer(String p){
         players.add(p);
         Player player = Env.AllPlayers.get(p);
-        if(player.getPosition().equals("G")){
-            totalGoalieCountingStats.addStats(((Goalie)player).getCountingStats().getStatsArray(), player.getGamesPlayed());
-        }else{  
-            totalSkaterCountingStats.addStats(((Skater)player).getCountingStats().getStatsArray(), player.getGamesPlayed());
+
+        switch(player.getClass().getName()){
+            case "main.Baseball.Batter":{
+                totalBattingStats.addStats(((Batter)player).getStats().getStatsArray(), player.getGamesPlayed(), players.size());
+            }
+            break;
+            case "main.Baseball.Pitcher":{
+                //totalPitchingStats.addStats(((Pitcher)player).getStats().getStatsArray(), player.getGamesPlayed(), players.size());
+            }
+            break;
+            case "main.Hockey.Skater":{
+                totalSkaterCountingStats.addStats(((Skater)player).getCountingStats().getStatsArray(), player.getGamesPlayed());
+            }
+            break;
+            case "main.Hockey.Goalie":{
+                totalGoalieCountingStats.addStats(((Goalie)player).getCountingStats().getStatsArray(), player.getGamesPlayed());
+            }
+            break;
         }
+
     }
 
     //Getters

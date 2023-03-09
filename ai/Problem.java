@@ -31,14 +31,20 @@ public class Problem {
     private int currentPick;
     private int highestScoreIndex;
 
+    private int statLength1;
+
+    private int statLength2;
+
     private String[] draftedPlayers;
 
-    public Problem(int rosterSize, int id) {
-        System.out.println("new problem");
+    public Problem(int rosterSize, int id, int length1, int length2) {
+
+        statLength1 = length1;
+        statLength2 = length2;
 
         draftSlots = new ArrayList<>();
         roster = new ArrayList<>();
-        opponentRosterScores = new float[Env.participants.size()][25];
+        opponentRosterScores = new float[Env.participants.size()][length1 + length2];
         availablePlayers = new ArrayList<>();
         opponentRosters = new ArrayList[Env.participants.size()];
 
@@ -47,28 +53,30 @@ public class Problem {
             currentKey = p.getKey();
             if(currentKey != id){
                 opponentRosters[currentKey] = p.getValue().getRoster().getPlayers();
-                float[] currentOpponentScore = new float[25];
+                float[] currentOpponentScore = new float[length1 + length2];
                 for(String s : opponentRosters[currentKey]){
-                    currentOpponentScore = updateRosterScore(currentOpponentScore, Env.AllPlayers.get(s));
+                    currentOpponentScore = updateRosterScore(currentOpponentScore, Env.AllPlayers.get(s), length1, length2);
                 }
                 opponentRosterScores[currentKey] = currentOpponentScore;
             }
         }
         
-        activeRosterScore = new float[25];
+        activeRosterScore = new float[length1 + length2];
         currentPick = Env.getCurrentPick();
         highestScoreIndex = 0;  
         draftedPlayers = new String[rosterSize];
     }
 
-    public Problem(Problem problem, int rosterSize) {
+    public Problem(Problem problem, int rosterSize, int length1, int length2) {
         
+        statLength1 = length1;
+        statLength2 = length2;
        
         draftSlots = new ArrayList<>(problem.getDraftSlots());
         roster = new ArrayList<>(problem.getRoster());	
         availablePlayers = new ArrayList<>(problem.getAvailablePlayers());
         opponentRosters = new ArrayList[Env.participants.size()];
-        opponentRosterScores = new float[Env.participants.size()][25];
+        opponentRosterScores = new float[Env.participants.size()][length1 + length2];
 
         int rosterLength = problem.getOpponentRosters().length;
         for(int i = 0; i < rosterLength; i++){
@@ -113,7 +121,7 @@ public class Problem {
         draftSlots.remove(slot);
         availablePlayers.remove(id);
         
-        activeRosterScore = updateRosterScore(activeRosterScore, player);
+        activeRosterScore = updateRosterScore(activeRosterScore, player, statLength1, statLength2);
 
         return true;
     } 
@@ -164,7 +172,7 @@ public class Problem {
         return draftSlot;
     }
 
-    public float[] updateRosterScore(float[] rosterScore, Player newPlayer){
+    public float[] updateRosterScore(float[] rosterScore, Player newPlayer, int length1, int length2){
 
         float[] newRosterScore = rosterScore;
         switch(newPlayer.getClass().getName()){
@@ -175,32 +183,20 @@ public class Problem {
                 Batter newBatter = (Batter) newPlayer;
                 BattingStats battingStats  = newBatter.getStats();
                 Float[] stats = battingStats.getStatsArray();
-                int length = stats.length;
                 int gp = newBatter.getGamesPlayed();
-                
-                for(int i = 1; i < 23; i++){
+
+                for(int i = 0; i < 23; i++){
                     newRosterScore[i] += stats[i] / gp * Env.getBattingWeights(i);
                 }
         
-                newRosterScore[28] += stats[28] / gp * Env.getBattingWeights(28);
-                newRosterScore[29] += stats[29] / gp * Env.getBattingWeights(29);
-        
-                for(int i = 31; i < length; i++){
-                    newRosterScore[i] += stats[i] / gp * Env.getBattingWeights(i);
+                int size = roster.size() + 1;
+                for(int i = 23; i < 29; i++){
+                    newRosterScore[i] = (newRosterScore[i] *  (size - 1)/size) + (stats[i] * (1 / size)) * Env.getBattingWeights(i);
                 }
-
-                // newRosterScore[23] = fieldingPercentage = (putouts + assists) / Math.max(1, (putouts + assists + errors));
-                // newRosterScore[24] = battingAverage = hits / Math.max(1,atBats);
-                // newRosterScore[25] = onBasePercentage = (hits + walks + hitByPitch) / Math.max(1,(atBats + walks + hitByPitch + sacFlys));
-                // newRosterScore[26] = sluggingPercentage = (singles + 2*doubles + 3*triples + 4*homeRuns)/ Math.max(1, atBats);
-                // newRosterScore[27] = OPS = (onBasePercentage + sluggingPercentage);
         
-                for(int i = 23; i < 28; i++){
-                    if(Env.getBattingWeights(i) > 0){
-                        newRosterScore[i] *= stats[i] * Env.getBattingWeights(i);
-                    }
+                for(int i = 28; i < stats.length; i++){
+                    newRosterScore[i] += stats[i] / gp;
                 }
-
 
             }
             break;
@@ -215,9 +211,8 @@ public class Problem {
                 Skater newSkater = (Skater) newPlayer;
                 SkaterCountingStats skaterStats  = newSkater.getCountingStats();
                 Integer[] stats = skaterStats.getStatsArray();
-                int length = stats.length;
                 int i;
-                for(i = 0; i < length; i++){
+                for(i = 0; i < length1; i++){
                     newRosterScore[i] += stats[i] * Env.getSkaterWeights(i);
                 }
         
@@ -234,13 +229,18 @@ public class Problem {
                 Integer[] stats = goalieStats.getStatsArray();
                 int length = stats.length;
                 for(int i = 0; i < length; i++){
-                    newRosterScore[i + 18] += stats[i] * Env.getGoalieWeights(i);
+                    newRosterScore[i + length1] += stats[i] * Env.getGoalieWeights(i);
                 }
             }
             break;
         }
 
         return newRosterScore;
+    }
+
+    
+    public int[] getStatLengths() {
+        return new int[] {statLength1, statLength2};
     }
     
     public void addDraftedPlayers(String player, int index) {
@@ -258,7 +258,7 @@ public class Problem {
             int opponentID = Env.totalPicksInDraft.get(i - 1);
             String s = players[i - currentPick - 1];
             opponentRosters[opponentID].add(s);
-            opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s));  
+            opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], Env.AllPlayers.get(s), statLength1, statLength2);  
         }
     }
     
@@ -288,12 +288,12 @@ public class Problem {
     public void setRosterScore() {
         for(String s : draftedPlayers){
             if(s != null)
-                activeRosterScore = updateRosterScore(activeRosterScore, Env.AllPlayers.get(s));
+                activeRosterScore = updateRosterScore(activeRosterScore, Env.AllPlayers.get(s), statLength1, statLength2);
         }
     }
 
     public void updateOpponentRosterScore(int opponentID, Player newPlayer){
-        opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], newPlayer);
+        opponentRosterScores[opponentID] = updateRosterScore(opponentRosterScores[opponentID], newPlayer, statLength1, statLength2);
     }
 
     //Getters

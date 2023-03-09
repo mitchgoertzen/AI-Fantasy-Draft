@@ -9,6 +9,16 @@ public class AIParticipant extends Participant {
 
     private ArrayList<DraftSlot> draftSlots;
 
+    public void restoreDraftSlot(int index) {
+        draftSlots.add(0, new DraftSlot(index));
+    }
+
+    private boolean hockey;
+
+    public boolean getHockey() {
+        return hockey;
+    }
+
     private int[] rosterEval;
     private int[] maxScore;
 
@@ -16,7 +26,7 @@ public class AIParticipant extends Participant {
 
     private Integer[] positionCounts = new Integer[5]; //lw, rw, c, d, g, f
 
-    public AIParticipant(int id, boolean isHuman, int draftNumber, int maxDraftSlots) {
+    public AIParticipant(int id, boolean isHuman, int draftNumber, int maxDraftSlots, boolean hockey) {
 
         super(id, isHuman, draftNumber);
         this.maxDraftSlots = maxDraftSlots;
@@ -29,12 +39,13 @@ public class AIParticipant extends Participant {
 		for(int i = 0; i < maxDraftSlots; i++){
             draftSlots.add(new DraftSlot(i));
         }
+        this.hockey = hockey;
     }
 
     @SuppressWarnings (value="unchecked")
-    private ProblemState initializeProblemState() {
+    private ProblemState initializeProblemState(int l1, int l2) {
         
-    	Problem initialProblem = new Problem(maxDraftSlots, super.getId());
+    	Problem initialProblem = new Problem(maxDraftSlots, super.getId(), l1, l2);
 
         initialProblem.setAvailablePlayers((ArrayList<String>) DraftMenu.getAvailablePlayers().clone());
 
@@ -95,7 +106,7 @@ public class AIParticipant extends Participant {
     	return bestState;
     }
 
-    public String draftPlayer(){
+    public String draftPlayer(int l1, int l2){
 
     	long StartTime = System.nanoTime();
         
@@ -103,7 +114,7 @@ public class AIParticipant extends Participant {
         maxScore[1] = -1;
         maxScore[2] = -1;
 
-        ProblemState initialState = initializeProblemState();
+        ProblemState initialState = initializeProblemState(l1, l2);
         
         initialState.setEval(rosterEval);
 
@@ -112,17 +123,19 @@ public class AIParticipant extends Participant {
 
         super.addPlayer(playerCode);
         
-        int index = Env.getPositionIndex(Env.AllPlayers.get(playerCode).getPosition(), positionCounts);
-        if(DEBUG){        
-            System.out.println("player pos: " + Env.AllPlayers.get(playerCode).getPosition());
-            System.out.println("new count: " + (positionCounts[index] + 1));
-            System.out.println("limit: " + Env.getPositionLimits()[index]);
+        if(hockey){
+            int index = Env.getPositionIndex(Env.AllPlayers.get(playerCode).getPosition(), positionCounts);
+            if(DEBUG){        
+                System.out.println("player pos: " + Env.AllPlayers.get(playerCode).getPosition());
+                System.out.println("new count: " + (positionCounts[index] + 1));
+                System.out.println("limit: " + Env.getPositionLimits()[index]);
+            }
+    
+            positionCounts[index]++;
         }
 
-        positionCounts[index]++;
-
-        System.out.println("score: " +  Env.PlayerScores.get(playerCode));
-        System.out.println("time elapsed: " + (System.nanoTime() - StartTime)/1000000000f + "s");
+        // System.out.println("score: " +  Env.PlayerScores.get(playerCode));
+        // System.out.println("time elapsed: " + (System.nanoTime() - StartTime)/1000000000f + "s");
         return playerCode;
     }
 

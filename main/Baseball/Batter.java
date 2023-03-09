@@ -56,7 +56,7 @@ public class Batter extends Player {
         "SH: %.0f, SF: %.0f, SB: %.0f, CS: %.0f, SB%% %.2f, NetSB: %.0f\n" +
         "PO: %.0f, A: %.0f, E: %.0f, F%%: %.2f, DPT: %.0f\n\n"
         , stats.getStatsArray()[1], stats.getStatsArray()[32], stats.getStatsArray()[2], stats.getStatsArray()[3], stats.getStatsArray()[4]
-        , stats.getStatsArray()[8], stats.getStatsArray()[5], stats.getStatsArray()[6], stats.getStatsArray()[7], stats.getStatsArray()[9], stats.getStatsArray()[28], stats.getStatsArray()[19]
+        , stats.getStatsArray()[5], stats.getStatsArray()[6], stats.getStatsArray()[7], stats.getStatsArray()[8], stats.getStatsArray()[9], stats.getStatsArray()[28], stats.getStatsArray()[19]
         , stats.getStatsArray()[24], stats.getStatsArray()[25], stats.getStatsArray()[26], stats.getStatsArray()[27]
         , stats.getStatsArray()[17], stats.getStatsArray()[14], stats.getStatsArray()[15], stats.getStatsArray()[16], stats.getStatsArray()[18]
         , stats.getStatsArray()[10], stats.getStatsArray()[11], stats.getStatsArray()[12], stats.getStatsArray()[13], stats.getStatsArray()[30], stats.getStatsArray()[29]

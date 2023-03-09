@@ -1,7 +1,5 @@
 package main.Baseball;
 
-import java.util.Arrays;
-
 import main.Env;
 
 public class BattingStats {
@@ -92,10 +90,10 @@ public class BattingStats {
         stats[2] = atBats += Float.parseFloat(array[5]) / ((year * 2) + 1);
         stats[3] = runs += Float.parseFloat(array[6]) / ((year * 2) + 1);
         stats[4] = hits += Float.parseFloat(array[7]) / ((year * 2) + 1);
-        stats[5] = doubles += Float.parseFloat(array[8]) / ((year * 2) + 1);
-        stats[6] = triples += Float.parseFloat(array[9]) / ((year * 2) + 1);
-        stats[7] = homeRuns += Float.parseFloat(array[10]) / ((year * 2) + 1);
-        stats[8] = singles += (hits - homeRuns - triples - doubles) / ((year * 2) + 1);
+        stats[6] = doubles += Float.parseFloat(array[8]) / ((year * 2) + 1);
+        stats[7] = triples += Float.parseFloat(array[9]) / ((year * 2) + 1);
+        stats[8] = homeRuns += Float.parseFloat(array[10]) / ((year * 2) + 1);
+        stats[5] = singles += (hits - homeRuns - triples - doubles) / ((year * 2) + 1);
         stats[9] = RBI += Float.parseFloat(array[11]) / ((year * 2) + 1);
         stats[10] = sacHits += Float.parseFloat(array[20]) / ((year * 2) + 1);
         stats[11] = sacFlys += Float.parseFloat(array[21]) / ((year * 2) + 1);
@@ -128,9 +126,18 @@ public class BattingStats {
 
     //used for roster's total stats
     //need to move somewhere else
-    public void addStats(Float[] newStats, int gamesPlayed){
-        for(int i = 0; i < stats.length; i++){
-            stats[i] += newStats[i]/gamesPlayed;
+    public void addStats(Float[] newStats, int gamesPlayed, int rosterSize){
+    
+        for(int i = 0; i < 23; i++){
+            stats[i] += newStats[i] / gamesPlayed;
+        }
+
+        for(int i = 23; i < 29; i++){
+            stats[i] = (stats[i] + newStats[i]) / rosterSize;
+        }
+
+        for(int i = 28; i < newStats.length; i++){
+            stats[i] += newStats[i] / gamesPlayed;
         }
     }
 
