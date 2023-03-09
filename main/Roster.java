@@ -25,9 +25,9 @@ public class Roster {
         players.add(p);
         Player player = Env.AllPlayers.get(p);
         if(player.getPosition().equals("G")){
-            totalGoalieCountingStats.addStats(((Goalie)player).getCountingStats().getStatsArray(), player.getGamesplayed());
+            totalGoalieCountingStats.addStats(((Goalie)player).getCountingStats().getStatsArray(), player.getGamesPlayed());
         }else{  
-            totalSkaterCountingStats.addStats(((Skater)player).getCountingStats().getStatsArray(), player.getGamesplayed());
+            totalSkaterCountingStats.addStats(((Skater)player).getCountingStats().getStatsArray(), player.getGamesPlayed());
         }
     }
 

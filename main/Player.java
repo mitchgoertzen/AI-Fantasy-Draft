@@ -3,7 +3,7 @@ public abstract class Player implements Cloneable {
 
     private float score = 0;
 
-    private int gamesplayed;
+    private int gamesPlayed;
 
     private String id;
     private String name;
@@ -28,7 +28,7 @@ public abstract class Player implements Cloneable {
         name = array[0];
         team = array[1];
         position = array[2];
-        gamesplayed = Integer.parseInt(array[3]);
+        gamesPlayed = Integer.parseInt(array[3]);
     }
     
     @Override
@@ -45,8 +45,8 @@ public abstract class Player implements Cloneable {
         return score;
     }
 
-    public int getGamesplayed() {
-        return gamesplayed;
+    public int getGamesPlayed() {
+        return gamesPlayed;
     }
 
     public String getID() {
@@ -67,10 +67,10 @@ public abstract class Player implements Cloneable {
 
     //Setters
     public void addGamesPlayed(int gp){
-        gamesplayed += gp;
+        gamesPlayed += gp;
     }
-    public void setGamesplayed(int gamesplayed) {
-        this.gamesplayed = gamesplayed;
+    public void setGamesPlayed(int gamesplayed) {
+        this.gamesPlayed = gamesplayed;
     }
 
     public void setId(String id) {
@@ -94,6 +94,6 @@ public abstract class Player implements Cloneable {
     }
 
     public void printInfo(){
-        System.out.printf("%s, %s, %s\n%s GP\n", name, team, position, gamesplayed);
+        System.out.printf("%s, %s, %s\n%s GP\n", name, team, position, gamesPlayed);
     }
 }

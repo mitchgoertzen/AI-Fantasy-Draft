@@ -20,14 +20,17 @@ public class Batter extends Player {
     public void addFieldingStats(String[] array, int year){
         //setScore(calculateScore());
         countYears();
-        if(year > 1)
-            super.addGamesPlayed(Integer.parseInt(array[3]) / year);
             
         stats.addFieldingStats(array, year);
     }
 
     public void addBattingStats(String[] array, int year){
         countYears();
+        if(year > 0)
+            super.addGamesPlayed(Integer.parseInt(array[3]) / ((year * 2) + 1));
+        else
+            super.setGamesPlayed(Integer.parseInt(array[3]));
+            
         stats.addBattingStats(array, year);
         setScore(calculateScore());
     }
@@ -52,13 +55,12 @@ public class Batter extends Player {
         "K: %.0f, BB: %.0f, IBB: %.0f, HBP: %.0f, GIDP: %.0f\n" +
         "SH: %.0f, SF: %.0f, SB: %.0f, CS: %.0f, SB%% %.2f, NetSB: %.0f\n" +
         "PO: %.0f, A: %.0f, E: %.0f, F%%: %.2f, DPT: %.0f\n\n"
-        , stats.getStats()[0], stats.getStats()[31], stats.getStats()[1], stats.getStats()[2], stats.getStats()[3]
-        , stats.getStats()[7], stats.getStats()[4], stats.getStats()[5], stats.getStats()[6], stats.getStats()[8]
-        , stats.getStats()[27], stats.getStats()[18], stats.getStats()[23], stats.getStats()[24], stats.getStats()[25]
-        , stats.getStats()[26], stats.getStats()[16], stats.getStats()[13], stats.getStats()[14], stats.getStats()[15]
-        , stats.getStats()[17], stats.getStats()[9], stats.getStats()[10], stats.getStats()[11], stats.getStats()[12]
-        , stats.getStats()[29], stats.getStats()[28], stats.getStats()[19], stats.getStats()[20], stats.getStats()[21]
-        , stats.getStats()[22], stats.getStats()[34]);
+        , stats.getStats()[1], stats.getStats()[32], stats.getStats()[2], stats.getStats()[3], stats.getStats()[4]
+        , stats.getStats()[8], stats.getStats()[5], stats.getStats()[6], stats.getStats()[7], stats.getStats()[9], stats.getStats()[28], stats.getStats()[19]
+        , stats.getStats()[24], stats.getStats()[25], stats.getStats()[26], stats.getStats()[27]
+        , stats.getStats()[17], stats.getStats()[14], stats.getStats()[15], stats.getStats()[16], stats.getStats()[18]
+        , stats.getStats()[10], stats.getStats()[11], stats.getStats()[12], stats.getStats()[13], stats.getStats()[30], stats.getStats()[29]
+        , stats.getStats()[20], stats.getStats()[21], stats.getStats()[22], stats.getStats()[23], stats.getStats()[35]);
     }
 
     private float calculateScore(){
@@ -66,10 +68,17 @@ public class Batter extends Player {
         float score = 0;
         Float[] array = stats.getStats();
 
-        score += getGamesplayed() * Env.getBattingWeights(0);
+        //score += getGamesPlayed() * Env.getBattingWeights(0);
 
         for(int i = 1; i < 23; i++){
-            score += array[i] * Env.getBattingWeights(i);
+            score += array[i] / getGamesPlayed() * Env.getBattingWeights(i);
+        }
+
+        score += array[28] / getGamesPlayed() * Env.getBattingWeights(28);
+        score += array[29] / getGamesPlayed() * Env.getBattingWeights(29);
+
+        for(int i = 31; i < array.length; i++){
+            score += array[i] / getGamesPlayed() * Env.getBattingWeights(i);
         }
 
         for(int i = 23; i < 28; i++){
@@ -78,15 +87,10 @@ public class Batter extends Player {
         //TODO: replace with += OPS+
        // score *= Math.max(0.01f, array[26]) * Env.getBattingWeights(26);
 
-        score += array[28] * Env.getBattingWeights(28);
-        score += array[29] * Env.getBattingWeights(29);
         //score *= Math.max(0.01f, array[29]) * Env.getBattingWeights(29);
 
-        for(int i = 31; i < array.length; i++){
-            score += array[i] * Env.getBattingWeights(i);
-        }
 
-        return (score / 162f);
+        return score * getGamesPlayed();
     }
     
 }

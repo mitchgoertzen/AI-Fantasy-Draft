@@ -19,10 +19,45 @@ public class Main {
             float[] g = {0f, 0f, 0f, -3f, 0f, 0.6f, 5f};
             Env.setHockeyWeights(s, g);
         }else{
-            float[] b = {0f, 0f, 0f, 1f, 0f, 0f, 0f, 0f, 1f, 1f, 
-                        0f, 0f, 1f, -0f, 0f, 0f, 0f, -0f, -0f, 
-                        0f, 0f, 0f, -0f, 0f, 1f, 0f, 0f, 0f, 
-                        0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f};
+            float[] b = {
+                0f, //GP
+                0f, //GS
+                0f, //AB
+                1f, //R
+                1f, //H
+                0f, //1B
+                0f, //2B
+                0f, //3B
+                1f, //HR
+                1f, //RBI
+                0f, //SH
+                0f, //SF
+                1f, //SB
+                -0f, //CS
+                1f, //BB
+                0f, //IBB
+                0f, //HBP
+                -1f, //K
+                -0f, //GIDP
+                0f, //TB
+                0f, //PO
+                0f, //A
+                -0f, //E
+                0f, //F%
+                1f, //BA
+                0f, //OBP
+                0f, //SLG
+                0f, //OPS
+                0f, //XBH
+                0f, //NetSB
+                0f, //SB%
+                0f, //HFC
+                0f, //PA
+                0f, //GS
+                0f, //OA
+                0f, //DP
+                0f //CI
+            };
             System.out.println(b.length);
             float[] p = {1f, 1f, 1f, 1f, -1f, 1f, 1f, 1f, 1f, -1f, 1f,
                         -1f, -1f, -1f, -1f, 0f, -1f, 1f, -1f, -1f, 0f, 
@@ -66,7 +101,10 @@ public class Main {
         try {
             FileWriter myWriter = new FileWriter("sortedScores.txt");
             for (Map.Entry<String,Float> mapElement : Env.SortedPlayerScores.entrySet()) {
-                if(mapElement.getKey().equals("rondoan01")){
+                if(mapElement.getKey().equals("judgeaa01")){
+                    Env.AllPlayers.get(mapElement.getKey()).printInfo();
+                }
+                if(mapElement.getKey().equals("beninan01")){
                     Env.AllPlayers.get(mapElement.getKey()).printInfo();
                 }
                 myWriter.write(i++ + ". " + Env.AllPlayers.get(mapElement.getKey()).getName() + ", " +  Env.AllPlayers.get(mapElement.getKey()).getPosition() + "\n");
