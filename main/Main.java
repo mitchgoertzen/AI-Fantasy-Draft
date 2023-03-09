@@ -58,13 +58,60 @@ public class Main {
                 0f, //DP
                 0f //CI
             };
-            System.out.println(b.length);
-            float[] p = {1f, 1f, 1f, 1f, -1f, 1f, 1f, 1f, 1f, -1f, 1f,
-                        -1f, -1f, -1f, -1f, 0f, -1f, 1f, -1f, -1f, 0f, 
-                        0f, 0f, 0f, 0f, 1f, 1f, 1f, 1f, 0f, 0f, 
-                        0f, 0f, 0f, 0f, 0f, 0f, 0f, 1f, 1f, 1f, 
-                        0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f};
-            System.out.println(p.length);
+
+            float[] p = {
+                0f, //GP
+                0f, //GS
+                0f, //IP
+                1f, //W
+                0f, //L
+                0f, //CG
+                0f, //SO
+                1f, //SV
+                0f, //O
+                0f, //H
+                0f, //BF
+                0f, //R
+                0f, //ER
+                0f, //HR
+                0f, //BB
+                0f, //IBB
+                0f, //HBP
+                1f, //K
+                0f, //WP
+                0f, //BK
+                0f, //SB
+                0f, //GIDP
+                0f, //SV CHANCES
+                0f, //HOLDS
+                0f, //TB
+                1f, //ERA
+                1f, //WHIP
+                0f, //K/BB
+                0f, //K/9
+                0f, //pitch count
+                0f, //1b
+                0f, //2b
+                0f, //3b
+                0f, //relief w
+                0f, //relief l
+                0f, //pickoffs
+                0f, //relief ap
+                0f, //OBP
+                0f, //WIN%
+                0f, //H/9
+                0f, //BB/9
+                0f, //no hit
+                0f, //perf
+                0f, //sv%
+                0f, //inherited runs
+                0f, //QS
+                0f, //blown sv
+                0f, //net sv
+                0f, //saves + holds
+                0f, //net sv + h
+                0f, //net wins
+            };
             Env.setBaseballWeights(b, p);
         }
 
@@ -101,12 +148,12 @@ public class Main {
         try {
             FileWriter myWriter = new FileWriter("sortedScores.txt");
             for (Map.Entry<String,Float> mapElement : Env.SortedPlayerScores.entrySet()) {
-                if(mapElement.getKey().equals("judgeaa01")){
-                    Env.AllPlayers.get(mapElement.getKey()).printInfo();
-                }
-                if(mapElement.getKey().equals("beninan01")){
-                    Env.AllPlayers.get(mapElement.getKey()).printInfo();
-                }
+                // if(mapElement.getKey().equals("beninan01")){
+                //     Env.AllPlayers.get(mapElement.getKey()).printInfo();
+                // }
+                // if(mapElement.getKey().equals("beninan01")){
+                //     Env.AllPlayers.get(mapElement.getKey()).printInfo();
+                // }
                 myWriter.write(i++ + ". " + Env.AllPlayers.get(mapElement.getKey()).getName() + ", " +  Env.AllPlayers.get(mapElement.getKey()).getPosition() + "\n");
                 myWriter.write("Score: " + mapElement.getValue() + "\n\n");
                 //myWriter.write(Env.AllPlayers.get(mapElement.getKey()).getInfo() + "\n\n");

@@ -72,9 +72,9 @@ public class BattingStats {
 
         //TODO: change if 2023 stats become available
         if(fielding){
-            addFieldingStats(array, 1);
+            addFieldingStats(array, 0);
         }else{
-            addBattingStats(array, 1);
+            addBattingStats(array, 0);
         }
         
         //UNUSED STATS

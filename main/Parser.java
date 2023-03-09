@@ -28,22 +28,22 @@ public class Parser {
         }else{
             //fielding
             String[] baseballFiles = {
-                    "stats/Baseball/mlb_fielding_2022.txt"};
+                    "stats/Baseball/mlb_fielding_2022.txt", 
+                    "stats/Baseball/mlb_fielding_2021.txt",
+                    "stats/Baseball/mlb_fielding_2020.txt"};
             parseFiles(baseballFiles, hockey, 0);
 
-            // , 
-            //         "stats/Baseball/mlb_fielding_2021.txt",
-            //         "stats/Baseball/mlb_fielding_2020.txt"
+
 
             //batting
             baseballFiles = 
                 new String[]{
-                    "stats/Baseball/mlb_batting_2022.txt"};
+                    "stats/Baseball/mlb_batting_2022.txt", 
+                    "stats/Baseball/mlb_batting_2021.txt",
+                    "stats/Baseball/mlb_batting_2020.txt"};
             parseFiles(baseballFiles, hockey, 1);
 
-            // , 
-            //         "stats/Baseball/mlb_batting_2021.txt",
-            //         "stats/Baseball/mlb_batting_2020.txt"
+
 
             //pitching
             baseballFiles = 
@@ -102,7 +102,6 @@ public class Parser {
                         currentID = currentLine[i] + currentID;
                     }
 
-                    float eval = -1;
                     currentPlayer = Env.AllPlayers.get(currentID);
 
                     //player has not been added yet
@@ -118,6 +117,8 @@ public class Parser {
                     }
                     //player has been added
                     else{ 
+
+
                         currentPlayerArray = parseStatLine(currentLine, currentPlayerArray.length, lineSize, currentID.length());
                         //if the player is a pitcher and has batting stats, new batter must be created
                         if(statType == 1  && currentPlayer.getPosition().equals("P")){
@@ -158,7 +159,11 @@ public class Parser {
                             
                             
                         }
+                        if(statType == 0 && fileIndex == 2){
+                            currentPlayer.resetStatYearsCounted();
+                        }
                     }
+
                     currentID = "";
                 }
                 

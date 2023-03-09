@@ -89,19 +89,31 @@ public class Pitcher extends Player {
             // System.out.println(i);
             // System.out.println(array[i]);
             // System.out.println(Env.getPitchingWeights(i));
-            score += array[i] * Env.getPitchingWeights(i);
+            score += array[i] * Env.getPitchingWeights(i) / getGamesPlayed();
         }
-
 
        // score *= Math.max(0.01f, array[25])  * Env.getPitchingWeights(25);
         //score /= Math.max(0.01f, array[26]) * Env.getPitchingWeights(26);
-        score /= Math.max(0.01f, array[39]) * Env.getPitchingWeights(39);
-        score /= Math.max(0.01f, array[40]) * Env.getPitchingWeights(40);
-
+        
       //  score *= Math.max(0.01f, array[27]) * Env.getPitchingWeights(27);
-        score *= Math.max(0.01f, array[28]) * Env.getPitchingWeights(28);
-        score *= Math.max(0.01f, array[38]) * Env.getPitchingWeights(38);
 
-        return (score / 162f );
+        if(Env.getPitchingWeights(28) > 0){
+            score *= Math.max(0.01f, array[28]) * Env.getPitchingWeights(28);
+        }
+
+        if(Env.getPitchingWeights(38) > 0){
+            score *= Math.max(0.01f, array[38]) * Env.getPitchingWeights(38);
+        }
+        
+        
+        if(Env.getPitchingWeights(39) > 0){
+            score *= 1 - (array[39]* Env.getPitchingWeights(39)) / 10 ;
+        }
+
+        if(Env.getPitchingWeights(40) > 0){
+            score *= 1 - (array[40]* Env.getPitchingWeights(40)) / 10 ;
+        }
+
+        return score * array[2] / 12f;
     }
 }

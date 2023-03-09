@@ -82,7 +82,9 @@ public class Batter extends Player {
         }
 
         for(int i = 23; i < 28; i++){
-            score *= Math.max(1, Math.max(0.01f, array[i]) * Env.getBattingWeights(i));
+            if(Env.getBattingWeights(i) > 0){
+                score *= array[i] * Env.getBattingWeights(i);
+            }
         }
         //TODO: replace with += OPS+
        // score *= Math.max(0.01f, array[26]) * Env.getBattingWeights(26);

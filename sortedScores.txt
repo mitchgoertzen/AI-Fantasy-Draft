@@ -1,4788 +1,4788 @@
 1. Freddie Freeman, 1B
-Score: 540.0
+Score: 253.60458
 
-2. Josï¿½ Ramï¿½rez, 3B
-Score: 480.99997
+2. Trea Turner, SS
+Score: 216.42802
 
-3. Aaron Judge, OF
-Score: 480.0
+3. Paul Goldschmidt, 1B
+Score: 201.67609
 
-4. Trea Turner, SS
-Score: 466.0
+4. Luis Arraez, 1B-2B-3B
+Score: 196.81026
 
-5. Steven Kwan, OF
-Score: 460.0
+5. Aaron Judge, OF
+Score: 195.22768
 
-6. Luis Arraez, 1B-2B-3B
-Score: 454.0
+6. José Ramírez, 3B
+Score: 193.6134
 
-7. Paul Goldschmidt, 1B
-Score: 446.00006
+7. Gerrit Cole, P
+Score: 191.75307
 
-8. Francisco Lindor, SS
-Score: 430.99997
+8. José Abreu, 1B
+Score: 184.93652
 
-9. Pete Alonso, 1B
-Score: 427.00006
+9. Vladimir Guerrero Jr., 1B-3B
+Score: 184.54224
 
-10. Josï¿½ Abreu, 1B
-Score: 423.0
+10. Manny Machado, 3B
+Score: 184.33673
 
-11. Vladimir Guerrero Jr., 1B-3B
-Score: 420.0
+11. Aaron Nola, P
+Score: 182.17677
 
-12. Alex Bregman, 3B
-Score: 419.99997
+12. Corbin Burnes, P
+Score: 180.35774
 
-13. Jeff McNeil, 2B-OF-3B
-Score: 417.00003
+13. Xander Bogaerts, SS
+Score: 179.49542
 
-14. Manny Machado, 3B
-Score: 415.00003
+14. Bo Bichette, SS
+Score: 177.58981
 
-15. Nolan Arenado, 3B
-Score: 414.0
+15. Jeff McNeil, 2B-OF-3B
+Score: 177.11497
 
 16. Jose Altuve, 2B
-Score: 405.99997
+Score: 175.17216
 
-17. Marcus Semien, 2B-SS
-Score: 405.99997
+17. Sandy Alcantara, P
+Score: 173.00557
 
-18. Amed Rosario, SS-OF
-Score: 403.0
+18. Nolan Arenado, 3B
+Score: 166.82933
 
 19. Juan Soto, OF
-Score: 400.00006
+Score: 165.87286
 
-20. Xander Bogaerts, SS
-Score: 393.00003
+20. Alex Verdugo, OF
+Score: 163.43456
 
-21. Bo Bichette, SS
-Score: 393.0
+21. Robbie Ray, P
+Score: 162.5
 
-22. Mookie Betts, OF-2B
-Score: 392.0
+22. Amed Rosario, SS-OF
+Score: 161.7543
 
-23. Brandon Nimmo, OF
-Score: 389.0
+23. Rafael Devers, 3B
+Score: 160.33292
 
-24. Kyle Tucker, OF
-Score: 388.00006
+24. Yu Darvish, P
+Score: 158.89485
 
-25. Yandy Dï¿½az, 3B-1B
-Score: 387.00003
+25. Pete Alonso, 1B
+Score: 158.85791
 
-26. Alex Verdugo, OF
-Score: 387.0
+26. Dylan Cease, P
+Score: 157.09685
 
-27. Yordan Alvarez, OF
-Score: 385.00003
+27. Yandy Díaz, 3B-1B
+Score: 156.56264
 
-28. Tommy Edman, SS-2B-3B-OF
-Score: 377.0
+28. Francisco Lindor, SS
+Score: 156.39502
 
-29. Dansby Swanson, SS
-Score: 376.0
+29. Shane Bieber, P
+Score: 154.45615
 
-30. Josh Bell, 1B
-Score: 373.0
+30. Carlos Rodón, P
+Score: 152.36885
 
-31. Cedric Mullins, OF
-Score: 370.0
+31. Mookie Betts, OF-2B
+Score: 151.98544
 
-32. Rafael Devers, 3B
-Score: 369.00003
+32. Kyle Tucker, OF
+Score: 151.47206
 
-33. Corey Seager, SS
-Score: 364.00003
+33. Marcus Semien, 2B-SS
+Score: 150.67795
 
-34. Alejandro Kirk, C
-Score: 362.00006
+34. Nathaniel Lowe, 1B
+Score: 150.4951
 
-35. Alec Bohm, 3B-1B
-Score: 362.0
+35. Carlos Correa, SS
+Score: 149.68973
 
-36. George Springer, OF
-Score: 355.99997
+36. Tommy Edman, SS-2B-3B-OF
+Score: 149.1645
 
-37. Nathaniel Lowe, 1B
-Score: 355.00003
+37. Max Scherzer, P
+Score: 149.00127
 
-38. Christian Yelich, OF
-Score: 347.99997
+38. Kevin Gausman, P
+Score: 148.60739
 
-39. Jake Cronenworth, 2B-1B-SS
-Score: 347.0
+39. Framber Valdez, P
+Score: 147.73578
 
-40. Ty France, 1B-3B-2B
-Score: 342.99997
+40. Dansby Swanson, SS
+Score: 147.42183
 
-41. Jurickson Profar, OF
-Score: 342.00003
+41. Cedric Mullins, OF
+Score: 146.7002
 
-42. Nico Hoerner, SS-3B
-Score: 339.00003
+42. Starling Marte, OF
+Score: 146.68239
 
-43. Andrew Benintendi, OF
-Score: 337.00003
+43. Brandon Nimmo, OF
+Score: 146.57315
 
-44. Christian Walker, 1B
-Score: 336.99997
+44. Ty France, 1B-3B-2B
+Score: 145.05286
 
-45. DJ LeMahieu, 3B-2B-1B
-Score: 334.00003
+45. Shohei Ohtani, P
+Score: 144.8
 
-46. Carlos Correa, SS
-Score: 331.0
+46. Alex Bregman, 3B
+Score: 144.5855
 
-47. Austin Riley, 3B-1B
-Score: 330.99997
+47. Brandon Woodruff, P
+Score: 143.21536
 
-48. Bobby Witt, SS-3B
-Score: 329.99997
+48. Zack Wheeler, P
+Score: 142.75558
 
-49. Isiah Kiner-Falefa, SS-3B
-Score: 327.00003
+49. Andrew Benintendi, OF
+Score: 142.59964
 
-50. Randy Arozarena, OF
-Score: 327.00003
+50. DJ LeMahieu, 3B-2B-1B
+Score: 142.40956
 
-51. Will Smith, C
-Score: 327.0
+51. Josh Bell, 1B
+Score: 141.08215
 
-52. J.T. Realmuto, C-1B
-Score: 327.0
+52. Joe Musgrove, P
+Score: 139.95284
 
-53. Andrï¿½s Gimï¿½nez, 2B-SS
-Score: 323.00003
+53. Charlie Morton, P
+Score: 139.40288
 
-54. Anthony Santander, OF
-Score: 319.0
+54. Austin Riley, 3B-1B
+Score: 139.09561
 
 55. Justin Turner, 3B
-Score: 317.0
+Score: 137.474
 
-56. Adam Frazier, 2B-OF-SS
-Score: 316.0
+56. Alec Bohm, 3B-1B
+Score: 137.26965
 
-57. Brendan Rodgers, 2B
-Score: 314.00003
+57. Steven Kwan, OF
+Score: 137.26465
 
-58. Taylor Ward, OF-3B
-Score: 314.00003
+58. Isiah Kiner-Falefa, SS-3B
+Score: 135.21571
 
-59. Gio Urshela, 3B-SS
-Score: 314.0
+59. Whit Merrifield, 2B-OF-1B-P
+Score: 134.11948
 
-60. Thairo Estrada, 2B-SS-OF-3B
-Score: 313.99997
+60. Zac Gallen, P
+Score: 133.26985
 
-61. Starling Marte, OF
-Score: 313.0
+61. Corey Seager, SS
+Score: 132.96053
 
-62. Julio Rodrï¿½guez, OF
-Score: 313.0
+62. Lucas Giolito, P
+Score: 130.13777
 
-63. Matt Olson, 1B
-Score: 311.99997
+63. Luis Castillo, P
+Score: 129.56258
 
-64. Ian Happ, OF
-Score: 310.99997
+64. Max Fried, P
+Score: 129.44879
 
-65. J.P. Crawford, SS
-Score: 309.00003
+65. Jake Cronenworth, 2B-1B-SS
+Score: 129.34251
 
-66. Whit Merrifield, 2B-OF-1B-P
-Score: 309.00003
+66. Charlie Blackmon, OF
+Score: 128.8893
 
-67. Adolis Garcï¿½a, OF
-Score: 307.00003
+67. Bryce Harper, OF
+Score: 128.78836
 
-68. Elvis Andrus, SS
-Score: 306.00003
+68. Adam Frazier, 2B-OF-SS
+Score: 128.77502
 
-69. Josh Rojas, 3B-2B
-Score: 305.0
+69. George Springer, OF
+Score: 128.11185
 
-70. Myles Straw, OF
-Score: 303.0
+70. J.T. Realmuto, C-1B
+Score: 127.80132
 
-71. Kyle Farmer, SS-3B-1B
-Score: 302.0
+71. Alek Manoah, P
+Score: 127.24354
 
-72. Charlie Blackmon, OF
-Score: 301.00003
+72. Triston McKenzie, P
+Score: 126.902
 
-73. Andrew Vaughn, OF-1B-2B
-Score: 301.0
+73. Bryan Reynolds, OF
+Score: 126.88455
 
-74. Brandon Drury, 3B-1B-2B-SS-OF
-Score: 298.99997
+74. Julio Urías, P
+Score: 126.602165
 
-75. Ha-Seong Kim, SS-3B
-Score: 296.99997
+75. Alejandro Kirk, C
+Score: 126.5691
 
-76. C.J. Cron, 1B
-Score: 296.0
+76. Lourdes Gurriel Jr., OF-1B
+Score: 126.5601
 
-77. Mark Canha, OF-3B-1B
-Score: 295.0
+77. Chris Bassitt, P
+Score: 125.5
 
-78. Tony Kemp, 2B-OF
-Score: 294.99997
+78. José Iglesias, SS
+Score: 124.8138
 
-79. Brendan Donovan, OF-2B-3B-1B-SS
-Score: 294.0
+79. Randy Arozarena, OF
+Score: 124.62625
 
-80. Bryan Reynolds, OF
-Score: 291.99997
+80. Yuli Gurriel, 1B
+Score: 124.451515
 
-81. Wilmer Flores, 2B-1B-3B
-Score: 291.0
+81. Gio Urshela, 3B-SS
+Score: 123.9054
 
-82. Rhys Hoskins, 1B
-Score: 290.00003
+82. J.P. Crawford, SS
+Score: 122.98526
 
-83. Yuli Gurriel, 1B
-Score: 286.99997
+83. Christian Yelich, OF
+Score: 122.6497
 
-84. Ronald Acuna Jr., OF
-Score: 286.0
+84. Will Smith, C
+Score: 121.88014
 
-85. Gleyber Torres, 2B-SS
-Score: 286.0
+85. Nelson Cruz, D/H
+Score: 121.50257
 
-86. Santiago Espinal, 2B-3B-SS
-Score: 284.00003
+86. Merrill Kelly, P
+Score: 121.12716
 
-87. Cï¿½sar Hernï¿½ndez, 2B-OF-3B
-Score: 284.0
+87. Nico Hoerner, SS-3B
+Score: 120.908676
 
-88. Lourdes Gurriel Jr., OF-1B
-Score: 281.00003
+88. Matt Olson, 1B
+Score: 120.629196
 
-89. Josï¿½ Iglesias, SS
-Score: 281.0
+89. Tim Anderson, SS
+Score: 119.92487
 
-90. Willy Adames, SS
-Score: 278.0
+90. J.D. Martinez, D
+Score: 119.73475
 
-91. Andrew McCutchen, OF
-Score: 278.0
+91. Shane McClanahan, P
+Score: 119.62222
 
-92. Sean Murphy, C
-Score: 277.00003
+92. Logan Webb, P
+Score: 119.227905
 
-93. Rowdy Tellez, 1B
-Score: 273.00003
+93. Nick Castellanos, OF
+Score: 118.91435
 
-94. Kyle Schwarber, OF
-Score: 272.0
+94. Adam Wainwright, P
+Score: 118.73162
 
-95. Josh Naylor, 1B-OF
-Score: 272.0
+95. Germán Márquez, P
+Score: 118.57929
 
-96. Michael Harris, OF
-Score: 270.0
+96. Andrés Giménez, 2B-SS
+Score: 117.310265
 
-97. Tommy Pham, OF
-Score: 269.99997
+97. José Berríos, P
+Score: 116.29697
 
-98. Anthony Rizzo, 1B
-Score: 269.00003
+98. Mark Canha, OF-3B-1B
+Score: 116.21606
 
-99. Daulton Varsho, OF-C
-Score: 267.00003
+99. C.J. Cron, 1B
+Score: 114.764824
 
-100. Ryan Mountcastle, 1B
-Score: 267.0
+100. Jurickson Profar, OF
+Score: 114.13345
 
-101. Harold Ramï¿½rez, 1B-OF
-Score: 266.0
+101. Ian Happ, OF
+Score: 114.01929
 
-102. Gavin Lux, 2B-OF-SS
-Score: 266.0
+102. Brendan Rodgers, 2B
+Score: 113.96658
 
-103. Bryce Harper, OF
-Score: 263.0
+103. Ronald Acuna Jr., OF
+Score: 112.975105
 
-104. Austin Hays, OF
-Score: 262.99997
+104. Josh Rojas, 3B-2B
+Score: 112.85799
 
-105. Nick Castellanos, OF
-Score: 260.00003
+105. Pablo López, P
+Score: 111.5875
 
-106. Kolten Wong, 2B-SS
-Score: 260.0
+106. Jean Segura, 2B-SS
+Score: 111.57081
 
-107. Mike Trout, OF
-Score: 259.00003
+107. Taylor Ward, OF-3B
+Score: 111.5633
 
-108. Ketel Marte, 2B
-Score: 259.0
+108. Teoscar Hernández, OF
+Score: 111.49618
 
-109. Yonathan Daza, OF
-Score: 257.0
+109. Nick Pivetta, P
+Score: 111.04971
 
-110. Ryan McMahon, 3B-2B-1B
-Score: 256.99997
+110. Christian Walker, 1B
+Score: 110.89078
 
-111. Jesse Winker, OF
-Score: 256.00003
+111. Kyle Farmer, SS-3B-1B
+Score: 110.63436
 
-112. Luis Rengifo, 2B-3B-SS-OF
-Score: 256.0
+112. César Hernández, 2B-OF-3B
+Score: 109.14996
 
-113. Ke'Bryan Hayes, 3B-SS
-Score: 254.0
+113. Sean Manaea, P
+Score: 109.104126
 
-114. Randal Grichuk, OF-P
-Score: 253.00002
+114. Myles Straw, OF
+Score: 108.68666
 
-115. Jeremy Peï¿½a, SS
-Score: 253.00002
+115. Logan Gilbert, P
+Score: 108.59376
 
-116. AJ Pollock, OF
-Score: 252.99998
+116. Harold Ramírez, 1B-OF
+Score: 107.92268
 
-117. Matt Chapman, 3B
-Score: 250.0
+117. Frankie Montas, P
+Score: 107.557465
 
-118. Adley Rutschman, C
-Score: 248.00002
+118. Gleyber Torres, 2B-SS
+Score: 107.40931
 
-119. Jose Miranda, 1B-3B
-Score: 247.00002
+119. Justin Verlander, P
+Score: 107.171425
 
-120. Luis Robert, OF
-Score: 246.99995
+120. Elvis Andrus, SS
+Score: 106.768234
 
-121. Trey Mancini, 1B-OF
-Score: 243.0
+121. Raimel Tapia, OF
+Score: 105.42407
 
-122. Hunter Renfroe, OF-1B
-Score: 241.99998
+122. Lance Lynn, P
+Score: 105.111115
 
-123. Teoscar Hernï¿½ndez, OF
-Score: 241.0
+123. Luis Garcia, P
+Score: 105.10926
 
-124. Miguel Rojas, SS-1B
-Score: 239.00003
+124. Jordan Montgomery, P
+Score: 105.024536
 
-125. Eugenio Suï¿½rez, 3B
-Score: 239.00002
+125. Blake Snell, P
+Score: 104.866394
 
-126. Javier Bï¿½ez, SS
-Score: 235.00002
+126. Santiago Espinal, 2B-3B-SS
+Score: 104.85468
 
-127. Joc Pederson, OF
-Score: 235.0
+127. Adolis García, OF
+Score: 104.04434
 
-128. Bryson Stott, SS-2B-3B
-Score: 235.0
+128. Luis Robert, OF
+Score: 104.01717
 
-129. Jean Segura, 2B-SS
-Score: 234.99998
+129. Anthony Santander, OF
+Score: 103.97943
 
-130. Christian Vï¿½zquez, C-1B-2B
-Score: 233.00002
+130. Tony Kemp, 2B-OF
+Score: 103.50912
 
-131. Carlos Santana, 1B-OF
-Score: 232.00002
+131. Kyle Wright, P
+Score: 103.44968
 
-132. Eric Hosmer, 1B
-Score: 232.0
+132. Kyle Gibson, P
+Score: 103.218994
 
-133. Nicky Lopez, 2B-SS-3B-P
-Score: 232.0
+133. Clayton Kershaw, P
+Score: 102.423454
 
-134. Max Kepler, OF
-Score: 231.0
+134. Ryan Mountcastle, 1B
+Score: 102.40584
 
-135. Raimel Tapia, OF
-Score: 230.0
+135. Rhys Hoskins, 1B
+Score: 102.22955
 
-136. Tim Anderson, SS
-Score: 227.99998
+136. Jordan Lyles, P
+Score: 102.07022
 
-137. Max Muncy, 3B-2B-1B
-Score: 226.99998
+137. Tyler Anderson, P
+Score: 101.638695
 
-138. Lane Thomas, OF
-Score: 226.00003
+138. Eric Hosmer, 1B
+Score: 101.60384
 
-139. Jorge Polanco, 2B-SS
-Score: 226.00002
+139. Wilmer Flores, 2B-1B-3B
+Score: 101.252045
 
-140. Eduardo Escobar, 3B-2B
-Score: 225.99998
+140. Kolten Wong, 2B-SS
+Score: 101.073
 
-141. Wander Franco, SS
-Score: 224.99997
+141. Martín Pérez, P
+Score: 100.52056
 
-142. Keibert Ruiz, C
-Score: 224.0
+142. AJ Pollock, OF
+Score: 100.38711
 
-143. Willson Contreras, C
-Score: 220.99998
+143. Randal Grichuk, OF-P
+Score: 100.351776
 
-144. Jake McCarthy, OF
-Score: 220.99997
+144. Thairo Estrada, 2B-SS-OF-3B
+Score: 100.27302
 
-145. Harold Castro, 1B-3B-SS-2B-OF-P
-Score: 219.99998
+145. Austin Hays, OF
+Score: 99.70666
 
-146. Seth Brown, 1B-OF
-Score: 219.99997
+146. Andrew McCutchen, OF
+Score: 99.69357
 
-147. Owen Miller, 1B-2B-3B
-Score: 218.00002
+147. Brady Singer, P
+Score: 99.590645
 
-148. Travis d'Arnaud, C
-Score: 217.99998
+148. Gavin Lux, 2B-OF-SS
+Score: 98.47941
 
-149. Jon Berti, 2B-3B-OF-SS
-Score: 217.0
+149. Christian Vázquez, C-1B-2B
+Score: 98.23156
 
-150. Dylan Carlson, OF
-Score: 216.0
+150. Jameson Taillon, P
+Score: 98.10543
 
-151. MJ Melendez, C-OF
-Score: 214.00002
+151. Willy Adames, SS
+Score: 98.087494
 
-152. Luis Urï¿½as, 3B-2B-SS
-Score: 213.00002
+152. Jesse Winker, OF
+Score: 97.77947
 
-153. Mike Yastrzemski, OF
-Score: 213.0
+153. Ryan McMahon, 3B-2B-1B
+Score: 97.699745
 
-154. Salvador Perez, C
-Score: 212.00003
+154. Ketel Marte, 2B
+Score: 97.59557
 
-155. Albert Pujols, 1B-P
-Score: 212.0
+155. Mike Trout, OF
+Score: 97.52804
 
-156. Austin Nola, C-2B-3B
-Score: 211.00002
+156. Shohei Ohtani_h, D1/H
+Score: 97.47441
 
-157. Daniel Vogelbach, 1B
-Score: 211.0
+157. Nicky Lopez, 2B-SS-3B-P
+Score: 96.73446
 
-158. Seiya Suzuki, OF
-Score: 211.0
+158. Tyler Mahle, P
+Score: 96.2528
 
-159. Michael A. Taylor, OF-P
-Score: 209.99998
+159. Miguel Rojas, SS-1B
+Score: 95.840164
 
-160. Connor Joe, OF-1B
-Score: 209.0
+160. Michael Brantley, OF
+Score: 95.465744
 
-161. Brandon Crawford, SS
-Score: 206.00002
+161. Eric Lauer, P
+Score: 95.423065
 
-162. Manuel Margot, OF
-Score: 206.0
+162. Cristian Javier, P
+Score: 95.37086
 
-163. Geraldo Perdomo, SS-3B-2B
-Score: 205.0
+163. Jorge Polanco, 2B-SS
+Score: 95.30713
 
-164. Aaron Hicks, OF
-Score: 203.99998
+164. Hunter Renfroe, OF-1B
+Score: 95.26608
 
-165. Cody Bellinger, OF
-Score: 203.0
+165. Tommy Pham, OF
+Score: 94.743416
 
-166. Jonah Heim, C
-Score: 202.00003
+166. Salvador Perez, C
+Score: 94.42606
 
-167. David Peralta, OF
-Score: 201.00002
+167. Nestor Cortes, P
+Score: 93.554634
 
-168. Jorge Mateo, SS
-Score: 200.99998
+168. Anthony Rizzo, 1B
+Score: 92.66626
 
-169. Ramï¿½n Urï¿½as, 3B-2B-SS
-Score: 199.99997
+169. Taijuan Walker, P
+Score: 92.108055
 
-170. Oscar Gonzalez, OF
-Score: 199.00002
+170. Ke'Bryan Hayes, 3B-SS
+Score: 91.86615
 
-171. Josh Harrison, 2B-3B-OF-P-SS
-Score: 199.0
+171. Patrick Sandoval, P
+Score: 91.83329
 
-172. Josh Donaldson, 3B
-Score: 198.00002
+172. Cole Irvin, P
+Score: 91.78083
 
-173. Nick Gordon, OF-2B-SS-3B-P
-Score: 194.0
+173. Brandon Drury, 3B-1B-2B-SS-OF
+Score: 91.67581
 
-174. Eloy Jimï¿½nez, OF
-Score: 193.99998
+174. Sean Murphy, C
+Score: 91.114395
 
-175. Marcell Ozuna, OF
-Score: 193.0
+175. Brandon Crawford, SS
+Score: 91.060776
 
-176. Jonathan India, 2B
-Score: 192.99997
+176. Nathan Eovaldi, P
+Score: 90.87939
 
-177. Tyler O'Neill, OF
-Score: 188.99998
+177. Manuel Margot, OF
+Score: 90.35996
 
-178. Joey Wendle, 3B-SS-2B
-Score: 187.99997
+178. Jon Gray, P
+Score: 90.11392
 
-179. Enrique Hernï¿½ndez, OF-2B-SS
-Score: 186.00002
+179. Kyle Freeland, P
+Score: 89.57223
 
-180. Alek Thomas, OF
-Score: 186.00002
+180. Josh Harrison, 2B-3B-OF-P-SS
+Score: 89.17308
 
-181. Luis Guillorme, 2B-3B-SS
-Score: 185.99998
+181. Josh Naylor, 1B-OF
+Score: 89.091125
 
-182. Nick Senzel, OF-3B-2B
-Score: 185.99998
+182. Alex Cobb, P
+Score: 89.06205
 
-183. Vinnie Pasquantino, 1B
-Score: 185.00002
+183. Jacob deGrom, P
+Score: 89.05167
 
-184. William Contreras, C-OF
-Score: 184.0
+184. Eduardo Escobar, 3B-2B
+Score: 88.87453
 
-185. Ben Gamel, OF-1B
-Score: 184.0
+185. Julio Rodríguez, OF
+Score: 88.81604
 
-186. Jesï¿½s Aguilar, 1B-3B
-Score: 183.0
+186. Miles Mikolas, P
+Score: 88.40741
 
-187. Chas McCormick, OF
-Score: 183.0
+187. Carlos Carrasco, P
+Score: 87.19571
 
-188. Luke Voit, 1B
-Score: 182.99998
+188. Kyle Schwarber, OF
+Score: 87.188416
 
-189. Rafael Ortega, OF
-Score: 182.0
+189. Harold Castro, 1B-3B-SS-2B-OF-P
+Score: 87.11435
 
-190. Hunter Dozier, 1B-OF-3B-P
-Score: 181.0
+190. JT Brubaker, P
+Score: 87.0777
 
-191. Garrett Cooper, 1B
-Score: 180.00002
+191. José Urquidy, P
+Score: 86.966805
 
-192. Jose Trevino, C
-Score: 179.00002
+192. Joc Pederson, OF
+Score: 86.754135
 
-193. Gavin Sheets, OF-1B
-Score: 176.00002
+193. Javier Báez, SS
+Score: 85.96891
 
-194. Michael Brantley, OF
-Score: 176.0
+194. David Peralta, OF
+Score: 85.848755
 
-195. Lars Nootbaar, OF
-Score: 175.99998
+195. Patrick Corbin, P
+Score: 85.54832
 
-196. Christian Arroyo, 2B-OF-SS-3B-1B
-Score: 174.0
+196. Tarik Skubal, P
+Score: 85.1184
 
-197. Trevor Story, 2B
-Score: 173.99998
+197. Daulton Varsho, OF-C
+Score: 84.18632
 
-198. Giancarlo Stanton, OF
-Score: 173.99998
+198. Alex Wood, P
+Score: 84.00001
 
-199. Matt Vierling, OF-3B-2B-1B
-Score: 173.0
+199. Sonny Gray, P
+Score: 83.858826
 
-200. Rougned Odor, 2B-3B
-Score: 172.0
+200. Josiah Gray, P
+Score: 83.80912
 
-201. Isaac Paredes, 3B-2B-1B-SS
-Score: 170.0
+201. Bobby Witt, SS-3B
+Score: 83.75633
 
-202. Jeimer Candelario, 3B
-Score: 170.0
+202. Luis Rengifo, 2B-3B-SS-OF
+Score: 83.03067
 
-203. Luis Garcï¿½a, SS-2B
-Score: 170.0
+203. Brendan Donovan, OF-2B-3B-1B-SS
+Score: 82.711
 
-204. Riley Greene, OF
-Score: 168.0
+204. Marcus Stroman, P
+Score: 82.623146
 
-205. Willi Castro, OF-2B-SS-3B
-Score: 167.99997
+205. Luis Urías, 3B-2B-SS
+Score: 82.49865
 
-206. Austin Slater, OF
-Score: 167.99997
+206. Dylan Carlson, OF
+Score: 81.30759
 
-207. Kevin Newman, 2B-SS
-Score: 167.0
+207. Miguel Cabrera, D/H
+Score: 81.295334
 
-208. Luis Gonzï¿½lez, OF-P
-Score: 167.0
+208. Cal Quantrill, P
+Score: 81.00277
 
-209. Harrison Bader, OF
-Score: 166.0
+209. Rowdy Tellez, 1B
+Score: 80.83429
 
-210. Robbie Grossman, OF
-Score: 162.99998
+210. Joey Wendle, 3B-SS-2B
+Score: 80.81608
 
-211. Jonathan Schoop, 2B-1B
-Score: 162.0
+211. Joe Ryan, P
+Score: 80.67936
 
-212. Aledmys Dï¿½az, OF-2B-SS-3B-1B
-Score: 162.0
+212. Marco Gonzales, P
+Score: 80.62328
 
-213. Leody Taveras, OF
-Score: 160.00002
+213. Johnny Cueto, P
+Score: 80.2575
 
-214. Yadiel Hernï¿½ndez, OF
-Score: 157.00002
+214. Michael Harris, OF
+Score: 80.21739
 
-215. Brandon Marsh, OF
-Score: 156.00002
+215. Dane Dunning, P
+Score: 79.96852
 
-216. Ji-Man Choi, 1B
-Score: 156.0
+216. Michael A. Taylor, OF-P
+Score: 79.651215
 
-217. Tyrone Taylor, OF
-Score: 155.99998
+217. Jesús Aguilar, 1B-3B
+Score: 79.60374
 
-218. Trent Grisham, OF
-Score: 155.99998
+218. Matt Chapman, 3B
+Score: 78.8692
 
-219. Maikel Franco, 3B-1B
-Score: 154.0
+219. Corey Kluber, P
+Score: 78.37499
 
-220. Elias Dï¿½az, C
-Score: 154.0
+220. Eloy Jiménez, OF
+Score: 78.37106
 
-221. Corey Dickerson, OF-P
-Score: 153.99998
+221. Max Muncy, 3B-2B-1B
+Score: 77.92495
 
-222. Darin Ruf, 1B-OF-P
-Score: 152.00002
+222. Eugenio Suárez, 3B
+Score: 77.82458
 
-223. Christopher Morel, OF-2B-3B-SS
-Score: 152.0
+223. Madison Bumgarner, P
+Score: 77.64979
 
-224. Patrick Wisdom, 3B-1B-OF
-Score: 151.99997
+224. Carlos Santana, 1B-OF
+Score: 77.48709
 
-225. Emmanuel Rivera, 3B-1B
-Score: 150.0
+225. Willson Contreras, C
+Score: 77.46233
 
-226. Jace Peterson, 3B-OF-1B-2B-P
-Score: 149.99998
+226. Max Kepler, OF
+Score: 76.988266
 
-227. Victor Robles, OF
-Score: 149.00002
+227. Travis d'Arnaud, C
+Score: 76.87174
 
-228. Yoï¿½n Moncada, 3B
-Score: 149.00002
+228. Trevor Story, 2B
+Score: 76.76443
 
-229. Joey Meneses, 1B-OF
-Score: 148.0
+229. Albert Pujols, 1B-P
+Score: 76.56839
 
-230. Bryan De La Cruz, OF
-Score: 146.99998
+230. Austin Nola, C-2B-3B
+Score: 76.25933
 
-231. Danny Jansen, C
-Score: 146.99998
+231. David Fletcher, 2B-SS
+Score: 75.95905
 
-232. Gilberto Celestino, OF
-Score: 145.99997
+232. Spencer Strider, P
+Score: 75.69892
 
-233. Byron Buxton, OF
-Score: 144.00002
+233. Mitch Keller, P
+Score: 75.27423
 
-234. Eric Haase, C-OF
-Score: 144.0
+234. Kevin Newman, 2B-SS
+Score: 73.65387
 
-235. Carson Kelly, C-P
-Score: 143.99998
+235. Tony Gonsolin, P
+Score: 73.65089
 
-236. Jacob Stallings, C
-Score: 143.0
+236. Ozzie Albies, 2B
+Score: 73.64043
 
-237. Donovan Solano, 1B-3B-2B
-Score: 141.99998
+237. Josh Donaldson, 3B
+Score: 73.55235
 
-238. Christian Bethancourt, C-1B-P-3B
-Score: 141.99998
+238. Jeimer Candelario, 3B
+Score: 73.50213
 
-239. Ozzie Albies, 2B
-Score: 141.0
+239. Hunter Greene, P
+Score: 73.468056
 
-240. Gary Sanchez, C-1B
-Score: 141.0
+240. Mike Yastrzemski, OF
+Score: 73.40785
 
-241. CJ Abrams, SS-2B-OF
-Score: 140.0
+241. Walker Buehler, P
+Score: 73.31965
 
-242. Taylor Walls, SS-2B-3B
-Score: 139.99998
+242. Tyler O'Neill, OF
+Score: 73.11372
 
-243. Victor Reyes, OF
-Score: 134.0
+243. Rich Hill, P
+Score: 72.988556
 
-244. Cal Raleigh, C
-Score: 134.0
+244. Michael Wacha, P
+Score: 72.44528
 
-245. Michael Chavis, 1B-2B-3B
-Score: 133.0
+245. Lane Thomas, OF
+Score: 72.41251
 
-246. Brian Anderson, 3B-OF-2B
-Score: 133.0
+246. Jesús Luzardo, P
+Score: 72.397865
 
-247. Tyler Naquin, OF
-Score: 131.00002
+247. Enrique Hernández, OF-2B-SS
+Score: 71.35997
 
-248. Oneil Cruz, SS-OF
-Score: 131.0
+248. Ramón Urías, 3B-2B-SS
+Score: 71.10095
 
-249. Jazz Chisholm Jr., 2B
-Score: 131.0
+249. Jonathan Schoop, 2B-1B
+Score: 71.0231
 
-250. Ramï¿½n Laureano, OF
-Score: 130.0
+250. Zach Plesac, P
+Score: 70.79667
 
-251. Mauricio Dubï¿½n, OF-SS-2B-3B
-Score: 130.0
+251. Keibert Ruiz, C
+Score: 70.79569
 
-252. TJ Friedl, OF
-Score: 130.0
+252. Andrew Heaney, P
+Score: 70.21032
 
-253. Jackie Bradley Jr., OF-P
-Score: 129.0
+253. Trevor Rogers, P
+Score: 70.14583
 
-254. Yasmani Grandal, C-1B
-Score: 129.0
+254. Jon Berti, 2B-3B-OF-SS
+Score: 70.0322
 
-255. Jake Fraley, OF
-Score: 128.00002
+255. Donovan Solano, 1B-3B-2B
+Score: 69.84212
 
-256. J.D. Davis, 3B-1B-OF
-Score: 127.99999
+256. Garrett Cooper, 1B
+Score: 69.47274
 
-257. David Fletcher, 2B-SS
-Score: 127.00001
+257. Ian Anderson, P
+Score: 68.917595
 
-258. Nick Fortes, C-1B
-Score: 127.0
+258. Luis Guillorme, 2B-3B-SS
+Score: 68.6265
 
-259. Yan Gomes, C
-Score: 127.0
+259. Robbie Grossman, OF
+Score: 67.90456
 
-260. Franmil Reyes, OF-P
-Score: 126.00004
+260. Aaron Civale, P
+Score: 67.57087
 
-261. Abraham Toro, 2B-3B-1B-OF
-Score: 126.0
+261. Ranger Suárez, P
+Score: 67.465385
 
-262. Frank Schwindel, 1B-P
-Score: 125.00001
+262. Corey Dickerson, OF-P
+Score: 66.85548
 
-263. Spencer Torkelson, 1B
-Score: 125.0
+263. Luis García, SS-2B
+Score: 66.63455
 
-264. Jared Walsh, 1B-OF
-Score: 123.00001
+264. José Quintana, P
+Score: 66.45653
 
-265. Chris Taylor, OF-2B-3B-SS
-Score: 122.00001
+265. Daniel Vogelbach, 1B
+Score: 66.294495
 
-266. Ildemaro Vargas, 3B-SS-2B-P
-Score: 122.0
+266. Zach Davies, P
+Score: 66.23846
 
-267. Avisaï¿½l Garcï¿½a, OF
-Score: 121.000015
+267. Jose Miranda, 1B-3B
+Score: 66.20045
 
-268. Joey Votto, 1B
-Score: 121.0
+268. Harrison Bader, OF
+Score: 66.158264
 
-269. Wil Myers, OF-1B-P-3B
-Score: 120.999985
+269. Marcell Ozuna, OF
+Score: 66.061905
 
-270. Evan Longoria, 3B
-Score: 119.99999
+270. Lance McCullers Jr., P
+Score: 65.32193
 
-271. Reese McGuire, C-P
-Score: 119.99999
+271. Mike Minor, P
+Score: 65.26026
 
-272. Dylan Moore, OF-SS-2B-1B-3B
-Score: 118.000015
+272. Seth Brown, 1B-OF
+Score: 65.02297
 
-273. Chad Pinder, OF-3B-1B-P-2B
-Score: 117.99999
+273. Christian Arroyo, 2B-OF-SS-3B-1B
+Score: 64.97162
 
-274. Francisco Mejï¿½a, C-1B
-Score: 117.0
+274. Jeremy Peña, SS
+Score: 64.099815
 
-275. Leury Garcia, 2B-SS-OF-3B
-Score: 117.0
+275. Kris Bryant, OF
+Score: 63.595036
 
-276. Jack Suwinski, OF
-Score: 116.0
+276. Hunter Dozier, 1B-OF-3B-P
+Score: 63.540173
 
-277. Tyler Stephenson, C-1B
-Score: 116.0
+277. Kris Bubic, P
+Score: 63.38889
 
-278. Andrew Knizner, C-1B-P
-Score: 115.00001
+278. Austin Slater, OF
+Score: 63.26306
 
-279. Tomï¿½s Nido, C
-Score: 115.0
+279. Eduardo Rodriguez, P
+Score: 63.202465
 
-280. Nick Allen, SS-2B
-Score: 115.0
+280. Yusei Kikuchi, P
+Score: 63.157986
 
-281. Juan Yepez, OF-1B-3B
-Score: 114.99998
+281. Kyle Hendricks, P
+Score: 63.094646
 
-282. Nick Madrigal, 2B
-Score: 113.00002
+282. William Contreras, C-OF
+Score: 63.000195
 
-283. Jesï¿½s Sï¿½nchez, OF
-Score: 113.000015
+283. Adley Rutschman, C
+Score: 62.934673
 
-284. Matt Reynolds, 2B-SS-3B-OF-1B-P
-Score: 113.0
+284. James Kaprielian, P
+Score: 62.890198
 
-285. Kris Bryant, OF
-Score: 112.99999
+285. Tyler Stephenson, C-1B
+Score: 62.865334
 
-286. Mitch Haniger, OF
-Score: 111.000015
+286. Willi Castro, OF-2B-SS-3B
+Score: 62.638092
 
-287. Victor Caratini, C-1B-P
-Score: 111.0
+287. Yadiel Hernández, OF
+Score: 62.33336
 
-288. Austin Barnes, C-2B
-Score: 110.99999
+288. Luke Voit, 1B
+Score: 62.26526
 
-289. Orlando Arcia, 2B-OF-3B-SS-P
-Score: 109.000015
+289. Yoán Moncada, 3B
+Score: 61.83025
 
-290. Pavin Smith, OF-1B
-Score: 109.000015
+290. Ben Gamel, OF-1B
+Score: 61.805897
 
-291. Jose Siri, OF
-Score: 109.00001
+291. Jose Trevino, C
+Score: 61.569942
 
-292. Albert Almora, OF
-Score: 109.0
+292. Freddy Peralta, P
+Score: 61.348145
 
-293. Yadier Molina, C-P-1B
-Score: 109.0
+293. Zack Greinke, P
+Score: 61.13158
 
-294. Alfonso Rivas, 1B-OF
-Score: 107.99999
+294. George Kirby, P
+Score: 61.100006
 
-295. Omar Narvï¿½ez, C
-Score: 106.99999
+295. Nick Lodolo, P
+Score: 61.04605
 
-296. Brandon Lowe, 2B-OF
-Score: 106.99999
+296. Erick Fedde, P
+Score: 60.002636
 
-297. Bobby Dalbec, 1B-3B-SS-2B
-Score: 106.00002
+297. Wil Myers, OF-1B-P-3B
+Score: 59.853436
 
-298. Nolan Gorman, 2B-OF
-Score: 105.99999
+298. Drew Smyly, P
+Score: 59.820766
 
-299. Kyle Higashioka, C
-Score: 105.000015
+299. Jared Walsh, 1B-OF
+Score: 59.30749
 
-300. LaMonte Wade Jr., OF-1B
-Score: 105.0
+300. Dylan Bundy, P
+Score: 59.051956
 
-301. Sam Haggerty, OF-2B
-Score: 104.99999
+301. Brad Keller, P
+Score: 58.967804
 
-302. Trayce Thompson, OF
-Score: 104.00001
+302. Drew Rasmussen, P
+Score: 58.882603
 
-303. Kole Calhoun, OF
-Score: 103.999985
+303. Oscar Gonzalez, OF
+Score: 58.82045
 
-304. Vimael Machï¿½n, 3B-SS-2B
-Score: 103.00001
+304. Reid Detmers, P
+Score: 58.788883
 
-305. Sheldon Neuse, 3B-2B-1B-SS-P
-Score: 103.0
+305. Chris Taylor, OF-2B-3B-SS
+Score: 58.268787
 
-306. Matt Carpenter, OF-1B-3B
-Score: 102.99999
+306. Aaron Hicks, OF
+Score: 58.26081
 
-307. Cavan Biggio, 2B-1B-OF-3B
-Score: 101.0
+307. Cody Bellinger, OF
+Score: 58.201447
 
-308. Matt Duffy, 3B-1B-2B
-Score: 101.0
+308. Daniel Lynch, P
+Score: 58.114925
 
-309. Rodolfo Castro, 2B-3B-SS
-Score: 99.99999
+309. Jonah Heim, C
+Score: 57.995544
 
-310. Kyle Isbel, OF
-Score: 99.00001
+310. Avisaíl García, OF
+Score: 57.919144
 
-311. Shohei Ohtani_h, D1/H
-Score: 99.0
+311. Maikel Franco, 3B-1B
+Score: 57.903767
 
-312. Josï¿½ Azocar, OF
-Score: 99.0
+312. Justin Steele, P
+Score: 57.88333
 
-313. Josh Smith, 3B-OF-SS-2B
-Score: 98.00001
+313. Aledmys Díaz, OF-2B-SS-3B-1B
+Score: 57.84545
 
-314. Tucker Barnhart, C-P-3B
-Score: 96.0
+314. Chris Flexen, P
+Score: 57.805817
 
-315. Mike Moustakas, 1B-3B
-Score: 95.00002
+315. José Suarez, P
+Score: 57.77838
 
-316. Edward Olivares, OF
-Score: 95.000015
+316. Ross Stripling, P
+Score: 57.524998
 
-317. Vaughn Grissom, 2B-SS
-Score: 95.00001
+317. Chad Kuhl, P
+Score: 57.34965
 
-318. Brandon Belt, 1B
-Score: 94.999985
+318. Nick Senzel, OF-3B-2B
+Score: 57.348476
 
-319. Ezequiel Duran, 3B-2B
-Score: 94.0
+319. Jorge Mateo, SS
+Score: 57.128086
 
-320. Jorge Soler, OF
-Score: 93.00001
+320. Elias Díaz, C
+Score: 56.52305
 
-321. Rob Refsnyder, OF
-Score: 92.999985
+321. Joey Votto, 1B
+Score: 56.138107
 
-322. Odï¿½bel Herrera, OF
-Score: 92.0
+322. Jacob Stallings, C
+Score: 56.046593
 
-323. Martï¿½n Maldonado, C
-Score: 92.0
+323. Trent Grisham, OF
+Score: 55.74245
 
-324. P.J. Higgins, 1B-C-3B
-Score: 91.0
+324. Seiya Suzuki, OF
+Score: 55.274563
 
-325. Eddie Rosario, OF
-Score: 90.99999
+325. Brandon Lowe, 2B-OF
+Score: 55.0526
 
-326. Adam Engel, OF
-Score: 90.000015
+326. Bryson Stott, SS-2B-3B
+Score: 55.03513
 
-327. Didi Gregorius, SS
-Score: 90.000015
+327. Franmil Reyes, OF-P
+Score: 54.62332
 
-328. Austin Hedges, C
-Score: 90.0
+328. David Peterson, P
+Score: 54.499054
 
-329. Anthony Rendon, 3B
-Score: 90.0
+329. Vinnie Pasquantino, 1B
+Score: 54.496128
 
-330. Kevin Kiermaier, OF
-Score: 88.000015
+330. Dean Kremer, P
+Score: 54.01277
 
-331. Adam Duvall, OF
-Score: 87.99999
+331. Tyler Naquin, OF
+Score: 53.962093
 
-332. Brad Miller, OF-3B
-Score: 87.999985
+332. Ji-Man Choi, 1B
+Score: 53.5432
 
-333. Andrew Velazquez, SS
-Score: 87.0
+333. Tyrone Taylor, OF
+Score: 52.888374
 
-334. Calvin Mitchell, OF
-Score: 86.99999
+334. Luis Severino, P
+Score: 52.866665
 
-335. Max Stassi, C
-Score: 86.000015
+335. Victor Reyes, OF
+Score: 52.838226
 
-336. Garrett Hampson, SS-OF-2B-3B
-Score: 86.00001
+336. Jace Peterson, 3B-OF-1B-2B-P
+Score: 52.798172
 
-337. Sergio Alcï¿½ntara, 3B-SS-2B
-Score: 86.0
+337. Eric Haase, C-OF
+Score: 52.443
 
-338. Franchy Cordero, 1B-OF
-Score: 85.00001
+338. Jazz Chisholm Jr., 2B
+Score: 52.237392
 
-339. Alejo Lopez, 2B-3B-OF-P
-Score: 84.99999
+339. Yan Gomes, C
+Score: 51.8354
 
-340. Jorge Alfaro, C
-Score: 84.0
+340. Nick Madrigal, 2B
+Score: 51.559525
 
-341. Akil Baddoo, OF
-Score: 83.0
+341. Byron Buxton, OF
+Score: 51.455894
 
-342. Ryan Jeffers, C
-Score: 83.0
+342. Yasmani Grandal, C-1B
+Score: 51.26855
 
-343. Tommy La Stella, 3B-2B-1B
-Score: 82.00001
+343. Leury Garcia, 2B-SS-OF-3B
+Score: 51.073193
 
-344. Austin Wynns, C-P
-Score: 81.0
+344. Evan Longoria, 3B
+Score: 50.915405
 
-345. Diego Castillo, SS-2B-OF-1B-3B-P
-Score: 81.0
+345. Darin Ruf, 1B-OF-P
+Score: 50.812714
 
-346. Jordan Luplow, OF-1B-3B
-Score: 80.0
+346. Glenn Otto, P
+Score: 50.680073
 
-347. Bubba Thompson, OF
-Score: 80.0
+347. Pavin Smith, OF-1B
+Score: 50.55781
 
-348. Jonathan Villar, 2B-3B-SS
-Score: 79.0
+348. Jake Odorizzi, P
+Score: 50.41171
 
-349. Mitch Garver, C
-Score: 78.99999
+349. Luis González, OF-P
+Score: 50.392384
 
-350. Seby Zavala, C-1B
-Score: 78.00001
+350. Leody Taveras, OF
+Score: 50.32893
 
-351. Nomar Mazara, OF
-Score: 77.99999
+351. Danny Jansen, C
+Score: 49.752625
 
-352. Tyler Heineman, C
-Score: 77.0
+352. Adrian Houser, P
+Score: 49.73653
 
-353. Austin Meadows, OF
-Score: 75.00001
+353. Carson Kelly, C-P
+Score: 49.32367
 
-354. Kevin Plawecki, C-P
-Score: 75.0
+354. Yadier Molina, C-P-1B
+Score: 49.299355
 
-355. Oswaldo Cabrera, OF-SS-3B-2B-1B
-Score: 74.99999
+355. Mike Clevinger, P
+Score: 49.024994
 
-356. Joey Gallo, OF-1B
-Score: 74.0
+356. Victor Robles, OF
+Score: 48.958305
 
-357. J.D. Martinez, D
-Score: 73.22223
+357. Kyle Bradish, P
+Score: 48.833332
 
-358. Tyler Wade, 2B-SS-3B-OF
-Score: 72.99999
+358. Austin Gomber, P
+Score: 48.755554
 
-359. Jonah Bride, 2B-3B-1B
-Score: 72.0
+359. J.D. Davis, 3B-1B-OF
+Score: 48.61529
 
-360. Edmundo Sosa, SS-3B-OF-2B
-Score: 71.0
+360. Rougned Odor, 2B-3B
+Score: 48.343105
 
-361. Joey Bart, C
-Score: 69.99999
+361. Joey Meneses, 1B-OF
+Score: 47.999996
 
-362. Danny Mendick, SS-2B-3B-OF
-Score: 69.99999
+362. Brian Anderson, 3B-OF-2B
+Score: 47.750397
 
-363. Brian Serven, C-1B-P
-Score: 69.00001
+363. Noah Syndergaard, P
+Score: 47.26822
 
-364. Hanser Alberto, 2B-3B-SS-P-1B-OF
-Score: 69.0
+364. Eddie Rosario, OF
+Score: 47.13006
 
-365. Michael Massey, 2B-3B
-Score: 68.99999
+365. Jeffrey Springs, P
+Score: 46.726547
 
-366. Luke Maile, C
-Score: 68.0
+366. MJ Melendez, C-OF
+Score: 46.52174
 
-367. Jarren Duran, OF
-Score: 68.0
+367. Braxton Garrett, P
+Score: 46.49631
 
-368. Garrett Stubbs, C-P-OF
-Score: 67.0
+368. Brandon Belt, 1B
+Score: 46.324917
 
-369. Nate Eaton, OF-3B
-Score: 67.0
+369. Ramón Laureano, OF
+Score: 45.860466
 
-370. Mike Brosseau, 3B-SS-1B-P
-Score: 67.0
+370. Aaron Ashby, P
+Score: 45.465946
 
-371. Miguel Andï¿½jar, OF-1B
-Score: 67.0
+371. Paul Blackburn, P
+Score: 45.380554
 
-372. Alex Kirilloff, OF-1B
-Score: 66.000015
+372. Jakob Junis, P
+Score: 45.32057
 
-373. Jake Burger, 3B-2B
-Score: 66.00001
+373. Antonio Senzatela, P
+Score: 45.31404
 
-374. Sam Hilliard, OF
-Score: 66.00001
+374. Jake Fraley, OF
+Score: 44.891907
 
-375. Keston Hiura, 1B-2B-OF
-Score: 66.0
+375. Austin Meadows, OF
+Score: 44.518932
 
-376. Ernie Clement, 3B-2B-OF-1B-SS-P
-Score: 65.99999
+376. Michael Kopech, P
+Score: 44.260254
 
-377. Nelson Velï¿½zquez, OF
-Score: 65.0
+377. Omar Narváez, C
+Score: 44.162804
 
-378. Johan Camargo, SS-3B-2B-1B
-Score: 65.0
+378. Reese McGuire, C-P
+Score: 44.043007
 
-379. James McCann, C-1B
-Score: 63.999996
+379. Patrick Wisdom, 3B-1B-OF
+Score: 43.82223
 
-380. Alex Call, OF
-Score: 63.999992
+380. Francisco Mejía, C-1B
+Score: 43.72121
 
-381. Tyler Nevin, 3B-1B-OF
-Score: 63.0
+381. Gary Sanchez, C-1B
+Score: 43.620518
 
-382. Curt Casali, C-1B
-Score: 62.000008
+382. Alek Thomas, OF
+Score: 42.960632
 
-383. David Villar, 3B-1B-2B
-Score: 61.000008
+383. Zach Eflin, P
+Score: 42.928806
 
-384. Josh VanMeter, 2B-1B-3B-P-OF-C
-Score: 61.0
+384. Ryan Yarbrough, P
+Score: 42.585938
 
-385. Gunnar Henderson, 3B-SS-2B
-Score: 61.0
+385. Riley Greene, OF
+Score: 42.44681
 
-386. Terrin Vavra, 2B-OF
-Score: 61.0
+386. Dakota Hudson, P
+Score: 42.21542
 
-387. Alan Trejo, SS-2B-3B
-Score: 60.999992
+387. Chad Pinder, OF-3B-1B-P-2B
+Score: 42.193096
 
-388. Charles Leblanc, 2B-3B-1B
-Score: 60.000008
+388. Mauricio Dubón, OF-SS-2B-3B
+Score: 42.016743
 
-389. Andy Ibï¿½ï¿½ez, 3B-1B-2B
-Score: 60.000004
+389. Isaac Paredes, 3B-2B-1B-SS
+Score: 41.690964
 
-390. Nelson Cruz, D/H
-Score: 59.777775
+390. Steven Matz, P
+Score: 41.642956
 
-391. Ryan O'Hearn, OF-1B
-Score: 59.00001
+391. Abraham Toro, 2B-3B-1B-OF
+Score: 41.412582
 
-392. Kyle Garlick, OF
-Score: 59.0
+392. Michael Chavis, 1B-2B-3B
+Score: 41.3157
 
-393. Jed Lowrie, 1B-2B
-Score: 58.999992
+393. Adam Duvall, OF
+Score: 40.766586
 
-394. Colin Moran, 1B-3B
-Score: 58.000004
+394. Jorge Soler, OF
+Score: 40.44857
 
-395. Zach McKinstry, 2B-3B-SS-OF
-Score: 58.000004
+395. Tommy La Stella, 3B-2B-1B
+Score: 40.277863
 
-396. Charlie Culberson, 3B-OF-2B-P-SS-1B
-Score: 57.000008
+396. Didi Gregorius, SS
+Score: 40.073803
 
-397. Trevor Larnach, OF
-Score: 57.0
+397. Kevin Kiermaier, OF
+Score: 40.034363
 
-398. Marwin Gonzalez, OF-SS-1B-3B-2B-P
-Score: 56.0
+398. Anthony Rendon, 3B
+Score: 39.833275
 
-399. Jake Cave, OF
-Score: 56.0
+399. LaMonte Wade Jr., OF-1B
+Score: 39.826225
 
-400. Luke Williams, OF-3B-2B-1B
-Score: 56.0
+400. Bobby Dalbec, 1B-3B-SS-2B
+Score: 39.644554
 
-401. JJ Bleday, OF
-Score: 55.0
+401. Tucker Barnhart, C-P-3B
+Score: 39.552254
 
-402. Gabriel Moreno, C-OF-3B-2B
-Score: 55.0
+402. Keegan Thompson, P
+Score: 39.140743
 
-403. Stephen Vogt, C-1B
-Score: 55.0
+403. Bryse Wilson, P
+Score: 39.13452
 
-404. Tucupita Marcano, OF-2B-SS
-Score: 54.999996
+404. Dylan Moore, OF-SS-2B-1B-3B
+Score: 38.98441
 
-405. Jo Adell, OF
-Score: 54.99999
+405. Jonathan Villar, 2B-3B-SS
+Score: 38.30066
 
-406. Ryan McKenna, OF-P
-Score: 54.000008
+406. Zach Thompson, P
+Score: 38.196396
 
-407. Jason Heyward, OF
-Score: 54.0
+407. Hyun Jin Ryu, P
+Score: 38.103703
 
-408. Richie Palacios, OF-2B
-Score: 53.999992
+408. Edward Cabrera, P
+Score: 37.63889
 
-409. Cristian Pache, OF
-Score: 53.000008
+409. Jackie Bradley Jr., OF-P
+Score: 37.614315
 
-410. Kurt Suzuki, C-1B
-Score: 53.000008
+410. Ildemaro Vargas, 3B-SS-2B-P
+Score: 37.60864
 
-411. Luis Torrens, C-2B-P
-Score: 53.0
+411. Garrett Hampson, SS-OF-2B-3B
+Score: 37.445248
 
-412. Josh Lowe, OF
-Score: 52.999996
+412. Rob Refsnyder, OF
+Score: 37.414513
 
-413. Yoshi Tsutsugo, 1B
-Score: 51.0
+413. Tomás Nido, C
+Score: 37.350323
 
-414. Aristides Aquino, OF
-Score: 50.999992
+414. Victor Caratini, C-1B-P
+Score: 37.27293
 
-415. Yu Chang, 2B-SS-1B-3B-P
-Score: 50.999992
+415. Ryan Feltner, P
+Score: 37.2
 
-416. Sean Bouchard, OF
-Score: 50.999992
+416. Dallas Keuchel, P
+Score: 37.15021
 
-417. Oscar Mercado, OF
-Score: 50.000004
+417. Domingo Germán, P
+Score: 37.101517
 
-418. Elehuris Montero, 3B-1B
-Score: 49.000008
+418. Orlando Arcia, 2B-OF-3B-SS-P
+Score: 37.000217
 
-419. Vidal Brujï¿½n, 2B-OF-SS-3B
-Score: 49.0
+419. Edward Olivares, OF
+Score: 36.634743
 
-420. Jason Vosler, 3B-OF-1B-2B-SS
-Score: 49.0
+420. Hanser Alberto, 2B-3B-SS-P-1B-OF
+Score: 36.60045
 
-421. Cooper Hummel, OF-C
-Score: 47.999992
+421. Bailey Ober, P
+Score: 36.29706
 
-422. Mark Mathias, 2B-1B-OF-3B
-Score: 46.0
+422. Trevor Williams, P
+Score: 36.258266
 
-423. Lorenzo Cain, OF
-Score: 46.0
+423. Brad Miller, OF-3B
+Score: 36.066032
 
-424. Jason Delay, C
-Score: 45.999996
+424. Cavan Biggio, 2B-1B-OF-3B
+Score: 35.994717
 
-425. Darick Hall, 1B-P
-Score: 45.99999
+425. Christian Bethancourt, C-1B-P-3B
+Score: 35.72327
 
-426. Corbin Carroll, OF
-Score: 45.0
+426. Christopher Morel, OF-2B-3B-SS
+Score: 35.69393
 
-427. Livan Soto, SS-3B
-Score: 45.0
+427. Tyler Glasnow, P
+Score: 35.18472
 
-428. Eli White, OF
-Score: 44.999996
+428. Roansy Contreras, P
+Score: 35.174606
 
-429. Dominic Smith, 1B
-Score: 44.0
-
-430. Triston Casas, 1B
-Score: 44.0
-
-431. Mike Ford, 1B-P
-Score: 42.000004
-
-432. Jake Meyers, OF
-Score: 42.000004
-
-433. Alcides Escobar, SS-2B-P
-Score: 42.0
-
-434. Conner Capel, OF
-Score: 41.999996
-
-435. Robinson Chirinos, C
-Score: 41.999996
-
-436. Miguel Cabrera, D/H
-Score: 41.888885
-
-437. Tyler Freeman, 3B-SS-2B
-Score: 41.000008
-
-438. Jonathan Davis, OF
-Score: 41.000008
-
-439. Skye Bolt, OF
-Score: 41.0
-
-440. Will Brennan, OF
-Score: 40.999996
-
-441. Kerry Carpenter, OF
-Score: 40.999996
-
-442. Paul DeJong, SS-2B
-Score: 39.999996
-
-443. Sam Huff, C-1B
-Score: 39.000004
-
-444. Nick Solak, OF-2B
-Score: 39.000004
-
-445. Nick Maton, OF-2B-SS-3B-P
-Score: 39.0
-
-446. Greg Allen, OF
-Score: 38.999996
-
-447. Buddy Kennedy, 2B-3B
-Score: 38.000008
-
-448. Drew Waters, OF
-Score: 38.0
-
-449. Spencer Steer, 3B-1B-2B
-Score: 38.0
-
-450. Andrelton Simmons, 2B-SS-P
-Score: 37.999996
-
-451. Dee Strange-Gordon, SS-OF-P
-Score: 37.000004
-
-452. Shea Langeliers, C
-Score: 37.0
-
-453. Garrett Mitchell, OF
-Score: 37.0
-
-454. Yermï¿½n Mercedes, OF-1B-C
-Score: 37.0
-
-455. David Bote, 3B-2B-1B
-Score: 36.999992
-
-456. Kyle Stowers, OF
-Score: 36.0
-
-457. Nolan Jones, OF
-Score: 35.000004
-
-458. Oswald Peraza, SS-2B
+429. Graham Ashcraft, P
 Score: 35.0
 
-459. Taylor Trammell, OF
-Score: 34.000008
+430. José Ureña, P
+Score: 34.75
 
-460. Michael Perez, C
-Score: 33.000004
+431. Jesús Sánchez, OF
+Score: 34.742764
 
-461. Jordan Groshans, 3B
-Score: 33.0
+432. Adrian Sampson, P
+Score: 34.666668
 
-462. Willians Astudillo, 2B-3B-1B-P
-Score: 33.0
+433. Kole Calhoun, OF
+Score: 34.64845
 
-463. Tim Locastro, OF
-Score: 33.0
+434. CJ Abrams, SS-2B-OF
+Score: 34.507042
 
-464. Ehire Adrianza, 3B-2B-OF-SS-P
-Score: 33.0
+435. Taylor Hearn, P
+Score: 34.364872
 
-465. Nick Pratto, 1B-OF
-Score: 32.000004
+436. Michael Lorenzen, P
+Score: 34.327946
 
-466. Romy Gonzalez, 2B-SS-OF
-Score: 32.0
+437. Matt Carpenter, OF-1B-3B
+Score: 33.750645
 
-467. Stone Garrett, OF
-Score: 32.0
+438. Austin Barnes, C-2B
+Score: 33.6581
 
-468. Luis Barrera, OF
-Score: 32.0
+439. Jorge Alfaro, C
+Score: 32.95307
 
-469. Travis Jankowski, OF
-Score: 31.999998
+440. Sam Haggerty, OF-2B
+Score: 32.84716
 
-470. Edwin Rios, 3B-1B
-Score: 31.999996
+441. Anthony DeSclafani, P
+Score: 32.60896
 
-471. Matt Thaiss, C-1B-3B
-Score: 31.999996
+442. Adam Engel, OF
+Score: 32.51286
 
-472. Stuart Fairchild, OF
-Score: 31.999994
+443. Andrew Knizner, C-1B-P
+Score: 32.115414
 
-473. Riley Adams, C-1B
-Score: 31.000004
+444. Wade Miley, P
+Score: 31.877226
 
-474. Seth Beer, 1B
-Score: 31.0
+445. Kyle Higashioka, C
+Score: 31.451456
 
-475. Kody Clemens, 3B-1B-2B-OF-P
-Score: 30.999996
+446. Mike Moustakas, 1B-3B
+Score: 31.40685
 
-476. Bligh Madris, OF-1B
-Score: 30.000004
+447. Chris Archer, P
+Score: 31.399178
 
-477. Jarred Kelenic, OF
-Score: 30.000002
+448. Jonathan Heasley, P
+Score: 31.2851
 
-478. Wynton Bernard, OF
-Score: 30.0
+449. Kevin Plawecki, C-P
+Score: 30.737303
 
-479. Ji Hwan Bae, OF-2B
-Score: 29.0
+450. Nick Solak, OF-2B
+Score: 30.669828
 
-480. Jose Herrera, C
-Score: 29.0
+451. Bruce Zimmermann, P
+Score: 30.484213
 
-481. Kevin Smith, 3B-SS
-Score: 28.999996
+452. Vince Velasquez, P
+Score: 30.145094
 
-482. Stephen Piscotty, OF
-Score: 28.000008
+453. Jack Flaherty, P
+Score: 30.004004
 
-483. David Hensley, SS-3B-2B-OF
-Score: 27.0
+454. Colin Moran, 1B-3B
+Score: 29.974106
 
-484. Yairo Munoz, 2B-3B-OF
-Score: 26.999998
+455. Dominic Smith, 1B
+Score: 29.968184
 
-485. Derek Hill, OF
-Score: 26.000002
+456. Paolo Espino, P
+Score: 29.930923
 
-486. Lewin Dï¿½az, 1B
-Score: 26.0
+457. Spenser Watkins, P
+Score: 29.646822
 
-487. Roman Quinn, OF
-Score: 25.999998
+458. Matt Reynolds, 2B-SS-3B-OF-1B-P
+Score: 29.488222
 
-488. Jake Marisnick, OF
-Score: 25.000002
+459. Tyler Wells, P
+Score: 29.357355
 
-489. Jonathan Aranda, 2B-1B-3B-OF
-Score: 25.0
+460. Max Stassi, C
+Score: 29.343925
 
-490. Patrick Mazeika, C-1B
-Score: 24.000004
+461. Nomar Mazara, OF
+Score: 29.156734
 
-491. Daz Cameron, OF
-Score: 24.000004
+462. Juan Yepez, OF-1B-3B
+Score: 29.090904
 
-492. Esteban Quiroz, 2B
-Score: 24.000002
+463. Tyler Alexander, P
+Score: 28.94307
 
-493. Jake Lamb, OF-3B-1B
-Score: 24.0
+464. Mitch White, P
+Score: 28.629305
 
-494. Jack Mayfield, 2B-3B-OF-P
-Score: 24.0
+465. Chris Paddack, P
+Score: 28.311584
 
-495. Roberto Perez, C
-Score: 23.999998
+466. John Means, P
+Score: 28.240137
 
-496. Royce Lewis, SS-OF
-Score: 23.999998
+467. Matt Manning, P
+Score: 28.102486
 
-497. Michael Toglia, OF-1B
-Score: 23.999996
+468. Joey Gallo, OF-1B
+Score: 27.921047
 
-498. Magneuris Sierra, OF
-Score: 23.000002
+469. Danny Mendick, SS-2B-3B-OF
+Score: 27.860563
 
-499. Peyton Burdick, OF
-Score: 23.0
+470. MacKenzie Gore, P
+Score: 27.708334
 
-500. Dermis Garcia, 1B-OF
-Score: 23.0
+471. Vaughn Grissom, 2B-SS
+Score: 27.624113
 
-501. Jordan Diaz, 2B-1B
-Score: 22.0
+472. Yordan Alvarez, OF
+Score: 27.53636
 
-502. Gabriel Arias, 3B-2B-SS-1B
-Score: 22.0
+473. Martín Maldonado, C
+Score: 27.52072
 
-503. Aramis Garcia, C-1B
-Score: 22.0
+474. Vimael Machín, 3B-SS-2B
+Score: 27.387573
 
-504. Tom Murphy, C
-Score: 22.0
+475. Tylor Megill, P
+Score: 27.296295
 
-505. Ryan Kreidler, 3B-SS-2B-OF
-Score: 22.0
+476. Tyler Wade, 2B-SS-3B-OF
+Score: 27.272575
 
-506. Travis Demeritte, OF
-Score: 22.0
+477. Bailey Falter, P
+Score: 27.032099
 
-507. Dalton Guthrie, OF-3B-2B
-Score: 21.0
+478. Luis Torrens, C-2B-P
+Score: 26.96074
 
-508. Luis Campusano, C
-Score: 21.0
+479. Sergio Alcántara, 3B-SS-2B
+Score: 26.886297
 
-509. Willie Calhoun, OF
-Score: 20.999998
+480. Albert Almora, OF
+Score: 26.86808
 
-510. Hoy Park, 2B-3B-SS-OF
-Score: 20.999996
+481. James McCann, C-1B
+Score: 26.823328
 
-511. Josh Jung, 3B
-Score: 20.000008
+482. Mitch Garver, C
+Score: 26.16093
 
-512. Michael Stefanic, 2B
-Score: 20.000002
+483. Jason Heyward, OF
+Score: 26.150818
 
-513. Nick Ahmed, SS
-Score: 20.0
+484. Elieser Hernandez, P
+Score: 26.033333
 
-514. Alec Burleson, OF-1B
-Score: 20.0
+485. Beau Brieske, P
+Score: 25.713333
 
-515. Jake Hager, 2B-3B-SS-P
-Score: 19.999998
+486. José Azocar, OF
+Score: 25.485151
 
-516. Michael Papierski, C-1B
-Score: 18.999998
+487. Michael Pineda, P
+Score: 25.428421
 
-517. Connor Wong, C-2B-3B
-Score: 17.999998
+488. Miguel Andújar, OF-1B
+Score: 25.425255
 
-518. Sandy Leon, C-P
-Score: 17.000002
+489. Spencer Torkelson, 1B
+Score: 25.347221
 
-519. Matt Wallner, OF
-Score: 17.0
+490. Aníbal Sánchez, P
+Score: 25.295519
 
-520. Donovan Walton, 2B-SS-P-3B
-Score: 16.999998
+491. Jonathan India, 2B
+Score: 25.147453
 
-521. Miguel Vargas, OF-1B-3B
-Score: 16.000002
+492. Kutter Crawford, P
+Score: 24.680159
 
-522. Robinson Canï¿½, 2B
-Score: 16.0
+493. Andrelton Simmons, 2B-SS-P
+Score: 24.583614
 
-523. Jerar Encarnacion, OF
-Score: 15.999999
+494. Giancarlo Stanton, OF
+Score: 24.443459
 
-524. Billy Hamilton, OF-2B-3B
-Score: 15.000002
+495. Mike Brosseau, 3B-SS-1B-P
+Score: 24.163658
 
-525. Brett Baty, 3B
-Score: 15.000002
+496. Mitch Haniger, OF
+Score: 23.972044
 
-526. Otto Lopez, SS-2B-OF
-Score: 15.0
+497. Nolan Gorman, 2B-OF
+Score: 23.97173
 
-527. Luke Raley, OF-1B
-Score: 14.999999
+498. Charlie Culberson, 3B-OF-2B-P-SS-1B
+Score: 23.92056
 
-528. Josh Palacios, OF
-Score: 14.999999
+499. Nick Allen, SS-2B
+Score: 23.846153
 
-529. Clint Frazier, OF
-Score: 14.999998
+500. Ryan Jeffers, C
+Score: 23.819809
 
-530. Meibrys Viloria, C
-Score: 14.000004
+501. Andrew Velazquez, SS
+Score: 23.753452
 
-531. Abraham Almonte, OF
-Score: 14.000002
+502. Jack Suwinski, OF
+Score: 23.484661
 
-532. J.J. Matijevic, 1B-OF
-Score: 14.0
+503. Lorenzo Cain, OF
+Score: 23.479912
 
-533. Will Benson, OF
-Score: 13.999998
+504. Dustin May, P
+Score: 23.288889
 
-534. Brett Phillips, OF-P
-Score: 13.000007
+505. Franchy Cordero, 1B-OF
+Score: 23.189209
 
-535. Erik Gonzï¿½lez, 3B-SS-2B-1B
-Score: 13.0
+506. Joan Adon, P
+Score: 23.178572
 
-536. Zach Reks, OF
-Score: 13.0
+507. Ryan O'Hearn, OF-1B
+Score: 23.068851
 
-537. James Outman, OF
-Score: 13.0
+508. Austin Voth, P
+Score: 23.024065
 
-538. Jaylin Davis, OF
-Score: 12.999999
+509. Drew Hutchison, P
+Score: 22.721504
 
-539. Adam Haseley, OF
-Score: 12.000001
+510. Vladimir Gutiérrez, P
+Score: 22.67222
 
-540. Maikel Garcia, SS
-Score: 12.0
+511. Garrett Whitlock, P
+Score: 22.649397
 
-541. Austin Romine, C
-Score: 11.000006
+512. Adrián Martinez, P
+Score: 22.641668
 
-542. Mickey Moniak, OF
-Score: 11.000002
+513. Ezequiel Duran, 3B-2B
+Score: 22.14423
 
-543. Renï¿½ Pinto, C
-Score: 11.000002
+514. Adbert Alzolay, P
+Score: 22.059893
 
-544. Richie Martin, 2B-SS
-Score: 11.000001
+515. Bryce Elder, P
+Score: 22.049997
 
-545. Payton Henry, C
-Score: 11.000001
+516. Austin Hedges, C
+Score: 21.896788
 
-546. Ford Proctor, 2B-C
-Score: 11.0
+517. Keegan Akin, P
+Score: 21.360062
 
-547. David MacKinnon, 1B-3B
-Score: 11.0
+518. Jordan Luplow, OF-1B-3B
+Score: 21.260098
 
-548. Guillermo Heredia, OF
-Score: 10.999995
+519. Casey Mize, P
+Score: 21.259657
 
-549. Kyle Lewis, OF
+520. Nick Ahmed, SS
+Score: 21.225292
+
+521. Bubba Thompson, OF
+Score: 21.176474
+
+522. Jo Adell, OF
+Score: 21.05535
+
+523. Brayan Bello, P
+Score: 20.86346
+
+524. Josh Fleming, P
+Score: 20.559063
+
+525. David Bote, 3B-2B-1B
+Score: 20.511719
+
+526. Keston Hiura, 1B-2B-OF
+Score: 20.496157
+
+527. Joey Bart, C
+Score: 20.395452
+
+528. Johan Oviedo, P
+Score: 20.301924
+
+529. Garrett Stubbs, C-P-OF
+Score: 20.30149
+
+530. Curt Casali, C-1B
+Score: 20.28339
+
+531. Josh VanMeter, 2B-1B-3B-P-OF-C
+Score: 20.130419
+
+532. Nick Martinez, P
+Score: 20.1289
+
+533. Sam Hilliard, OF
+Score: 20.10456
+
+534. Marwin Gonzalez, OF-SS-1B-3B-2B-P
+Score: 19.98538
+
+535. Yu Chang, 2B-SS-1B-3B-P
+Score: 19.812386
+
+536. Calvin Mitchell, OF
+Score: 19.698112
+
+537. JP Sears, P
+Score: 19.558825
+
+538. Kurt Suzuki, C-1B
+Score: 19.554924
+
+539. Tanner Houck, P
+Score: 19.513449
+
+540. Trey Mancini, 1B-OF
+Score: 19.324938
+
+541. Josh Smith, 3B-OF-SS-2B
+Score: 19.323946
+
+542. Devin Smeltzer, P
+Score: 19.296875
+
+543. Yoshi Tsutsugo, 1B
+Score: 19.156635
+
+544. Davis Martin, P
+Score: 19.155355
+
+545. Josh Winckowski, P
+Score: 19.082777
+
+546. Johan Camargo, SS-3B-2B-1B
+Score: 19.008
+
+547. Josh Winder, P
+Score: 18.983334
+
+548. Kyle Garlick, OF
+Score: 18.76069
+
+549. Oscar Mercado, OF
+Score: 18.68472
+
+550. Justin Dunn, P
+Score: 18.630556
+
+551. Oswaldo Cabrera, OF-SS-3B-2B-1B
+Score: 18.506493
+
+552. Tyler Heineman, C
+Score: 18.22617
+
+553. Odúbel Herrera, OF
+Score: 18.199999
+
+554. Livan Soto, SS-3B
+Score: 18.0
+
+555. Nate Eaton, OF-3B
+Score: 17.698112
+
+556. Paul DeJong, SS-2B
+Score: 17.651903
+
+557. Jorge López, P
+Score: 17.647917
+
+558. Gabriel Moreno, C-OF-3B-2B
+Score: 17.536234
+
+559. Huascar Ynoa, P
+Score: 17.530924
+
+560. Willians Astudillo, 2B-3B-1B-P
+Score: 17.461878
+
+561. Aaron Sanchez, P
+Score: 17.445833
+
+562. Edwin Díaz, P
+Score: 17.43435
+
+563. Zach McKinstry, 2B-3B-SS-OF
+Score: 17.421743
+
+564. Wander Franco, SS
+Score: 17.199287
+
+565. Frank Schwindel, 1B-P
+Score: 17.156567
+
+566. Tommy Henry, P
+Score: 16.972223
+
+567. Caleb Smith, P
+Score: 16.93611
+
+568. Wil Crowe, P
+Score: 16.765032
+
+569. Michael Massey, 2B-3B
+Score: 16.751444
+
+570. Diego Castillo, SS-2B-OF-1B-3B-P
+Score: 16.694656
+
+571. Alex Faedo, P
+Score: 16.625
+
+572. Kolby Allard, P
+Score: 16.507223
+
+573. Hayden Wesneski, P
+Score: 16.5
+
+574. Konnor Pilkington, P
+Score: 16.433332
+
+575. Jed Lowrie, 1B-2B
+Score: 16.36567
+
+576. Jaime Barria, P
+Score: 16.251165
+
+577. Aristides Aquino, OF
+Score: 16.18145
+
+578. Jake Cave, OF
+Score: 16.058264
+
+579. Phil Gosselin, 3B-2B-1B-P-OF
+Score: 16.035486
+
+580. Spencer Howard, P
+Score: 16.01451
+
+581. Akil Baddoo, OF
+Score: 16.00538
+
+582. Liam Hendriks, P
+Score: 16.002745
+
+583. Alec Mills, P
+Score: 15.898246
+
+584. Jason Alexander, P
+Score: 15.822223
+
+585. Gunnar Henderson, 3B-SS-2B
+Score: 15.775862
+
+586. Charles Leblanc, 2B-3B-1B
+Score: 15.769232
+
+587. Terrin Vavra, 2B-OF
+Score: 15.764045
+
+588. Ehire Adrianza, 3B-2B-OF-SS-P
+Score: 15.700457
+
+589. Touki Toussaint, P
+Score: 15.694444
+
+590. Adam Oller, P
+Score: 15.600001
+
+591. Garrett Richards, P
+Score: 15.542527
+
+592. Stephen Vogt, C-1B
+Score: 15.534036
+
+593. Humberto Castellanos, P
+Score: 15.463613
+
+594. Tucker Davidson, P
+Score: 15.445386
+
+595. Michael King, P
+Score: 15.43492
+
+596. Zach Logue, P
+Score: 15.267857
+
+597. Alcides Escobar, SS-2B-P
+Score: 15.253222
+
+598. Sean Bouchard, OF
+Score: 15.16216
+
+599. Alex Call, OF
+Score: 15.157893
+
+600. Andre Pallante, P
+Score: 15.12766
+
+601. Eli Morgan, P
+Score: 15.095239
+
+602. Ryan Pepiot, P
+Score: 15.041667
+
+603. Rafael Ortega, OF
+Score: 14.978978
+
+604. Kenley Jansen, P
+Score: 14.943882
+
+605. Pedro Severino, C-1B
+Score: 14.773198
+
+606. Jonah Bride, 2B-3B-1B
+Score: 14.666665
+
+607. Will Brennan, OF
+Score: 14.642857
+
+608. Willie Calhoun, OF
+Score: 14.387191
+
+609. Matt Duffy, 3B-1B-2B
+Score: 14.35986
+
+610. Ken Waldichuk, P
+Score: 14.25
+
+611. Kevin Pillar, OF
+Score: 14.153915
+
+612. David Villar, 3B-1B-2B
+Score: 14.076925
+
+613. Brian Serven, C-1B-P
+Score: 14.021392
+
+614. Shane Baz, P
+Score: 13.945636
+
+615. Alex Dickerson, OF
+Score: 13.933837
+
+616. Scott Barlow, P
+Score: 13.639331
+
+617. Drey Jameson, P
+Score: 13.556251
+
+618. Rony García, P
+Score: 13.4748535
+
+619. Nelson Velázquez, OF
+Score: 13.351352
+
+620. Ryan Helsley, P
+Score: 13.32968
+
+621. Jordan Romano, P
+Score: 13.294056
+
+622. Eli White, OF
+Score: 13.24297
+
+623. Matt Moore, P
+Score: 13.189358
+
+624. Daniel Bard, P
+Score: 13.1607895
+
+625. Daulton Jefferies, P
+Score: 13.148332
+
+626. Josh Hader, P
+Score: 13.136388
+
+627. Chase De Jong, P
+Score: 13.101531
+
+628. Matthew Boyd, P
+Score: 13.007974
+
+629. Dee Strange-Gordon, SS-OF-P
+Score: 12.985944
+
+630. Carlos Hernández, P
+Score: 12.957469
+
+631. Conner Capel, OF
+Score: 12.923076
+
+632. Jack Mayfield, 2B-3B-OF-P
+Score: 12.852964
+
+633. Andrew Vaughn, OF-1B-2B
+Score: 12.795095
+
+634. Brock Burke, P
+Score: 12.762341
+
+635. Derek Hill, OF
+Score: 12.6919
+
+636. Devin Williams, P
+Score: 12.690102
+
+637. Griffin Jax, P
+Score: 12.678287
+
+638. Garrett Hill, P
+Score: 12.668137
+
+639. Mark Mathias, 2B-1B-OF-3B
+Score: 12.591382
+
+640. Luke Weaver, P
+Score: 12.55795
+
+641. Richie Palacios, OF-2B
+Score: 12.535712
+
+642. Travis Jankowski, OF
+Score: 12.512078
+
+643. Emmanuel Clase, P
+Score: 12.492999
+
+644. Mark Leiter Jr., P
+Score: 12.48
+
+645. Stephen Piscotty, OF
+Score: 12.455132
+
+646. Raisel Iglesias, P
+Score: 12.382607
+
+647. Jonathan Davis, OF
+Score: 12.317885
+
+648. Luis Patiño, P
+Score: 12.260396
+
+649. Taylor Rogers, P
+Score: 12.174564
+
+650. Robinson Chirinos, C
+Score: 12.059443
+
+651. Cory Abbott, P
+Score: 12.045834
+
+652. Yonathan Daza, OF
+Score: 11.954595
+
+653. Ryan Pressly, P
+Score: 11.918007
+
+654. Chi Chi González, P
+Score: 11.853055
+
+655. Craig Kimbrel, P
+Score: 11.819285
+
+656. Magneuris Sierra, OF
+Score: 11.813734
+
+657. Giovanny Gallegos, P
+Score: 11.688399
+
+658. Corbin Carroll, OF
+Score: 11.682693
+
+659. Nabil Crismatt, P
+Score: 11.668687
+
+660. Clarke Schmidt, P
+Score: 11.658161
+
+661. Luis Cessa, P
+Score: 11.654714
+
+662. Paul Sewald, P
+Score: 11.61584
+
+663. Chase Anderson, P
+Score: 11.584222
+
+664. Garrett Mitchell, OF
+Score: 11.52459
+
+665. Darick Hall, 1B-P
+Score: 11.499997
+
+666. Yermín Mercedes, OF-1B-C
+Score: 11.490716
+
+667. Elehuris Montero, 3B-1B
+Score: 11.414775
+
+668. Justus Sheffield, P
+Score: 11.383926
+
+669. Trevor Richards, P
+Score: 11.29893
+
+670. Collin McHugh, P
+Score: 11.2625
+
+671. Mike Ford, 1B-P
+Score: 11.252468
+
+672. David Bednar, P
+Score: 11.230255
+
+673. Mike Mayers, P
+Score: 11.201173
+
+674. Andy Ibáñez, 3B-1B-2B
+Score: 11.190163
+
+675. Erik González, 3B-SS-2B-1B
+Score: 11.188451
+
+676. Sam Huff, C-1B
+Score: 11.184907
+
+677. Joey Wentz, P
+Score: 11.116666
+
+678. Juan Lagares, OF
+Score: 11.11302
+
+679. Tim Locastro, OF
+Score: 11.086287
+
+680. Tanner Scott, P
+Score: 11.084583
+
+681. Jake Marisnick, OF
+Score: 11.057206
+
+682. Matt Beaty, OF-1B
+Score: 11.036171
+
+683. Javier Assad, P
+Score: 11.022223
+
+684. Edmundo Sosa, SS-3B-OF-2B
+Score: 11.013888
+
+685. Emilio Pagán, P
+Score: 10.911732
+
+686. Cristian Pache, OF
+Score: 10.904156
+
+687. Greg Allen, OF
+Score: 10.778983
+
+688. Daniel Norris, P
+Score: 10.731857
+
+689. Otto Lopez, SS-2B-OF
+Score: 10.714286
+
+690. Oswald Peraza, SS-2B
+Score: 10.714286
+
+691. Héctor Neris, P
+Score: 10.626258
+
+692. Gregory Soto, P
+Score: 10.591636
+
+693. Jake Lamb, OF-3B-1B
+Score: 10.576877
+
+694. Camilo Doval, P
+Score: 10.555844
+
+695. Miguel Sanó, 1B
+Score: 10.522502
+
+696. Nick Nelson, P
+Score: 10.408803
+
+697. Trevor Stephan, P
+Score: 10.388889
+
+698. Chris Stratton, P
+Score: 10.383243
+
+699. Sam Hentges, P
+Score: 10.367909
+
+700. Dinelson Lamet, P
+Score: 10.366842
+
+701. Kerry Carpenter, OF
+Score: 10.349514
+
+702. Tyler Gilbert, P
+Score: 10.347726
+
+703. Reynaldo López, P
+Score: 10.342361
+
+704. Clay Holmes, P
+Score: 10.3092165
+
+705. Clint Frazier, OF
+Score: 10.28079
+
+706. Guillermo Heredia, OF
+Score: 10.252007
+
+707. Kyle Lewis, OF
+Score: 10.22294
+
+708. Edwin Rios, 3B-1B
+Score: 10.170333
+
+709. Tyler Freeman, 3B-SS-2B
+Score: 10.116884
+
+710. Kyle Finnegan, P
+Score: 10.060807
+
+711. Connor Joe, OF-1B
+Score: 10.003724
+
+712. Jeff Hoffman, P
+Score: 10.003705
+
+713. Cole Ragans, P
 Score: 10.0
 
-550. Andrew Knapp, C
-Score: 10.0
+714. Bryan Abreu, P
+Score: 9.990752
 
-551. Chad Wallach, C
-Score: 10.0
+715. A.J. Minter, P
+Score: 9.989899
 
-552. Juan Lagares, OF
-Score: 10.0
+716. David Robertson, P
+Score: 9.9655905
 
-553. Logan O'Hoppe, C
-Score: 10.0
-
-554. Mark Payton, OF
-Score: 10.0
-
-555. Zack Collins, C-1B
-Score: 10.0
-
-556. Esteury Ruiz, OF
-Score: 9.999999
-
-557. Jermaine Palacios, SS-2B-1B-3B-P
-Score: 9.000002
-
-558. Kelvin Gutiï¿½rrez, 3B
-Score: 9.000001
-
-559. Cal Stevenson, OF
-Score: 9.000001
-
-560. Adalberto Mondesï¿½, SS
-Score: 9.0
-
-561. Ezequiel Tovar, SS
-Score: 9.0
-
-562. Cam Gallagher, C
-Score: 9.0
-
-563. Tres Barrera, C
-Score: 9.0
-
-564. Mark Vientos, 3B
-Score: 9.0
-
-565. Mike Zunino, C
-Score: 8.999996
-
-566. Pablo Reyes, SS-3B-P
-Score: 8.0
-
-567. Austin Dean, OF
-Score: 8.0
-
-568. Dom Nuï¿½ez, C
-Score: 7.9999995
-
-569. Justin Verlander, P
-Score: 7.3890514
-
-570. Max Scherzer, P
-Score: 7.3137774
-
-571. Jacob deGrom, P
-Score: 7.1090565
-
-572. Matt Beaty, OF-1B
-Score: 7.000001
-
-573. Cody Thomas, OF
-Score: 7.0000005
-
-574. Phil Gosselin, 3B-2B-1B-P-OF
-Score: 7.0000005
-
-575. Jared Young, 1B-OF
-Score: 7.0
-
-576. Chadwick Tromp, C
-Score: 7.0
-
-577. Manny Piï¿½a, C
-Score: 7.0
-
-578. Corbin Burnes, P
-Score: 6.1763425
-
-579. Gerrit Cole, P
-Score: 6.148183
-
-580. Jonathan Araï¿½z, 3B-2B-SS
-Score: 6.0000024
-
-581. Carlos Pï¿½rez, C
-Score: 6.0000005
-
-582. Yonny Hernandez, 3B-2B
-Score: 6.0
-
-583. Monte Harrison, OF
-Score: 6.0
-
-584. Alex Dickerson, OF
-Score: 5.9999995
-
-585. Ben DeLuzio, OF
-Score: 5.9999995
-
-586. Mark Contreras, OF
-Score: 5.999999
-
-587. Aaron Nola, P
-Score: 5.64726
-
-588. Yu Darvish, P
-Score: 5.56274
-
-589. Clayton Kershaw, P
-Score: 5.4718227
-
-590. Julio Urï¿½as, P
-Score: 5.3121357
-
-591. Shane Bieber, P
-Score: 5.0025587
-
-592. Gosuke Katoh, 1B-2B
-Score: 5.0
-
-593. Vinny Capra, OF-2B
-Score: 5.0
-
-594. Lewis Brinson, OF
-Score: 5.0
-
-595. Max Schrock, OF-2B-P
-Score: 5.0
-
-596. Khalil Lee, OF
-Score: 5.0
-
-597. Brendon Davis, OF-3B
-Score: 4.9999995
-
-598. Jose Barrero, SS
-Score: 4.999998
-
-599. Bradley Zimmer, OF
-Score: 4.999996
-
-600. Carlos Rodï¿½n, P
-Score: 4.92905
-
-601. Max Fried, P
-Score: 4.8925595
-
-602. Brandon Woodruff, P
-Score: 4.735893
-
-603. Kevin Gausman, P
-Score: 4.642196
-
-604. Zack Wheeler, P
-Score: 4.498554
-
-605. Sandy Alcantara, P
-Score: 4.3769875
-
-606. Shohei Ohtani, P
-Score: 4.3330107
-
-607. Nestor Cortes, P
-Score: 4.137038
-
-608. Zac Gallen, P
-Score: 4.128718
-
-609. Shane McClanahan, P
-Score: 4.1163764
-
-610. Alek Manoah, P
-Score: 4.061066
-
-611. Eddy Alvarez, OF-3B-SS
-Score: 4.0000014
-
-612. Matt Davidson, 3B-1B
-Score: 4.0000014
-
-613. Heliot Ramos, OF
-Score: 4.0000005
-
-614. Nick Plummer, OF
-Score: 4.0000005
-
-615. Dairon Blanco, OF
-Score: 4.0
-
-616. Francisco ï¿½lvarez, C
-Score: 4.0
-
-617. Dustin Garneau, C
-Score: 4.0
-
-618. Michael Hermosillo, OF
-Score: 4.0
-
-619. Joe Dunand, 2B-3B
-Score: 3.9999998
-
-620. Tony Gonsolin, P
-Score: 3.7319584
-
-621. Chris Martin, P
-Score: 3.5284307
-
-622. Joe Musgrove, P
-Score: 3.4939957
-
-623. Spencer Strider, P
-Score: 3.469924
-
-624. Jameson Taillon, P
-Score: 3.444305
-
-625. Edwin Dï¿½az, P
-Score: 3.3918962
-
-626. Tyler Anderson, P
-Score: 3.3599393
-
-627. Dylan Cease, P
-Score: 3.3325553
-
-628. Cristian Javier, P
-Score: 3.2416098
-
-629. Chris Bassitt, P
-Score: 3.241012
-
-630. Framber Valdez, P
-Score: 3.162449
-
-631. Liam Hendriks, P
-Score: 3.067945
-
-632. Lance Lynn, P
-Score: 3.0430675
-
-633. Logan Webb, P
-Score: 3.0060425
-
-634. Anthony Bemboom, C
-Score: 3.0000024
-
-635. Mark Kolozsvary, C
-Score: 3.000002
-
-636. Korey Lee, C
-Score: 3.0000014
-
-637. Yolmer Sanchez, 2B-3B-SS-P
-Score: 3.000001
-
-638. Dixon Machado, SS
-Score: 3.0000007
-
-639. Chris Owings, 2B-SS-3B-OF-P
-Score: 3.0000005
-
-640. Elier Hernandez, OF-1B
-Score: 3.0000002
-
-641. Narciso Crook, OF
-Score: 3.0
-
-642. Pedro Severino, C-1B
-Score: 3.0
-
-643. Miles Mastrobuoni, 2B-OF
-Score: 3.0
-
-644. Terrance Gore, OF
-Score: 3.0
-
-645. Ender Inciarte, OF
-Score: 3.0
-
-646. Chuckie Robinson, C
-Score: 3.0
-
-647. Canaan Smith-Njigba, OF
-Score: 3.0
-
-648. Sebastian Rivero, C
-Score: 2.9999998
-
-649. Estevan Florial, OF
-Score: 2.9999998
-
-650. Billy McKinney, OF-1B
-Score: 2.9999993
-
-651. Charlie Morton, P
-Score: 2.9966364
-
-652. Logan Gilbert, P
-Score: 2.966246
-
-653. Triston McKenzie, P
-Score: 2.944063
-
-654. Ryan Helsley, P
-Score: 2.8828669
-
-655. Jordan Montgomery, P
-Score: 2.874067
-
-656. Jeffrey Springs, P
-Score: 2.8564188
-
-657. Robbie Ray, P
-Score: 2.8333998
-
-658. Nathan Eovaldi, P
-Score: 2.8260884
-
-659. Emmanuel Clase, P
-Score: 2.7820714
-
-660. Ross Stripling, P
-Score: 2.7451773
-
-661. Luis Garcia, P
-Score: 2.6073413
-
-662. Collin McHugh, P
-Score: 2.5805683
-
-663. Kyle Wright, P
-Score: 2.5531282
-
-664. Cal Quantrill, P
-Score: 2.5179377
-
-665. Drew Rasmussen, P
-Score: 2.4979157
-
-666. Josï¿½ Urquidy, P
-Score: 2.4678707
-
-667. Merrill Kelly, P
-Score: 2.421301
-
-668. Paul Sewald, P
-Score: 2.3943493
-
-669. Penn Murfee, P
-Score: 2.372515
-
-670. Josï¿½ Berrï¿½os, P
-Score: 2.3722003
-
-671. George Kirby, P
-Score: 2.3244424
-
-672. Michael Wacha, P
-Score: 2.3237147
-
-673. Evan Phillips, P
-Score: 2.2860186
-
-674. Corey Kluber, P
-Score: 2.2649858
-
-675. Walker Buehler, P
-Score: 2.2618177
-
-676. Garrett Whitlock, P
-Score: 2.2520773
-
-677. Miles Mikolas, P
-Score: 2.2257545
-
-678. Pablo Lï¿½pez, P
-Score: 2.221795
-
-679. Brady Singer, P
-Score: 2.1840887
-
-680. Luis Castillo, P
-Score: 2.1729445
-
-681. Devin Williams, P
-Score: 2.1641793
-
-682. Adam Wainwright, P
-Score: 2.1564174
-
-683. Taijuan Walker, P
-Score: 2.113446
-
-684. Joe Ryan, P
-Score: 2.0588913
-
-685. Luis Severino, P
-Score: 2.0435266
-
-686. Lucas Giolito, P
-Score: 2.0242233
-
-687. Freddy Peralta, P
-Score: 2.0108058
-
-688. Drew Ellis, 3B
-Score: 2.0000007
-
-689. Brandon Dixon, 3B-OF
-Score: 2.0000005
-
-690. Zack Short, 2B-SS
-Score: 2.0000005
-
-691. Mario Feliciano, C
-Score: 2.0
-
-692. Brent Rooker, OF
-Score: 2.0
-
-693. Chris Okey, C
-Score: 1.9999999
-
-694. Michael Siani, OF
-Score: 1.9999999
-
-695. Sonny Gray, P
-Score: 1.9138157
-
-696. Kenley Jansen, P
-Score: 1.9117984
-
-697. A.J. Minter, P
-Score: 1.9056013
-
-698. Sean Manaea, P
-Score: 1.8774596
-
-699. Carlos Carrasco, P
-Score: 1.8674343
-
-700. Eric Lauer, P
-Score: 1.8304121
-
-701. Scott Barlow, P
-Score: 1.8159161
-
-702. Dylan Lee, P
-Score: 1.8077532
-
-703. Ryan Pressly, P
-Score: 1.7965977
-
-704. Jordan Romano, P
-Score: 1.7735164
-
-705. Alex Vesia, P
-Score: 1.7620785
-
-706. Andrew Heaney, P
-Score: 1.7519304
-
-707. Raisel Iglesias, P
-Score: 1.7469976
-
-708. Martï¿½n Pï¿½rez, P
-Score: 1.7246542
-
-709. Blake Snell, P
-Score: 1.7068868
-
-710. Eli Morgan, P
-Score: 1.6935275
-
-711. Tyler Mahle, P
-Score: 1.6779613
-
-712. Alex Wood, P
-Score: 1.6616017
-
-713. Marcus Stroman, P
-Score: 1.6383153
-
-714. Reynaldo Lï¿½pez, P
-Score: 1.6260597
-
-715. Kyle Gibson, P
-Score: 1.6150918
-
-716. Caleb Thielbar, P
-Score: 1.6149899
-
-717. Aaron Civale, P
-Score: 1.6118697
+717. Brent Suter, P
+Score: 9.818181
 
 718. Adam Ottavino, P
-Score: 1.5834624
+Score: 9.814456
 
-719. Alex Cobb, P
-Score: 1.564124
+719. Jason Delay, C
+Score: 9.793548
 
-720. Jason Adam, P
-Score: 1.5356276
+720. Matt Swarmer, P
+Score: 9.787879
 
-721. Cole Irvin, P
-Score: 1.5254192
+721. Jordan Hicks, P
+Score: 9.746199
 
-722. Alexis Dï¿½az, P
-Score: 1.51871
+722. Jhoan Duran, P
+Score: 9.7263155
 
-723. Erasmo Ramï¿½rez, P
-Score: 1.5012815
+723. Seth Lugo, P
+Score: 9.68
 
-724. Tim Mayza, P
-Score: 1.4843088
+724. Ji Hwan Bae, OF-2B
+Score: 9.666667
 
-725. Erik Swanson, P
-Score: 1.479547
+725. Jalen Beeks, P
+Score: 9.66356
 
-726. Tarik Skubal, P
-Score: 1.467265
+726. Brett Phillips, OF-P
+Score: 9.637591
 
-727. Jon Gray, P
-Score: 1.4659781
+727. Rafael Montero, P
+Score: 9.627595
 
-728. Hï¿½ctor Neris, P
-Score: 1.4561056
+728. Louie Varland, P
+Score: 9.533333
 
-729. Phil Bickford, P
-Score: 1.4399735
+729. Matthew Liberatore, P
+Score: 9.500001
 
-730. Frankie Montas, P
-Score: 1.4383926
+730. Jimmy Herget, P
+Score: 9.48902
 
-731. Ranger Suï¿½rez, P
-Score: 1.4110551
+731. Chas McCormick, OF
+Score: 9.482003
 
-732. Adam Cimber, P
-Score: 1.4049827
+732. Adalberto Mondesí, SS
+Score: 9.479501
 
-733. Clay Holmes, P
-Score: 1.3952146
+733. Wily Peralta, P
+Score: 9.379086
 
-734. Nick Pivetta, P
-Score: 1.3713247
+734. Michael Fulmer, P
+Score: 9.342054
 
-735. Drew Smyly, P
-Score: 1.3572861
+735. David Hensley, SS-3B-2B-OF
+Score: 9.310345
 
-736. Jimmy Herget, P
-Score: 1.3555534
+736. Phil Maton, P
+Score: 9.294384
 
-737. Enyel De Los Santos, P
-Score: 1.3509079
+737. Caleb Thielbar, P
+Score: 9.276198
 
-738. Bryan Abreu, P
-Score: 1.345376
+738. Cristopher Sánchez, P
+Score: 9.244444
 
-739. Jordan Lyles, P
-Score: 1.3421513
+739. Mike Zunino, C
+Score: 9.227153
 
-740. James Karinchak, P
-Score: 1.3387704
+740. Lucas Luetge, P
+Score: 9.185668
 
-741. Rich Hill, P
-Score: 1.3324158
+741. Duane Underwood Jr., P
+Score: 9.183398
 
-742. Matt Festa, P
-Score: 1.319935
+742. JJ Bleday, OF
+Score: 9.166667
 
-743. Fï¿½lix Bautista, P
-Score: 1.306198
+743. Abraham Almonte, OF
+Score: 9.161933
 
-744. Tyler Glasnow, P
-Score: 1.3045669
+744. Daniel Castano, P
+Score: 9.155926
 
-745. Germï¿½n Mï¿½rquez, P
-Score: 1.3027393
+745. Steven Duggar, OF
+Score: 9.133578
 
-746. Johnny Cueto, P
-Score: 1.3015912
+746. Drew Waters, OF
+Score: 9.104166
 
-747. Andrew Kittredge, P
-Score: 1.2976433
+747. Kyle Stowers, OF
+Score: 9.098903
 
-748. Brock Burke, P
-Score: 1.2925885
+748. Mychal Givens, P
+Score: 9.082593
 
-749. Giovanny Gallegos, P
-Score: 1.2893519
+749. Erasmo Ramírez, P
+Score: 9.0724745
 
-750. Rafael Montero, P
-Score: 1.2833683
+750. James Karinchak, P
+Score: 9.035714
 
-751. Joe Jimï¿½nez, P
-Score: 1.2733996
+751. Shawn Armstrong, P
+Score: 9.033387
 
-752. Griffin Jax, P
-Score: 1.2310677
+752. Kyle Muller, P
+Score: 9.027778
 
-753. Lance McCullers Jr., P
-Score: 1.2270766
+753. Jesse Chavez, P
+Score: 8.975343
 
-754. Bailey Falter, P
-Score: 1.2254138
+754. Will Smith, P
+Score: 8.948718
 
-755. Steven Matz, P
-Score: 1.2058278
+755. Félix Bautista, P
+Score: 8.944102
 
-756. Nabil Crismatt, P
-Score: 1.203791
+756. Alexis Díaz, P
+Score: 8.926554
 
-757. Ron Marinaccio, P
-Score: 1.1938728
+757. Kendall Graveman, P
+Score: 8.853743
 
-758. Dylan Bundy, P
-Score: 1.1856611
+758. Stone Garrett, OF
+Score: 8.842105
 
-759. J.P. Feyereisen, P
-Score: 1.1823258
+759. Lou Trivino, P
+Score: 8.822197
 
-760. Trevor Stephan, P
-Score: 1.1699153
+760. Jake Diekman, P
+Score: 8.74802
 
-761. Josï¿½ Quintana, P
-Score: 1.1674187
+761. Roman Quinn, OF
+Score: 8.698769
 
-762. Marco Gonzales, P
-Score: 1.167362
+762. Elvin Rodriguez, P
+Score: 8.690476
 
-763. Diego Castillo, P
-Score: 1.15893
+763. Andrés Muñoz, P
+Score: 8.687674
 
-764. Zach Eflin, P
-Score: 1.1480887
+764. Triston Casas, 1B
+Score: 8.684211
 
-765. Hyun Jin Ryu, P
-Score: 1.1444606
+765. Michael Grove, P
+Score: 8.660714
 
-766. Michael King, P
-Score: 1.1421137
+766. Jordan Groshans, 3B
+Score: 8.655737
 
-767. Zack Greinke, P
-Score: 1.1260563
+767. Max Castillo, P
+Score: 8.611309
 
-768. David Bednar, P
-Score: 1.1232954
+768. Justin Upton, OF
+Score: 8.585623
 
-769. Seth Lugo, P
-Score: 1.1184945
+769. Wynton Bernard, OF
+Score: 8.571428
 
-770. Kyle Hendricks, P
-Score: 1.1109439
+770. Ryne Nelson, P
+Score: 8.547223
 
-771. Keegan Thompson, P
-Score: 1.1079645
+771. Nolan Jones, OF
+Score: 8.546513
 
-772. Robert Suarez, P
-Score: 1.0949273
+772. Cooper Hummel, OF-C
+Score: 8.454544
 
-773. Chris Flexen, P
-Score: 1.080494
+773. Daz Cameron, OF
+Score: 8.434457
 
-774. Kyle Freeland, P
-Score: 1.0802287
+774. Matt Thaiss, C-1B-3B
+Score: 8.421838
 
-775. Daniel Bard, P
-Score: 1.0707835
+775. José Alvarado, P
+Score: 8.397037
 
-776. David Peterson, P
-Score: 1.0672226
+776. Chase Silseth, P
+Score: 8.392858
 
-777. Anthony Bass, P
-Score: 1.0637207
+777. Dillon Tate, P
+Score: 8.364545
 
-778. John Schreiber, P
-Score: 1.060235
+778. Lewis Brinson, OF
+Score: 8.34686
 
-779. Josï¿½ Alvarado, P
-Score: 1.0449697
+779. Jake Woodford, P
+Score: 8.288288
 
-780. Tyler Wells, P
-Score: 1.0388448
+780. Lewin Díaz, 1B
+Score: 8.253003
 
-781. Andrï¿½s Muï¿½oz, P
-Score: 1.0363103
+781. Buddy Kennedy, 2B-3B
+Score: 8.240966
 
-782. Zach Pop, P
-Score: 1.0314646
+782. Joe Jiménez, P
+Score: 8.234841
 
-783. Josï¿½ Suarez, P
-Score: 1.0279673
+783. Diego Castillo, P
+Score: 8.233434
 
-784. Jesï¿½s Luzardo, P
-Score: 1.0149499
+784. Anthony Bass, P
+Score: 8.193344
 
-785. Brent Suter, P
-Score: 1.0132772
+785. Rowan Wick, P
+Score: 8.188828
 
-786. Eduardo Rodriguez, P
-Score: 1.0016394
+786. Kohei Arihara, P
+Score: 8.184722
 
-787. Cole Tucker, OF-2B-SS
-Score: 1.0000026
+787. Jarlín García, P
+Score: 8.1710415
 
-788. Bryce Johnson, OF
-Score: 1.0000004
+788. Brad Boxberger, P
+Score: 8.143092
 
-789. Lucius Fox, SS-3B
-Score: 1.0000002
+789. Shea Langeliers, C
+Score: 8.077465
 
-790. Jason Krizan, OF
-Score: 1.0000001
+790. Steve Cishek, P
+Score: 8.042417
 
-791. Bryan Lavastida, C
-Score: 1.0000001
+791. Chris Sale, P
+Score: 8.04
 
-792. Eguy Rosario, 3B-SS
-Score: 1.0000001
+792. Evan Phillips, P
+Score: 8.016797
 
-793. JT Riddle, 3B
+793. Spencer Steer, 3B-1B-2B
+Score: 8.0
+
+794. A.J. Puk, P
+Score: 7.918182
+
+795. Wilmer Difo, SS-2B
+Score: 7.8786645
+
+796. Yimi Garcia, P
+Score: 7.84664
+
+797. John Schreiber, P
+Score: 7.7864337
+
+798. Alex Lange, P
+Score: 7.730923
+
+799. Aroldis Chapman, P
+Score: 7.72558
+
+800. Michael Perez, C
+Score: 7.720585
+
+801. Alex Vesia, P
+Score: 7.660606
+
+802. Ryan Weathers, P
+Score: 7.622727
+
+803. Jason Adam, P
+Score: 7.604627
+
+804. Ryne Stanek, P
+Score: 7.5656075
+
+805. Sean Hjelle, P
+Score: 7.5520835
+
+806. Tyler Rogers, P
+Score: 7.5437045
+
+807. Chris Martin, P
+Score: 7.528675
+
+808. Yairo Munoz, 2B-3B-OF
+Score: 7.513578
+
+809. Bryan De La Cruz, OF
+Score: 7.510888
+
+810. Mark Melancon, P
+Score: 7.5022407
+
+811. Jared Koenig, P
+Score: 7.494166
+
+812. Phil Bickford, P
+Score: 7.474972
+
+813. José Ruiz, P
+Score: 7.4460506
+
+814. Andrew Chafin, P
+Score: 7.4182715
+
+815. Craig Stammen, P
+Score: 7.4
+
+816. Robinson Canó, 2B
+Score: 7.3824143
+
+817. Kelvin Gutiérrez, 3B
+Score: 7.3810296
+
+818. Robert Dugger, P
+Score: 7.377222
+
+819. Cody Poteet, P
+Score: 7.3519855
+
+820. Enyel De Los Santos, P
+Score: 7.3379784
+
+821. Hunter Strickland, P
+Score: 7.33534
+
+822. Bradley Zimmer, OF
+Score: 7.3053374
+
+823. Ryan Tepera, P
+Score: 7.292347
+
+824. DJ Stewart, /H
+Score: 7.2549267
+
+825. Cam Gallagher, C
+Score: 7.233406
+
+826. Dylan Floro, P
+Score: 7.2231593
+
+827. Manny Piña, C
+Score: 7.210226
+
+828. Royce Lewis, SS-OF
+Score: 7.2
+
+829. Penn Murfee, P
+Score: 7.1979165
+
+830. Michael Rucker, P
+Score: 7.1867614
+
+831. Erik Swanson, P
+Score: 7.1796613
+
+832. Kirk McCarty, P
+Score: 7.1538463
+
+833. Taylor Clarke, P
+Score: 7.1513934
+
+834. Corbin Martin, P
+Score: 7.1513896
+
+835. Alex Kirilloff, OF-1B
+Score: 7.1441855
+
+836. Adam Cimber, P
+Score: 7.1086297
+
+837. Bryan Baker, P
+Score: 7.1063976
+
+838. Brooks Raley, P
+Score: 7.099518
+
+839. Luis García, P
+Score: 7.0929008
+
+840. Matt Brash, P
+Score: 7.0794873
+
+841. Connor Overton, P
+Score: 7.0555553
+
+842. Sam Long, P
+Score: 7.048611
+
+843. Dalton Guthrie, OF-3B-2B
+Score: 7.0
+
+844. Tommy Nance, P
+Score: 6.972727
+
+845. Carlos Estévez, P
+Score: 6.956339
+
+846. Taylor Widener, P
+Score: 6.9502907
+
+847. Stephen Strasburg, P
+Score: 6.9502773
+
+848. Roberto Perez, C
+Score: 6.919636
+
+849. Bryan Shaw, P
+Score: 6.883775
+
+850. Ian Kennedy, P
+Score: 6.85
+
+851. Tyler Beede, P
+Score: 6.843639
+
+852. Max Schrock, OF-2B-P
+Score: 6.839324
+
+853. Will Vest, P
+Score: 6.8220615
+
+854. Austin Davis, P
+Score: 6.8010755
+
+855. Andrew Wantz, P
+Score: 6.745579
+
+856. Jhoulys Chacín, P
+Score: 6.743155
+
+857. Matt Barnes, P
+Score: 6.712279
+
+858. Trent Thornton, P
+Score: 6.6870713
+
+859. Josh Staumont, P
+Score: 6.6752453
+
+860. Gavin Sheets, OF-1B
+Score: 6.666667
+
+861. Cole Sands, P
+Score: 6.634848
+
+862. Dylan Coleman, P
+Score: 6.6318436
+
+863. Cody Morris, P
+Score: 6.628572
+
+864. Esteban Quiroz, 2B
+Score: 6.600001
+
+865. Dillon Peters, P
+Score: 6.5940285
+
+866. Génesis Cabrera, P
+Score: 6.590769
+
+867. Drew Smith, P
+Score: 6.5624347
+
+868. Luis Gil, P
+Score: 6.5500007
+
+869. Andrew Bellatti, P
+Score: 6.5422225
+
+870. Brandon Hughes, P
+Score: 6.5228076
+
+871. Jonathan Loáisiga, P
+Score: 6.5020337
+
+872. Joel Payamps, P
+Score: 6.4981136
+
+873. Zack Collins, C-1B
+Score: 6.488593
+
+874. Hoby Milner, P
+Score: 6.4762273
+
+875. Matt Wisler, P
+Score: 6.4672413
+
+876. Tanner Banks, P
+Score: 6.4357142
+
+877. Jharel Cotton, P
+Score: 6.4303308
+
+878. Jovani Moran, P
+Score: 6.4105906
+
+879. Robert Stephenson, P
+Score: 6.4089913
+
+880. Pete Fairbanks, P
+Score: 6.375568
+
+881. David Price, P
+Score: 6.370546
+
+882. Chad Green, P
+Score: 6.3665695
+
+883. Tyler Matzek, P
+Score: 6.3572617
+
+884. Connor Brogdon, P
+Score: 6.355556
+
+885. Wandy Peralta, P
+Score: 6.340688
+
+886. Buck Farmer, P
+Score: 6.335186
+
+887. David Phelps, P
+Score: 6.312407
+
+888. Tyler Duffey, P
+Score: 6.262872
+
+889. Dennis Santana, P
+Score: 6.256807
+
+890. José Leclerc, P
+Score: 6.2328205
+
+891. Reiver Sanmartin, P
+Score: 6.168642
+
+892. Matt Bush, P
+Score: 6.1314816
+
+893. Brandon Bielak, P
+Score: 6.1214237
+
+894. Brad Hand, P
+Score: 6.1196294
+
+895. Steven Okert, P
+Score: 6.097691
+
+896. Joely Rodríguez, P
+Score: 6.0635586
+
+897. Connor Seabold, P
+Score: 6.0483336
+
+898. Dominic Leone, P
+Score: 6.0472655
+
+899. Cole Sulser, P
+Score: 6.0215054
+
+900. Zack Littell, P
+Score: 6.0140166
+
+901. Seranthony Domínguez, P
+Score: 6.0077157
+
+902. Aaron Loup, P
+Score: 6.005463
+
+903. Carl Edwards Jr., P
+Score: 6.0004725
+
+904. James Outman, OF
+Score: 6.0
+
+905. Dylan Lee, P
+Score: 5.911232
+
+906. Tanner Rainey, P
+Score: 5.9111114
+
+907. Jackson Stephens, P
+Score: 5.9111114
+
+908. Daniel Hudson, P
+Score: 5.88695
+
+909. Nick Pratto, 1B-OF
+Score: 5.8734183
+
+910. Jeurys Familia, P
+Score: 5.862087
+
+911. Scott Effross, P
+Score: 5.86072
+
+912. Robert Suarez, P
+Score: 5.8562965
+
+913. Jordan Diaz, 2B-1B
+Score: 5.8367343
+
+914. Trevor May, P
+Score: 5.8119655
+
+915. Jackson Kowar, P
+Score: 5.777778
+
+916. Matt Festa, P
+Score: 5.773585
+
+917. Yohan Ramirez, P
+Score: 5.772141
+
+918. Sandy Leon, C-P
+Score: 5.751707
+
+919. Hunter Brown, P
+Score: 5.7428575
+
+920. Mike Baumann, P
+Score: 5.7416663
+
+921. Ryan Brasier, P
+Score: 5.7351947
+
+922. Luis Ortiz, P
+Score: 5.6666665
+
+923. Corey Knebel, P
+Score: 5.657471
+
+924. John King, P
+Score: 5.644671
+
+925. José Quijada, P
+Score: 5.626362
+
+926. Adam Haseley, OF
+Score: 5.6231556
+
+927. Trevor Megill, P
+Score: 5.6224494
+
+928. Colin Poche, P
+Score: 5.5961537
+
+929. Ha-Seong Kim, SS-3B
+Score: 5.5730343
+
+930. Nick Neidert, P
+Score: 5.566667
+
+931. Jarred Kelenic, OF
+Score: 5.5509396
+
+932. Domingo Acevedo, P
+Score: 5.5294514
+
+933. Brusdar Graterol, P
+Score: 5.496147
+
+934. Jose Herrera, C
+Score: 5.486487
+
+935. Joe Mantiply, P
+Score: 5.470581
+
+936. Nick Gordon, OF-2B-SS-3B-P
+Score: 5.4666657
+
+937. Cionel Pérez, P
+Score: 5.454296
+
+938. Joel Kuhnel, P
+Score: 5.453459
+
+939. Miguel Castro, P
+Score: 5.429301
+
+940. Joe Kelly, P
+Score: 5.4158473
+
+941. Matt Foster, P
+Score: 5.4093056
+
+942. Andres Machado, P
+Score: 5.392795
+
+943. Travis Demeritte, OF
+Score: 5.3924046
+
+944. Albert Abreu, P
+Score: 5.3908997
+
+945. Andrew Kittredge, P
+Score: 5.388949
+
+946. Alex Colomé, P
+Score: 5.349191
+
+947. Noé Ramirez, P
+Score: 5.3450704
+
+948. Zach Jackson, P
+Score: 5.3333335
+
+949. Bligh Madris, OF-1B
+Score: 5.309735
+
+950. Sean Newcomb, P
+Score: 5.2855554
+
+951. Justin Lawrence, P
+Score: 5.283712
+
+952. Tom Murphy, C
+Score: 5.27878
+
+953. Hirokazu Sawamura, P
+Score: 5.2656717
+
+954. Ron Marinaccio, P
+Score: 5.225
+
+955. Cole Tucker, OF-2B-SS
+Score: 5.1910963
+
+956. Michael Toglia, OF-1B
+Score: 5.1891885
+
+957. Lucas Gilbreath, P
+Score: 5.151075
+
+958. Jake McGee, P
+Score: 5.1500845
+
+959. Steven Wilson, P
+Score: 5.1233335
+
+960. Jake Meyers, OF
+Score: 5.118721
+
+961. Niko Goodrum, 2B-1B
+Score: 5.0864377
+
+962. Billy McKinney, OF-1B
+Score: 5.0740824
+
+963. John Brebbia, P
+Score: 5.0705285
+
+964. Matt Strahm, P
+Score: 5.068687
+
+965. Anthony Kay, P
+Score: 5.0485187
+
+966. Amir Garrett, P
+Score: 5.044209
+
+967. Bryan Garcia, P
+Score: 5.041515
+
+968. Nick Sandlin, P
+Score: 5.0304093
+
+969. Billy Hamilton, OF-2B-3B
+Score: 5.029977
+
+970. Jaylin Davis, OF
+Score: 5.0221605
+
+971. Ian Gibaut, P
+Score: 4.998799
+
+972. Josh Sborz, P
+Score: 4.984056
+
+973. Jimmy Lambert, P
+Score: 4.9484496
+
+974. Tim Mayza, P
+Score: 4.909638
+
+975. Yency Almonte, P
+Score: 4.895409
+
+976. Jhonathan Diaz, P
+Score: 4.881111
+
+977. Alex Young, P
+Score: 4.8691053
+
+978. Ryan Thompson, P
+Score: 4.865451
+
+979. Jordan Weems, P
+Score: 4.816253
+
+980. Jackson Tetreault, P
+Score: 4.8125
+
+981. Jonathan Aranda, 2B-1B-3B-OF
+Score: 4.8076925
+
+982. Dermis Garcia, 1B-OF
+Score: 4.758621
+
+983. Hansel Robles, P
+Score: 4.756478
+
+984. Peyton Burdick, OF
+Score: 4.75
+
+985. Ty Blach, P
+Score: 4.7468753
+
+986. Adrián Morejón, P
+Score: 4.7425923
+
+987. Tyler Kinley, P
+Score: 4.738889
+
+988. Austin Pruitt, P
+Score: 4.7279134
+
+989. Brandon Marsh, OF
+Score: 4.689266
+
+990. Aaron Bummer, P
+Score: 4.663155
+
+991. Tommy Milone, P
+Score: 4.654222
+
+992. Chris Mazza, P
+Score: 4.649206
+
+993. Brett Martin, P
+Score: 4.64868
+
+994. Alex Wells, P
+Score: 4.625556
+
+995. Chasen Shreve, P
+Score: 4.623404
+
+996. Joe Barlow, P
+Score: 4.617284
+
+997. Yunior Marte, P
+Score: 4.615385
+
+998. Travis Shaw, 1B
+Score: 4.6132193
+
+999. Joey Krehbiel, P
+Score: 4.597701
+
+1000. Austin Dean, OF
+Score: 4.584948
+
+1001. Jake Bird, P
+Score: 4.554386
+
+1002. J.P. Feyereisen, P
+Score: 4.5131707
+
+1003. Kody Clemens, 3B-1B-2B-OF-P
+Score: 4.504273
+
+1004. Miguel Yajure, P
+Score: 4.4892735
+
+1005. Austin Romine, C
+Score: 4.4673667
+
+1006. Logan Allen, P
+Score: 4.4460607
+
+1007. Max Kranick, P
+Score: 4.395556
+
+1008. Manny Banuelos, P
+Score: 4.3928576
+
+1009. Art Warren, P
+Score: 4.3711586
+
+1010. Seth Martinez, P
+Score: 4.3555555
+
+1011. Ender Inciarte, OF
+Score: 4.3403215
+
+1012. Pierce Johnson, P
+Score: 4.3277774
+
+1013. Bobby Bradley, 1B
+Score: 4.3251696
+
+1014. Donovan Walton, 2B-SS-P-3B
+Score: 4.300191
+
+1015. Tony Santillan, P
+Score: 4.29885
+
+1016. Ashton Goudeau, P
+Score: 4.2705884
+
+1017. Zach Pop, P
+Score: 4.247222
+
+1018. José Cisnero, P
+Score: 4.2376866
+
+1019. Ross Detwiler, P
+Score: 4.2285333
+
+1020. Janson Junk, P
+Score: 4.2166667
+
+1021. Luke Farrell, P
+Score: 4.2129626
+
+1022. Gabriel Arias, 3B-2B-SS-1B
+Score: 4.212766
+
+1023. Hunter Harvey, P
+Score: 4.2027907
+
+1024. Packy Naughton, P
+Score: 4.2000003
+
+1025. Peter Strzelecki, P
+Score: 4.180556
+
+1026. Trevor Larnach, OF
+Score: 4.164102
+
+1027. Garrett Cleavinger, P
+Score: 4.143426
+
+1028. Trevor Gott, P
+Score: 4.1419444
+
+1029. Heath Hembree, P
+Score: 4.1017776
+
+1030. Yonny Hernandez, 3B-2B
+Score: 4.094794
+
+1031. Anderson Espinoza, P
+Score: 4.0940475
+
+1032. Josh Jung, 3B
+Score: 4.0816345
+
+1033. Huascar Brazoban, P
+Score: 4.0493827
+
+1034. Dany Jiménez, P
+Score: 4.040294
+
+1035. Richard Bleier, P
+Score: 3.9909194
+
+1036. Lucas Sims, P
+Score: 3.950578
+
+1037. Ralph Garza, P
+Score: 3.9373016
+
+1038. Michael Stefanic, 2B
+Score: 3.9344265
+
+1039. Ryan Kreidler, 3B-SS-2B-OF
+Score: 3.9178083
+
+1040. Oliver Ortega, P
+Score: 3.9090035
+
+1041. J.C. Mejía, P
+Score: 3.8857148
+
+1042. Matt Wallner, OF
+Score: 3.8771927
+
+1043. Josh Rogers, P
+Score: 3.8703709
+
+1044. Lars Nootbaar, OF
+Score: 3.8695216
+
+1045. Chadwick Tromp, C
+Score: 3.8685086
+
+1046. Anthony Bender, P
+Score: 3.8629627
+
+1047. Matt Peacock, P
+Score: 3.8629167
+
+1048. Nick Wittgren, P
+Score: 3.8611114
+
+1049. Anthony Misiewicz, P
+Score: 3.8498085
+
+1050. Blake Treinen, P
+Score: 3.8488567
+
+1051. Jason Foley, P
+Score: 3.8455029
+
+1052. Steven Brault, P
+Score: 3.8449576
+
+1053. Dauri Moreta, P
+Score: 3.8271606
+
+1054. Jerad Eickhoff, P
+Score: 3.8194447
+
+1055. Maikel Garcia, SS
+Score: 3.818182
+
+1056. Stephen Nogosek, P
+Score: 3.7800925
+
+1057. Zack Thompson, P
+Score: 3.7568185
+
+1058. Alec Burleson, OF-1B
+Score: 3.75
+
+1059. Víctor Arano, P
+Score: 3.7441862
+
+1060. J.B. Wendelken, P
+Score: 3.715417
+
+1061. Ernie Clement, 3B-2B-OF-1B-SS-P
+Score: 3.7024791
+
+1062. Tim Hill, P
+Score: 3.6889408
+
+1063. Kevin Ginkel, P
+Score: 3.6835144
+
+1064. Jordan Holloway, P
+Score: 3.6666667
+
+1065. Jonathan Araúz, 3B-2B-SS
+Score: 3.6631863
+
+1066. Tyler Danish, P
+Score: 3.654948
+
+1067. Jeff Brigham, P
+Score: 3.625
+
+1068. Phillips Valdez, P
+Score: 3.5952141
+
+1069. Jonathan Hernández, P
+Score: 3.5569115
+
+1070. Sam Moll, P
+Score: 3.546667
+
+1071. Zac Lowther, P
+Score: 3.5416667
+
+1072. Andrew Knapp, C
+Score: 3.5335371
+
+1073. Dom Nuñez, C
+Score: 3.520468
+
+1074. Cody Stashak, P
+Score: 3.5030863
+
+1075. Beau Sulser, P
+Score: 3.4991667
+
+1076. Reiss Knehr, P
+Score: 3.4944446
+
+1077. Matt Vierling, OF-3B-2B-1B
+Score: 3.4194055
+
+1078. Yonny Chirinos, P
+Score: 3.4125001
+
+1079. Reyes Moronta, P
+Score: 3.3955557
+
+1080. Caleb Ferguson, P
+Score: 3.3918293
+
+1081. Nick Maton, OF-2B-SS-3B-P
+Score: 3.390314
+
+1082. Louis Head, P
+Score: 3.3843844
+
+1083. Anthony Banda, P
+Score: 3.377288
+
+1084. Tres Barrera, C
+Score: 3.3406594
+
+1085. Jose Rojas, 3B-OF
+Score: 3.3333337
+
+1086. Juan Minaya, P
+Score: 3.33
+
+1087. Jake Cousins, P
+Score: 3.325
+
+1088. JT Chargois, P
+Score: 3.3048432
+
+1089. Paul Fry, P
+Score: 3.3044116
+
+1090. Taylor Walls, SS-2B-3B
+Score: 3.2982461
+
+1091. Jeremy Beasley, P
+Score: 3.2447479
+
+1092. Drew Steckenrider, P
+Score: 3.22608
+
+1093. Pablo Reyes, SS-3B-P
+Score: 3.2193732
+
+1094. Kirby Snead, P
+Score: 3.216319
+
+1095. A.J. Alexy, P
+Score: 3.1888888
+
+1096. T.J. Zeuch, P
+Score: 3.1750002
+
+1097. Kyle Isbel, OF
+Score: 3.1622803
+
+1098. Adonis Medina, P
+Score: 3.161
+
+1099. Brent Rooker, OF
+Score: 3.091906
+
+1100. Jandel Gustave, P
+Score: 3.086111
+
+1101. Ronald Bolaños, P
+Score: 3.073827
+
+1102. Tommy Hunter, P
+Score: 3.068116
+
+1103. Emmanuel Rivera, 3B-1B
+Score: 3.0666666
+
+1104. Archie Bradley, P
+Score: 3.0544713
+
+1105. Jason Castro, C
+Score: 3.0391438
+
+1106. Andre Jackson, P
+Score: 2.9838889
+
+1107. Nick Vespi, P
+Score: 2.9580002
+
+1108. Sergio Romo, P
+Score: 2.9520862
+
+1109. Sean Poppen, P
+Score: 2.9444447
+
+1110. Edwin Uceta, P
+Score: 2.9333332
+
+1111. J.J. Matijevic, 1B-OF
+Score: 2.925373
+
+1112. Jerar Encarnacion, OF
+Score: 2.9090908
+
+1113. Taylor Jones, /H
+Score: 2.881867
+
+1114. Chris Owings, 2B-SS-3B-OF-P
+Score: 2.8595014
+
+1115. Logan O'Hoppe, C
+Score: 2.857143
+
+1116. Colin Holderman, P
+Score: 2.8295138
+
+1117. Robert Gsellman, P
+Score: 2.8071425
+
+1118. Dustin Garneau, C
+Score: 2.8057928
+
+1119. Wyatt Mills, P
+Score: 2.801852
+
+1120. Ronny Henriquez, P
+Score: 2.8
+
+1121. Greg Holland, P
+Score: 2.782184
+
+1122. Trevor Kelley, P
+Score: 2.777778
+
+1123. Caleb Kilian, P
+Score: 2.7750003
+
+1124. Sam Coonrod, P
+Score: 2.7633722
+
+1125. Brett Baty, 3B
+Score: 2.7631583
+
+1126. Jose Barrero, SS
+Score: 2.7606714
+
+1127. Mickey Moniak, OF
+Score: 2.7500353
+
+1128. Casey Lawrence, P
+Score: 2.75
+
+1129. Chris Ellis, P
+Score: 2.7499998
+
+1130. Anthony Alford, OF
+Score: 2.7493799
+
+1131. Anthony Gose, P
+Score: 2.738889
+
+1132. Kaleb Ort, P
+Score: 2.726
+
+1133. Miguel Vargas, OF-1B-3B
+Score: 2.7234042
+
+1134. Owen Miller, 1B-2B-3B
+Score: 2.7225125
+
+1135. Luke Williams, OF-3B-2B-1B
+Score: 2.7210886
+
+1136. Michael Papierski, C-1B
+Score: 2.7142856
+
+1137. Hoy Park, 2B-3B-SS-OF
+Score: 2.6692708
+
+1138. Jorge Alcala, P
+Score: 2.6601853
+
+1139. Julian Merryweather, P
+Score: 2.6544802
+
+1140. Jacob Barnes, P
+Score: 2.6499999
+
+1141. Kyle Crick, P
+Score: 2.6016667
+
+1142. Thomas Hatch, P
+Score: 2.5908892
+
+1143. Kyle Nelson, P
+Score: 2.5811594
+
+1144. Jose Cuas, P
+Score: 2.5723403
+
+1145. Miguel Diaz, P
+Score: 2.5626261
+
+1146. Travis Lakins Sr., P
+Score: 2.5617285
+
+1147. Luis Perdomo, P
+Score: 2.559375
+
+1148. Sam Selman, P
+Score: 2.5492065
+
+1149. Will Benson, OF
+Score: 2.5454545
+
+1150. Yennier Cano, P
+Score: 2.5384614
+
+1151. Jose Alvarez, P
+Score: 2.5159469
+
+1152. T.J. McFarland, P
+Score: 2.5126264
+
+1153. Ryan Weber, P
+Score: 2.5101237
+
+1154. Jake Brentz, P
+Score: 2.4921877
+
+1155. Darren O'Day, P
+Score: 2.4753332
+
+1156. Meibrys Viloria, C
+Score: 2.4299998
+
+1157. Ryan Borucki, P
+Score: 2.4270456
+
+1158. Domingo Tapia, P
+Score: 2.395652
+
+1159. Eric Stout, P
+Score: 2.3941667
+
+1160. Derek Law, P
+Score: 2.3863888
+
+1161. Thomas Szapucki, P
+Score: 2.3727276
+
+1162. TJ Friedl, OF
+Score: 2.3548388
+
+1163. Sean Reid-Foley, P
+Score: 2.3546762
+
+1164. Yerry De Los Santos, P
+Score: 2.3423078
+
+1165. René Pinto, C
+Score: 2.3375006
+
+1166. Jose Siri, OF
+Score: 2.333333
+
+1167. Chad Smith, P
+Score: 2.3
+
+1168. Danny Coulombe, P
+Score: 2.283158
+
+1169. Andrew Nardi, P
+Score: 2.2756412
+
+1170. Kenny Rosenberg, P
+Score: 2.2666667
+
+1171. Keynan Middleton, P
+Score: 2.2448149
+
+1172. Austin Adams, P
+Score: 2.227053
+
+1173. Angel Rondón, P
+Score: 2.2222223
+
+1174. Darwinzon Hernandez, P
+Score: 2.2215278
+
+1175. Eddy Alvarez, OF-3B-SS
+Score: 2.1995533
+
+1176. Chad Wallach, C
+Score: 2.17931
+
+1177. Austin Wynns, C-P
+Score: 2.174359
+
+1178. César Valdez, P
+Score: 2.1652963
+
+1179. Erich Uelmen, P
+Score: 2.16
+
+1180. Anthony Castro, P
+Score: 2.1572225
+
+1181. Blake Taylor, P
+Score: 2.120625
+
+1182. Angel Zerpa, P
+Score: 2.1111112
+
+1183. DL Hall, P
+Score: 2.1000001
+
+1184. Tyson Miller, P
+Score: 2.1
+
+1185. Joe Smith, P
+Score: 2.0955555
+
+1186. Michael Plassmeyer, P
+Score: 2.0708334
+
+1187. Cade Cavalli, P
+Score: 2.05
+
+1188. Norge Ruíz, P
+Score: 2.0357144
+
+1189. Mason Thompson, P
+Score: 2.028186
+
+1190. Mark Payton, OF
+Score: 1.9966782
+
+1191. Jesus Tinoco, P
+Score: 1.9733335
+
+1192. Drew VerHagen, P
+Score: 1.9526318
+
+1193. Sean Doolittle, P
+Score: 1.9482054
+
+1194. Sam Howard, P
+Score: 1.946
+
+1195. Shelby Miller, P
+Score: 1.9444443
+
+1196. Jacob Lemoine, P
+Score: 1.937963
+
+1197. Kodi Whitley, P
+Score: 1.9272728
+
+1198. Calvin Faucher, P
+Score: 1.9181819
+
+1199. Ezequiel Tovar, SS
+Score: 1.909091
+
+1200. Mauricio Llovera, P
+Score: 1.9055557
+
+1201. Nick Fortes, C-1B
+Score: 1.9032257
+
+1202. Junior Fernández, P
+Score: 1.8761616
+
+1203. Spencer Patton, P
+Score: 1.8699735
+
+1204. Cody Thomas, OF
+Score: 1.8666668
+
+1205. Jimmy Yacabonis, P
+Score: 1.8632144
+
+1206. Jared Young, 1B-OF
+Score: 1.8421052
+
+1207. Austin Warren, P
+Score: 1.8416666
+
+1208. Yoan López, P
+Score: 1.8340279
+
+1209. Ryan Burr, P
+Score: 1.8286551
+
+1210. James Norwood, P
+Score: 1.8095239
+
+1211. JoJo Romero, P
+Score: 1.8055555
+
+1212. Ethan Small, P
+Score: 1.7791667
+
+1213. Tyler Thornburg, P
+Score: 1.7777778
+
+1214. Fernando Cruz, P
+Score: 1.775
+
+1215. Phoenix Sanders, P
+Score: 1.775
+
+1216. Richie Martin, 2B-SS
+Score: 1.7732421
+
+1217. Marcos Diplán, P
+Score: 1.7592593
+
+1218. Collin Snider, P
+Score: 1.759127
+
+1219. Riley Adams, C-1B
+Score: 1.7530864
+
+1220. Dusten Knight, P
+Score: 1.7416667
+
+1221. Collin Wiles, P
+Score: 1.7249999
+
+1222. Trayce Thompson, OF
+Score: 1.722222
+
+1223. Esteury Ruiz, OF
+Score: 1.7142856
+
+1224. Alfonso Rivas, 1B-OF
+Score: 1.6969693
+
+1225. Ryan Hendrix, P
+Score: 1.6838623
+
+1226. Tyler Clippard, P
+Score: 1.6798693
+
+1227. Daniel Mengden, P
+Score: 1.6683334
+
+1228. José Butto, P
+Score: 1.6666666
+
+1229. Chris Devenski, P
+Score: 1.6562963
+
+1230. Manuel Rodríguez, P
+Score: 1.6447221
+
+1231. Zack Weiss, P
+Score: 1.6375002
+
+1232. Gabe Speier, P
+Score: 1.6304445
+
+1233. Kervin Castro, P
+Score: 1.6269232
+
+1234. Tayler Scott, P
+Score: 1.625
+
+1235. Luke Maile, C
+Score: 1.5666668
+
+1236. Tyler Cyr, P
+Score: 1.5465279
+
+1237. Eduard Bazardo, P
+Score: 1.5437502
+
+1238. Kyle Barraclough, P
+Score: 1.5429293
+
+1239. David MacKinnon, 1B-3B
+Score: 1.54
+
+1240. Miguel Sánchez, P
+Score: 1.5350528
+
+1241. Jarren Duran, OF
+Score: 1.5285568
+
+1242. Robbie Erlin, P
+Score: 1.5111111
+
+1243. Justin Bruihl, P
+Score: 1.5103942
+
+1244. Luis Frías, P
+Score: 1.5083333
+
+1245. Grayson Greiner, C
+Score: 1.5081041
+
+1246. Zack Short, 2B-SS
+Score: 1.5042738
+
+1247. Cal Stevenson, OF
+Score: 1.5000001
+
+1248. Max Meyer, P
+Score: 1.5
+
+1249. Mark Vientos, 3B
+Score: 1.5
+
+1250. Austin Brice, P
+Score: 1.4791666
+
+1251. Hunter Gaddis, P
+Score: 1.4791666
+
+1252. Jake Reed, P
+Score: 1.4730159
+
+1253. Justin Wilson, P
+Score: 1.4427538
+
+1254. Seth Beer, 1B
+Score: 1.4320989
+
+1255. Ryan McKenna, OF-P
+Score: 1.4266927
+
+1256. Jason Vosler, 3B-OF-1B-2B-SS
+Score: 1.4246575
+
+1257. Scott Alexander, P
+Score: 1.4055556
+
+1258. Michael Hermosillo, OF
+Score: 1.4050559
+
+1259. Luke Bard, P
+Score: 1.3953333
+
+1260. Anthony Bemboom, C
+Score: 1.3937677
+
+1261. Jose Marte, P
+Score: 1.3888888
+
+1262. Pedro Avila, P
+Score: 1.3888888
+
+1263. Ryan Castellani, P
+Score: 1.3847779
+
+1264. Jake McCarthy, OF
+Score: 1.3709985
+
+1265. Javy Guerra, P
+Score: 1.3619046
+
+1266. Tommy Romero, P
+Score: 1.35
+
+1267. Carlos Pérez, C
+Score: 1.3333335
+
+1268. Patrick Murphy, P
+Score: 1.3269842
+
+1269. Dereck Rodríguez, P
+Score: 1.32
+
+1270. Shane Greene, P
+Score: 1.3193055
+
+1271. Geraldo Perdomo, SS-3B-2B
+Score: 1.3189963
+
+1272. Monte Harrison, OF
+Score: 1.2975781
+
+1273. Jermaine Palacios, SS-2B-1B-3B-P
+Score: 1.2857146
+
+1274. Cam Vieaux, P
+Score: 1.28125
+
+1275. Michael Feliz, P
+Score: 1.2569444
+
+1276. Simeon Woods Richardson, P
+Score: 1.25
+
+1277. Elvis Peguero, P
+Score: 1.2285715
+
+1278. Ford Proctor, 2B-C
+Score: 1.2222222
+
+1279. Tommy Kahnle, P
+Score: 1.22
+
+1280. Conner Menez, P
+Score: 1.2030555
+
+1281. Joe Dunand, 2B-3B
+Score: 1.2
+
+1282. Evan Lee, P
+Score: 1.1958333
+
+1283. Matt Gage, P
+Score: 1.1818182
+
+1284. Estevan Florial, OF
+Score: 1.1740764
+
+1285. Adam Kolarek, P
+Score: 1.154396
+
+1286. Dairon Blanco, OF
+Score: 1.1428572
+
+1287. Xzavion Curry, P
+Score: 1.1375
+
+1288. Kyle Tyler, P
+Score: 1.1250001
+
+1289. Alex Claudio, P
+Score: 1.1238889
+
+1290. Justin Grimm, P
+Score: 1.0844444
+
+1291. Greg Weissert, P
+Score: 1.0791668
+
+1292. Rodolfo Castro, 2B-3B-SS
+Score: 1.0762272
+
+1293. Bennett Sousa, P
+Score: 1.072
+
+1294. Matt Davidson, 3B-1B
+Score: 1.0696714
+
+1295. Cooper Criswell, P
+Score: 1.0666667
+
+1296. Aaron Brooks, P
+Score: 1.0616667
+
+1297. Patrick Mazeika, C-1B
+Score: 1.0548524
+
+1298. Sam Clay, P
+Score: 1.0522435
+
+1299. Tucupita Marcano, OF-2B-SS
+Score: 1.0505052
+
+1300. Ka'ai Tom, OF
+Score: 1.0339506
+
+1301. Shaun Anderson, P
+Score: 1.0301235
+
+1302. Drew Carlton, P
+Score: 1.0287038
+
+1303. Danny Young, P
+Score: 1.0166667
+
+1304. Zack Kelly, P
+Score: 1.0153846
+
+1305. Vinny Capra, OF-2B
 Score: 1.0
 
-794. Brian O'Keefe, C
-Score: 1.0
-
-795. Kramer Robertson, SS
-Score: 1.0
-
-796. Rob Brantly, C
-Score: 1.0
-
-797. Liover Peguero, SS
-Score: 1.0
-
-798. Grayson Greiner, C
-Score: 1.0
-
-799. Steele Walker, OF
+1306. Brendon Davis, OF-3B
 Score: 0.99999994
 
-800. Yainer Diaz, C
-Score: 0.99999994
+1307. JT Riddle, 3B
+Score: 0.9391374
 
-801. Kevin Padlo, 3B-1B
-Score: 0.99999994
+1308. Logan Gillaspie, P
+Score: 0.9220589
 
-802. Jason Foley, P
-Score: 0.9972622
+1309. Jay Jackson, P
+Score: 0.91666657
 
-803. Brad Boxberger, P
-Score: 0.9962019
+1310. Seby Zavala, C-1B
+Score: 0.9139782
 
-804. Reid Detmers, P
-Score: 0.9939955
+1311. Ben DeLuzio, OF
+Score: 0.9
 
-805. Jhoan Duran, P
-Score: 0.9899632
+1312. Bryan Hoeing, P
+Score: 0.88958335
 
-806. Cody Stashak, P
-Score: 0.98906934
+1313. Angel De Jesus, P
+Score: 0.88958335
 
-807. Taylor Clarke, P
-Score: 0.9825168
+1314. Tyler Nevin, 3B-1B-OF
+Score: 0.88888896
 
-808. Ian Anderson, P
-Score: 0.9802816
+1315. Enoli Paredes, P
+Score: 0.8875758
 
-809. Patrick Sandoval, P
-Score: 0.9670574
+1316. Anderson Severino, P
+Score: 0.8875
 
-810. David Price, P
-Score: 0.96291333
+1317. Raynel Espinal, P
+Score: 0.875
 
-811. Bailey Ober, P
-Score: 0.95477796
+1318. Andrew Vasquez, P
+Score: 0.8341667
 
-812. Tanner Banks, P
-Score: 0.9518621
+1319. Josh Palacios, OF
+Score: 0.82222205
 
-813. Trevor Richards, P
-Score: 0.95182586
+1320. Aaron Fletcher, P
+Score: 0.8066667
 
-814. Chad Green, P
-Score: 0.9413624
+1321. Yolmer Sanchez, 2B-3B-SS-P
+Score: 0.800995
 
-815. Jesse Chavez, P
-Score: 0.9384467
+1322. Nick Mears, P
+Score: 0.79958326
 
-816. Noah Syndergaard, P
-Score: 0.92950064
+1323. Jake Fishman, P
+Score: 0.7857143
 
-817. Josh Hader, P
-Score: 0.9163929
+1324. Gavin Hollowell, P
+Score: 0.77777785
 
-818. Hoby Milner, P
-Score: 0.9117136
+1325. Kevin Herget, P
+Score: 0.77777785
 
-819. Pete Fairbanks, P
-Score: 0.90444106
+1326. Kyle Dowdy, P
+Score: 0.7625
 
-820. Daniel Hudson, P
-Score: 0.90437025
+1327. Jake Burger, 3B-2B
+Score: 0.76023394
 
-821. Lucas Luetge, P
-Score: 0.9033065
+1328. Narciso Crook, OF
+Score: 0.75
 
-822. Chris Stratton, P
-Score: 0.90245575
+1329. Mario Feliciano, C
+Score: 0.75
 
-823. Matt Moore, P
-Score: 0.90189296
+1330. Cody Sedlock, P
+Score: 0.75
 
-824. Mychal Givens, P
-Score: 0.9007688
+1331. Alan Trejo, SS-2B-3B
+Score: 0.7487924
 
-825. Ryan Tepera, P
-Score: 0.8978372
+1332. Francisco Perez, P
+Score: 0.7287879
 
-826. Austin Gomber, P
-Score: 0.8945024
+1333. Aramis Garcia, C-1B
+Score: 0.72727257
 
-827. Camilo Doval, P
-Score: 0.89396864
+1334. Mark Contreras, OF
+Score: 0.7241378
 
-828. Yimi Garcia, P
-Score: 0.88523734
+1335. Gosuke Katoh, 1B-2B
+Score: 0.71428573
 
-829. Kyle Finnegan, P
-Score: 0.88468283
+1336. Taylor Trammell, OF
+Score: 0.7122507
 
-830. Mike Clevinger, P
-Score: 0.8827287
+1337. Mark Appel, P
+Score: 0.7013889
 
-831. Cionel Pï¿½rez, P
-Score: 0.8824141
+1338. Jhon Romero, P
+Score: 0.7
 
-832. Austin Voth, P
-Score: 0.8770395
+1339. Zack Britton, P
+Score: 0.6944445
 
-833. John Brebbia, P
-Score: 0.874212
+1340. Jeremiah Estrada, P
+Score: 0.6933333
 
-834. Sam Hentges, P
-Score: 0.86889374
+1341. Luis Ortiz, P
+Score: 0.68333334
 
-835. Dillon Tate, P
-Score: 0.8688389
+1342. Parker Mushinski, P
+Score: 0.67619056
 
-836. David Robertson, P
-Score: 0.8656803
+1343. Jared Solomon, P
+Score: 0.675
 
-837. Craig Stammen, P
-Score: 0.86519724
+1344. Locke St. John, P
+Score: 0.6666667
 
-838. Craig Kimbrel, P
-Score: 0.859508
+1345. Francisco Álvarez, C
+Score: 0.6666667
 
-839. Jakob Junis, P
-Score: 0.8549571
+1346. Reed Garrett, P
+Score: 0.65000004
 
-840. Josiah Gray, P
-Score: 0.85460854
+1347. Justin Topa, P
+Score: 0.6296914
 
-841. Domingo Acevedo, P
-Score: 0.85219413
+1348. Jesus Cruz, P
+Score: 0.6247619
 
-842. Yusei Kikuchi, P
-Score: 0.84877586
+1349. Ken Giles, P
+Score: 0.6166666
 
-843. JT Chargois, P
-Score: 0.8487482
+1350. Mark Kolozsvary, C
+Score: 0.6000004
 
-844. Connor Brogdon, P
-Score: 0.8435603
+1351. Dixon Machado, SS
+Score: 0.60000014
 
-845. Phil Maton, P
-Score: 0.84300363
+1352. Canaan Smith-Njigba, OF
+Score: 0.6
 
-846. Trevor May, P
-Score: 0.84117633
+1353. Denyi Reyes, P
+Score: 0.59999996
 
-847. Tylor Megill, P
-Score: 0.83819526
+1354. Ethan Roberts, P
+Score: 0.59999996
 
-848. Zach Plesac, P
-Score: 0.8379832
+1355. Jordan Sheffield, P
+Score: 0.59097224
 
-849. Alex Lange, P
-Score: 0.8370201
+1356. Miles Mastrobuoni, 2B-OF
+Score: 0.5625
 
-850. Taylor Rogers, P
-Score: 0.83680385
+1357. Francisco Morales, P
+Score: 0.5555556
 
-851. Tanner Houck, P
-Score: 0.835719
+1358. Nick Plummer, OF
+Score: 0.55172426
 
-852. Jake Odorizzi, P
-Score: 0.83315957
+1359. Elier Hernandez, OF-1B
+Score: 0.54545456
 
-853. Tyler Rogers, P
-Score: 0.8214976
+1360. James Naile, P
+Score: 0.5357143
 
-854. Brooks Raley, P
-Score: 0.8176617
+1361. Alejo Lopez, 2B-3B-OF-P
+Score: 0.52173924
 
-855. Trevor Williams, P
-Score: 0.8126298
+1362. Damon Jones, P
+Score: 0.5208333
 
-856. Michael Kopech, P
-Score: 0.8110844
+1363. Oneil Cruz, SS-OF
+Score: 0.5185185
 
-857. Colin Poche, P
-Score: 0.80310833
+1364. Bryce Montes de Oca, P
+Score: 0.51666665
 
-858. Paul Blackburn, P
-Score: 0.80093825
+1365. Roenis Elías, P
+Score: 0.51428574
 
-859. Dylan Coleman, P
-Score: 0.7953181
+1366. Ronel Blanco, P
+Score: 0.5083333
 
-860. Andrew Wantz, P
-Score: 0.7743795
+1367. Pedro Báez, P
+Score: 0.49206343
 
-861. Andrew Chafin, P
-Score: 0.7704256
+1368. Korey Lee, C
+Score: 0.4800002
 
-862. Matt Bush, P
-Score: 0.76857436
+1369. Silvino Bracho, P
+Score: 0.47833332
 
-863. A.J. Puk, P
-Score: 0.7617933
+1370. Kirby Yates, P
+Score: 0.47333333
 
-864. Steven Wilson, P
-Score: 0.7599414
+1371. Romy Gonzalez, 2B-SS-OF
+Score: 0.47222227
 
-865. Dean Kremer, P
-Score: 0.74891186
+1372. Brandon Dixon, 3B-OF
+Score: 0.46265057
 
-866. Bryan Baker, P
-Score: 0.7468066
+1373. Terrance Gore, OF
+Score: 0.45714286
 
-867. Ryne Stanek, P
-Score: 0.7448211
+1374. Tayler Saucedo, P
+Score: 0.45064104
 
-868. Emilio Pagï¿½n, P
-Score: 0.7420247
+1375. Tyler Holton, P
+Score: 0.45000002
 
-869. Steven Okert, P
-Score: 0.73630077
+1376. Taylor Motter, 3B-2B
+Score: 0.44871786
 
-870. Madison Bumgarner, P
-Score: 0.7340217
+1377. David McKay, P
+Score: 0.4375
 
-871. Chris Paddack, P
-Score: 0.73030293
+1378. Foster Griffin, P
+Score: 0.42777777
 
-872. James Kaprielian, P
-Score: 0.72898245
+1379. Deven Marrero, 3B-SS
+Score: 0.4166667
 
-873. Dane Dunning, P
-Score: 0.7278991
+1380. Chuckie Robinson, C
+Score: 0.40677968
 
-874. Drew Smith, P
-Score: 0.72678846
+1381. Heliot Ramos, OF
+Score: 0.40000004
 
-875. Nick Lodolo, P
-Score: 0.72370505
+1382. Drew Ellis, 3B
+Score: 0.39130422
 
-876. Justin Steele, P
-Score: 0.7190748
+1383. Rico Garcia, P
+Score: 0.375
 
-877. Edward Cabrera, P
-Score: 0.71738344
+1384. Oliver Pérez, P
+Score: 0.37203702
 
-878. Keegan Akin, P
-Score: 0.71707773
+1385. Josh Lowe, OF
+Score: 0.3703704
 
-879. Jarlï¿½n Garcï¿½a, P
-Score: 0.7150501
+1386. Gilberto Celestino, OF
+Score: 0.36158198
 
-880. Robert Stephenson, P
-Score: 0.71427596
+1387. Luis Castillo, P
+Score: 0.35555556
 
-881. Jaime Barria, P
-Score: 0.71349686
+1388. R.J. Alvarez, P
+Score: 0.35
 
-882. Hunter Greene, P
-Score: 0.7132642
-
-883. Matt Wisler, P
-Score: 0.7106771
-
-884. Ryan Yarbrough, P
-Score: 0.7091045
-
-885. Luis Cessa, P
-Score: 0.7048289
-
-886. John Means, P
-Score: 0.6996497
-
-887. Richard Bleier, P
-Score: 0.6983278
-
-888. Caleb Ferguson, P
-Score: 0.6931805
-
-889. Michael Lorenzen, P
-Score: 0.69130176
-
-890. Jake Woodford, P
-Score: 0.6890437
-
-891. Adrian Sampson, P
-Score: 0.68900913
-
-892. Nick Sandlin, P
-Score: 0.688901
-
-893. Nick Martinez, P
-Score: 0.6859666
-
-894. Kendall Graveman, P
-Score: 0.6845179
-
-895. Hayden Wesneski, P
-Score: 0.6722223
-
-896. Luis Garcï¿½a, P
-Score: 0.67104304
-
-897. Shawn Armstrong, P
-Score: 0.6690512
-
-898. Jonathan Loï¿½isiga, P
-Score: 0.6643438
-
-899. Ryan Thompson, P
-Score: 0.66105056
-
-900. Brusdar Graterol, P
-Score: 0.65989137
-
-901. Mike Mayers, P
-Score: 0.6560179
-
-902. Seranthony Domï¿½nguez, P
-Score: 0.6535703
-
-903. Michael Rucker, P
-Score: 0.65349364
-
-904. Wandy Peralta, P
-Score: 0.64199525
-
-905. Dylan Floro, P
-Score: 0.6417222
-
-906. Zach Davies, P
-Score: 0.640231
-
-907. Josï¿½ Ruiz, P
-Score: 0.6391421
-
-908. Taylor Hearn, P
-Score: 0.6367175
-
-909. Blake Treinen, P
-Score: 0.6344289
-
-910. Tim Hill, P
-Score: 0.6306129
-
-911. Chase De Jong, P
-Score: 0.62910587
-
-912. Adbert Alzolay, P
-Score: 0.62716657
-
-913. Jake Diekman, P
-Score: 0.62394667
-
-914. Trevor Rogers, P
-Score: 0.6199566
-
-915. Carl Edwards Jr., P
-Score: 0.6196476
-
-916. Joe Mantiply, P
-Score: 0.6185099
-
-917. Hunter Harvey, P
-Score: 0.60752845
-
-918. Miguel Castro, P
-Score: 0.59711754
-
-919. Roansy Contreras, P
-Score: 0.5962297
-
-920. Jack Flaherty, P
-Score: 0.5947701
-
-921. Domingo Germï¿½n, P
-Score: 0.5928357
-
-922. Anthony DeSclafani, P
-Score: 0.58435166
-
-923. Lucas Gilbreath, P
-Score: 0.5823984
-
-924. Brandon Hughes, P
-Score: 0.5773502
-
-925. Zack Littell, P
-Score: 0.5751677
-
-926. Wade Miley, P
-Score: 0.5745243
-
-927. Vince Velasquez, P
-Score: 0.57402205
-
-928. Devin Smeltzer, P
-Score: 0.57278836
-
-929. Jalen Beeks, P
-Score: 0.571995
-
-930. Andres Machado, P
-Score: 0.57192045
-
-931. Mitch Keller, P
-Score: 0.5712818
-
-932. Rony Garcï¿½a, P
-Score: 0.56933093
-
-933. Andrew Bellatti, P
-Score: 0.56465137
-
-934. Bryan Shaw, P
-Score: 0.5627191
-
-935. Tyler Kinley, P
-Score: 0.55755085
-
-936. Yency Almonte, P
-Score: 0.5564278
-
-937. Michael Fulmer, P
-Score: 0.5537906
-
-938. Adriï¿½n Morejï¿½n, P
-Score: 0.5535224
-
-939. Carlos Estï¿½vez, P
-Score: 0.54999715
-
-940. JT Brubaker, P
-Score: 0.54626596
-
-941. Tyler Matzek, P
-Score: 0.5409094
-
-942. Scott Effross, P
-Score: 0.5404149
-
-943. Aroldis Chapman, P
-Score: 0.5365068
-
-944. Tanner Scott, P
-Score: 0.53276855
-
-945. Drey Jameson, P
-Score: 0.527338
-
-946. Brad Hand, P
-Score: 0.5257959
-
-947. Will Vest, P
-Score: 0.52498966
-
-948. Gï¿½nesis Cabrera, P
-Score: 0.52360785
-
-949. Patrick Corbin, P
-Score: 0.52260935
-
-950. JP Sears, P
-Score: 0.50952077
-
-951. Amir Garrett, P
-Score: 0.5072854
-
-952. Glenn Otto, P
-Score: 0.5050094
-
-953. Andre Pallante, P
-Score: 0.5031108
-
-954. Adrian Houser, P
-Score: 0.50261587
-
-955. Brad Keller, P
-Score: 0.50257653
-
-956. Matt Foster, P
-Score: 0.49917683
-
-957. Joe Barlow, P
-Score: 0.4985191
-
-958. Dakota Hudson, P
-Score: 0.4938235
-
-959. Chad Kuhl, P
-Score: 0.48439908
-
-960. Braxton Garrett, P
-Score: 0.48310584
-
-961. Matt Strahm, P
-Score: 0.47945118
-
-962. Garrett Richards, P
-Score: 0.47777793
-
-963. Hunter Brown, P
-Score: 0.47689083
-
-964. Jeff Hoffman, P
-Score: 0.4767512
-
-965. Hunter Strickland, P
-Score: 0.4763859
-
-966. Sam Moll, P
-Score: 0.4744274
-
-967. Tyler Alexander, P
-Score: 0.4708096
-
-968. Aaron Loup, P
-Score: 0.4691657
-
-969. Kyle Bradish, P
-Score: 0.46659568
-
-970. Jharel Cotton, P
-Score: 0.46619278
-
-971. Aaron Bummer, P
-Score: 0.46517247
-
-972. Ty Blach, P
-Score: 0.46453542
-
-973. Antonio Senzatela, P
-Score: 0.463706
-
-974. Trevor Gott, P
-Score: 0.46339318
-
-975. Michael Pineda, P
-Score: 0.45846575
-
-976. Jorge Lï¿½pez, P
-Score: 0.45749244
-
-977. Nick Vespi, P
-Score: 0.44959882
-
-978. Graham Ashcraft, P
-Score: 0.4453027
-
-979. Peter Strzelecki, P
-Score: 0.44352996
-
-980. Jake McGee, P
-Score: 0.44035867
-
-981. Daniel Norris, P
-Score: 0.43921807
-
-982. Mike Minor, P
-Score: 0.43898544
-
-983. Erick Fedde, P
-Score: 0.43800417
-
-984. Lucas Sims, P
-Score: 0.4364099
-
-985. Buck Farmer, P
-Score: 0.43590102
-
-986. Noï¿½ Ramirez, P
-Score: 0.43588525
-
-987. Clarke Schmidt, P
-Score: 0.43081918
-
-988. Hirokazu Sawamura, P
-Score: 0.42972443
-
-989. Joel Kuhnel, P
-Score: 0.42691958
-
-990. Joey Krehbiel, P
-Score: 0.42033485
-
-991. Yohan Ramirez, P
-Score: 0.4127986
-
-992. Luis Perdomo, P
-Score: 0.40888888
-
-993. Kyle Nelson, P
-Score: 0.407787
-
-994. Anthony Gose, P
-Score: 0.4061676
-
-995. Seth Martinez, P
-Score: 0.4024111
-
-996. Nick Nelson, P
-Score: 0.40057933
-
-997. Josï¿½ Cisnero, P
-Score: 0.3976027
-
-998. Tyler Danish, P
-Score: 0.3975621
-
-999. Josh Staumont, P
-Score: 0.3973736
-
-1000. Austin Davis, P
-Score: 0.39627475
-
-1001. Jandel Gustave, P
-Score: 0.39463553
-
-1002. Zach Jackson, P
-Score: 0.39436337
-
-1003. Ryan Pepiot, P
-Score: 0.39419103
-
-1004. Spenser Watkins, P
-Score: 0.3922888
-
-1005. Wil Crowe, P
-Score: 0.38700694
-
-1006. Matt Manning, P
-Score: 0.3862474
-
-1007. Luis Castillo, P
-Score: 0.38518518
-
-1008. Josh Sborz, P
-Score: 0.38301367
-
-1009. Dinelson Lamet, P
-Score: 0.38221782
-
-1010. Elieser Hernandez, P
-Score: 0.38107714
-
-1011. Tyler Duffey, P
-Score: 0.379588
-
-1012. Dustin May, P
-Score: 0.3787225
-
-1013. Johan Oviedo, P
-Score: 0.37833756
-
-1014. Manny Banuelos, P
-Score: 0.37259945
-
-1015. Bruce Zimmermann, P
-Score: 0.37228256
-
-1016. Dominic Leone, P
-Score: 0.37155616
-
-1017. Trevor Megill, P
-Score: 0.37021866
-
-1018. Wily Peralta, P
-Score: 0.36630598
-
-1019. Colin Holderman, P
-Score: 0.3619465
-
-1020. Jake Cousins, P
-Score: 0.3601458
-
-1021. Vï¿½ctor Arano, P
-Score: 0.3584479
-
-1022. Aaron Ashby, P
-Score: 0.35715288
-
-1023. Daniel Lynch, P
-Score: 0.35038656
-
-1024. Bryse Wilson, P
-Score: 0.3490829
-
-1025. Chasen Shreve, P
-Score: 0.34826127
-
-1026. MacKenzie Gore, P
-Score: 0.34751922
-
-1027. Jhoulys Chacï¿½n, P
-Score: 0.34633157
-
-1028. Austin Adams, P
-Score: 0.34618387
-
-1029. Humberto Castellanos, P
-Score: 0.3454045
-
-1030. Justin Lawrence, P
-Score: 0.3441064
-
-1031. Ryan Borucki, P
-Score: 0.34146062
-
-1032. Jeurys Familia, P
-Score: 0.33956823
-
-1033. Garrett Cleavinger, P
-Score: 0.33718425
-
-1034. Matthew Boyd, P
-Score: 0.336903
-
-1035. Joely Rodrï¿½guez, P
-Score: 0.33509922
-
-1036. Anthony Misiewicz, P
-Score: 0.3344623
-
-1037. Evan Phillips_h, 1
+1389. Brian O'Keefe, C
 Score: 0.33333334
 
-1038. Ian Kennedy, P
-Score: 0.33149803
+1390. Michael Kelly, P
+Score: 0.33333334
 
-1039. Caleb Smith, P
-Score: 0.33067203
+1391. Tanner Tully, P
+Score: 0.33333334
 
-1040. Lou Trivino, P
-Score: 0.3269445
+1392. Liover Peguero, SS
+Score: 0.33333334
 
-1041. Paolo Espino, P
-Score: 0.32513478
+1393. Luke Barker, P
+Score: 0.33333334
 
-1042. Corey Knebel, P
-Score: 0.3242292
+1394. Michael Siani, OF
+Score: 0.33333334
 
-1043. Darren O'Day, P
-Score: 0.3183337
+1395. Chris Okey, C
+Score: 0.3333333
 
-1044. Eduard Bazardo, P
-Score: 0.31568858
+1396. Phillip Diehl, P
+Score: 0.3272222
 
-1045. Kris Bubic, P
-Score: 0.3128112
+1397. Michel Báez, P
+Score: 0.3116667
 
-1046. Josh Winder, P
-Score: 0.3088421
+1398. Jake Walsh, P
+Score: 0.30555555
 
-1047. Jackson Stephens, P
-Score: 0.30829573
+1399. Connor Wong, C-2B-3B
+Score: 0.2735043
 
-1048. Zach Thompson, P
-Score: 0.30434063
+1400. Franklin German, P
+Score: 0.26666668
 
-1049. Tommy Nance, P
-Score: 0.3039802
+1401. Gregory Santos, P
+Score: 0.26666668
 
-1050. Zack Thompson, P
-Score: 0.30332145
+1402. Matt Koch, P
+Score: 0.25625
 
-1051. Connor Overton, P
-Score: 0.29944116
+1403. Nate Fisher, P
+Score: 0.25
 
-1052. Pierce Johnson, P
-Score: 0.29861954
+1404. Connor Sadzeck, P
+Score: 0.25
 
-1053. Beau Brieske, P
-Score: 0.29782948
+1405. Parker Markel, P
+Score: 0.25
 
-1054. J.B. Wendelken, P
-Score: 0.2956051
+1406. Easton McGee, P
+Score: 0.25
 
-1055. Joe Kelly, P
-Score: 0.29469553
+1407. Cole Waites, P
+Score: 0.24761905
 
-1056. Ryan Feltner, P
-Score: 0.29402414
+1408. Tony Wolters, C-2B
+Score: 0.23800004
 
-1057. Jose Alvarez, P
-Score: 0.29390952
+1409. Stuart Fairchild, OF
+Score: 0.23703706
 
-1058. Joel Payamps, P
-Score: 0.2929878
+1410. Cristofer Ogando, P
+Score: 0.22777778
 
-1059. Michael Grove, P
-Score: 0.2920479
+1411. Travis Blankenhorn, /D
+Score: 0.20262986
 
-1060. Albert Abreu, P
-Score: 0.29197612
+1412. Eguy Rosario, 3B-SS
+Score: 0.20000003
 
-1061. Mark Leiter Jr., P
-Score: 0.28883874
+1413. Rob Brantly, C
+Score: 0.19913422
 
-1062. Gregory Soto, P
-Score: 0.2862255
+1414. Arodys Vizcaíno, P
+Score: 0.18571429
 
-1063. Will Smith, P
-Score: 0.28557593
+1415. Aneurys Zabala, P
+Score: 0.18333334
 
-1064. Dillon Peters, P
-Score: 0.28555635
+1416. Ray Kerr, P
+Score: 0.17857142
 
-1065. Tyler Cyr, P
-Score: 0.28516474
+1417. William Woods, P
+Score: 0.16666667
 
-1066. Juan Minaya, P
-Score: 0.28449225
+1418. Rob Zastryzny, P
+Score: 0.16666667
 
-1067. Casey Mize, P
-Score: 0.28341854
+1419. Noah Davis, P
+Score: 0.16666667
 
-1068. Ken Waldichuk, P
-Score: 0.28326276
+1420. Cal Raleigh, C
+Score: 0.15987174
 
-1069. Rowan Wick, P
-Score: 0.28311712
+1421. Riley O'Brien, P
+Score: 0.15277779
 
-1070. Louis Head, P
-Score: 0.2798009
+1422. Ian Hamilton, P
+Score: 0.14666668
 
-1071. Josh Fleming, P
-Score: 0.27931955
+1423. Luis Barrera, OF
+Score: 0.13888891
 
-1072. Kutter Crawford, P
-Score: 0.27888834
+1424. Jason Krizan, OF
+Score: 0.12500001
 
-1073. T.J. McFarland, P
-Score: 0.27803582
+1425. Yainer Diaz, C
+Score: 0.12499999
 
-1074. Trevor Kelley, P
-Score: 0.27734396
+1426. Daniel Duarte, P
+Score: 0.12222222
 
-1075. Reyes Moronta, P
-Score: 0.27726647
+1427. Steven Souza Jr., OF
+Score: 0.11255944
 
-1076. John King, P
-Score: 0.2754784
+1428. Bryce Johnson, OF
+Score: 0.11111115
 
-1077. Matt Brash, P
-Score: 0.2743616
+1429. Vinny Nittoli, P
+Score: 0.11111111
 
-1078. Archie Bradley, P
-Score: 0.2708413
+1430. Nicholas Padilla, P
+Score: 0.1
 
-1079. Alec Mills, P
-Score: 0.2701252
+1431. Matt Dermody, P
+Score: 0.1
 
-1080. Shane Baz, P
-Score: 0.2681235
+1432. José Godoy, C
+Score: 0.09009011
 
-1081. Sean Doolittle, P
-Score: 0.2675895
+1433. Payton Henry, C
+Score: 0.088888906
 
-1082. Anthony Bender, P
-Score: 0.26711187
+1434. Skye Bolt, OF
+Score: 0.08771926
 
-1083. Aaron Sanchez, P
-Score: 0.26668707
+1435. Bryan Lavastida, C
+Score: 0.08333334
 
-1084. Kyle Crick, P
-Score: 0.26391256
+1436. Bubby Rossman, P
+Score: 0.083333336
 
-1085. Nick Wittgren, P
-Score: 0.26148343
+1437. Cam Alldred, P
+Score: 0.083333336
 
-1086. Anï¿½bal Sï¿½nchez, P
-Score: 0.2601163
+1438. Yerry Rodriguez, P
+Score: 0.083333336
 
-1087. Chris Sale, P
-Score: 0.25731415
+1439. José Castillo, P
+Score: 0.083333336
 
-1088. Art Warren, P
-Score: 0.25556642
+1440. Nick Duron, P
+Score: 0.083333336
 
-1089. Cole Sulser, P
-Score: 0.25475785
+1441. Lucius Fox, SS-3B
+Score: 0.08000001
 
-1090. Kodi Whitley, P
-Score: 0.2542612
+1442. Brian Moran, P
+Score: 0.075
 
-1091. Logan Gillaspie, P
-Score: 0.252356
+1443. Steele Walker, OF
+Score: 0.071428575
 
-1092. Dennis Santana, P
-Score: 0.25225297
+1444. Luke Raley, OF-1B
+Score: 0.060606025
 
-1093. Ryne Nelson, P
-Score: 0.25214756
+1445. Sebastian Rivero, C
+Score: 0.03888887
 
-1094. Jordan Hicks, P
-Score: 0.2490338
+1446. Nicklaus Snyder, P
+Score: 0.02037037
 
-1095. Greg Weissert, P
-Score: 0.24872221
+1447. Vidal Bruján, 2B-OF-SS-3B
+Score: 0.017094009
 
-1096. Bryan Garcia, P
-Score: 0.24587584
+1448. Bowden Francis, P
+Score: 0.016666668
 
-1097. Luke Weaver, P
-Score: 0.24528714
+1449. Freddy Tarnok, P
+Score: 0.016666668
 
-1098. Steve Cishek, P
-Score: 0.24466002
+1450. Matthew Batten, 3B-2B-OF-P
+Score: 4.70563E-8
 
-1099. Scott Alexander, P
-Score: 0.24452405
-
-1100. Davis Martin, P
-Score: 0.24302466
-
-1101. Austin Warren, P
-Score: 0.24266005
-
-1102. Yunior Marte, P
-Score: 0.24236058
-
-1103. Sam Long, P
-Score: 0.24038087
-
-1104. Matt Barnes, P
-Score: 0.23991515
-
-1105. Mark Melancon, P
-Score: 0.23950024
-
-1106. Jorge Alcala, P
-Score: 0.23861897
-
-1107. Chris Archer, P
-Score: 0.23497736
-
-1108. Cristopher Sï¿½nchez, P
-Score: 0.23492491
-
-1109. Joey Wentz, P
-Score: 0.23353276
-
-1110. Dany Jimï¿½nez, P
-Score: 0.23248895
-
-1111. Ross Detwiler, P
-Score: 0.23239851
-
-1112. Adriï¿½n Martinez, P
-Score: 0.2304186
-
-1113. Miguel Diaz, P
-Score: 0.22991623
-
-1114. Reiver Sanmartin, P
-Score: 0.22594303
-
-1115. Chris Devenski, P
-Score: 0.22587289
-
-1116. Jake Fishman, P
-Score: 0.2250712
-
-1117. Bryce Elder, P
-Score: 0.22475968
-
-1118. Heath Hembree, P
-Score: 0.22342017
-
-1119. Drew Hutchison, P
-Score: 0.22310619
-
-1120. Garrett Hill, P
-Score: 0.22050607
-
-1121. Duane Underwood Jr., P
-Score: 0.21771537
-
-1122. Josï¿½ Ureï¿½a, P
-Score: 0.21598531
-
-1123. Joe Smith, P
-Score: 0.21446861
-
-1124. Jacob Barnes, P
-Score: 0.21259263
-
-1125. Dallas Keuchel, P
-Score: 0.210131
-
-1126. Ryan Brasier, P
-Score: 0.21012045
-
-1127. Yonny Chirinos, P
-Score: 0.20861365
-
-1128. Jimmy Lambert, P
-Score: 0.20849113
-
-1129. Drew Steckenrider, P
-Score: 0.2081951
-
-1130. Touki Toussaint, P
-Score: 0.20621236
-
-1131. Tanner Rainey, P
-Score: 0.205189
-
-1132. Huascar Brazoban, P
-Score: 0.20420367
-
-1133. Adonis Medina, P
-Score: 0.20163405
-
-1134. Jonathan Hernï¿½ndez, P
-Score: 0.2004474
-
-1135. Jonathan Heasley, P
-Score: 0.19972108
-
-1136. Brett Martin, P
-Score: 0.19906747
-
-1137. Spencer Patton, P
-Score: 0.19758071
-
-1138. Kevin Ginkel, P
-Score: 0.19650297
-
-1139. Sean Poppen, P
-Score: 0.19566861
-
-1140. Kolby Allard, P
-Score: 0.19497341
-
-1141. Kirk McCarty, P
-Score: 0.1940277
-
-1142. Jose Cuas, P
-Score: 0.19104548
-
-1143. Zack Kelly, P
-Score: 0.18530568
-
-1144. Mitch White, P
-Score: 0.18371388
-
-1145. Stephen Nogosek, P
-Score: 0.18312731
-
-1146. Alex Colomï¿½, P
-Score: 0.1784156
-
-1147. Erich Uelmen, P
-Score: 0.17543212
-
-1148. Justus Sheffield, P
-Score: 0.17540857
-
-1149. Danny Coulombe, P
-Score: 0.1720729
-
-1150. Paul Fry, P
-Score: 0.17150001
-
-1151. Josh Winckowski, P
-Score: 0.17018487
-
-1152. Brandon Bielak, P
-Score: 0.16875346
-
-1153. Ashton Goudeau, P
-Score: 0.16820233
-
-1154. Ian Gibaut, P
-Score: 0.16759135
-
-1155. Jason Alexander, P
-Score: 0.16344494
-
-1156. Anthony Banda, P
-Score: 0.16271077
-
-1157. Sean Newcomb, P
-Score: 0.16268714
-
-1158. Konnor Pilkington, P
-Score: 0.15910645
-
-1159. Greg Holland, P
-Score: 0.15906496
-
-1160. James Norwood, P
-Score: 0.15796195
-
-1161. Phillips Valdez, P
-Score: 0.15784302
-
-1162. Alex Young, P
-Score: 0.15368564
-
-1163. Blake Taylor, P
-Score: 0.15266274
-
-1164. Luis Patiï¿½o, P
-Score: 0.15265697
-
-1165. Justin Bruihl, P
-Score: 0.15215869
-
-1166. Tommy Henry, P
-Score: 0.15167549
-
-1167. Angel Rondï¿½n, P
-Score: 0.15046297
-
-1168. Jake Bird, P
-Score: 0.15028633
-
-1169. Jake Reed, P
-Score: 0.14876838
-
-1170. Javier Assad, P
-Score: 0.14663492
-
-1171. Sergio Romo, P
-Score: 0.14175469
-
-1172. Louie Varland, P
-Score: 0.14163236
-
-1173. Hansel Robles, P
-Score: 0.14149475
-
-1174. Taylor Widener, P
-Score: 0.14016978
-
-1175. Collin Snider, P
-Score: 0.1401265
-
-1176. Vladimir Gutiï¿½rrez, P
-Score: 0.1399716
-
-1177. Ryan Hendrix, P
-Score: 0.13828985
-
-1178. David Phelps, P
-Score: 0.13794746
-
-1179. Sam Coonrod, P
-Score: 0.13414083
-
-1180. Kirby Snead, P
-Score: 0.13412188
-
-1181. Jay Jackson, P
-Score: 0.13288751
-
-1182. Chase Anderson, P
-Score: 0.13248375
-
-1183. Justin Dunn, P
-Score: 0.13212852
-
-1184. Sean Reid-Foley, P
-Score: 0.12856452
-
-1185. Mason Thompson, P
-Score: 0.12807661
-
-1186. Huascar Ynoa, P
-Score: 0.12703015
-
-1187. Shane Greene, P
-Score: 0.12698968
-
-1188. Yoan Lï¿½pez, P
-Score: 0.12189431
-
-1189. Ryan Burr, P
-Score: 0.12115363
-
-1190. Kevin Herget, P
-Score: 0.1207133
-
-1191. Josh Rogers, P
-Score: 0.119837984
-
-1192. Carlos Hernï¿½ndez, P
-Score: 0.11798628
-
-1193. Marcos Diplï¿½n, P
-Score: 0.117940105
-
-1194. Cï¿½sar Valdez, P
-Score: 0.11790168
-
-1195. Zach Logue, P
-Score: 0.11656269
-
-1196. Matt Swarmer, P
-Score: 0.1154957
-
-1197. Tyler Clippard, P
-Score: 0.11517884
-
-1198. Keynan Middleton, P
-Score: 0.11485924
-
-1199. Ralph Garza, P
-Score: 0.11460347
-
-1200. Tommy Milone, P
-Score: 0.11108443
-
-1201. Oliver Ortega, P
-Score: 0.10951166
-
-1202. Spencer Howard, P
-Score: 0.10916521
-
-1203. Luke Bard, P
-Score: 0.10900735
-
-1204. Cody Poteet, P
-Score: 0.10815862
-
-1205. Domingo Tapia, P
-Score: 0.10512811
-
-1206. Justin Wilson, P
-Score: 0.1046922
-
-1207. Sean Hjelle, P
-Score: 0.103660055
-
-1208. Matt Peacock, P
-Score: 0.09996662
-
-1209. Sam Howard, P
-Score: 0.09721788
-
-1210. Kyle Tyler, P
-Score: 0.09698412
-
-1211. Ryan Weathers, P
-Score: 0.096801266
-
-1212. Sam Selman, P
-Score: 0.095330976
-
-1213. Matthew Liberatore, P
-Score: 0.0952172
-
-1214. Tyler Beede, P
-Score: 0.09424968
-
-1215. Manuel Rodrï¿½guez, P
-Score: 0.09306558
-
-1216. Kyle Muller, P
-Score: 0.09063258
-
-1217. Locke St. John, P
-Score: 0.090534985
-
-1218. Bennett Sousa, P
-Score: 0.089399494
-
-1219. DL Hall, P
-Score: 0.08870653
-
-1220. Derek Law, P
-Score: 0.08688119
-
-1221. Chi Chi Gonzï¿½lez, P
-Score: 0.08645995
-
-1222. Chris Mazza, P
-Score: 0.08582397
-
-1223. Daulton Jefferies, P
-Score: 0.08443288
-
-1224. Mike Baumann, P
-Score: 0.0843046
-
-1225. Brayan Bello, P
-Score: 0.08426574
-
-1226. Mauricio Llovera, P
-Score: 0.08393037
-
-1227. Janson Junk, P
-Score: 0.08390687
-
-1228. Cody Morris, P
-Score: 0.083362296
-
-1229. Anthony Kay, P
-Score: 0.08307096
-
-1230. Miguel Sï¿½nchez, P
-Score: 0.08132288
-
-1231. Daniel Castano, P
-Score: 0.08059354
-
-1232. Trent Thornton, P
-Score: 0.078798614
-
-1233. Drew VerHagen, P
-Score: 0.07747991
-
-1234. Javy Guerra, P
-Score: 0.0774759
-
-1235. Conner Menez, P
-Score: 0.076464675
-
-1236. Kyle Barraclough, P
-Score: 0.07562663
-
-1237. Calvin Faucher, P
-Score: 0.0743877
-
-1238. Tyler Gilbert, P
-Score: 0.07181002
-
-1239. Jhonathan Diaz, P
-Score: 0.07057929
-
-1240. Alex Wells, P
-Score: 0.06954363
-
-1241. Luke Farrell, P
-Score: 0.068844594
-
-1242. Reiss Knehr, P
-Score: 0.06664356
-
-1243. Logan Allen, P
-Score: 0.06600373
-
-1244. Adam Oller, P
-Score: 0.06566185
-
-1245. Jake Brentz, P
-Score: 0.06486339
-
-1246. Kaleb Ort, P
-Score: 0.064752996
-
-1247. Jared Koenig, P
-Score: 0.060744
-
-1248. Alex Faedo, P
-Score: 0.05915668
-
-1249. Alex Claudio, P
-Score: 0.057996757
-
-1250. Jordan Holloway, P
-Score: 0.05796962
-
-1251. Angel Zerpa, P
-Score: 0.055851854
-
-1252. Cam Alldred, P
-Score: 0.055555556
-
-1253. Luke Barker, P
-Score: 0.055555556
-
-1254. Tucker Davidson, P
-Score: 0.054652173
-
-1255. Tony Santillan, P
-Score: 0.053951688
-
-1256. Luis Gil, P
-Score: 0.053388856
-
-1257. Chase Silseth, P
-Score: 0.051636115
-
-1258. Anthony Castro, P
-Score: 0.049950983
-
-1259. Ryan Weber, P
-Score: 0.049698796
-
-1260. Yerry Rodriguez, P
-Score: 0.049382716
-
-1261. Max Kranick, P
-Score: 0.0470868
-
-1262. Adam Kolarek, P
-Score: 0.04687849
-
-1263. Darwinzon Hernandez, P
-Score: 0.045187447
-
-1264. Jimmy Yacabonis, P
-Score: 0.04451835
-
-1265. Junior Fernï¿½ndez, P
-Score: 0.043880068
-
-1266. Miguel Yajure, P
-Score: 0.04034792
-
-1267. Travis Lakins Sr., P
-Score: 0.0402821
-
-1268. Jackson Tetreault, P
-Score: 0.036916267
-
-1269. Easton McGee, P
-Score: 0.03549383
-
-1270. Yennier Cano, P
-Score: 0.034277067
-
-1271. Austin Brice, P
-Score: 0.033963658
-
-1272. Kohei Arihara, P
-Score: 0.033845786
-
-1273. Andrew Nardi, P
-Score: 0.033124987
-
-1274. Enoli Paredes, P
-Score: 0.03243187
-
-1275. Nick Mears, P
-Score: 0.03154721
-
-1276. A.J. Alexy, P
-Score: 0.027923502
-
-1277. Joan Adon, P
-Score: 0.026583118
-
-1278. Steven Brault, P
-Score: 0.026339015
-
-1279. Bowden Francis, P
-Score: 0.025925925
-
-1280. Freddy Tarnok, P
-Score: 0.025925925
-
-1281. Oliver Pï¿½rez, P
-Score: 0.025125012
-
-1282. Nick Duron, P
-Score: 0.024691358
-
-1283. Kervin Castro, P
-Score: 0.023377167
-
-1284. Luis Frï¿½as, P
-Score: 0.023274409
-
-1285. Chris Ellis, P
-Score: 0.02086129
-
-1286. Zac Lowther, P
-Score: 0.020846868
-
-1287. Nick Neidert, P
-Score: 0.018859932
-
-1288. Thomas Hatch, P
-Score: 0.016337132
-
-1289. Bryan Hoeing, P
-Score: 0.015907299
-
-1290. Austin Pruitt, P
-Score: 0.014263409
-
-1291. Stephen Strasburg, P
-Score: 0.012736282
-
-1292. Ryan Castellani, P
-Score: 0.012034326
-
-1293. Josï¿½ Quijada, P
-Score: 0.010798347
-
-1294. Jovani Moran, P
-Score: 0.010489072
-
-1295. Zack Britton, P
-Score: 0.009753771
-
-1296. Josï¿½ Leclerc, P
-Score: 0.009738511
-
-1297. J.C. Mejï¿½a, P
-Score: 0.009105556
-
-1298. Tyson Miller, P
-Score: 0.009092041
-
-1299. Rico Garcia, P
-Score: 0.008105129
-
-1300. Tommy Romero, P
-Score: 0.007679573
-
-1301. Tommy Kahnle, P
-Score: 0.007606093
-
-1302. Dauri Moreta, P
-Score: 0.0074691344
-
-1303. Jordan Weems, P
-Score: 0.007383594
-
-1304. Tommy Hunter, P
-Score: 0.006199359
-
-1305. Foster Griffin, P
-Score: 0.0054847742
-
-1306. Packy Naughton, P
-Score: 0.004820462
-
-1307. Drew Carlton, P
-Score: 0.0048112012
-
-1308. Max Castillo, P
-Score: 0.004492976
-
-1309. Julian Merryweather, P
-Score: 0.0043834597
-
-1310. Cory Abbott, P
-Score: 0.004358894
-
-1311. Gabe Speier, P
-Score: 0.003969006
-
-1312. Jeff Brigham, P
-Score: 0.0038930043
-
-1313. Yerry De Los Santos, P
-Score: 0.003680482
-
-1314. Zack Weiss, P
-Score: 0.0035679264
-
-1315. Phoenix Sanders, P
-Score: 0.0035126659
-
-1316. Wyatt Mills, P
-Score: 0.003474581
-
-1317. Fernando Cruz, P
-Score: 0.0032623278
-
-1318. Matt Gage, P
-Score: 0.003120713
-
-1319. Jesus Tinoco, P
-Score: 0.0030853706
-
-1320. Jeremy Beasley, P
-Score: 0.002924465
-
-1321. Cole Ragans, P
-Score: 0.002767011
-
-1322. Luis Ortiz, P
-Score: 0.0027517145
-
-1323. Robert Gsellman, P
-Score: 0.0026658948
-
-1324. Cole Sands, P
-Score: 0.0026283592
-
-1325. Ronny Henriquez, P
-Score: 0.0024543207
-
-1326. Edwin Uceta, P
-Score: 0.0024344868
-
-1327. JoJo Romero, P
-Score: 0.0022935271
-
-1328. Beau Sulser, P
-Score: 0.0020813136
-
-1329. Robert Dugger, P
-Score: 0.0020642136
-
-1330. Andrew Vasquez, P
-Score: 0.001908809
-
-1331. Michael Plassmeyer, P
-Score: 0.0018596782
-
-1332. Tyler Thornburg, P
-Score: 0.0016673577
-
-1333. Tyler Holton, P
-Score: 0.0016666666
-
-1334. Collin Wiles, P
-Score: 0.0016572389
-
-1335. Eric Stout, P
-Score: 0.0015830375
-
-1336. Andre Jackson, P
-Score: 0.0015638736
-
-1337. Casey Lawrence, P
-Score: 0.0015499195
-
-1338. Corbin Martin, P
-Score: 0.0015316838
-
-1339. Luis Ortiz, P
-Score: 0.0015117695
-
-1340. Parker Mushinski, P
-Score: 0.0015089528
-
-1341. Chad Smith, P
-Score: 0.001502572
-
-1342. Angel De Jesus, P
-Score: 0.0015001295
-
-1343. Norge Ruï¿½z, P
-Score: 0.0014074075
-
-1344. Daniel Mengden, P
-Score: 0.0013998509
-
-1345. Shelby Miller, P
-Score: 0.0013985308
-
-1346. Jhon Romero, P
-Score: 0.0013413065
-
-1347. Sam Clay, P
-Score: 0.001335312
-
-1348. Ken Giles, P
-Score: 0.0013317331
-
-1349. Thomas Szapucki, P
-Score: 0.001311545
-
-1350. Anderson Espinoza, P
-Score: 0.0012751779
-
-1351. T.J. Zeuch, P
-Score: 0.0012656666
-
-1352. Dusten Knight, P
-Score: 0.0012353909
-
-1353. James Naile, P
-Score: 0.0012152777
-
-1354. Elvin Rodriguez, P
-Score: 0.0011936985
-
-1355. Michael Feliz, P
-Score: 0.0011771362
-
-1356. Michael Kelly, P
-Score: 0.0011705533
-
-1357. Michel Bï¿½ez, P
-Score: 0.001154321
-
-1358. Aaron Brooks, P
-Score: 0.0011538127
-
-1359. Jacob Lemoine, P
-Score: 0.0011518406
-
-1360. Ronald Bolaï¿½os, P
-Score: 0.0010933692
-
-1361. Silvino Bracho, P
-Score: 0.0010386467
-
-1362. Justin Grimm, P
-Score: 0.0010281277
-
-1363. Pedro Avila, P
-Score: 0.0010200134
-
-1364. Elvis Peguero, P
-Score: 9.735613E-4
-
-1365. Denyi Reyes, P
-Score: 9.666667E-4
-
-1366. Mark Appel, P
-Score: 9.6340745E-4
-
-1367. Jordan Sheffield, P
-Score: 9.5956365E-4
-
-1368. Jackson Kowar, P
-Score: 9.572974E-4
-
-1369. Anderson Severino, P
-Score: 8.1549824E-4
-
-1370. Aaron Fletcher, P
-Score: 8.1251515E-4
-
-1371. Roenis Elï¿½as, P
-Score: 8.0705463E-4
-
-1372. Rob Zastryzny, P
-Score: 7.9561037E-4
-
-1373. Connor Seabold, P
-Score: 7.7994814E-4
-
-1374. Tayler Scott, P
-Score: 7.790051E-4
-
-1375. Patrick Murphy, P
-Score: 7.685503E-4
-
-1376. Robbie Erlin, P
-Score: 7.5639266E-4
-
-1377. Kenny Rosenberg, P
-Score: 7.483004E-4
-
-1378. Jose Marte, P
-Score: 6.8844954E-4
-
-1379. Jeremiah Estrada, P
-Score: 6.8477367E-4
-
-1380. Gavin Hollowell, P
-Score: 6.7215366E-4
-
-1381. Cam Vieaux, P
-Score: 6.6589843E-4
-
-1382. Max Meyer, P
-Score: 6.525573E-4
-
-1383. Jared Solomon, P
-Score: 6.5125007E-4
-
-1384. Tayler Saucedo, P
-Score: 6.3507E-4
-
-1385. Jesus Cruz, P
-Score: 5.819711E-4
-
-1386. Vinny Nittoli, P
-Score: 5.816187E-4
-
-1387. Cooper Criswell, P
-Score: 5.6040235E-4
-
-1388. Simeon Woods Richardson, P
-Score: 5.4869684E-4
-
-1389. Danny Young, P
-Score: 5.1460904E-4
-
-1390. Justin Topa, P
-Score: 5.125337E-4
-
-1391. Kirby Yates, P
-Score: 4.992675E-4
-
-1392. Shaun Anderson, P
-Score: 4.950139E-4
-
-1393. Raynel Espinal, P
-Score: 4.785493E-4
-
-1394. Matt Koch, P
-Score: 4.403703E-4
-
-1395. Ronel Blanco, P
-Score: 4.2191142E-4
-
-1396. Cristofer Ogando, P
-Score: 3.9509597E-4
-
-1397. Kyle Dowdy, P
-Score: 3.941152E-4
-
-1398. Ethan Roberts, P
-Score: 3.7185178E-4
-
-1399. Jerad Eickhoff, P
-Score: 3.578841E-4
-
-1400. Evan Lee, P
-Score: 3.574455E-4
-
-1401. Pedro Bï¿½ez, P
-Score: 3.5199354E-4
-
-1402. Francisco Perez, P
-Score: 3.4353998E-4
-
-1403. Parker Markel, P
-Score: 3.0864193E-4
-
-1404. Cade Cavalli, P
-Score: 2.9667348E-4
-
-1405. Caleb Kilian, P
-Score: 2.9639446E-4
-
-1406. Ray Kerr, P
-Score: 2.7434842E-4
-
-1407. Dereck Rodrï¿½guez, P
-Score: 2.5192345E-4
-
-1408. Francisco Morales, P
-Score: 2.4862823E-4
-
-1409. Cole Waites, P
-Score: 2.4490166E-4
-
-1410. William Woods, P
-Score: 2.3319613E-4
-
-1411. Damon Jones, P
-Score: 2.3276165E-4
-
-1412. Nate Fisher, P
-Score: 2.2633743E-4
-
-1413. Jake Walsh, P
-Score: 2.16278E-4
-
-1414. Reed Garrett, P
-Score: 2.1280866E-4
-
-1415. Bryce Montes de Oca, P
-Score: 2.0138155E-4
-
-1416. Aneurys Zabala, P
-Score: 1.9314128E-4
-
-1417. Phillip Diehl, P
-Score: 1.8909608E-4
-
-1418. David McKay, P
-Score: 1.8903274E-4
-
-1419. Ethan Small, P
-Score: 1.7892338E-4
-
-1420. Brian Moran, P
-Score: 1.5871399E-4
-
-1421. Connor Sadzeck, P
-Score: 1.5432098E-4
-
-1422. Cody Sedlock, P
-Score: 1.5432097E-4
-
-1423. Arodys Vizcaï¿½no, P
-Score: 1.4979424E-4
-
-1424. Josï¿½ Butto, P
-Score: 1.3717421E-4
-
-1425. Xzavion Curry, P
-Score: 1.2986969E-4
-
-1426. Hunter Gaddis, P
-Score: 1.08756285E-4
-
-1427. Gregory Santos, P
-Score: 9.0556365E-5
-
-1428. Franklin German, P
-Score: 7.4466E-5
-
-1429. Tanner Tully, P
-Score: 6.001372E-5
-
-1430. Josï¿½ Castillo, P
-Score: 4.8010974E-5
-
-1431. Daniel Duarte, P
-Score: 4.7614696E-5
-
-1432. A.J. Ladwig, P
-Score: 4.2878368E-5
-
-1433. Riley O'Brien, P
-Score: 3.810014E-5
-
-1434. Bubby Rossman, P
-Score: 2.7434842E-5
-
-1435. Ian Hamilton, P
-Score: 2.3824994E-5
-
-1436. Noah Davis, P
-Score: 2.2862367E-5
-
-1437. R.J. Alvarez, P
-Score: 2.1844993E-5
-
-1438. Nicholas Padilla, P
-Score: 1.6872427E-5
-
-1439. Matt Dermody, P
-Score: 1.6049382E-5
-
-1440. Nicklaus Snyder, P
-Score: 8.299041E-6
-
-1441. Matthew Batten, 3B-2B-OF-P
-Score: 4.4703484E-7
-
-1442. Brennan Bernardino, P
-Score: 7.897805E-8
-
-1443. Gerardo Reyes, P
-Score: 4.4031225E-8
-
-1444. Nash Walters, P
-Score: 1.6003657E-8
-
-1445. Jackson Stephens_h, 1
+1451. Jackson Stephens_h, 1
 Score: 0.0
 
-1446. Anthony Alford, OF
+1452. Jake Reed_h, 1
 Score: 0.0
 
-1447. Jake Reed_h, 1
+1453. Andrew Nardi_h, 1
 Score: 0.0
 
-1448. Andrew Nardi_h, 1
+1454. Mark Appel_h, /1
 Score: 0.0
 
-1449. Mark Appel_h, /1
+1455. Dylan Floro_h, 1
 Score: 0.0
 
-1450. Dylan Floro_h, 1
+1456. Justin Grimm_h, 1
 Score: 0.0
 
-1451. Justin Grimm_h, 1
+1457. Caleb Thielbar_h, 1
 Score: 0.0
 
-1452. Caleb Thielbar_h, 1
+1458. Reyes Moronta_h, 1
 Score: 0.0
 
-1453. Reyes Moronta_h, 1
+1459. Clarke Schmidt_h, 1
 Score: 0.0
 
-1454. Clarke Schmidt_h, 1
+1460. Jeff Hoffman_h, 1
 Score: 0.0
 
-1455. Jeff Hoffman_h, 1
+1461. Kramer Robertson, SS
 Score: 0.0
 
-1456. Hunter Strickland_h, 1
+1462. Hunter Strickland_h, 1
 Score: 0.0
 
-1457. Joey Krehbiel_h, 1
+1463. Brennan Bernardino, P
 Score: 0.0
 
-1458. Craig Kimbrel_h, 1
+1464. Joey Krehbiel_h, 1
 Score: 0.0
 
-1459. Joely Rodrï¿½guez_h, 1
+1465. Craig Kimbrel_h, 1
 Score: 0.0
 
-1460. Joe Barlow_h, 1
+1466. Joely Rodríguez_h, 1
 Score: 0.0
 
-1461. Matthew Liberatore_h, /1
+1467. Joe Barlow_h, 1
 Score: 0.0
 
-1462. J.B. Wendelken_h, 1
+1468. Matthew Liberatore_h, /1
 Score: 0.0
 
-1463. Anderson Severino_h, /1
+1469. J.B. Wendelken_h, 1
 Score: 0.0
 
-1464. Lucas Gilbreath_h, 1
+1470. Anderson Severino_h, /1
 Score: 0.0
 
-1465. Scott Alexander_h, 1
+1471. Lucas Gilbreath_h, 1
 Score: 0.0
 
-1466. James Kaprielian_h, 1/DH
+1472. Scott Alexander_h, 1
 Score: 0.0
 
-1467. Cole Sulser_h, 1
+1473. James Kaprielian_h, 1/DH
 Score: 0.0
 
-1468. Scott Kingery, 2B
+1474. Cole Sulser_h, 1
 Score: 0.0
 
-1469. Taylor Clarke_h, 1
+1475. Taylor Clarke_h, 1
 Score: 0.0
 
-1470. Kyle Nelson_h, 1
+1476. Kyle Nelson_h, 1
 Score: 0.0
 
-1471. Jorge Lï¿½pez_h, 1
+1477. Jorge López_h, 1
 Score: 0.0
 
-1472. Ian Kennedy_h, 1
+1478. Ian Kennedy_h, 1
 Score: 0.0
 
-1473. Trevor Williams_h, 1
+1479. Trevor Williams_h, 1
 Score: 0.0
 
-1474. Ka'ai Tom, OF
+1480. Noé Ramirez_h, 1
 Score: 0.0
 
-1475. Noï¿½ Ramirez_h, 1
+1481. David Price_h, 1
 Score: 0.0
 
-1476. David Price_h, 1
+1482. Scott Barlow_h, 1
 Score: 0.0
 
-1477. Scott Barlow_h, 1
+1483. Jeurys Familia_h, 1
 Score: 0.0
 
-1478. Jeurys Familia_h, 1
+1484. Enyel De Los Santos_h, 1
 Score: 0.0
 
-1479. Enyel De Los Santos_h, 1
+1485. Bryan Shaw_h, 1
 Score: 0.0
 
-1480. Bryan Shaw_h, 1
+1486. Diego Castillo_h, 1
 Score: 0.0
 
-1481. Diego Castillo_h, 1
+1487. Evan Phillips_h, 1
 Score: 0.0
 
-1482. Jonathan Loï¿½isiga_h, 1
+1488. Jonathan Loáisiga_h, 1
 Score: 0.0
 
-1483. Carlos Hernï¿½ndez_h, 1
+1489. Carlos Hernández_h, 1
 Score: 0.0
 
-1484. Sean Poppen_h, 1
+1490. Sean Poppen_h, 1
 Score: 0.0
 
-1485. Nate Mondou, 2B
+1491. Nate Mondou, 2B
 Score: 0.0
 
-1486. Justin Bruihl_h, 1
+1492. Justin Bruihl_h, 1
 Score: 0.0
 
-1487. Daniel Bard_h, 1
+1493. Daniel Bard_h, 1
 Score: 0.0
 
-1488. Steven Duggar, OF
+1494. Jhoan Duran_h, 1
 Score: 0.0
 
-1489. Jhoan Duran_h, 1
+1495. Zach Pop_h, 1
 Score: 0.0
 
-1490. Zach Pop_h, 1
+1496. A.J. Ladwig, P
 Score: 0.0
 
-1491. Mark Melancon_h, 1
+1497. Mark Melancon_h, 1
 Score: 0.0
 
-1492. Penn Murfee_h, 1
+1498. Penn Murfee_h, 1
 Score: 0.0
 
-1493. Tommy Hunter_h, 1
+1499. Tommy Hunter_h, 1
 Score: 0.0
 
-1494. Chasen Shreve_h, 1
+1500. Chasen Shreve_h, 1
 Score: 0.0
 
-1495. Cory Spangenberg, 3B
+1501. Cory Spangenberg, 3B
 Score: 0.0
 
-1496. Keynan Middleton_h, 1
+1502. Keynan Middleton_h, 1
 Score: 0.0
 
-1497. Fï¿½lix Bautista_h, 1
+1503. Félix Bautista_h, 1
 Score: 0.0
 
-1498. JoJo Romero_h, 1
+1504. JoJo Romero_h, 1
 Score: 0.0
 
-1499. Brett Martin_h, 1
+1505. Brett Martin_h, 1
 Score: 0.0
 
-1500. Daniel Lynch_h, 1
+1506. Daniel Lynch_h, 1
 Score: 0.0
 
-1501. Brandon Hughes_h, 1
+1507. Brandon Hughes_h, 1
 Score: 0.0
 
-1502. Joel Payamps_h, 1
+1508. Joel Payamps_h, 1
 Score: 0.0
 
-1503. Seth Lugo_h, 1
+1509. Seth Lugo_h, 1
 Score: 0.0
 
-1504. Mychal Givens_h, 1/H
+1510. Mychal Givens_h, 1/H
 Score: 0.0
 
-1505. Rico Garcia_h, /1
+1511. Rico Garcia_h, /1
 Score: 0.0
 
-1506. Ronald Bolaï¿½os_h, /1
+1512. Ronald Bolaños_h, /1
 Score: 0.0
 
-1507. Wyatt Mills_h, 1
+1513. Wyatt Mills_h, 1
 Score: 0.0
 
-1508. Joel Kuhnel_h, 1
+1514. Joel Kuhnel_h, 1
 Score: 0.0
 
-1509. Taylor Rogers_h, 1
+1515. Taylor Rogers_h, 1
 Score: 0.0
 
-1510. Richard Bleier_h, 1
+1516. Brendon Little, P
 Score: 0.0
 
-1511. Luke Weaver_h, 1/DH
+1517. Richard Bleier_h, 1
 Score: 0.0
 
-1512. Liam Hendriks_h, 1
+1518. Luke Weaver_h, 1/DH
 Score: 0.0
 
-1513. Aaron Bummer_h, 1
+1519. Liam Hendriks_h, 1
 Score: 0.0
 
-1514. Steven Okert_h, 1
+1520. Gerardo Reyes, P
 Score: 0.0
 
-1515. Chris Martin_h, 1
+1521. Aaron Bummer_h, 1
 Score: 0.0
 
-1516. Ryan Hendrix_h, /1
+1522. Steven Okert_h, 1
 Score: 0.0
 
-1517. Edwin Dï¿½az_h, 1
+1523. Chris Martin_h, 1
 Score: 0.0
 
-1518. Matt Foster_h, 1
+1524. Ryan Hendrix_h, /1
 Score: 0.0
 
-1519. Tanner Scott_h, 1
+1525. Edwin Díaz_h, 1
 Score: 0.0
 
-1520. David Bednar_h, 1
+1526. Matt Foster_h, 1
 Score: 0.0
 
-1521. Kendall Graveman_h, 1
+1527. Tanner Scott_h, 1
 Score: 0.0
 
-1522. Dauri Moreta_h, 1
+1528. David Bednar_h, 1
 Score: 0.0
 
-1523. Paul Sewald_h, 1
+1529. Kendall Graveman_h, 1
 Score: 0.0
 
-1524. Jimmy Lambert_h, 1
+1530. Dauri Moreta_h, 1
 Score: 0.0
 
-1525. Alex Colomï¿½_h, 1
+1531. Paul Sewald_h, 1
 Score: 0.0
 
-1526. Joe Mantiply_h, 1
+1532. Jimmy Lambert_h, 1
 Score: 0.0
 
-1527. Carlos Estï¿½vez_h, 1
+1533. Alex Colomé_h, 1
 Score: 0.0
 
-1528. Alec Mills_h, /1
+1534. Joe Mantiply_h, 1
 Score: 0.0
 
-1529. Adonis Medina_h, 1
+1535. Carlos Estévez_h, 1
 Score: 0.0
 
-1530. Tyler Duffey_h, 1
+1536. Alec Mills_h, /1
 Score: 0.0
 
-1531. Marcus Wilson, OF
+1537. Adonis Medina_h, 1
 Score: 0.0
 
-1532. Reynaldo Lï¿½pez_h, 1
+1538. Tyler Duffey_h, 1
 Score: 0.0
 
-1533. Albert Abreu_h, 1
+1539. Marcus Wilson, OF
 Score: 0.0
 
-1534. Matt Brash_h, 1
+1540. Reynaldo López_h, 1
 Score: 0.0
 
-1535. Anthony Bass_h, 1/DH
+1541. Albert Abreu_h, 1
 Score: 0.0
 
-1536. Kevin Ginkel_h, 1
+1542. Matt Brash_h, 1
 Score: 0.0
 
-1537. Sï¿½mon Muzziotti, OF
+1543. Anthony Bass_h, 1/DH
 Score: 0.0
 
-1538. Phil Bickford_h, 1
+1544. Kevin Ginkel_h, 1
 Score: 0.0
 
-1539. Dillon Tate_h, 1
+1545. Símon Muzziotti, OF
 Score: 0.0
 
-1540. Michael Fulmer_h, 1
+1546. Phil Bickford_h, 1
 Score: 0.0
 
-1541. Collin Snider_h, 1
+1547. Dillon Tate_h, 1
 Score: 0.0
 
-1542. Taylor Jones, /H
+1548. Michael Fulmer_h, 1
 Score: 0.0
 
-1543. Daniel Norris_h, 1
+1549. Nash Walters, P
 Score: 0.0
 
-1544. Dylan Coleman_h, 1
+1550. Collin Snider_h, 1
 Score: 0.0
 
-1545. Drew Steckenrider_h, 1
+1551. Daniel Norris_h, 1
 Score: 0.0
 
-1546. Donny Sands, C
+1552. Dylan Coleman_h, 1
 Score: 0.0
 
-1547. Josh Staumont_h, 1
+1553. Drew Steckenrider_h, 1
 Score: 0.0
 
-1548. Andrew Bellatti_h, 1
+1554. Donny Sands, C
 Score: 0.0
 
-1549. Cionel Pï¿½rez_h, 1
+1555. Josh Staumont_h, 1
 Score: 0.0
-
-1550. Brendon Little, P
-Score: -1.4479501E-8
-
-1551. Josï¿½ Alvarado_h, 1
-Score: -0.33333334
 
-1552. Travis Blankenhorn, /D
-Score: -0.33333334
-
-1553. Tyler Anderson_h, 1/H
-Score: -0.33333334
-
-1554. David Robertson_h, 1
-Score: -0.33333334
-
-1555. Reiver Sanmartin_h, 1
-Score: -0.33333334
-
-1556. DJ Stewart, /H
-Score: -0.6666667
+1556. Andrew Bellatti_h, 1
+Score: 0.0
 
-1557. Ronnie Dawson, /D
-Score: -0.6666667
+1557. Cionel Pérez_h, 1
+Score: 0.0
 
-1558. Josï¿½ Godoy, C
-Score: -0.99999964
+1558. Zach Reks, OF
+Score: -0.0
 
-1559. Alex Jackson, C
-Score: -0.99999964
+1559. Drew Jackson, OF-3B
+Score: -0.0
 
-1560. Rylan Bannon, 3B-2B
-Score: -0.99999994
+1560. Aaron Whitefield, OF
+Score: -0.0
 
-1561. Dillon Thomas, OF
-Score: -1.0
+1561. Luis Liberato, OF
+Score: -0.0
 
-1562. Drew Jackson, OF-3B
-Score: -1.0
+1562. José Alvarado_h, 1
+Score: -0.0
 
-1563. Taylor Motter, 3B-2B
-Score: -1.0
+1563. Brewer Hicklen, OF
+Score: -0.0
 
-1564. Wilmer Difo, SS-2B
-Score: -1.0
+1564. Tyler Anderson_h, 1/H
+Score: -0.0
 
-1565. Yusniel Diaz, OF
-Score: -1.0
+1565. Christian Lopes, 2B-OF
+Score: -0.0
 
-1566. Joe Perez, 3B
-Score: -1.0
+1566. David Robertson_h, 1
+Score: -0.0
 
-1567. Mickey McDonald, OF
-Score: -1.0
+1567. Yusniel Diaz, OF
+Score: -0.0
 
-1568. Jack Larsen, OF
-Score: -1.0
+1568. Reiver Sanmartin_h, 1
+Score: -0.0
 
-1569. Kevin Pillar, OF
-Score: -1.0
+1569. Bo Naylor, C
+Score: -0.0
 
-1570. Ivï¿½n Herrera, C
-Score: -1.0000004
+1570. Joe Perez, 3B
+Score: -0.0
 
-1571. Lenyn Sosa, SS-2B
-Score: -1.0000004
+1571. Mickey McDonald, OF
+Score: -0.0
 
-1572. Steven Souza Jr., OF
-Score: -1.0000005
+1572. Freddy Fermin, C
+Score: -0.0
 
-1573. Justin Upton, OF
-Score: -1.9999999
+1573. Josh Lester, 3B
+Score: -0.0
 
-1574. Freddy Fermin, C
-Score: -1.9999999
+1574. Jack Larsen, OF
+Score: -0.0
 
-1575. Travis Swaggerty, OF
-Score: -2.0
+1575. Luis Campusano, C
+Score: -0.0067038713
 
-1576. Deven Marrero, 3B-SS
-Score: -2.0000002
+1576. Sheldon Neuse, 3B-2B-1B-SS-P
+Score: -0.03760686
 
-1577. Miguel Sanï¿½, 1B
-Score: -2.0000005
+1577. Ronnie Dawson, /D
+Score: -0.039682534
 
-1578. Jeter Downs, 2B-3B-SS
-Score: -2.0000007
+1578. Kevin Smith, 3B-SS
+Score: -0.041666664
 
-1579. Caleb Hamilton, C-1B
-Score: -2.9999998
+1579. P.J. Higgins, 1B-C-3B
+Score: -0.0531401
 
-1580. Tim Beckham, OF-1B
-Score: -3.0
+1580. Dillon Thomas, OF
+Score: -0.061728373
 
-1581. Luis Liberato, OF
-Score: -3.0
+1581. Jake Hager, 2B-3B-SS-P
+Score: -0.07692301
 
-1582. Israel Pineda, C
-Score: -3.0
+1582. Scott Kingery, 2B
+Score: -0.10271387
 
-1583. Brewer Hicklen, OF
-Score: -3.0
+1583. Iván Herrera, C
+Score: -0.11111115
 
-1584. Josh Lester, 3B
-Score: -3.0
+1584. Lenyn Sosa, SS-2B
+Score: -0.11428575
 
-1585. Tony Wolters, C-2B
-Score: -3.0
+1585. Ronald Guzmán, 1B
+Score: -0.11458774
 
-1586. Ryan Aguilar, OF-1B
-Score: -3.0000002
+1586. Kevin Padlo, 3B-1B
+Score: -0.12820514
 
-1587. Christian Lopes, 2B-OF
-Score: -4.0
+1587. Rylan Bannon, 3B-2B
+Score: -0.14285715
 
-1588. Bobby Bradley, 1B
-Score: -4.0
+1588. Caleb Hamilton, C-1B
+Score: -0.16666666
 
-1589. Jose Rojas, 3B-OF
-Score: -4.999999
+1589. Khalil Lee, OF
+Score: -0.16666667
 
-1590. Austin Allen, C
-Score: -4.9999995
+1590. Travis Swaggerty, OF
+Score: -0.22222222
 
-1591. Ronald Guzmï¿½n, 1B
-Score: -5.0
+1591. Israel Pineda, C
+Score: -0.23076925
 
-1592. Aaron Whitefield, OF
-Score: -5.0
+1592. Tim Beckham, OF-1B
+Score: -0.24
 
-1593. Bo Naylor, C
-Score: -5.0
+1593. Jeter Downs, 2B-3B-SS
+Score: -0.3076924
 
-1594. Travis Shaw, 1B
-Score: -7.0
+1594. Ryan Aguilar, OF-1B
+Score: -0.40909094
 
-1595. Jason Castro, C
-Score: -7.0000005
+1595. Austin Allen, C
+Score: -0.5092583
 
-1596. Niko Goodrum, 2B-1B
-Score: -8.999999
+1596. Alex Jackson, C
+Score: -0.57176054
 
