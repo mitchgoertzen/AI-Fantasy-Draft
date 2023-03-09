@@ -56,4 +56,8 @@ public class Roster {
     public void setTotalSkaterCountingStats(SkaterCountingStats totalCountingStats) {
         this.totalSkaterCountingStats = totalCountingStats;
     }
+
+    public void removePlayer(String id){
+        players.remove(id);
+    }
 }

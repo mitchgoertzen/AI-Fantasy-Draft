@@ -46,7 +46,7 @@ public class BattingStats {
     private float doublePlaysTurned = 0;
     private float catcherInterference = 0;
 
-    public Float[] getStats() {
+    public Float[] getStatsArray() {
         return stats;
     }
 

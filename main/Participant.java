@@ -44,6 +44,10 @@ public class Participant {
         return roster;
     }
 
+    public void removeRecentDraft(String id){
+        roster.removePlayer(id);
+    }
+
     public String getName() {
         return name;
     }

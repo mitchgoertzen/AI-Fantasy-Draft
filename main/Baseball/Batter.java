@@ -55,18 +55,18 @@ public class Batter extends Player {
         "K: %.0f, BB: %.0f, IBB: %.0f, HBP: %.0f, GIDP: %.0f\n" +
         "SH: %.0f, SF: %.0f, SB: %.0f, CS: %.0f, SB%% %.2f, NetSB: %.0f\n" +
         "PO: %.0f, A: %.0f, E: %.0f, F%%: %.2f, DPT: %.0f\n\n"
-        , stats.getStats()[1], stats.getStats()[32], stats.getStats()[2], stats.getStats()[3], stats.getStats()[4]
-        , stats.getStats()[8], stats.getStats()[5], stats.getStats()[6], stats.getStats()[7], stats.getStats()[9], stats.getStats()[28], stats.getStats()[19]
-        , stats.getStats()[24], stats.getStats()[25], stats.getStats()[26], stats.getStats()[27]
-        , stats.getStats()[17], stats.getStats()[14], stats.getStats()[15], stats.getStats()[16], stats.getStats()[18]
-        , stats.getStats()[10], stats.getStats()[11], stats.getStats()[12], stats.getStats()[13], stats.getStats()[30], stats.getStats()[29]
-        , stats.getStats()[20], stats.getStats()[21], stats.getStats()[22], stats.getStats()[23], stats.getStats()[35]);
+        , stats.getStatsArray()[1], stats.getStatsArray()[32], stats.getStatsArray()[2], stats.getStatsArray()[3], stats.getStatsArray()[4]
+        , stats.getStatsArray()[8], stats.getStatsArray()[5], stats.getStatsArray()[6], stats.getStatsArray()[7], stats.getStatsArray()[9], stats.getStatsArray()[28], stats.getStatsArray()[19]
+        , stats.getStatsArray()[24], stats.getStatsArray()[25], stats.getStatsArray()[26], stats.getStatsArray()[27]
+        , stats.getStatsArray()[17], stats.getStatsArray()[14], stats.getStatsArray()[15], stats.getStatsArray()[16], stats.getStatsArray()[18]
+        , stats.getStatsArray()[10], stats.getStatsArray()[11], stats.getStatsArray()[12], stats.getStatsArray()[13], stats.getStatsArray()[30], stats.getStatsArray()[29]
+        , stats.getStatsArray()[20], stats.getStatsArray()[21], stats.getStatsArray()[22], stats.getStatsArray()[23], stats.getStatsArray()[35]);
     }
 
     private float calculateScore(){
 
         float score = 0;
-        Float[] array = stats.getStats();
+        Float[] array = stats.getStatsArray();
 
         //score += getGamesPlayed() * Env.getBattingWeights(0);
 
@@ -90,7 +90,6 @@ public class Batter extends Player {
        // score *= Math.max(0.01f, array[26]) * Env.getBattingWeights(26);
 
         //score *= Math.max(0.01f, array[29]) * Env.getBattingWeights(29);
-
 
         return score * getGamesPlayed();
     }

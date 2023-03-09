@@ -35,6 +35,7 @@ public class AIParticipant extends Participant {
     private ProblemState initializeProblemState() {
         
     	Problem initialProblem = new Problem(maxDraftSlots, super.getId());
+
         initialProblem.setAvailablePlayers((ArrayList<String>) DraftMenu.getAvailablePlayers().clone());
 
         int numParticipants = Env.participants.size();

@@ -8,6 +8,8 @@ import main.DraftSlot;
 import main.Env;
 import main.Participant;
 import main.Player;
+import main.Baseball.Batter;
+import main.Baseball.BattingStats;
 import main.Hockey.Goalie;
 import main.Hockey.GoalieCountingStats;
 import main.Hockey.Skater;
@@ -32,6 +34,7 @@ public class Problem {
     private String[] draftedPlayers;
 
     public Problem(int rosterSize, int id) {
+        System.out.println("new problem");
 
         draftSlots = new ArrayList<>();
         roster = new ArrayList<>();
@@ -164,32 +167,77 @@ public class Problem {
     public float[] updateRosterScore(float[] rosterScore, Player newPlayer){
 
         float[] newRosterScore = rosterScore;
+        switch(newPlayer.getClass().getName()){
+            case "main.Baseball.Batter":{
+                if(DEBUG)
+                    System.out.println("player is a batter");
+
+                Batter newBatter = (Batter) newPlayer;
+                BattingStats battingStats  = newBatter.getStats();
+                Float[] stats = battingStats.getStatsArray();
+                int length = stats.length;
+                int gp = newBatter.getGamesPlayed();
+                
+                for(int i = 1; i < 23; i++){
+                    newRosterScore[i] += stats[i] / gp * Env.getBattingWeights(i);
+                }
         
-        if(newPlayer.getPosition().equals("G")){
-            if(DEBUG)
-                System.out.println("player is a goalie");
-            Goalie newGoalie = (Goalie) newPlayer;
-            GoalieCountingStats goalieStats  = newGoalie.getCountingStats();
-            Integer[] stats = goalieStats.getStatsArray();
-            int length = stats.length;
-            for(int i = 0; i < length; i++){
-                newRosterScore[i] += stats[i] * Env.getGoalieWeights(i);
+                newRosterScore[28] += stats[28] / gp * Env.getBattingWeights(28);
+                newRosterScore[29] += stats[29] / gp * Env.getBattingWeights(29);
+        
+                for(int i = 31; i < length; i++){
+                    newRosterScore[i] += stats[i] / gp * Env.getBattingWeights(i);
+                }
+
+                // newRosterScore[23] = fieldingPercentage = (putouts + assists) / Math.max(1, (putouts + assists + errors));
+                // newRosterScore[24] = battingAverage = hits / Math.max(1,atBats);
+                // newRosterScore[25] = onBasePercentage = (hits + walks + hitByPitch) / Math.max(1,(atBats + walks + hitByPitch + sacFlys));
+                // newRosterScore[26] = sluggingPercentage = (singles + 2*doubles + 3*triples + 4*homeRuns)/ Math.max(1, atBats);
+                // newRosterScore[27] = OPS = (onBasePercentage + sluggingPercentage);
+        
+                for(int i = 23; i < 28; i++){
+                    if(Env.getBattingWeights(i) > 0){
+                        newRosterScore[i] *= stats[i] * Env.getBattingWeights(i);
+                    }
+                }
+
+
             }
-        }else{
-            if(DEBUG)
-                System.out.println("player is a skater");
-            Skater newSkater = (Skater) newPlayer;
-            SkaterCountingStats skaterStats  = newSkater.getCountingStats();
-            Integer[] stats = skaterStats.getStatsArray();
-            int length = stats.length;
-            int i;
-            for(i = 0; i < length; i++){
-                newRosterScore[i] += stats[i] * Env.getSkaterWeights(i);
+            break;
+            case "main.Baseball.Pitcher":{
+                if(DEBUG)
+                    System.out.println("player is a pitcher");
             }
-    
-            newRosterScore[i++] += skaterStats.getPoints() * Env.getSkaterWeights(i);
-            newRosterScore[i++] += skaterStats.getPowerplaypoints() * Env.getSkaterWeights(i);
-            newRosterScore[i] += skaterStats.getShpoints() * Env.getSkaterWeights(i);
+            break;
+            case "main.Hockey.Skater":{
+                if(DEBUG)
+                    System.out.println("player is a skater");
+                Skater newSkater = (Skater) newPlayer;
+                SkaterCountingStats skaterStats  = newSkater.getCountingStats();
+                Integer[] stats = skaterStats.getStatsArray();
+                int length = stats.length;
+                int i;
+                for(i = 0; i < length; i++){
+                    newRosterScore[i] += stats[i] * Env.getSkaterWeights(i);
+                }
+        
+                newRosterScore[i++] += skaterStats.getPoints() * Env.getSkaterWeights(i);
+                newRosterScore[i++] += skaterStats.getPowerplaypoints() * Env.getSkaterWeights(i);
+                newRosterScore[i] += skaterStats.getShpoints() * Env.getSkaterWeights(i);
+            }
+            break;
+            case "main.Hockey.Goalie":{
+                if(DEBUG)
+                    System.out.println("player is a goalie");
+                Goalie newGoalie = (Goalie) newPlayer;
+                GoalieCountingStats goalieStats  = newGoalie.getCountingStats();
+                Integer[] stats = goalieStats.getStatsArray();
+                int length = stats.length;
+                for(int i = 0; i < length; i++){
+                    newRosterScore[i + 18] += stats[i] * Env.getGoalieWeights(i);
+                }
+            }
+            break;
         }
 
         return newRosterScore;

@@ -11,7 +11,7 @@ public class SearchModel {
         DraftSlot nextDraftSlot = prob.nextDraftSlot();
         ArrayList<String> availablePlayers = prob.getAvailablePlayers();
         ArrayList<Problem> subProblems = new ArrayList<>();
-
+       
         prob.nextPick();
 
         int availablePlayerScope = Math.min(50, availablePlayers.size());

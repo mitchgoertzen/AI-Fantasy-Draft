@@ -128,9 +128,23 @@ public class Main {
         Random random = new Random();
 
         //hockey
-        Parser.parsePlayers(hockey);
-       // Parser.parseSkaters();
+        if(hockey){
+            Parser.parseHockeyPlayers();
+        }else{
+            Parser.parsePlayers(hockey);
+        }
         Env.sortPlayerScores();
+
+        // Env.participants.put(0, new Participant(0, true, 1));
+        // Env.participants.put(1, new Participant(1, true, 2));
+        // Env.participants.put(2, new AIParticipant(2, false, 3, rounds));
+        // Env.participants.put(3, new Participant(3, true, 4));
+        // Env.participants.put(4, new Participant(4, true, 5));
+        // Env.participants.put(5, new Participant(5, true, 6));
+        // Env.participants.put(6, new Participant(6, true, 7));
+        // Env.participants.put(7, new Participant(7, true, 8));
+        // Env.participants.put(8, new Participant(8, true, 9));
+        // Env.participants.put(9, new Participant(9, true, 10));
 
         List<Integer> draftNumbers = IntStream.rangeClosed(1, playerCount)
         .boxed().collect(Collectors.toList());
@@ -138,12 +152,13 @@ public class Main {
         for(int i = 0;i < playerCount;i++){
             int num = random.nextInt(draftNumbers.size());
             if(i < humanPlayers){
-                Env.participants.put(i, new Participant(i, (i < humanPlayers), draftNumbers.get(num)));
+                Env.participants.put(i, new Participant(i, true, draftNumbers.get(num)));
             }else{
-                Env.participants.put(i, new AIParticipant(i, (i < humanPlayers), draftNumbers.get(num), rounds));
+                Env.participants.put(i, new AIParticipant(i, false, draftNumbers.get(num), rounds));
             }
             draftNumbers.remove(num);
         }
+
         int i = 1;
         try {
             FileWriter myWriter = new FileWriter("sortedScores.txt");
@@ -179,7 +194,7 @@ public class Main {
 
             if(readString.equals("begin")){
                 System.out.println();
-              //  DraftMenu.Draft(rounds, playerCount, false);
+                DraftMenu.Draft(rounds, playerCount, false);
                 readString = null;
                 scanner.close();
             }else if(readString.equals("exit")){

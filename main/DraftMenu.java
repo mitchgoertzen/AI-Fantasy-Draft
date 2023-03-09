@@ -22,12 +22,13 @@ public class DraftMenu {
 
     public static void Draft(int rounds, int playerCount, boolean snake){
 
-        Env.setCurrentPick(1);
         Env.setCurrentRound(1);
-        
-        int currentPickInRound =  1;
+
         int currentPickInDraft =  Env.getCurrentPick();
         int currentRound = Env.getCurrentRound();
+        int currentPickInRound =  1;
+
+        Env.setCurrentPick(currentPickInRound);
 
         Participant[] draftOrder = new Participant[playerCount];
         Participant currentParticipant;
@@ -69,7 +70,18 @@ public class DraftMenu {
                     readString = scanner.nextLine().toLowerCase();
                     playerCode = checkForPlayer(readString);
                 }else{
-                    playerCode = ((AIParticipant) currentParticipant).draftPlayer();
+                    while(!readString.equals("c")){
+                        playerCode = ((AIParticipant) currentParticipant).draftPlayer();
+                        System.out.println(currentParticipant.getName() + " wants to draft " + Env.AllPlayers.get(playerCode).getName() + 
+                        ". To confirm this selection press 'C', to deny press 'D'...");
+                        readString = scanner.nextLine().toLowerCase();
+                        if(readString.equals("d")){
+                            availablePlayers.remove(playerCode);
+                            playerScores.remove(playerCode);
+                            currentParticipant.removeRecentDraft(playerCode);
+                        }
+                    }
+                      
                 }
                 if(readString.equals("exit")){
                     readString = null;
