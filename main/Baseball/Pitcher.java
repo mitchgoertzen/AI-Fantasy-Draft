@@ -92,27 +92,52 @@ public class Pitcher extends Player {
             score += array[i] * Env.getPitchingWeights(i) / getGamesPlayed();
         }
 
-       // score *= Math.max(0.01f, array[25])  * Env.getPitchingWeights(25);
-        //score /= Math.max(0.01f, array[26]) * Env.getPitchingWeights(26);
-        
-      //  score *= Math.max(0.01f, array[27]) * Env.getPitchingWeights(27);
+        int[] lower = new int[]{25, 26, 39, 40};
 
-        if(Env.getPitchingWeights(28) > 0){
-            score *= Math.max(0.01f, array[28]) * Env.getPitchingWeights(28);
-        }
-
-        if(Env.getPitchingWeights(38) > 0){
-            score *= Math.max(0.01f, array[38]) * Env.getPitchingWeights(38);
-        }
-        
-        
-        if(Env.getPitchingWeights(39) > 0){
-            score *= 1 - (array[39]* Env.getPitchingWeights(39)) / 10 ;
+        for(int i : lower){
+            if(Env.getPitchingWeights(i) > 0){
+                score *= 1 - (array[i] * Env.getPitchingWeights(i)) / 10;
+            }
         }
 
-        if(Env.getPitchingWeights(40) > 0){
-            score *= 1 - (array[40]* Env.getPitchingWeights(40)) / 10 ;
+        int[] higher = new int[]{27, 28, 38};
+
+        for(int i : higher){
+            if(Env.getPitchingWeights(i) > 0){
+                score *= Math.max(0.01f, array[i]) * Env.getPitchingWeights(i);
+            }
         }
+
+
+        // if(Env.getPitchingWeights(25) > 0){
+        //     score *= 1 - (array[25] * Env.getPitchingWeights(25)) / 10;
+        // }
+
+        // if(Env.getPitchingWeights(26) > 0){
+        //     score *= 1 - (array[26] * Env.getPitchingWeights(26)) / 10;
+        // }
+        
+        // if(Env.getPitchingWeights(39) > 0){
+        //     score *= 1 - (array[39]* Env.getPitchingWeights(39)) / 10 ;
+        // }
+
+        // if(Env.getPitchingWeights(40) > 0){
+        //     score *= 1 - (array[40]* Env.getPitchingWeights(40)) / 10 ;
+        // }
+
+
+        
+        // if(Env.getPitchingWeights(27) > 0){
+        //     score *= Math.max(0.01f, array[27]) * Env.getPitchingWeights(27);
+        // }
+
+        // if(Env.getPitchingWeights(28) > 0){
+        //     score *= Math.max(0.01f, array[28]) * Env.getPitchingWeights(28);
+        // }
+
+        // if(Env.getPitchingWeights(38) > 0){
+        //     score *= Math.max(0.01f, array[38]) * Env.getPitchingWeights(38);
+        // }
 
         return score * array[2] * ((float)getGamesPlayed() / 250) / 8;
     }

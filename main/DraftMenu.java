@@ -65,7 +65,6 @@ public class DraftMenu {
             }
         }
 
-        System.out.println("To draft a player: type their first and last name");
         while(Env.getCurrentRound() <= rounds){
 
             currentParticipant = draftOrder[currentPickInRound - 1];
@@ -81,6 +80,8 @@ public class DraftMenu {
             while(readString != null){
 
                 if(currentParticipant.isHuman()){
+                    System.out.println("To draft a player: type their first and last name");
+                    //TODO: names with special characters do not work for search
                     readString = scanner.nextLine().toLowerCase();
                     playerCode = checkForPlayer(readString);
                 }else{

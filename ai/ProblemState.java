@@ -20,6 +20,8 @@ public class ProblemState {
 	private int totalWins;
 	private int weeklyPoints;
 	private int cumulativeScore;
+	private int length1;;
+	private int length2;
 
 	private int[] eval;
 	private int[] parent_eval;
@@ -112,7 +114,10 @@ public class ProblemState {
 		round++;
 	}
 
-	public int[] SimulateOpponentDraftPicks(){	
+	public int[] SimulateOpponentDraftPicks(int[] lengths){	
+
+		length1 = lengths[0];
+		length2 = lengths[1];
 
 		int numParticipants = Env.participants.size();
 		int currentPick = problem.getCurrentPick() - 1;
@@ -212,7 +217,10 @@ public class ProblemState {
 		}	
 		
 		int oppID = Env.totalPicksInDraft.get(i - 1);
-		for(int k = 0; k < 25; k++){
+		for(int k = 0; k < (length1 + length2); k++){
+
+			//:TODO: create case for picther stats where the lower number is better
+
 			cumulativeScore += problem.getActiveRosterScore()[k];
 			if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) > 0 ){
 				currentPoints++;

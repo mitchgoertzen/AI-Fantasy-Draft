@@ -71,7 +71,7 @@ public class Main {
                 0f, //O
                 0f, //H
                 0f, //BF
-                -1f, //R
+                -0f, //R
                 0f, //ER
                 0f, //HR
                 0f, //BB
@@ -122,7 +122,7 @@ public class Main {
             Env.setPositionLimit(i, Env.getTotalRounds());
         }
 
-        int humanPlayers = 0;
+        int humanPlayers = 1;
         int playerCount = Env.getTotalParticipants();
         int rounds = Env.getTotalRounds();
         Random random = new Random();
