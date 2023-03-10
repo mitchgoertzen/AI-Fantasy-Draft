@@ -47,13 +47,13 @@ public class Parser {
                     "stats/Baseball/mlb_batting_2020.txt"};
             parseFiles(baseballFiles, hockey, 1);
 
-            // //pitching
-            // baseballFiles = 
-            //     new String[]{
-            //         "stats/Baseball/mlb_pitching_2022.txt", 
-            //         "stats/Baseball/mlb_pitching_2021.txt",
-            //         "stats/Baseball/mlb_pitching_2020.txt"};
-            // parseFiles(baseballFiles, hockey, 2);
+            //pitching
+            baseballFiles = 
+                new String[]{
+                    "stats/Baseball/mlb_pitching_2022.txt", 
+                    "stats/Baseball/mlb_pitching_2021.txt",
+                    "stats/Baseball/mlb_pitching_2020.txt"};
+            parseFiles(baseballFiles, hockey, 2);
         }
 
     }
@@ -104,6 +104,11 @@ public class Parser {
                         currentID = currentLine[i] + currentID;
                     }
 
+
+                    if(statType == 1 && Env.AllPlayers.get(currentID + "_h") != null){
+                        currentID += "_h";
+                    }
+                    
                     currentPlayer = Env.AllPlayers.get(currentID);
 
                     //player has not been added yet
@@ -151,7 +156,8 @@ public class Parser {
                                         // System.out.println();
                                     }
                                 }else{
-                                    Env.updatePlayerStats(currentID, currentPlayerArray, statType, fileIndex);
+                                    if(!currentPlayer.getPosition().equals("P"))
+                                        Env.updatePlayerStats(currentID, currentPlayerArray, statType, fileIndex);
                                     // System.out.println("Batter");
                                     // System.out.println(currentPlayer.getName());
                                     // System.out.println("counted years " + currentPlayer.getStatYearsCounted() + "/" + (fileIndex + 1));

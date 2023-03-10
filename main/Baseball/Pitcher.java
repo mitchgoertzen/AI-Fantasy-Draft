@@ -114,6 +114,6 @@ public class Pitcher extends Player {
             score *= 1 - (array[40]* Env.getPitchingWeights(40)) / 10 ;
         }
 
-        return score * array[2] / 12f;
+        return score * array[2] * ((float)getGamesPlayed() / 250);
     }
 }
