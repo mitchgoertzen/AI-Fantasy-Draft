@@ -63,7 +63,7 @@ public class PitchingStats {
     private float netSavesandHolds = 0;
     private float netWins = 0;
 
-    public Float[] getStats() {
+    public Float[] getStatsArray() {
         return stats;
     }
 
@@ -156,9 +156,17 @@ public class PitchingStats {
 
     }
 
-    public void addStats(Integer[] newStats, int gamesPlayed){
-        for(int i = 0; i < stats.length; i++){
-            stats[i] += newStats[i]/gamesPlayed;
+    public void addStats(Float[] newStats, int gamesPlayed, int rosterSize){
+        for(int i = 0; i < 20; i++){
+            stats[i] += newStats[i] / gamesPlayed;
+        }
+        
+        for(int i = 25; i < 29; i++){
+            stats[i] = (stats[i] *  (rosterSize - 1)/rosterSize) + (newStats[i] * (1 / rosterSize));
+        }
+
+        for(int i = 38; i < 41; i++){
+            stats[i] = (stats[i] *  (rosterSize - 1)/rosterSize) + (newStats[i] * (1 / rosterSize));
         }
     }
 

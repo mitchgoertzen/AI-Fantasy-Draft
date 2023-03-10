@@ -131,9 +131,9 @@ public class BattingStats {
         for(int i = 0; i < 23; i++){
             stats[i] += newStats[i] / gamesPlayed;
         }
-
+        
         for(int i = 23; i < 29; i++){
-            stats[i] = (stats[i] + newStats[i]) / rosterSize;
+            stats[i] = (stats[i] *  (rosterSize - 1)/rosterSize) + (newStats[i] * (1 / rosterSize));
         }
 
         for(int i = 28; i < newStats.length; i++){

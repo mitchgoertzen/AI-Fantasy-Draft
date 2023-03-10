@@ -4,13 +4,13 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-
 import main.Baseball.Batter;
 import main.Baseball.Pitcher;
 
 public class DraftMenu {
     
     private static ArrayList<String> availablePlayers = new ArrayList<>();
+    private static ArrayList<String> draftedPlayers = new ArrayList<>();
 
     private static LinkedHashMap<String, Float> playerScores = new LinkedHashMap<>();
 
@@ -84,18 +84,18 @@ public class DraftMenu {
                     readString = scanner.nextLine().toLowerCase();
                     playerCode = checkForPlayer(readString);
                 }else{
-                    while(!readString.equals("c")){
+                  //  while(!readString.equals("c")){
                         playerCode = ((AIParticipant) currentParticipant).draftPlayer(length1, length2);
-                        System.out.println(currentParticipant.getName() + " wants to draft " + Env.AllPlayers.get(playerCode).getName() + 
-                        ". To confirm this selection press 'C', to deny press 'D'...");
-                        readString = scanner.nextLine().toLowerCase();
-                        if(readString.equals("d")){
-                            availablePlayers.remove(playerCode);
-                            playerScores.remove(playerCode);
-                            ((AIParticipant) currentParticipant).restoreDraftSlot(currentRound - 1);
-                            currentParticipant.removeRecentDraft(playerCode);
-                        }
-                    }
+                    //     System.out.println(currentParticipant.getName() + " wants to draft " + Env.AllPlayers.get(playerCode).getName() + 
+                    //     ". To confirm this selection press 'C', to deny press 'D'...");
+                    //     readString = scanner.nextLine().toLowerCase();
+                    //     if(readString.equals("d")){
+                    //         availablePlayers.remove(playerCode);
+                    //         playerScores.remove(playerCode);
+                    //         ((AIParticipant) currentParticipant).restoreDraftSlot(currentRound - 1);
+                    //         currentParticipant.removeRecentDraft(playerCode);
+                    //     }
+                    // }
                       
                 }
                 if(readString.equals("exit")){
@@ -120,6 +120,7 @@ public class DraftMenu {
                             availablePlayers.remove(playerCode);
                             playerScores.remove(playerCode);
                             Env.playerDrafted.put(playerCode, true);
+                            draftedPlayers.add(Env.AllPlayers.get(playerCode).getName());
                             readString = null;
                         }else{
                             System.out.println("This player has already been drafted.");
@@ -137,6 +138,10 @@ public class DraftMenu {
         }
         scanner.close();
         System.out.println("\nThe current fantasy draft has concluded.");
+
+        for(int i = 0; i < draftedPlayers.size(); i++){
+            System.out.println((i + 1) + ". " + draftedPlayers.get(i));
+        }
     }
 
     public static ArrayList<String> getAvailablePlayers(){

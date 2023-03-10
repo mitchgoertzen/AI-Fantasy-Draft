@@ -41,7 +41,7 @@ public class Roster {
             }
             break;
             case "main.Baseball.Pitcher":{
-                //totalPitchingStats.addStats(((Pitcher)player).getStats().getStatsArray(), player.getGamesPlayed(), players.size());
+                totalPitchingStats.addStats(((Pitcher)player).getStats().getStatsArray(), player.getGamesPlayed(), players.size());
             }
             break;
             case "main.Hockey.Skater":{

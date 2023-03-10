@@ -10,6 +10,8 @@ import main.Participant;
 import main.Player;
 import main.Baseball.Batter;
 import main.Baseball.BattingStats;
+import main.Baseball.Pitcher;
+import main.Baseball.PitchingStats;
 import main.Hockey.Goalie;
 import main.Hockey.GoalieCountingStats;
 import main.Hockey.Skater;
@@ -194,7 +196,7 @@ public class Problem {
                     newRosterScore[i] = (newRosterScore[i] *  (size - 1)/size) + (stats[i] * (1 / size)) * Env.getBattingWeights(i);
                 }
         
-                for(int i = 28; i < stats.length; i++){
+                for(int i = 28; i < length1; i++){
                     newRosterScore[i] += stats[i] / gp;
                 }
 
@@ -203,6 +205,24 @@ public class Problem {
             case "main.Baseball.Pitcher":{
                 if(DEBUG)
                     System.out.println("player is a pitcher");
+
+                Pitcher newPitcher = (Pitcher) newPlayer;
+                PitchingStats pitchingStats  = newPitcher.getStats();
+                Float[] stats = pitchingStats.getStatsArray();
+                int gp = newPitcher.getGamesPlayed();
+
+                for(int i = 0; i < 20; i++){
+                    newRosterScore[i + length1] += stats[i] / gp * Env.getPitchingWeights(i);
+                }
+
+                int size = roster.size() + 1;
+                for(int i = 25; i < 29; i++){
+                    newRosterScore[i + length1] = (newRosterScore[i + length1] *  (size - 1)/size) + (stats[i] * (1 / size)) * Env.getPitchingWeights(i);
+                }
+
+                for(int i = 38; i < 41; i++){
+                    newRosterScore[i + length1] = (newRosterScore[i + length1] *  (size - 1)/size) + (stats[i] * (1 / size)) * Env.getPitchingWeights(i);
+                }
             }
             break;
             case "main.Hockey.Skater":{

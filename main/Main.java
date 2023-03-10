@@ -62,16 +62,16 @@ public class Main {
             float[] p = {
                 0f, //GP
                 0f, //GS
-                0f, //IP
+                1f, //IP
                 1f, //W
                 0f, //L
-                0f, //CG
-                0f, //SO
+                1f, //CG
+                1f, //SO
                 1f, //SV
                 0f, //O
                 0f, //H
                 0f, //BF
-                0f, //R
+                -1f, //R
                 0f, //ER
                 0f, //HR
                 0f, //BB
@@ -115,8 +115,8 @@ public class Main {
             Env.setBaseballWeights(b, p);
         }
 
-        Env.setTotalParticipants(4);
-        Env.setTotalRounds(4);
+        Env.setTotalParticipants(10);
+        Env.setTotalRounds(10);
 
         for(int i = 0; i < 6; i++){
             Env.setPositionLimit(i, Env.getTotalRounds());
@@ -206,5 +206,6 @@ public class Main {
                 System.out.println("Or type \'exit\' to exit the draft");
             }
         }
+
     }
 }
