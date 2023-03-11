@@ -89,7 +89,8 @@ public class Pitcher extends Player {
             // System.out.println(i);
             // System.out.println(array[i]);
             // System.out.println(Env.getPitchingWeights(i));
-            score += array[i] * Env.getPitchingWeights(i) / getGamesPlayed();
+            
+            score += (10 * array[i] * Env.getPitchingWeights(i)) / (getGamesPlayed() * Math.max(1, getStatYearsCounted()));
         }
 
         int[] lower = new int[]{25, 26, 39, 40};

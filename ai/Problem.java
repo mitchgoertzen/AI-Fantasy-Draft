@@ -186,9 +186,10 @@ public class Problem {
                 BattingStats battingStats  = newBatter.getStats();
                 Float[] stats = battingStats.getStatsArray();
                 int gp = newBatter.getGamesPlayed();
-
+                int yearsCounted = newBatter.getStatYearsCounted();
+                
                 for(int i = 0; i < 23; i++){
-                    newRosterScore[i] += stats[i] / gp * Env.getBattingWeights(i);
+                    newRosterScore[i] += (10 * stats[i]* Env.getBattingWeights(i)) / (gp * Math.max(1, yearsCounted));
                 }
         
                 int size = roster.size() + 1;
@@ -197,7 +198,7 @@ public class Problem {
                 }
         
                 for(int i = 28; i < length1; i++){
-                    newRosterScore[i] += stats[i] / gp;
+                    newRosterScore[i] += (10 * stats[i]* Env.getBattingWeights(i)) / (gp * Math.max(1, yearsCounted));
                 }
 
             }
@@ -210,9 +211,10 @@ public class Problem {
                 PitchingStats pitchingStats  = newPitcher.getStats();
                 Float[] stats = pitchingStats.getStatsArray();
                 int gp = newPitcher.getGamesPlayed();
+                int yearsCounted = newPitcher.getStatYearsCounted();
 
                 for(int i = 0; i < 20; i++){
-                    newRosterScore[i + length1] += stats[i] / gp * Env.getPitchingWeights(i);
+                    newRosterScore[i + length1] += (10 * stats[i]* Env.getPitchingWeights(i)) / (gp * Math.max(1, yearsCounted));
                 }
 
                 int size = roster.size() + 1;

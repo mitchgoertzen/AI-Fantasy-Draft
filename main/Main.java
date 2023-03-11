@@ -163,9 +163,9 @@ public class Main {
         try {
             FileWriter myWriter = new FileWriter("sortedScores.txt");
             for (Map.Entry<String,Float> mapElement : Env.SortedPlayerScores.entrySet()) {
-                // if(mapElement.getKey().equals("beninan01")){
-                //     Env.AllPlayers.get(mapElement.getKey()).printInfo();
-                // }
+                if(mapElement.getKey().equals("alvaryo01")){
+                    Env.AllPlayers.get(mapElement.getKey()).printInfo();
+                }
                 // if(mapElement.getKey().equals("diazya01")){
                 //     Env.AllPlayers.get(mapElement.getKey()).printInfo();
                 // }

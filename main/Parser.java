@@ -105,11 +105,16 @@ public class Parser {
                     }
 
 
+
+
+
                     if(statType == 1 && Env.AllPlayers.get(currentID + "_h") != null){
                         currentID += "_h";
                     }
                     
                     currentPlayer = Env.AllPlayers.get(currentID);
+
+
 
                     //player has not been added yet
                     if(currentPlayer == null){
@@ -125,6 +130,9 @@ public class Parser {
                     //player has been added
                     else{ 
 
+                        if(statType == 1 && fileIndex == 0){
+                            currentPlayer.resetStatYearsCounted();
+                        }
 
                         currentPlayerArray = parseStatLine(currentLine, currentPlayerArray.length, lineSize, currentID.length());
                         //if the player is a pitcher and has batting stats, new batter must be created
@@ -146,6 +154,8 @@ public class Parser {
 
                             // }
 
+
+
                             if(currentPlayer.getStatYearsCounted() <= fileIndex){
                                 if(statType == 2){
                                     if(currentPlayer.getPosition().equals("P")){
@@ -156,6 +166,13 @@ public class Parser {
                                         // System.out.println();
                                     }
                                 }else{
+
+                                    if(statType == 1 && currentID.equals("alvaryo01")){
+                                        System.out.println("file index: " + fileIndex);
+        
+                                        System.out.println("gp: " + currentPlayerArray[3]);
+                                    }
+
                                     if(!currentPlayer.getPosition().equals("P"))
                                         Env.updatePlayerStats(currentID, currentPlayerArray, statType, fileIndex);
                                     // System.out.println("Batter");
@@ -166,9 +183,6 @@ public class Parser {
                             }
                             
                             
-                        }
-                        if(statType == 0 && fileIndex == 2){
-                            currentPlayer.resetStatYearsCounted();
                         }
                     }
 

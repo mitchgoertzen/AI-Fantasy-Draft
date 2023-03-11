@@ -71,14 +71,14 @@ public class Batter extends Player {
         //score += getGamesPlayed() * Env.getBattingWeights(0);
 
         for(int i = 1; i < 23; i++){
-            score += array[i] / getGamesPlayed() * Env.getBattingWeights(i);
+            score += (10 * array[i]* Env.getBattingWeights(i)) / (getGamesPlayed() * Math.max(1, getStatYearsCounted()));
         }
 
         score += array[28] / getGamesPlayed() * Env.getBattingWeights(28);
         score += array[29] / getGamesPlayed() * Env.getBattingWeights(29);
 
         for(int i = 31; i < array.length; i++){
-            score += array[i] / getGamesPlayed() * Env.getBattingWeights(i);
+            score += (10 * array[i]* Env.getBattingWeights(i)) / (getGamesPlayed() * Math.max(1, getStatYearsCounted()));
         }
 
         for(int i = 23; i < 28; i++){

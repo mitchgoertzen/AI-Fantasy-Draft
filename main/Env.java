@@ -292,7 +292,7 @@ public class Env {
     }
 
     public static void updatePlayerStats(String id, String[] array,int statType, int year){
-        Player player = AllPlayers.get(id);
+        
         switch(statType){
             case 0: ((Batter)AllPlayers.get(id)).addFieldingStats(array, year);
             break;
@@ -301,6 +301,7 @@ public class Env {
             case 2: ((Pitcher)AllPlayers.get(id)).addPitchingStats(array, year);
             break;
         }
+        Player player = AllPlayers.get(id);
         PlayerScores.put(id, player.getScore());
     }
 }
