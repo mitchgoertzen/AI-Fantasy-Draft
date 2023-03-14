@@ -18,11 +18,15 @@ public class DraftMenu {
     private static int length2;
 
     public static String checkForPlayer(String name){
-        for (String s : availablePlayers) {
-            Player player = Env.AllPlayers.get(s);
-            if(name.equals(player.getName().toLowerCase())){
-            return s;
-           }
+        if(Env.AllPlayers.containsKey(name)){
+            return name;
+        }else{
+            for (String s : availablePlayers) {
+                Player player = Env.AllPlayers.get(s);
+                if(name.equals(player.getName().toLowerCase())){
+                    return s;
+               }
+            }
         }
         return null;
     }
@@ -46,8 +50,10 @@ public class DraftMenu {
 
         Participant[] draftOrder = new Participant[playerCount];
         Participant currentParticipant;
+
+        String charset = "ISO-8859-1";
         
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in, charset);
 
         for (Map.Entry<String,Float> mapElement : Env.SortedPlayerScores.entrySet()) {
             playerScores.put(mapElement.getKey(), mapElement.getValue());
@@ -83,6 +89,8 @@ public class DraftMenu {
                     System.out.println("To draft a player: type their first and last name");
                     //TODO: names with special characters do not work for search
                     readString = scanner.nextLine().toLowerCase();
+                    
+                    System.out.println("Your input: " + readString);
                     playerCode = checkForPlayer(readString);
                 }else{
                   //  while(!readString.equals("c")){

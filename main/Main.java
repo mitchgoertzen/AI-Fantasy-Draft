@@ -115,14 +115,14 @@ public class Main {
             Env.setBaseballWeights(b, p);
         }
 
-        Env.setTotalParticipants(4);
+        Env.setTotalParticipants(1);
         Env.setTotalRounds(10);
 
         for(int i = 0; i < 6; i++){
             Env.setPositionLimit(i, Env.getTotalRounds());
         }
 
-        int humanPlayers = 0;
+        int humanPlayers = 1;
         int playerCount = Env.getTotalParticipants();
         int rounds = Env.getTotalRounds();
         Random random = new Random();

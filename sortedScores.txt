@@ -7,7 +7,7 @@ Score: 992.81384
 3. Paul Goldschmidt, 1B
 Score: 962.64215
 
-4. Jos√© Ram√≠rez, 3B
+4. JosÈ RamÌrez, 3B
 Score: 888.857
 
 5. Sandy Alcantara, P
@@ -58,10 +58,10 @@ Score: 765.71796
 20. Rafael Devers, 3B
 Score: 756.98676
 
-21. Carlos Rod√≥n, P
+21. Carlos RodÛn, P
 Score: 752.0569
 
-22. Julio Ur√≠as, P
+22. Julio UrÌas, P
 Score: 749.39026
 
 23. Bo Bichette, SS
@@ -73,7 +73,7 @@ Score: 745.6811
 25. Max Scherzer, P
 Score: 743.7615
 
-26. Jos√© Abreu, 1B
+26. JosÈ Abreu, 1B
 Score: 739.3824
 
 27. Yu Darvish, P
@@ -199,7 +199,7 @@ Score: 616.4272
 67. Adam Wainwright, P
 Score: 615.7188
 
-68. Adolis Garc√≠a, OF
+68. Adolis GarcÌa, OF
 Score: 612.5824
 
 69. Christian Yelich, OF
@@ -211,7 +211,7 @@ Score: 611.28906
 71. J.T. Realmuto, C-1B
 Score: 610.6025
 
-72. Teoscar Hern√°ndez, OF
+72. Teoscar Hern·ndez, OF
 Score: 609.9053
 
 73. Willy Adames, SS
@@ -223,7 +223,7 @@ Score: 607.36414
 75. Jake Cronenworth, 2B-1B-SS
 Score: 598.6098
 
-76. Eugenio Su√°rez, 3B
+76. Eugenio Su·rez, 3B
 Score: 598.5667
 
 77. Charlie Morton, P
@@ -241,7 +241,7 @@ Score: 596.56976
 81. Ian Happ, OF
 Score: 594.80676
 
-82. Mart√≠n P√©rez, P
+82. MartÌn PÈrez, P
 Score: 593.33136
 
 83. Nestor Cortes, P
@@ -250,7 +250,7 @@ Score: 577.14197
 84. Starling Marte, OF
 Score: 576.0555
 
-85. Yandy D√≠az, 3B-1B
+85. Yandy DÌaz, 3B-1B
 Score: 570.85803
 
 86. Tommy Edman, SS-2B-3B-OF
@@ -283,7 +283,7 @@ Score: 563.84467
 95. Matt Chapman, 3B
 Score: 560.5175
 
-96. Pablo L√≥pez, P
+96. Pablo LÛpez, P
 Score: 558.3511
 
 97. Anthony Santander, OF
@@ -352,7 +352,7 @@ Score: 509.18195
 118. Taijuan Walker, P
 Score: 506.3726
 
-119. Andr√©s Gim√©nez, 2B-SS
+119. AndrÈs GimÈnez, 2B-SS
 Score: 502.86203
 
 120. Miles Mikolas, P
@@ -415,13 +415,13 @@ Score: 485.90106
 139. Whit Merrifield, 2B-OF-1B-P
 Score: 485.6862
 
-140. Jos√© Berr√≠os, P
+140. JosÈ BerrÌos, P
 Score: 484.96646
 
-141. Julio Rodr√≠guez, OF
+141. Julio RodrÌguez, OF
 Score: 484.02756
 
-142. Germ√°n M√°rquez, P
+142. Germ·n M·rquez, P
 Score: 483.86618
 
 143. Wilmer Flores, 2B-1B-3B
@@ -460,7 +460,7 @@ Score: 470.65094
 154. Jeffrey Springs, P
 Score: 469.45605
 
-155. Edwin D√≠az, P
+155. Edwin DÌaz, P
 Score: 468.3451
 
 156. Randal Grichuk, OF-P
@@ -472,7 +472,7 @@ Score: 465.8946
 158. Drew Rasmussen, P
 Score: 463.4707
 
-159. Javier B√°ez, SS
+159. Javier B·ez, SS
 Score: 463.3337
 
 160. Sonny Gray, P
@@ -481,7 +481,7 @@ Score: 462.85254
 161. Brendan Rodgers, 2B
 Score: 460.92194
 
-162. Ranger Su√°rez, P
+162. Ranger Su·rez, P
 Score: 460.43567
 
 163. Alejandro Kirk, C
@@ -508,7 +508,7 @@ Score: 454.1025
 170. Jordan Lyles, P
 Score: 453.85187
 
-171. Jos√© Urquidy, P
+171. JosÈ Urquidy, P
 Score: 452.0193
 
 172. Kyle Gibson, P
@@ -517,7 +517,7 @@ Score: 451.8589
 173. Nelson Cruz, D/H
 Score: 450.85092
 
-174. Jos√© Quintana, P
+174. JosÈ Quintana, P
 Score: 450.1711
 
 175. Tyler Mahle, P
@@ -580,13 +580,13 @@ Score: 425.63397
 194. Kyle Freeland, P
 Score: 424.98254
 
-195. Luis Ur√≠as, 3B-2B-SS
+195. Luis UrÌas, 3B-2B-SS
 Score: 422.76376
 
 196. Carlos Santana, 1B-OF
 Score: 421.58038
 
-197. C√©sar Hern√°ndez, 2B-OF-3B
+197. CÈsar Hern·ndez, 2B-OF-3B
 Score: 421.19357
 
 198. Ross Stripling, P
@@ -697,7 +697,7 @@ Score: 384.4469
 233. Jean Segura, 2B-SS
 Score: 384.0317
 
-234. Jes√∫s Aguilar, 1B-3B
+234. Jes˙s Aguilar, 1B-3B
 Score: 383.91827
 
 235. Tony Kemp, 2B-OF
@@ -730,7 +730,7 @@ Score: 376.3246
 244. Joey Votto, 1B
 Score: 373.97018
 
-245. Jos√© Iglesias, SS
+245. JosÈ Iglesias, SS
 Score: 373.14893
 
 246. Marcell Ozuna, OF
@@ -757,7 +757,7 @@ Score: 369.35342
 253. Franmil Reyes, OF-P
 Score: 367.74478
 
-254. Eloy Jim√©nez, OF
+254. Eloy JimÈnez, OF
 Score: 367.66608
 
 255. Jared Walsh, 1B-OF
@@ -796,13 +796,13 @@ Score: 357.39978
 266. Drew Smyly, P
 Score: 356.4469
 
-267. Harold Ram√≠rez, 1B-OF
+267. Harold RamÌrez, 1B-OF
 Score: 355.57358
 
 268. Santiago Espinal, 2B-3B-SS
 Score: 353.08273
 
-269. Christian V√°zquez, C-1B-2B
+269. Christian V·zquez, C-1B-2B
 Score: 352.30353
 
 270. Michael Kopech, P
@@ -811,7 +811,7 @@ Score: 351.17664
 271. Raisel Iglesias, P
 Score: 350.6402
 
-272. Yo√°n Moncada, 3B
+272. Yo·n Moncada, 3B
 Score: 349.94736
 
 273. Ryan Helsley, P
@@ -829,7 +829,7 @@ Score: 345.51843
 277. Ji-Man Choi, 1B
 Score: 345.2358
 
-278. Jes√∫s Luzardo, P
+278. Jes˙s Luzardo, P
 Score: 345.05176
 
 279. Adley Rutschman, C
@@ -838,7 +838,7 @@ Score: 339.85083
 280. Gary Sanchez, C-1B
 Score: 339.47266
 
-281. Ram√≥n Ur√≠as, 3B-2B-SS
+281. RamÛn UrÌas, 3B-2B-SS
 Score: 339.18488
 
 282. George Kirby, P
@@ -868,10 +868,10 @@ Score: 329.269
 290. Austin Slater, OF
 Score: 329.199
 
-291. Enrique Hern√°ndez, OF-2B-SS
+291. Enrique Hern·ndez, OF-2B-SS
 Score: 329.1374
 
-292. Jeremy Pe√±a, SS
+292. Jeremy PeÒa, SS
 Score: 328.85965
 
 293. A.J. Minter, P
@@ -922,7 +922,7 @@ Score: 316.2652
 308. Brendan Donovan, OF-2B-3B-1B-SS
 Score: 315.62997
 
-309. Jos√© Suarez, P
+309. JosÈ Suarez, P
 Score: 315.60785
 
 310. Adam Duvall, OF
@@ -1066,7 +1066,7 @@ Score: 293.03802
 356. Cal Raleigh, C
 Score: 292.61823
 
-357. Ram√≥n Laureano, OF
+357. RamÛn Laureano, OF
 Score: 291.71576
 
 358. Joey Wendle, 3B-SS-2B
@@ -1075,10 +1075,10 @@ Score: 290.41293
 359. Collin McHugh, P
 Score: 289.12085
 
-360. Jorge L√≥pez, P
+360. Jorge LÛpez, P
 Score: 288.07465
 
-361. Avisa√≠l Garc√≠a, OF
+361. AvisaÌl GarcÌa, OF
 Score: 287.3812
 
 362. Lars Nootbaar, OF
@@ -1144,10 +1144,10 @@ Score: 273.45468
 382. David Bednar, P
 Score: 272.95935
 
-383. Elias D√≠az, C
+383. Elias DÌaz, C
 Score: 271.8
 
-384. H√©ctor Neris, P
+384. HÈctor Neris, P
 Score: 270.84973
 
 385. Noah Syndergaard, P
@@ -1189,7 +1189,7 @@ Score: 263.53406
 397. Rafael Montero, P
 Score: 263.4579
 
-398. Luis Garc√≠a, SS-2B
+398. Luis GarcÌa, SS-2B
 Score: 263.0348
 
 399. Oneil Cruz, SS-OF
@@ -1198,7 +1198,7 @@ Score: 262.97354
 400. Owen Miller, 1B-2B-3B
 Score: 262.6867
 
-401. Yadiel Hern√°ndez, OF
+401. Yadiel Hern·ndez, OF
 Score: 262.1809
 
 402. Trevor Stephan, P
@@ -1213,7 +1213,7 @@ Score: 260.9462
 405. Erick Fedde, P
 Score: 260.8485
 
-406. F√©lix Bautista, P
+406. FÈlix Bautista, P
 Score: 260.60474
 
 407. Mike Clevinger, P
@@ -1228,7 +1228,7 @@ Score: 260.05603
 410. Nick Martinez, P
 Score: 259.3725
 
-411. Alexis D√≠az, P
+411. Alexis DÌaz, P
 Score: 257.4676
 
 412. Keegan Akin, P
@@ -1318,13 +1318,13 @@ Score: 246.3355
 440. Zach Thompson, P
 Score: 246.303
 
-441. Aledmys D√≠az, OF-2B-SS-3B-1B
+441. Aledmys DÌaz, OF-2B-SS-3B-1B
 Score: 245.76903
 
 442. Kendall Graveman, P
 Score: 245.75552
 
-443. Andr√©s Mu√±oz, P
+443. AndrÈs MuÒoz, P
 Score: 245.52406
 
 444. Tanner Houck, P
@@ -1333,7 +1333,7 @@ Score: 245.39615
 445. Matt Carpenter, OF-1B-3B
 Score: 244.71788
 
-446. Reynaldo L√≥pez, P
+446. Reynaldo LÛpez, P
 Score: 244.54216
 
 447. Jose Trevino, C
@@ -1372,7 +1372,7 @@ Score: 239.62
 458. Jacob Stallings, C
 Score: 239.25117
 
-459. Jes√∫s S√°nchez, OF
+459. Jes˙s S·nchez, OF
 Score: 238.76993
 
 460. Taylor Rogers, P
@@ -1399,7 +1399,7 @@ Score: 235.03009
 467. Tanner Scott, P
 Score: 234.44873
 
-468. Mart√≠n Maldonado, C
+468. MartÌn Maldonado, C
 Score: 234.00241
 
 469. Erik Swanson, P
@@ -1456,7 +1456,7 @@ Score: 228.19221
 486. Will Smith, P
 Score: 227.58469
 
-487. Domingo Germ√°n, P
+487. Domingo Germ·n, P
 Score: 226.91533
 
 488. Chris Stratton, P
@@ -1468,10 +1468,10 @@ Score: 225.70001
 490. Dylan Floro, P
 Score: 225.59198
 
-491. Erasmo Ram√≠rez, P
+491. Erasmo RamÌrez, P
 Score: 224.33336
 
-492. Jarl√≠n Garc√≠a, P
+492. JarlÌn GarcÌa, P
 Score: 223.78122
 
 493. Sam Hentges, P
@@ -1489,7 +1489,7 @@ Score: 222.49863
 497. Keston Hiura, 1B-2B-OF
 Score: 222.234
 
-498. Jos√© Alvarado, P
+498. JosÈ Alvarado, P
 Score: 222.1858
 
 499. Luis Guillorme, 2B-3B-SS
@@ -1519,7 +1519,7 @@ Score: 218.54393
 507. Max Stassi, C
 Score: 218.13123
 
-508. Emilio Pag√°n, P
+508. Emilio Pag·n, P
 Score: 217.68745
 
 509. Kyle Bradish, P
@@ -1549,7 +1549,7 @@ Score: 215.41806
 517. Alex Lange, P
 Score: 215.23456
 
-518. Luis Gonz√°lez, OF-P
+518. Luis Gonz·lez, OF-P
 Score: 214.49974
 
 519. Luis Cessa, P
@@ -1576,7 +1576,7 @@ Score: 210.07208
 526. Jesse Chavez, P
 Score: 209.95773
 
-527. Cionel P√©rez, P
+527. Cionel PÈrez, P
 Score: 209.94492
 
 528. Aaron Loup, P
@@ -1630,10 +1630,10 @@ Score: 202.61963
 544. Penn Murfee, P
 Score: 202.4138
 
-545. Joe Jim√©nez, P
+545. Joe JimÈnez, P
 Score: 202.39046
 
-546. Omar Narv√°ez, C
+546. Omar Narv·ez, C
 Score: 202.30806
 
 547. Joe Mantiply, P
@@ -1645,7 +1645,7 @@ Score: 200.6341
 549. David Fletcher, 2B-SS
 Score: 200.23549
 
-550. Luis Garc√≠a, P
+550. Luis GarcÌa, P
 Score: 199.41846
 
 551. Brad Hand, P
@@ -1657,7 +1657,7 @@ Score: 198.67717
 553. Mark Melancon, P
 Score: 198.63727
 
-554. Jos√© Ure√±a, P
+554. JosÈ UreÒa, P
 Score: 196.00354
 
 555. Trevor Richards, P
@@ -1684,10 +1684,10 @@ Score: 193.67722
 562. Jonathan Villar, 2B-3B-SS
 Score: 193.5151
 
-563. Francisco Mej√≠a, C-1B
+563. Francisco MejÌa, C-1B
 Score: 192.4501
 
-564. Carlos Est√©vez, P
+564. Carlos EstÈvez, P
 Score: 192.1988
 
 565. Drew Hutchison, P
@@ -1729,7 +1729,7 @@ Score: 183.1866
 577. Orlando Arcia, 2B-OF-3B-SS-P
 Score: 183.07207
 
-578. Jos√© Ruiz, P
+578. JosÈ Ruiz, P
 Score: 182.6658
 
 579. Jose Siri, OF
@@ -1741,7 +1741,7 @@ Score: 182.09554
 581. Johan Oviedo, P
 Score: 181.96634
 
-582. Jonathan Lo√°isiga, P
+582. Jonathan Lo·isiga, P
 Score: 181.34795
 
 583. Franchy Cordero, 1B-OF
@@ -1762,7 +1762,7 @@ Score: 180.15132
 588. Connor Brogdon, P
 Score: 179.4206
 
-589. Od√∫bel Herrera, OF
+589. Od˙bel Herrera, OF
 Score: 179.189
 
 590. Christian Bethancourt, C-1B-P-3B
@@ -1846,7 +1846,7 @@ Score: 170.21283
 616. Nick Sandlin, P
 Score: 169.52812
 
-617. Seranthony Dom√≠nguez, P
+617. Seranthony DomÌnguez, P
 Score: 169.27841
 
 618. Drew Smith, P
@@ -1924,7 +1924,7 @@ Score: 160.62018
 642. Joel Payamps, P
 Score: 160.52426
 
-643. Tom√°s Nido, C
+643. Tom·s Nido, C
 Score: 160.4991
 
 644. Adam Engel, OF
@@ -1966,7 +1966,7 @@ Score: 156.71638
 656. Richard Bleier, P
 Score: 156.49515
 
-657. Mauricio Dub√≥n, OF-SS-2B-3B
+657. Mauricio DubÛn, OF-SS-2B-3B
 Score: 156.4828
 
 658. Taylor Clarke, P
@@ -1987,7 +1987,7 @@ Score: 154.81204
 663. Alfonso Rivas, 1B-OF
 Score: 154.73038
 
-664. G√©nesis Cabrera, P
+664. GÈnesis Cabrera, P
 Score: 154.18164
 
 665. Ron Marinaccio, P
@@ -2011,7 +2011,7 @@ Score: 152.70909
 671. Hirokazu Sawamura, P
 Score: 152.22531
 
-672. Joely Rodr√≠guez, P
+672. Joely RodrÌguez, P
 Score: 151.05313
 
 673. Colin Poche, P
@@ -2020,13 +2020,13 @@ Score: 150.72797
 674. Beau Brieske, P
 Score: 150.72499
 
-675. Jos√© Cisnero, P
+675. JosÈ Cisnero, P
 Score: 150.45952
 
 676. Andrew Knizner, C-1B-P
 Score: 150.2447
 
-677. Sergio Alc√°ntara, 3B-SS-2B
+677. Sergio Alc·ntara, 3B-SS-2B
 Score: 149.84557
 
 678. Michael Pineda, P
@@ -2062,7 +2062,7 @@ Score: 147.70346
 688. MacKenzie Gore, P
 Score: 146.75235
 
-689. Jos√© Leclerc, P
+689. JosÈ Leclerc, P
 Score: 146.61691
 
 690. Tim Hill, P
@@ -2122,7 +2122,7 @@ Score: 140.57988
 708. Ryan Feltner, P
 Score: 140.48325
 
-709. An√≠bal S√°nchez, P
+709. AnÌbal S·nchez, P
 Score: 139.77245
 
 710. Cole Sulser, P
@@ -2182,7 +2182,7 @@ Score: 134.62955
 728. Bryce Elder, P
 Score: 133.39099
 
-729. No√© Ramirez, P
+729. NoÈ Ramirez, P
 Score: 133.23059
 
 730. Michael Rucker, P
@@ -2191,7 +2191,7 @@ Score: 132.51733
 731. Zach Pop, P
 Score: 132.15048
 
-732. Jos√© Quijada, P
+732. JosÈ Quijada, P
 Score: 131.8394
 
 733. P.J. Higgins, 1B-C-3B
@@ -2218,7 +2218,7 @@ Score: 129.5681
 740. Amir Garrett, P
 Score: 129.39435
 
-741. Miguel San√≥, 1B
+741. Miguel SanÛ, 1B
 Score: 129.19852
 
 742. Jake Burger, 3B-2B
@@ -2245,7 +2245,7 @@ Score: 127.976616
 749. Trevor May, P
 Score: 127.57498
 
-750. Alex Colom√©, P
+750. Alex ColomÈ, P
 Score: 127.47098
 
 751. Sam Moll, P
@@ -2395,10 +2395,10 @@ Score: 113.71617
 799. Garrett Hill, P
 Score: 113.64578
 
-800. Vimael Mach√≠n, 3B-SS-2B
+800. Vimael MachÌn, 3B-SS-2B
 Score: 113.33497
 
-801. Rony Garc√≠a, P
+801. Rony GarcÌa, P
 Score: 113.02232
 
 802. Jake Cave, OF
@@ -2437,7 +2437,7 @@ Score: 107.81668
 813. Anthony Misiewicz, P
 Score: 107.50655
 
-814. Nelson Vel√°zquez, OF
+814. Nelson Vel·zquez, OF
 Score: 107.38485
 
 815. Brayan Bello, P
@@ -2461,7 +2461,7 @@ Score: 105.139
 821. Charlie Culberson, 3B-OF-2B-P-SS-1B
 Score: 104.95585
 
-822. Carlos Hern√°ndez, P
+822. Carlos Hern·ndez, P
 Score: 104.83963
 
 823. Hayden Wesneski, P
@@ -2488,7 +2488,7 @@ Score: 101.56334
 830. Alex Young, P
 Score: 101.176865
 
-831. Dany Jim√©nez, P
+831. Dany JimÈnez, P
 Score: 101.15167
 
 832. Luke Maile, C
@@ -2503,7 +2503,7 @@ Score: 100.24404
 835. Oscar Mercado, OF
 Score: 99.08393
 
-836. Jonathan Hern√°ndez, P
+836. Jonathan Hern·ndez, P
 Score: 98.905685
 
 837. Jason Alexander, P
@@ -2551,7 +2551,7 @@ Score: 93.52106
 851. Charles Leblanc, 2B-3B-1B
 Score: 93.005066
 
-852. Vladimir Guti√©rrez, P
+852. Vladimir GutiÈrrez, P
 Score: 92.98935
 
 853. Justin Dunn, P
@@ -2563,7 +2563,7 @@ Score: 92.9387
 855. Chasen Shreve, P
 Score: 92.85918
 
-856. Jos√© Azocar, OF
+856. JosÈ Azocar, OF
 Score: 92.605484
 
 857. Huascar Brazoban, P
@@ -2593,13 +2593,13 @@ Score: 91.19906
 865. J.B. Wendelken, P
 Score: 91.18213
 
-866. Andy Ib√°√±ez, 3B-1B-2B
+866. Andy Ib·Òez, 3B-1B-2B
 Score: 90.924706
 
 867. Hansel Robles, P
 Score: 90.7791
 
-868. Miguel And√∫jar, OF-1B
+868. Miguel And˙jar, OF-1B
 Score: 90.0537
 
 869. Manny Banuelos, P
@@ -2617,7 +2617,7 @@ Score: 89.81148
 873. Eli White, OF
 Score: 89.46788
 
-874. V√≠ctor Arano, P
+874. VÌctor Arano, P
 Score: 89.1449
 
 875. Dillon Peters, P
@@ -2644,7 +2644,7 @@ Score: 87.60162
 882. Nick Pratto, 1B-OF
 Score: 87.25979
 
-883. Yerm√≠n Mercedes, OF-1B-C
+883. YermÌn Mercedes, OF-1B-C
 Score: 87.23794
 
 884. Mark Mathias, 2B-1B-OF-3B
@@ -2686,7 +2686,7 @@ Score: 84.3456
 896. Cory Abbott, P
 Score: 84.11221
 
-897. Adri√°n Morej√≥n, P
+897. Adri·n MorejÛn, P
 Score: 84.07334
 
 898. Touki Toussaint, P
@@ -2785,7 +2785,7 @@ Score: 77.88911
 929. Yunior Marte, P
 Score: 77.85376
 
-930. Jhoulys Chac√≠n, P
+930. Jhoulys ChacÌn, P
 Score: 77.7603
 
 931. Alex Faedo, P
@@ -2800,7 +2800,7 @@ Score: 77.5345
 934. Cody Poteet, P
 Score: 77.22279
 
-935. Adri√°n Martinez, P
+935. Adri·n Martinez, P
 Score: 76.74471
 
 936. Hunter Brown, P
@@ -2839,7 +2839,7 @@ Score: 73.89852
 947. Mason Thompson, P
 Score: 73.79175
 
-948. Lewin D√≠az, 1B
+948. Lewin DÌaz, 1B
 Score: 73.73025
 
 949. Sean Poppen, P
@@ -2878,7 +2878,7 @@ Score: 71.22279
 960. Kyle Lewis, OF
 Score: 70.909935
 
-961. Cristopher S√°nchez, P
+961. Cristopher S·nchez, P
 Score: 70.84006
 
 962. Michael Perez, C
@@ -2956,7 +2956,7 @@ Score: 65.03759
 986. Joan Adon, P
 Score: 64.99041
 
-987. Chi Chi Gonz√°lez, P
+987. Chi Chi Gonz·lez, P
 Score: 64.94592
 
 988. Stephen Nogosek, P
@@ -2968,7 +2968,7 @@ Score: 64.79271
 990. Matt Swarmer, P
 Score: 64.7346
 
-991. Luis Pati√±o, P
+991. Luis PatiÒo, P
 Score: 64.70909
 
 992. Phillips Valdez, P
@@ -3064,7 +3064,7 @@ Score: 59.287903
 1022. Austin Adams, P
 Score: 59.167747
 
-1023. Adalberto Mondes√≠, SS
+1023. Adalberto MondesÌ, SS
 Score: 58.769783
 
 1024. Ryne Nelson, P
@@ -3139,7 +3139,7 @@ Score: 54.128082
 1047. Mike Baumann, P
 Score: 54.059113
 
-1048. Vidal Bruj√°n, 2B-OF-SS-3B
+1048. Vidal Bruj·n, 2B-OF-SS-3B
 Score: 54.034447
 
 1049. Skye Bolt, OF
@@ -3202,10 +3202,10 @@ Score: 49.620197
 1068. Matt Thaiss, C-1B-3B
 Score: 49.61294
 
-1069. Junior Fern√°ndez, P
+1069. Junior Fern·ndez, P
 Score: 49.083496
 
-1070. Dom Nu√±ez, C
+1070. Dom NuÒez, C
 Score: 48.77145
 
 1071. Matt Beaty, OF-1B
@@ -3241,7 +3241,7 @@ Score: 47.460953
 1081. Sandy Leon, C-P
 Score: 46.791252
 
-1082. Erik Gonz√°lez, 3B-SS-2B-1B
+1082. Erik Gonz·lez, 3B-SS-2B-1B
 Score: 46.1794
 
 1083. Gabriel Moreno, C-OF-3B-2B
@@ -3280,7 +3280,7 @@ Score: 43.714287
 1094. Tyler Thornburg, P
 Score: 43.349037
 
-1095. Manny Pi√±a, C
+1095. Manny PiÒa, C
 Score: 43.326748
 
 1096. Cole Sands, P
@@ -3310,7 +3310,7 @@ Score: 41.893494
 1104. Sam Coonrod, P
 Score: 41.771057
 
-1105. Manuel Rodr√≠guez, P
+1105. Manuel RodrÌguez, P
 Score: 41.624916
 
 1106. David Hensley, SS-3B-2B-OF
@@ -3334,7 +3334,7 @@ Score: 40.770973
 1112. Ashton Goudeau, P
 Score: 40.737083
 
-1113. Miguel S√°nchez, P
+1113. Miguel S·nchez, P
 Score: 40.72561
 
 1114. Luke Bard, P
@@ -3373,10 +3373,10 @@ Score: 38.997753
 1125. Sam Howard, P
 Score: 38.4857
 
-1126. Marcos Dipl√°n, P
+1126. Marcos Dipl·n, P
 Score: 37.847183
 
-1127. Kelvin Guti√©rrez, 3B
+1127. Kelvin GutiÈrrez, 3B
 Score: 37.49073
 
 1128. Luis Barrera, OF
@@ -3397,7 +3397,7 @@ Score: 36.968727
 1133. Collin Snider, P
 Score: 36.743702
 
-1134. Ronald Bola√±os, P
+1134. Ronald BolaÒos, P
 Score: 36.56729
 
 1135. Jeremy Beasley, P
@@ -3433,7 +3433,7 @@ Score: 35.65783
 1145. Domingo Tapia, P
 Score: 35.64207
 
-1146. Robinson Can√≥, 2B
+1146. Robinson CanÛ, 2B
 Score: 35.46006
 
 1147. Adam Kolarek, P
@@ -3535,7 +3535,7 @@ Score: 30.855656
 1179. Tyler Freeman, 3B-SS-2B
 Score: 30.840057
 
-1180. C√©sar Valdez, P
+1180. CÈsar Valdez, P
 Score: 30.824987
 
 1181. Gabriel Arias, 3B-2B-SS-1B
@@ -3565,7 +3565,7 @@ Score: 29.49056
 1189. Sean Newcomb, P
 Score: 29.328787
 
-1190. Ren√© Pinto, C
+1190. RenÈ Pinto, C
 Score: 29.106716
 
 1191. Jose Herrera, C
@@ -3598,7 +3598,7 @@ Score: 27.55785
 1200. Jake Hager, 2B-3B-SS-P
 Score: 27.422405
 
-1201. Yoan L√≥pez, P
+1201. Yoan LÛpez, P
 Score: 26.793633
 
 1202. Jay Jackson, P
@@ -3640,7 +3640,7 @@ Score: 24.524807
 1214. Luis Ortiz, P
 Score: 24.446033
 
-1215. Jonathan Ara√∫z, 3B-2B-SS
+1215. Jonathan Ara˙z, 3B-2B-SS
 Score: 24.250729
 
 1216. Dustin Garneau, C
@@ -3727,7 +3727,7 @@ Score: 20.257763
 1243. Chad Wallach, C
 Score: 20.159496
 
-1244. Angel Rond√≥n, P
+1244. Angel RondÛn, P
 Score: 20.07619
 
 1245. Tyler Holton, P
@@ -3751,7 +3751,7 @@ Score: 18.5891
 1251. Ryan Castellani, P
 Score: 18.542427
 
-1252. Norge Ru√≠z, P
+1252. Norge RuÌz, P
 Score: 18.481695
 
 1253. Anthony Bemboom, C
@@ -3844,7 +3844,7 @@ Score: 15.428571
 1282. Jeremiah Estrada, P
 Score: 15.293532
 
-1283. Roenis El√≠as, P
+1283. Roenis ElÌas, P
 Score: 15.223214
 
 1284. Dusten Knight, P
@@ -3973,7 +3973,7 @@ Score: 10.187483
 1325. Elvis Peguero, P
 Score: 10.115547
 
-1326. Francisco √Ålvarez, C
+1326. Francisco ¡lvarez, C
 Score: 10.10204
 
 1327. Simeon Woods Richardson, P
@@ -3982,7 +3982,7 @@ Score: 9.874285
 1328. Jeter Downs, 2B-3B-SS
 Score: 9.763246
 
-1329. Dereck Rodr√≠guez, P
+1329. Dereck RodrÌguez, P
 Score: 9.576904
 
 1330. Jimmy Yacabonis, P
@@ -4045,7 +4045,7 @@ Score: 7.658497
 1349. Sebastian Rivero, C
 Score: 7.6584506
 
-1350. Pedro B√°ez, P
+1350. Pedro B·ez, P
 Score: 7.542121
 
 1351. Steven Souza Jr., OF
@@ -4066,10 +4066,10 @@ Score: 7.285714
 1356. Darwinzon Hernandez, P
 Score: 7.1972394
 
-1357. Michel B√°ez, P
+1357. Michel B·ez, P
 Score: 7.04529
 
-1358. Ronald Guzm√°n, 1B
+1358. Ronald Guzm·n, 1B
 Score: 6.505918
 
 1359. Cristofer Ogando, P
@@ -4132,7 +4132,7 @@ Score: 4.8979597
 1378. Scott Kingery, 2B
 Score: 4.812986
 
-1379. Carlos P√©rez, C
+1379. Carlos PÈrez, C
 Score: 4.7619047
 
 1380. Kevin Herget, P
@@ -4159,7 +4159,7 @@ Score: 4.3875
 1387. Narciso Crook, OF
 Score: 4.265873
 
-1388. Arodys Vizca√≠no, P
+1388. Arodys VizcaÌno, P
 Score: 4.262891
 
 1389. Brandon Dixon, 3B-OF
@@ -4174,7 +4174,7 @@ Score: 4.051948
 1392. Silvino Bracho, P
 Score: 4.027337
 
-1393. Jos√© Godoy, C
+1393. JosÈ Godoy, C
 Score: 4.023312
 
 1394. Austin Allen, C
@@ -4186,7 +4186,7 @@ Score: 3.857143
 1396. Yerry Rodriguez, P
 Score: 3.857143
 
-1397. Oliver P√©rez, P
+1397. Oliver PÈrez, P
 Score: 3.7232118
 
 1398. Miles Mastrobuoni, 2B-OF
@@ -4252,7 +4252,7 @@ Score: 2.2329671
 1418. Deven Marrero, 3B-SS
 Score: 2.2125604
 
-1419. Iv√°n Herrera, C
+1419. Iv·n Herrera, C
 Score: 2.154195
 
 1420. Yainer Diaz, C
@@ -4327,7 +4327,7 @@ Score: 0.7857144
 1443. Evan Phillips_h, 1
 Score: 0.71428573
 
-1444. S√≠mon Muzziotti, OF
+1444. SÌmon Muzziotti, OF
 Score: 0.5612245
 
 1445. Nate Mondou, 2B
@@ -4348,7 +4348,7 @@ Score: 0.43177858
 1450. Donny Sands, C
 Score: 0.35714287
 
-1451. Jos√© Castillo, P
+1451. JosÈ Castillo, P
 Score: 0.34285724
 
 1452. Ronnie Dawson, /D
@@ -4423,7 +4423,7 @@ Score: 0.0
 1475. Craig Kimbrel_h, 1
 Score: 0.0
 
-1476. Joely Rodr√≠guez_h, 1
+1476. Joely RodrÌguez_h, 1
 Score: 0.0
 
 1477. Joe Barlow_h, 1
@@ -4456,13 +4456,13 @@ Score: 0.0
 1486. Luis Liberato, OF
 Score: 0.0
 
-1487. Jos√© Alvarado_h, 1
+1487. JosÈ Alvarado_h, 1
 Score: 0.0
 
 1488. Kyle Nelson_h, 1
 Score: 0.0
 
-1489. Jorge L√≥pez_h, 1
+1489. Jorge LÛpez_h, 1
 Score: 0.0
 
 1490. Ian Kennedy_h, 1
@@ -4471,7 +4471,7 @@ Score: 0.0
 1491. Brewer Hicklen, OF
 Score: 0.0
 
-1492. No√© Ramirez_h, 1
+1492. NoÈ Ramirez_h, 1
 Score: 0.0
 
 1493. Scott Barlow_h, 1
@@ -4489,10 +4489,10 @@ Score: 0.0
 1497. Diego Castillo_h, 1
 Score: 0.0
 
-1498. Jonathan Lo√°isiga_h, 1
+1498. Jonathan Lo·isiga_h, 1
 Score: 0.0
 
-1499. Carlos Hern√°ndez_h, 1
+1499. Carlos Hern·ndez_h, 1
 Score: 0.0
 
 1500. Sean Poppen_h, 1
@@ -4525,7 +4525,7 @@ Score: 0.0
 1509. Keynan Middleton_h, 1
 Score: 0.0
 
-1510. F√©lix Bautista_h, 1
+1510. FÈlix Bautista_h, 1
 Score: 0.0
 
 1511. JoJo Romero_h, 1
@@ -4558,7 +4558,7 @@ Score: 0.0
 1520. Bo Naylor, C
 Score: 0.0
 
-1521. Ronald Bola√±os_h, /1
+1521. Ronald BolaÒos_h, /1
 Score: 0.0
 
 1522. Wyatt Mills_h, 1
@@ -4588,7 +4588,7 @@ Score: 0.0
 1530. Ryan Hendrix_h, /1
 Score: 0.0
 
-1531. Edwin D√≠az_h, 1
+1531. Edwin DÌaz_h, 1
 Score: 0.0
 
 1532. Matt Foster_h, 1
@@ -4615,13 +4615,13 @@ Score: 0.0
 1539. Jimmy Lambert_h, 1
 Score: 0.0
 
-1540. Alex Colom√©_h, 1
+1540. Alex ColomÈ_h, 1
 Score: 0.0
 
 1541. Joe Mantiply_h, 1
 Score: 0.0
 
-1542. Carlos Est√©vez_h, 1
+1542. Carlos EstÈvez_h, 1
 Score: 0.0
 
 1543. Adonis Medina_h, 1
@@ -4636,7 +4636,7 @@ Score: 0.0
 1546. Tyler Duffey_h, 1
 Score: 0.0
 
-1547. Reynaldo L√≥pez_h, 1
+1547. Reynaldo LÛpez_h, 1
 Score: 0.0
 
 1548. Albert Abreu_h, 1
@@ -4678,7 +4678,7 @@ Score: 0.0
 1560. Andrew Bellatti_h, 1
 Score: 0.0
 
-1561. Cionel P√©rez_h, 1
+1561. Cionel PÈrez_h, 1
 Score: 0.0
 
 1562. Brendon Little, P
@@ -4690,7 +4690,7 @@ Score: -0.30705917
 1564. Nicklaus Snyder, P
 Score: -0.35891396
 
-1565. Luis Fr√≠as, P
+1565. Luis FrÌas, P
 Score: -0.6185765
 
 1566. Andrew Nardi, P
@@ -4711,7 +4711,7 @@ Score: -1.6734699
 1571. Caleb Kilian, P
 Score: -1.8457675
 
-1572. J.C. Mej√≠a, P
+1572. J.C. MejÌa, P
 Score: -1.9443364
 
 1573. Bryce Montes de Oca, P
@@ -4765,7 +4765,7 @@ Score: -7.3624477
 1589. Jake Walsh, P
 Score: -7.586776
 
-1590. Jos√© Butto, P
+1590. JosÈ Butto, P
 Score: -8.039733
 
 1591. Bryan Hoeing, P
