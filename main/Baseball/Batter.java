@@ -19,13 +19,11 @@ public class Batter extends Player {
 
     public void addFieldingStats(String[] array, int year){
         //setScore(calculateScore());
-        countYears();
             
         stats.addFieldingStats(array, year);
     }
 
     public void addBattingStats(String[] array, int year){
-        countYears();
         if(year > 0)
             super.addGamesPlayed(Integer.parseInt(array[3]) / ((year * 2) + 1));
         else
@@ -71,14 +69,14 @@ public class Batter extends Player {
         //score += getGamesPlayed() * Env.getBattingWeights(0);
 
         for(int i = 1; i < 23; i++){
-            score += (10 * array[i]* Env.getBattingWeights(i)) / (getGamesPlayed() * Math.max(1, getStatYearsCounted()));
+            score += (10 * array[i]* Env.getBattingWeights(i)) / getGamesPlayed() ;
         }
 
-        score += array[28] / getGamesPlayed() * Env.getBattingWeights(28);
-        score += array[29] / getGamesPlayed() * Env.getBattingWeights(29);
+        score += array[28] * Env.getBattingWeights(28) / getGamesPlayed();
+        score += array[29] * Env.getBattingWeights(29) / getGamesPlayed();
 
         for(int i = 31; i < array.length; i++){
-            score += (10 * array[i]* Env.getBattingWeights(i)) / (getGamesPlayed() * Math.max(1, getStatYearsCounted()));
+            score += (10 * array[i]* Env.getBattingWeights(i)) / getGamesPlayed();
         }
 
         for(int i = 23; i < 28; i++){

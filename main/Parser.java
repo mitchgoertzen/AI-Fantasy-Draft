@@ -124,15 +124,23 @@ public class Parser {
                             //     System.out.println(designatedHitters++);
                             // }
                             currentPlayerArray = parseStatLine(currentLine, currentPlayerArray.length, lineSize, currentID.length());
+                            // if(currentID.equals("verlaju01")){
+                            //     System.out.println("type: " + statType);
+                            //     System.out.println("gp: " + currentPlayerArray[3]);
+                            //     System.out.println("file index: " + fileIndex);
+                            //     System.out.println();
+                            // }
                             createPlayer(currentPlayerArray, currentID, statType, fileIndex, hockey);
                         }
                     }
                     //player has been added
                     else{ 
 
-                        if(statType == 1 && fileIndex == 0){
-                            currentPlayer.resetStatYearsCounted();
+                        if(Env.AllPlayers.get(currentID).isFieldingCounted() && statType > 0 && fileIndex == 0){
+                            Env.AllPlayers.get(currentID).setFieldingCounted(false);
+                            Env.AllPlayers.get(currentID).resetStatYearsCounted();
                         }
+                        
 
                         currentPlayerArray = parseStatLine(currentLine, currentPlayerArray.length, lineSize, currentID.length());
                         //if the player is a pitcher and has batting stats, new batter must be created
@@ -156,9 +164,24 @@ public class Parser {
 
 
 
+                            // if(currentID.equals("verlaju01")){
+                            //     System.out.println("type: " + statType);
+                            //     System.out.println("gp: " + currentPlayer.getGamesPlayed());
+                            //     System.out.println("years counted: " + currentPlayer.getStatYearsCounted());
+                            //     System.out.println("file index: " + fileIndex);
+                            //     System.out.println();
+                            // }
+
+
                             if(currentPlayer.getStatYearsCounted() <= fileIndex){
+
+
                                 if(statType == 2){
                                     if(currentPlayer.getPosition().equals("P")){
+
+                                        // if(currentID.equals("verlaju01")){
+                                        //     System.out.println("updating");
+                                        // }
                                         Env.updatePlayerStats(currentID, currentPlayerArray, statType, fileIndex);
                                         // System.out.println("Pitcher");
                                         // System.out.println(currentPlayer.getName());
@@ -166,13 +189,6 @@ public class Parser {
                                         // System.out.println();
                                     }
                                 }else{
-
-                                    if(statType == 1 && currentID.equals("alvaryo01")){
-                                        System.out.println("file index: " + fileIndex);
-        
-                                        System.out.println("gp: " + currentPlayerArray[3]);
-                                    }
-
                                     if(!currentPlayer.getPosition().equals("P"))
                                         Env.updatePlayerStats(currentID, currentPlayerArray, statType, fileIndex);
                                     // System.out.println("Batter");
@@ -248,7 +264,8 @@ public class Parser {
                  default: currentPlayer = new Batter(currentID, currentPlayerArray, info, false);
              }
          }
-
+         currentPlayer.setFieldingCounted(true);
+         currentPlayer.countYears();
          Env.PlayerScores.put(currentID, currentPlayer.getScore());
          Env.AllPlayers.put(currentID, currentPlayer);
     }

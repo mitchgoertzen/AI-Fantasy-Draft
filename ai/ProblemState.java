@@ -1,5 +1,6 @@
 package ai;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -215,13 +216,34 @@ public class ProblemState {
 			}
 			System.out.println();
 		}	
-		
+
+		Integer[] counting = new Integer[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+								, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+								, 20, 21, 22, 28, 29
+								, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39
+								, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49
+								, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59
+								, 60, 61, 23, 24, 25, 26, 27, 28, 64, 65, 75};
+		Integer[] lower = new Integer[]{62, 63, 76, 77};
+		Integer[] higher = new Integer[]{23, 24, 25, 26, 27, 28, 64, 65, 75};
+
 		int oppID = Env.totalPicksInDraft.get(i - 1);
-		for(int k = 0; k < (length1 + length2); k++){
+		
+		for(int k : counting){
 
-			//:TODO: create case for picther stats where the lower number is better
+			if(Arrays.asList(higher).contains(k)){
+				if(k >= 37){
+					if(Env.getPitchingWeights(k-37) > 0)
+						cumulativeScore *= problem.getActiveRosterScore()[k];
+				}
+				else{
+					if(Env.getBattingWeights(k) > 0)
+						cumulativeScore *= problem.getActiveRosterScore()[k];
+				}
+			}else{
+				cumulativeScore += problem.getActiveRosterScore()[k];
+			}
 
-			cumulativeScore += problem.getActiveRosterScore()[k];
 			if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) > 0 ){
 				currentPoints++;
 				weeklyPoints++;
@@ -229,6 +251,38 @@ public class ProblemState {
 			else if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) < 0 )
 				opponentPoints++;
 		}
+
+		for(int k : lower){
+			if(Env.getPitchingWeights()[k-37] > 0)
+				cumulativeScore /= problem.getActiveRosterScore()[k];
+			
+
+			if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) < 0 ){
+				currentPoints++;
+				weeklyPoints++;
+			}
+			else if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) > 0 )
+				opponentPoints++;
+		}
+
+		
+		// for(int k = 0; k < (length1 + length2); k++){
+
+		// 	//:TODO: create case for picther stats where the lower number is better
+
+		// 	cumulativeScore += problem.getActiveRosterScore()[k];
+
+
+
+
+
+		// 	if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) > 0 ){
+		// 		currentPoints++;
+		// 		weeklyPoints++;
+		// 	}
+		// 	else if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) < 0 )
+		// 		opponentPoints++;
+		// }
 
 		if(currentPoints > opponentPoints)
 			totalWins++;

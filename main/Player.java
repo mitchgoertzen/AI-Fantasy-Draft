@@ -3,6 +3,16 @@ public abstract class Player implements Cloneable {
 
     private float score = 0;
 
+    private boolean fieldingCounted;
+
+    public boolean isFieldingCounted() {
+        return fieldingCounted;
+    }
+
+    public void setFieldingCounted(boolean fieldingCounted) {
+        this.fieldingCounted = fieldingCounted;
+    }
+
     private int gamesPlayed;
 
     private String id;

@@ -17,7 +17,6 @@ public class Pitcher extends Player {
     }
 
     public void addPitchingStats(String[] array, int year){
-        countYears();
         if(year > 0)
             super.addGamesPlayed(Integer.parseInt(array[5]) / ((year * 2) + 1));
         stats.addPitchingStats(array, year);
@@ -90,7 +89,7 @@ public class Pitcher extends Player {
             // System.out.println(array[i]);
             // System.out.println(Env.getPitchingWeights(i));
             
-            score += (10 * array[i] * Env.getPitchingWeights(i)) / (getGamesPlayed() * Math.max(1, getStatYearsCounted()));
+            score += (10 * array[i] * Env.getPitchingWeights(i)) / Math.max(1, array[2]);
         }
 
         int[] lower = new int[]{25, 26, 39, 40};
@@ -140,6 +139,7 @@ public class Pitcher extends Player {
         //     score *= Math.max(0.01f, array[38]) * Env.getPitchingWeights(38);
         // }
 
-        return score * array[2] * ((float)getGamesPlayed() / 250) / 8;
+            return score * array[2] / 7 * 1.5f;
+//        return score * array[2] * ((float)getGamesPlayed() / 250) / 8;
     }
 }

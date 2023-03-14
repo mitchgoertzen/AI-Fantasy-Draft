@@ -293,6 +293,8 @@ public class Env {
 
     public static void updatePlayerStats(String id, String[] array,int statType, int year){
         
+        AllPlayers.get(id).countYears();
+
         switch(statType){
             case 0: ((Batter)AllPlayers.get(id)).addFieldingStats(array, year);
             break;

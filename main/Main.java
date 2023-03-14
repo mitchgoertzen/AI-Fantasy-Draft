@@ -37,7 +37,7 @@ public class Main {
                 1f, //BB
                 0f, //IBB
                 0f, //HBP
-                -1f, //K
+                -0f, //K
                 -0f, //GIDP
                 0f, //TB
                 0f, //PO
@@ -66,7 +66,7 @@ public class Main {
                 1f, //W
                 0f, //L
                 1f, //CG
-                1f, //SO
+                0f, //SO
                 1f, //SV
                 0f, //O
                 0f, //H
@@ -115,14 +115,14 @@ public class Main {
             Env.setBaseballWeights(b, p);
         }
 
-        Env.setTotalParticipants(10);
+        Env.setTotalParticipants(4);
         Env.setTotalRounds(10);
 
         for(int i = 0; i < 6; i++){
             Env.setPositionLimit(i, Env.getTotalRounds());
         }
 
-        int humanPlayers = 1;
+        int humanPlayers = 0;
         int playerCount = Env.getTotalParticipants();
         int rounds = Env.getTotalRounds();
         Random random = new Random();
@@ -163,9 +163,9 @@ public class Main {
         try {
             FileWriter myWriter = new FileWriter("sortedScores.txt");
             for (Map.Entry<String,Float> mapElement : Env.SortedPlayerScores.entrySet()) {
-                if(mapElement.getKey().equals("alvaryo01")){
-                    Env.AllPlayers.get(mapElement.getKey()).printInfo();
-                }
+                // if(mapElement.getKey().equals("verlaju01")){
+                //     Env.AllPlayers.get(mapElement.getKey()).printInfo();
+                // }
                 // if(mapElement.getKey().equals("diazya01")){
                 //     Env.AllPlayers.get(mapElement.getKey()).printInfo();
                 // }
