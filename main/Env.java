@@ -130,7 +130,7 @@ public class Env {
     private static int currentRound;
     private static int currentPick;
 
-    private static  Integer[] positionLimits = new Integer[6]; //lw,rw,c,d,g
+    private static  Integer[] positionLimits = new Integer[12]; //lw,rw,c,d,g
 
     public static LinkedHashMap<String, Float> SortedPlayerScores = new LinkedHashMap<>();
     
@@ -156,7 +156,7 @@ public class Env {
             return pitchingWeights[i];
     }  
     
-    public static int getPositionIndex(String position, Integer[] positionCounts){
+    public static int getHockeyPositionIndex(String position, Integer[] positionCounts){
         switch(position){
             case "LW":
                 return 0;
@@ -191,6 +191,22 @@ public class Env {
                 
         }
         return -1;
+    }
+
+    public static int getBaseballPositionIndex(String position){
+        switch(position){
+            case "C": return 0;
+            case "1B": return 1;
+            case "2B": return 2;
+            case "3B": return 3;
+            case "SS": return 4;
+            case "OF": return 5;
+            case "SP": return 7;
+            case "RP": return 8;
+            default:
+                return 6;
+        }
+        
     }
     
     public static void sortPlayerScores() {

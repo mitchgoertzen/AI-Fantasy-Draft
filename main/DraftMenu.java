@@ -117,7 +117,7 @@ public class DraftMenu {
                             + currentParticipant.getName() + " has drafted "
                             + Env.AllPlayers.get(playerCode).getName() + "\n");
                             if(!hockey){
-                                if(Env.AllPlayers.get(playerCode).getPosition().equals("P")){
+                                if(Env.AllPlayers.get(playerCode).getClass().getName().equals("main.Baseball.Pitcher")){
                                     ((Pitcher)Env.AllPlayers.get(playerCode)).printInfo();
                                 }else{
                                     ((Batter)Env.AllPlayers.get(playerCode)).printInfo();

@@ -124,11 +124,11 @@ public class AIParticipant extends Participant {
         super.addPlayer(playerCode);
         
         if(hockey){
-            int index = Env.getPositionIndex(Env.AllPlayers.get(playerCode).getPosition(), positionCounts);
+            int index = Env.getHockeyPositionIndex(Env.AllPlayers.get(playerCode).getPosition(), positionCounts);
             if(DEBUG){        
                 System.out.println("player pos: " + Env.AllPlayers.get(playerCode).getPosition());
                 System.out.println("new count: " + (positionCounts[index] + 1));
-                System.out.println("limit: " + Env.getPositionLimits()[index]);
+                System.out.println("limit: " + Env.getHockeyPositionLimits()[index]);
             }
     
             positionCounts[index]++;

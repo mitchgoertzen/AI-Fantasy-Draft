@@ -150,7 +150,7 @@ public class Parser {
 
                         currentPlayerArray = parseStatLine(currentLine, currentPlayerArray.length, lineSize, currentID.length());
                         //if the player is a pitcher and has batting stats, new batter must be created
-                        if(statType == 1  && currentPlayer.getPosition().equals("P")){
+                        if(statType == 1  && currentPlayer.getClass().getName().equals("main.Baseball.Pitcher")){
                             
                             if(fileIndex == 0){
                                 currentID += "_h";
@@ -181,9 +181,8 @@ public class Parser {
 
                             if(currentPlayer.getStatYearsCounted() <= fileIndex){
 
-
                                 if(statType == 2){
-                                    if(currentPlayer.getPosition().equals("P")){
+                                    if(currentPlayer.getClass().getName().equals("main.Baseball.Pitcher")){
 
                                         // if(currentID.equals("verlaju01")){
                                         //     System.out.println("updating");
@@ -195,7 +194,7 @@ public class Parser {
                                         // System.out.println();
                                     }
                                 }else{
-                                    if(!currentPlayer.getPosition().equals("P"))
+                                    if(!currentPlayer.getClass().getName().equals("main.Baseball.Pitcher"))
                                         Env.updatePlayerStats(currentID, currentPlayerArray, statType, fileIndex);
                                     // System.out.println("Batter");
                                     // System.out.println(currentPlayer.getName());
@@ -248,7 +247,13 @@ public class Parser {
             switch(statType){
                 case 0: { 
                     if(currentPlayerArray[9].equals("P")){
-                        info = new String[]{currentPlayerArray[0], currentPlayerArray[1], "P", currentPlayerArray[3]};
+                        String pos = "";
+                        if(Float.parseFloat(currentPlayerArray[4]) > (0.5f * Float.parseFloat(currentPlayerArray[3]))){
+                            pos = "SP";
+                        }else{
+                            pos = "RP";
+                        }
+                        info = new String[]{currentPlayerArray[0], currentPlayerArray[1], pos, currentPlayerArray[3]};
                         currentPlayer = new Pitcher(currentID, currentPlayerArray, info, true);
                         if(DEBUG)
                             System.out.println(currentPlayer.getName() + " has a score of : " + eval);
@@ -263,7 +268,13 @@ public class Parser {
                  }
                  break;
                  case 2:  { 
-                     info = new String[]{currentPlayerArray[0], currentPlayerArray[1], "P", currentPlayerArray[6]};
+                    String pos = "";
+                    if(Float.parseFloat(currentPlayerArray[6]) > (0.5f * Float.parseFloat(currentPlayerArray[5]))){
+                        pos = "SP";
+                    }else{
+                        pos = "RP";
+                    }
+                     info = new String[]{currentPlayerArray[0], currentPlayerArray[1], pos, currentPlayerArray[6]};
                      currentPlayer = new Pitcher(currentID, currentPlayerArray, info, false);
                  }
                  break;

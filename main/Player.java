@@ -37,7 +37,11 @@ public abstract class Player implements Cloneable {
         this.id = id;
         name = array[0];
         team = array[1];
-        position = array[2];
+        String pos = array[2];
+        if(pos != "SP" && pos != "RP"){
+            pos = pos.split("\\-")[0];
+        }
+        position = pos;
         gamesPlayed = Integer.parseInt(array[3]);
     }
     
