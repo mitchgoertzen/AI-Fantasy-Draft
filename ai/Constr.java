@@ -85,11 +85,11 @@ public class Constr {
 
 
             if(positionIndex < 7){
-                if(positionIndex == 0){ 
-                    System.out.println("count: " + (ai.getPositionCounts()[positionIndex] + 1));
-                    System.out.println("limit: " + Env.getPositionLimits()[positionIndex]);
-                    System.out.println("extra: " +  ai.getExtraBattersAvailable());
-                }
+                // if(positionIndex == 0){ 
+                //     System.out.println("count: " + (ai.getPositionCounts()[positionIndex] + 1));
+                //     System.out.println("limit: " + Env.getPositionLimits()[positionIndex]);
+                //     System.out.println("extra: " +  ai.getExtraBattersAvailable());
+                // }
 
                 if((ai.getPositionCounts()[positionIndex] + 1) > (Env.getPositionLimits()[positionIndex] + ai.getExtraBattersAvailable())){
                     if(DEBUG_VERBOSE){
