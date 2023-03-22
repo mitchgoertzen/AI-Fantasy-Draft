@@ -6,7 +6,7 @@ public class Eval {
 
 	public ProblemState evaluate(ProblemState leaf) {
 
-        int[] newEval = leaf.SimulateOpponentDraftPicks(leaf.getProblem().getStatLengths());
+        float[] newEval = leaf.SimulateOpponentDraftPicks(leaf.getProblem().getStatLengths());
 
         leaf.setEval(newEval);
 

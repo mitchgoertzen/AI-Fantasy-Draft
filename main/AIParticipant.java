@@ -19,8 +19,8 @@ public class AIParticipant extends Participant {
         return hockey;
     }
 
-    private int[] rosterEval;
-    private int[] maxScore;
+    private float[] rosterEval;
+    private float[] maxScore;
 
     private int maxDraftSlots;
 
@@ -30,8 +30,8 @@ public class AIParticipant extends Participant {
 
         super(id, isHuman, draftNumber);
         this.maxDraftSlots = maxDraftSlots;
-        maxScore = new int[3]; 
-        rosterEval = new int[3];
+        maxScore = new float[3]; 
+        rosterEval = new float[3];
         draftSlots = new ArrayList<>();
         for(int i = 0; i < positionCounts.length; i++){
             positionCounts[i] = 0;
@@ -139,7 +139,7 @@ public class AIParticipant extends Participant {
         return playerCode;
     }
 
-    public int[] getMaxScore() {
+    public float[] getMaxScore() {
         return maxScore;
     }
 
@@ -151,7 +151,7 @@ public class AIParticipant extends Participant {
         return positionCounts;
     }
 
-    public void setMaxScore(int[] maxScore) {
+    public void setMaxScore(float[] maxScore) {
         this.maxScore = maxScore;
     }
 }

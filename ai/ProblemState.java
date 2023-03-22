@@ -20,12 +20,12 @@ public class ProblemState {
 
 	private int totalWins;
 	private int weeklyPoints;
-	private int cumulativeScore;
+	private float cumulativeScore;
 	private int length1;;
 	private int length2;
 
-	private int[] eval;
-	private int[] parent_eval;
+	private float[] eval;
+	private float[] parent_eval;
 
 	private int round;
 
@@ -38,7 +38,7 @@ public class ProblemState {
 	public ProblemState(Problem problem, ProblemState parent, AIParticipant ai) {
 		round = Env.getCurrentRound();
         myConstr = new Constr();
-		eval = new int[3];
+		eval = new float[3];
         this.problem = problem;		
 		this.ai = ai;
 
@@ -76,7 +76,7 @@ public class ProblemState {
 
 	public boolean isBestSolution() {
 
-		if (eval[0] > ai.getMaxScore()[0]) {
+		if (Float.compare(eval[0], ai.getMaxScore()[0]) > 0) {
 			ai.setMaxScore(eval);
 			if(DEBUG){
 				System.out.println("isBestSolution");
@@ -85,8 +85,8 @@ public class ProblemState {
 				System.out.println(eval[2]);
 			}
 			return true;
-		}else if(eval[0] == ai.getMaxScore()[0]){
-			if(eval[1] > ai.getMaxScore()[1]){
+		}else if(Float.compare(eval[0], ai.getMaxScore()[0]) == 0){
+			if(Float.compare(eval[1], ai.getMaxScore()[1]) > 0){
 				ai.setMaxScore(eval);
 				if(DEBUG){
 					System.out.println("isBestSolution");
@@ -95,8 +95,8 @@ public class ProblemState {
 					System.out.println(eval[2]);
 				}
 				return true;
-			}else if(eval[1] == ai.getMaxScore()[1]){
-				if(eval[2] > ai.getMaxScore()[2]){
+			}else if(Float.compare(eval[1], ai.getMaxScore()[1]) == 0){
+				if(Float.compare(eval[2], ai.getMaxScore()[2]) > 0){
 					ai.setMaxScore(eval);
 					if(DEBUG){
 						System.out.println("isBestSolution");
@@ -115,7 +115,7 @@ public class ProblemState {
 		round++;
 	}
 
-	public int[] SimulateOpponentDraftPicks(int[] lengths){	
+	public float[] SimulateOpponentDraftPicks(int[] lengths){	
 
 		length1 = lengths[0];
 		length2 = lengths[1];
@@ -217,6 +217,7 @@ public class ProblemState {
 			System.out.println();
 		}	
 
+
 		Integer[] counting = new Integer[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 								, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
 								, 20, 21, 22, 28, 29
@@ -233,15 +234,27 @@ public class ProblemState {
 
 			if(Arrays.asList(higher).contains(k)){
 				if(k >= 37){
-					if(Env.getPitchingWeights(k-37) > 0)
+					if(Env.getPitchingWeights(k-37) > 0 && problem.getActiveRosterScore()[k] > 0){
 						cumulativeScore *= problem.getActiveRosterScore()[k];
+						if(DEBUG_VERBOSE)
+                			System.out.println("at " + k + ": " + cumulativeScore);
+					}
 				}
 				else{
-					if(Env.getBattingWeights(k) > 0)
+					if(Env.getBattingWeights(k) > 0 && problem.getActiveRosterScore()[k] > 0){
+						if(DEBUG_VERBOSE)
+                			System.out.println(Env.getBattingWeights(k) + ", " + problem.getActiveRosterScore()[k]);
 						cumulativeScore *= problem.getActiveRosterScore()[k];
+						if(DEBUG_VERBOSE)
+                			System.out.println("at " + k + ": " + cumulativeScore);
+					}
 				}
 			}else{
 				cumulativeScore += problem.getActiveRosterScore()[k];
+				if(DEBUG_VERBOSE && problem.getActiveRosterScore()[k] > 0){
+					System.out.println("at " + k + ": " + problem.getActiveRosterScore()[k]);
+					System.out.println("cumulative: " + cumulativeScore);
+				}
 			}
 
 			if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) > 0 ){
@@ -253,8 +266,14 @@ public class ProblemState {
 		}
 
 		for(int k : lower){
-			if(Env.getPitchingWeights()[k-37] > 0)
+
+			if(Env.getPitchingWeights()[k-37] > 0 && problem.getActiveRosterScore()[k] > 0){
+				if(DEBUG_VERBOSE){
+					System.out.println("at " + k + ": " + cumulativeScore);
+					System.out.println(Env.getPitchingWeights()[k-37] + ", " + problem.getActiveRosterScore()[k]);
+				}
 				cumulativeScore /= problem.getActiveRosterScore()[k];
+			}
 			
 
 			if(Float.compare(problem.getActiveRosterScore()[k], problem.getOpponentRosterScores()[oppID][k]) < 0 ){
@@ -284,6 +303,10 @@ public class ProblemState {
 		// 		opponentPoints++;
 		// }
 
+		
+		if(DEBUG)
+			System.out.println(cumulativeScore);
+
 		if(currentPoints > opponentPoints)
 			totalWins++;
 	}
@@ -296,11 +319,11 @@ public class ProblemState {
 		return myConstr;
 	}
 
-	public int[] getEval() {
+	public float[] getEval() {
 		return eval;
 	}
 
-	public int[] getParentEval() {
+	public float[] getParentEval() {
 		return parent_eval;
 	}
 	
@@ -332,7 +355,7 @@ public class ProblemState {
 		return problem.getDraftedPlayers()[Env.getCurrentRound() - 1];
 	}
 
-	public void setEval(int[] eval) {
+	public void setEval(float[] eval) {
 		this.eval = eval;
 	}
 
@@ -340,7 +363,7 @@ public class ProblemState {
 		this.problem = problem;
 	}
 
-	public void setParentEval(int[] parent_eval) {
+	public void setParentEval(float[] parent_eval) {
 		this.parent_eval = parent_eval;
 	}
 }

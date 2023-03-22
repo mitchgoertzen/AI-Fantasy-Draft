@@ -139,7 +139,7 @@ public class Pitcher extends Player {
         //     score *= Math.max(0.01f, array[38]) * Env.getPitchingWeights(38);
         // }
 
-            return score * array[2] / 7 * 1.5f;
+            return score * array[2] / 6f;
 //        return score * array[2] * ((float)getGamesPlayed() / 250) / 8;
     }
 }

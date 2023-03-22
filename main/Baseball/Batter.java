@@ -89,7 +89,7 @@ public class Batter extends Player {
 
         //score *= Math.max(0.01f, array[29]) * Env.getBattingWeights(29);
 
-        return score * getGamesPlayed() / 7;
+        return score * getGamesPlayed() / 5;
     }
     
 }

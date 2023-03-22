@@ -172,13 +172,13 @@ class LeafComparator implements Comparator<ProblemState> {
         if (node1.equals(node2))
             return 0;
 
-        int result = Integer.compare(node1.getProblem().getDraftSlots().size(),
+        int result = Float.compare(node1.getProblem().getDraftSlots().size(),
                         node2.getProblem().getDraftSlots().size());
         if (result == 0)
-            result = Integer.compare(node1.getEval()[0], node2.getEval()[0]);
+            result = Float.compare(node1.getEval()[0], node2.getEval()[0]);
 
         if (result == 0)
-            result = Integer.compare(node1.hashCode(), node2.hashCode());
+            result = Float.compare(node1.hashCode(), node2.hashCode());
         return result;
     }
 

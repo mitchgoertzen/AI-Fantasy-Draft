@@ -24,7 +24,7 @@ public class Main {
                 0f, //GS
                 0f, //AB
                 1f, //R
-                1f, //H
+                0f, //H
                 0f, //1B
                 0f, //2B
                 0f, //3B
@@ -34,7 +34,7 @@ public class Main {
                 0f, //SF
                 1f, //SB
                 -0f, //CS
-                1f, //BB
+                0f, //BB
                 0f, //IBB
                 0f, //HBP
                 -0f, //K
@@ -65,7 +65,7 @@ public class Main {
                 1f, //IP
                 1f, //W
                 0f, //L
-                1f, //CG
+                0f, //CG
                 0f, //SO
                 1f, //SV
                 0f, //O
@@ -115,14 +115,14 @@ public class Main {
             Env.setBaseballWeights(b, p);
         }
 
-        Env.setTotalParticipants(1);
-        Env.setTotalRounds(10);
+        Env.setTotalParticipants(10);
+        Env.setTotalRounds(4);
 
         for(int i = 0; i < 6; i++){
             Env.setPositionLimit(i, Env.getTotalRounds());
         }
 
-        int humanPlayers = 1;
+        int humanPlayers = 0;
         int playerCount = Env.getTotalParticipants();
         int rounds = Env.getTotalRounds();
         Random random = new Random();

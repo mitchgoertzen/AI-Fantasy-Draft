@@ -34,25 +34,31 @@ public class Parser {
         }else{
             //fielding
             String[] baseballFiles = {
-                    "stats/Baseball/mlb_fielding_2022.txt", 
+                    "stats/Baseball/mlb_fielding_2022.txt"
+                    , 
                     "stats/Baseball/mlb_fielding_2021.txt",
-                    "stats/Baseball/mlb_fielding_2020.txt"};
+                    "stats/Baseball/mlb_fielding_2020.txt"
+                };
             parseFiles(baseballFiles, hockey, 0);
 
             //batting
             baseballFiles = 
                 new String[]{
-                    "stats/Baseball/mlb_batting_2022.txt", 
+                    "stats/Baseball/mlb_batting_2022.txt"
+                    , 
                     "stats/Baseball/mlb_batting_2021.txt",
-                    "stats/Baseball/mlb_batting_2020.txt"};
+                    "stats/Baseball/mlb_batting_2020.txt"
+                };
             parseFiles(baseballFiles, hockey, 1);
 
             //pitching
             baseballFiles = 
                 new String[]{
-                    "stats/Baseball/mlb_pitching_2022.txt", 
+                    "stats/Baseball/mlb_pitching_2022.txt"
+                    , 
                     "stats/Baseball/mlb_pitching_2021.txt",
-                    "stats/Baseball/mlb_pitching_2020.txt"};
+                    "stats/Baseball/mlb_pitching_2020.txt"
+                };
             parseFiles(baseballFiles, hockey, 2);
         }
 
