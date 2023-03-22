@@ -5,7 +5,8 @@ import ai.*;
 
 public class AIParticipant extends Participant {
 
-    private final boolean DEBUG = false;
+    private final boolean DEBUG = true;
+    private final boolean DEBUG_VERBOSE = false;
 
     private ArrayList<DraftSlot> draftSlots;
 
@@ -24,7 +25,14 @@ public class AIParticipant extends Participant {
 
     private int maxDraftSlots;
 
-    private Integer[] positionCounts = new Integer[5]; //lw, rw, c, d, g, f
+    private Integer[] positionCounts = new Integer[11]; 
+    private boolean[] positionDraftEligible = new boolean[11]; 
+
+    private int extraBattersAvailable = 2; 
+
+    private int extraPitchersAvailable = 4; 
+    //lw, rw, c, d, g, f
+    //C, 1B, 2B, 3B, SS, OF, D, SP, RP, B, P
 
     public AIParticipant(int id, boolean isHuman, int draftNumber, int maxDraftSlots, boolean hockey) {
 
@@ -35,6 +43,7 @@ public class AIParticipant extends Participant {
         draftSlots = new ArrayList<>();
         for(int i = 0; i < positionCounts.length; i++){
             positionCounts[i] = 0;
+            positionDraftEligible[i] = true;
         }
 		for(int i = 0; i < maxDraftSlots; i++){
             draftSlots.add(new DraftSlot(i));
@@ -90,7 +99,7 @@ public class AIParticipant extends Participant {
     		//If the solution is complete and it has a better eval value than the current best state,
     		//then update the best state to the current state
     		if (!(currentState == null)) {
-                if(DEBUG)
+                if(DEBUG_VERBOSE)
                     System.out.println("current state not null");
     			bestState = currentState;
     		}
@@ -122,16 +131,81 @@ public class AIParticipant extends Participant {
         String playerCode = solution.getMostRecentDraftSelection();
 
         super.addPlayer(playerCode);
-        
+        int index = -1;
+
         if(hockey){
-            int index = Env.getHockeyPositionIndex(Env.AllPlayers.get(playerCode).getPosition(), positionCounts);
-            if(DEBUG){        
-                System.out.println("player pos: " + Env.AllPlayers.get(playerCode).getPosition());
-                System.out.println("new count: " + (positionCounts[index] + 1));
-                System.out.println("limit: " + Env.getHockeyPositionLimits()[index]);
+            index = Env.getHockeyPositionIndex(Env.AllPlayers.get(playerCode).getPosition(), positionCounts);
+        }
+        else{
+            index = Env.getBaseballPositionIndex(Env.AllPlayers.get(playerCode).getPosition());
+            if(positionCounts[index] + 1 > Env.getPositionLimits()[index]){
+                if(index < 7)
+                    extraBattersAvailable--;
+                else
+                    extraPitchersAvailable--;
             }
-    
-            positionCounts[index]++;
+            
+            if(index < 7 && extraBattersAvailable == 0){
+                if(DEBUG){
+
+                    System.out.println("x batters 0");
+                    System.out.println("index: " + index);
+                    System.out.println("positionCounts[index] + 1: " + (positionCounts[index] + 1));
+                }
+
+                if((positionCounts[index] + 1) >= Env.getPositionLimits()[index]){
+                    if(DEBUG){
+                        System.out.println("count >= limit");
+                    }
+                    positionDraftEligible[index] = false;
+                }
+
+                for(int i = 0; i < 7; i++){
+                    if(positionCounts[i] >= Env.getPositionLimits()[i])
+                        positionDraftEligible[i] = false;
+                }
+
+            }
+            
+            if(index >= 7){
+                if(extraPitchersAvailable == 0 ){
+                    if(positionCounts[index] + 1 >= Env.getPositionLimits()[index])
+                        positionDraftEligible[index] = false;
+                    for(int i = 7; i < 9; i++){
+                        if(positionCounts[i] >= Env.getPositionLimits()[i])
+                            positionDraftEligible[i] = false;
+                    }
+                }else{
+                    if(index == 7){
+                        if(positionCounts[index] + 1 >= (Env.getPositionLimits()[10] - (Env.getPositionLimits()[8] - positionCounts[8])))
+                            positionDraftEligible[index] = false;
+                    }else if(index == 8){
+                        if(positionCounts[index] + 1 >= (Env.getPositionLimits()[10] - (Env.getPositionLimits()[7] - positionCounts[7])))
+                            positionDraftEligible[index] = false;
+                    }
+                }
+            }  
+        }
+
+        positionCounts[index]++;
+
+        if(DEBUG){ 
+            
+            for(int i = 0; i < positionDraftEligible.length; i++){
+                if(positionDraftEligible[i] == true){
+                    System.out.println("pos index available: " + i);
+                }
+            }
+            System.out.println("player pos: " + Env.AllPlayers.get(playerCode).getPosition());
+            System.out.println("new count: " + (positionCounts[index]));
+            System.out.println("limit: " + Env.getPositionLimits()[index]);
+            System.out.println("extra batters: " + getExtraBattersAvailable());
+            System.out.println("extra pitchers: " + getExtraPitchersAvailable());
+
+            System.out.println("\nRoster: ");
+            for(String s : super.getRoster().getPlayers()){
+                    System.out.println(Env.AllPlayers.get(s).getName() + ", " + Env.AllPlayers.get(s).getPosition());
+            }
         }
 
         // System.out.println("score: " +  Env.PlayerScores.get(playerCode));
@@ -139,8 +213,20 @@ public class AIParticipant extends Participant {
         return playerCode;
     }
 
+    public boolean getPositionDraftEligible(int index) {
+        return positionDraftEligible[index];
+    }
+
     public float[] getMaxScore() {
         return maxScore;
+    }
+    
+    public int getExtraBattersAvailable() {
+        return extraBattersAvailable;
+    }
+
+    public int getExtraPitchersAvailable() {
+        return extraPitchersAvailable;
     }
 
     public int getMaxDraftSlots() {

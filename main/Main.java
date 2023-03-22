@@ -115,25 +115,25 @@ public class Main {
             Env.setBaseballWeights(b, p);
         }
 
-        Env.setTotalParticipants(10);
-        Env.setTotalRounds(4);
+        Env.setTotalParticipants(2);
+        Env.setTotalRounds(18);
 
-        for(int i = 0; i < 6; i++){
-            Env.setPositionLimit(i, Env.getTotalRounds());
-        }
+        // for(int i = 0; i < 6; i++){
+        //     Env.setPositionLimit(i, Env.getTotalRounds());
+        // }
 
 
-        // Env.setPositionLimit(0, 1);//C
-        // Env.setPositionLimit(1, 1);//1B
-        // Env.setPositionLimit(2, 1);//2B
-        // Env.setPositionLimit(3, 1);//3B
-        // Env.setPositionLimit(4, 1);//SS
-        // Env.setPositionLimit(5, 3);//OF
-        // Env.setPositionLimit(6, 0);//D
-        // Env.setPositionLimit(8, 2);//SP
-        // Env.setPositionLimit(9, 2);//RP
-        // Env.setPositionLimit(10, 10);//BATTER
-        // Env.setPositionLimit(11, 8);//PICTHER
+        Env.setPositionLimit(0, 1);//C
+        Env.setPositionLimit(1, 1);//1B
+        Env.setPositionLimit(2, 1);//2B
+        Env.setPositionLimit(3, 1);//3B
+        Env.setPositionLimit(4, 1);//SS
+        Env.setPositionLimit(5, 3);//OF
+        Env.setPositionLimit(6, 0);//D
+        Env.setPositionLimit(7, 2);//SP
+        Env.setPositionLimit(8, 2);//RP
+        Env.setPositionLimit(9, 10);//BATTER
+        Env.setPositionLimit(10, 8);//PICTHER
 
         int humanPlayers = 0;
         int playerCount = Env.getTotalParticipants();

@@ -130,7 +130,7 @@ public class Env {
     private static int currentRound;
     private static int currentPick;
 
-    private static  Integer[] positionLimits = new Integer[12]; //lw,rw,c,d,g
+    private static  Integer[] positionLimits = new Integer[11]; //lw,rw,c,d,g
 
     public static LinkedHashMap<String, Float> SortedPlayerScores = new LinkedHashMap<>();
     

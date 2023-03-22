@@ -78,7 +78,7 @@ public class Control {
 
         SimulatePreviousPicks();
 
-        ArrayList<Problem> subProblems = SearchModel.Div(currentLeaf.getProblem(), currentLeaf.getAi().getMaxDraftSlots(), currentLeaf.getRound(), currentLeaf.getAi().getId());
+        ArrayList<Problem> subProblems = SearchModel.Div(currentLeaf.getProblem(), currentLeaf.getAi().getMaxDraftSlots(), currentLeaf.getRound(), currentLeaf.getAi());
         
         // If the node cannot be divided into more leaves, discard it
         if (subProblems.isEmpty()) {

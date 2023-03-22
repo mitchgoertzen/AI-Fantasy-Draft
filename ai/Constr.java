@@ -10,6 +10,7 @@ import main.Player;
 
 public class Constr {
     private final boolean DEBUG = false;
+    private final boolean DEBUG_VERBOSE = false;
 
     public boolean meetsConstraints(Problem problem, AIParticipant ai, int round, Map<Integer, Boolean> draftedPlayerCombinations) {
         
@@ -75,28 +76,51 @@ public class Constr {
                 return false;
             }
         }else{
+
+
+
             //index to be used for currentPlayer's position
             int positionIndex = Env.getBaseballPositionIndex(currentPlayer.getPosition());
 
-            //checking forward position limit
-            if(positionIndex < 3){
 
-                int forwardCount = ai.getPositionCounts()[0] + ai.getPositionCounts()[1] + ai.getPositionCounts()[2];
 
-                if(forwardCount + 1> Env.getPositionLimits()[5])
-                    return false;
-                
-            //checking individual position limit
-            } else if(ai.getPositionCounts()[positionIndex] + 1 > Env.getPositionLimits()[positionIndex]){
-
-                if(DEBUG){
-                    System.out.println("Player pos: " + currentPlayer.getPosition());
-                    System.out.println("index: " + positionIndex);
-                    System.out.println("count: " + ai.getPositionCounts()[positionIndex]);
+            if(positionIndex < 7){
+                if(positionIndex == 0){ 
+                    System.out.println("count: " + (ai.getPositionCounts()[positionIndex] + 1));
                     System.out.println("limit: " + Env.getPositionLimits()[positionIndex]);
-                    System.out.println("limit for: " + currentPlayer.getPosition());
+                    System.out.println("extra: " +  ai.getExtraBattersAvailable());
                 }
-                return false;
+
+                if((ai.getPositionCounts()[positionIndex] + 1) > (Env.getPositionLimits()[positionIndex] + ai.getExtraBattersAvailable())){
+                    if(DEBUG_VERBOSE){
+                        System.out.println("Player pos: " + currentPlayer.getPosition());
+                        System.out.println("count: " + ai.getPositionCounts()[positionIndex]);
+                        System.out.println("limit: " + Env.getPositionLimits()[positionIndex]);
+                    }
+                    return false;
+                }
+            } else{
+
+                if(positionIndex == 7){
+                    if((ai.getPositionCounts()[positionIndex] + 1) >= (Env.getPositionLimits()[10] - Env.getPositionLimits()[positionIndex] - (Env.getPositionLimits()[8] - ai.getPositionCounts()[8]))){
+                        if(DEBUG_VERBOSE){
+                            System.out.println("Player pos: " + currentPlayer.getPosition());
+                            System.out.println("count: " + ai.getPositionCounts()[positionIndex]);
+                            System.out.println("limit: " + Env.getPositionLimits()[positionIndex]);
+                        }
+                        return false;
+                    }
+                }else if(positionIndex == 8){
+                    if((ai.getPositionCounts()[positionIndex] + 1) >= (Env.getPositionLimits()[10] - Env.getPositionLimits()[positionIndex] - (Env.getPositionLimits()[7] - ai.getPositionCounts()[7]))){
+                        if(DEBUG_VERBOSE){
+                            System.out.println("Player pos: " + currentPlayer.getPosition());
+                            System.out.println("count: " + ai.getPositionCounts()[positionIndex]);
+                            System.out.println("limit: " + Env.getPositionLimits()[positionIndex]);
+                        }
+                        return false;
+                    }
+                }
+
             }
         }
 
